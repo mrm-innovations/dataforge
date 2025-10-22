@@ -34,6 +34,9 @@ jobs:
       - name: Prepare Pages artifacts (index.html + SPA fallback)
         run: |
           cp dist/index.html dist/404.html
+          # Provide favicon from existing logo to avoid 404s
+          cp dist/logo.png dist/favicon.png || true
+          cp dist/logo.png dist/favicon.ico || true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
