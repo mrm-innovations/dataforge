@@ -31,7 +31,6 @@ jobs:
         run: npm run build
       - name: Prepare Pages artifacts (index.html + SPA fallback)
         run: |
-          cp dist/src_entry.html dist/index.html
           cp dist/index.html dist/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

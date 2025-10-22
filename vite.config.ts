@@ -12,9 +12,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  build: {
-    rollupOptions: {
-      input: path.resolve(__dirname, 'src_entry.html'),
-    },
-  },
+  // Use default Vite HTML entry: index.html
 })
