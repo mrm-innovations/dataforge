@@ -1,6 +1,6 @@
 # DataForge
 
-A React + TypeScript application built with Vite for data exploration and visualization. The project appears to power a “Scorecard v6” UI with maps, charts, and province/municipality data.
+A React + TypeScript application built with Vite for data exploration and visualization. The project appears to power a “Regional Governance Performance Portal” UI with maps, charts, and province/municipality data.
 
 ## Features
 - Vite + React (SWC) dev/build pipeline
