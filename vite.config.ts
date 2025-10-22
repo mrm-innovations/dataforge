@@ -4,7 +4,8 @@ import path from 'node:path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/scorecard_v6/',
+  // Base path for GitHub Pages project site: https://<user>.github.io/<repo>/
+  base: '/dataforge/',
   plugins: [react()],
   resolve: {
     alias: {

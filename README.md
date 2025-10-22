@@ -42,12 +42,13 @@ npm run preview
 - `vite.config.ts` – Vite configuration (base path is set to `/scorecard_v6/`)
 
 ## Deployment
-- The `base` in `vite.config.ts` is `/scorecard_v6/`, which is useful when hosting under a subpath (e.g., GitHub Pages under a repository named `scorecard_v6`). If you deploy under a different repository or domain root, adjust `base` accordingly.
-- Build with `npm run build` and deploy the `dist/` directory to your hosting provider.
+- GitHub Pages: this repo is configured to deploy via GitHub Actions on push to `main`.
+  - Vite `base` is set to `/dataforge/` for project pages at `https://mrm-innovations.github.io/dataforge/`.
+  - Workflow: `.github/workflows/deploy.yml` builds and publishes the `dist/` folder using the official Pages actions.
+- Manual build: `npm run build` outputs to `dist/` if you need to deploy elsewhere.
 
 ## Contributing
 Issues and pull requests are welcome. Please open an issue for discussion before major changes.
 
 ## License
 Add your license of choice here (e.g., MIT). If unspecified, all rights reserved by default.
-
