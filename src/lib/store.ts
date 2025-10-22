@@ -51,13 +51,10 @@ export async function loadCanon() {
   const base = (import.meta as any).env?.BASE_URL ?? '/'
   const dir = `${location.pathname.replace(/\/[^/]*$/, '/') || '/'}`
   const candidates = [
-    // Prefer bundled static path under app base
-    `${base}public/lg-audits.json`,
-    // Fallbacks for varied hosting setups
+    // Vite copies files from /public to the build root; prefer this path
     `${base}lg-audits.json`,
-    `${dir}public/lg-audits.json`,
+    // Fallbacks for non-standard hosting or local file serving
     `${dir}lg-audits.json`,
-    `/public/lg-audits.json`,
     `/lg-audits.json`,
   ]
   let canon: Canon | null = null

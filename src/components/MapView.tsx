@@ -105,21 +105,21 @@ export function MapView({ rows }: Props){
         const dir = `${location.pathname.replace(/\/[^/]*$/, '/') || '/'}`
         const candidates = [
           // Combined Provinces + HUC (preferred new name)
-          `${base}public/region12_province_huc.geojson`,
           `${base}region12_province_huc.geojson`,
-          `${dir}public/region12_province_huc.geojson`,
+          `${base}region12_province_huc.geojson`,
+          `${dir}region12_province_huc.geojson`,
           `${dir}region12_province_huc.geojson`,
           // Back-compat (old name with space)
-          `${base}public/region12_province%20_huc.geojson`,
           `${base}region12_province%20_huc.geojson`,
-          `${dir}public/region12_province%20_huc.geojson`,
+          `${base}region12_province%20_huc.geojson`,
+          `${dir}region12_province%20_huc.geojson`,
           `${dir}region12_province%20_huc.geojson`,
           // Generic Philippines provinces file (fallback)
-          `${base}public/ph-provinces.geojson`,
           `${base}ph-provinces.geojson`,
-          `${dir}public/ph-provinces.geojson`,
+          `${base}ph-provinces.geojson`,
           `${dir}ph-provinces.geojson`,
-          `/public/ph-provinces.geojson`,
+          `${dir}ph-provinces.geojson`,
+          `/ph-provinces.geojson`,
           `/ph-provinces.geojson`,
         ]
         let geo: any | null = null
@@ -450,3 +450,4 @@ export function MapView({ rows }: Props){
     </Card>
   )
 }
+
