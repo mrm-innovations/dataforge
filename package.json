@@ -1,45 +1,48 @@
 {
-  "name": "scorecard_v4",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@tailwindcss/cli": "^4.1.13",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.1",
-    "@vitejs/plugin-react-swc": "^4.1.0",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.13",
-    "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.9.3",
-    "vite": "^7.1.9"
-  },
-  "dependencies": {
-    "@radix-ui/react-dropdown-menu": "^2.1.16",
-    "@radix-ui/react-label": "^2.1.7",
-    "@radix-ui/react-popover": "^1.1.15",
-    "@radix-ui/react-scroll-area": "^1.2.10",
-    "@radix-ui/react-select": "^2.2.6",
-    "@radix-ui/react-separator": "^1.1.7",
-    "@radix-ui/react-slot": "^1.2.3",
-    "@radix-ui/react-tabs": "^1.1.13",
-    "@radix-ui/react-tooltip": "^1.2.8",
-    "chart.js": "^4.5.0",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.545.0",
-    "react": "^19.2.0",
-    "react-chartjs-2": "^5.3.0",
-    "react-dom": "^19.2.0",
-    "tailwind-merge": "^3.3.1"
-  }
+    "name":  "scorecard_v4",
+    "version":  "1.0.0",
+    "description":  "",
+    "main":  "index.js",
+    "scripts":  {
+                    "dev":  "vite",
+                    "build": "vite build",`r`n    "build:pages": "vite build --base=/dataforge/",`r`n    "build:apache": "vite build --base=/scorecard_v6/",
+                    "preview":  "vite preview"
+                },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "devDependencies":  {
+                            "@tailwindcss/cli":  "^4.1.13",
+                            "@types/react":  "^19.2.2",
+                            "@types/react-dom":  "^19.2.1",
+                            "@vitejs/plugin-react-swc":  "^4.1.0",
+                            "autoprefixer":  "^10.4.21",
+                            "postcss":  "^8.5.6",
+                            "tailwindcss":  "^3.4.13",
+                            "tailwindcss-animate":  "^1.0.7",
+                            "typescript":  "^5.9.3",
+                            "vite":  "^7.1.9"
+                        },
+    "dependencies":  {
+                         "@radix-ui/react-dropdown-menu":  "^2.1.16",
+                         "@radix-ui/react-label":  "^2.1.7",
+                         "@radix-ui/react-popover":  "^1.1.15",
+                         "@radix-ui/react-scroll-area":  "^1.2.10",
+                         "@radix-ui/react-select":  "^2.2.6",
+                         "@radix-ui/react-separator":  "^1.1.7",
+                         "@radix-ui/react-slot":  "^1.2.3",
+                         "@radix-ui/react-tabs":  "^1.1.13",
+                         "@radix-ui/react-tooltip":  "^1.2.8",
+                         "chart.js":  "^4.5.0",
+                         "class-variance-authority":  "^0.7.1",
+                         "clsx":  "^2.1.1",
+                         "lucide-react":  "^0.545.0",
+                         "react":  "^19.2.0",
+                         "react-chartjs-2":  "^5.3.0",
+                         "react-dom":  "^19.2.0",
+                         "tailwind-merge":  "^3.3.1"
+                     }
 }
+
