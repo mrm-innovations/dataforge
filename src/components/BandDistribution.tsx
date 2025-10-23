@@ -103,6 +103,14 @@ export function BandDistribution({ rows }: Props) {
         data={data as any}
         options={{
           responsive: true,
+          // Make the bars slimmer: shrink category and bar percentages
+          datasets: {
+            bar: {
+              categoryPercentage: 0.55,
+              barPercentage: 0.7,
+              maxBarThickness: 22,
+            },
+          },
           scales: {
             x: { stacked: true },
             y: {
