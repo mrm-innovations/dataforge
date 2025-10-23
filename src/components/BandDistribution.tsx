@@ -106,9 +106,10 @@ export function BandDistribution({ rows }: Props) {
           // Make the bars slimmer: shrink category and bar percentages
           datasets: {
             bar: {
-              categoryPercentage: 0.55,
-              barPercentage: 0.7,
-              maxBarThickness: 22,
+              // Slightly wider than previous tweak
+              categoryPercentage: 0.62,
+              barPercentage: 0.78,
+              maxBarThickness: 26,
             },
           },
           scales: {

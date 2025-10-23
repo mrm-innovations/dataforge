@@ -45,10 +45,10 @@ export function ProvinceChart({ rows }: { rows: any[] }) {
         responsive: true,
         datasets: {
           bar: {
-            // Slightly slimmer bars than default
-            categoryPercentage: 0.6,
-            barPercentage: 0.75,
-            maxBarThickness: 24,
+            // Slightly wider than previous tweak
+            categoryPercentage: 0.68,
+            barPercentage: 0.82,
+            maxBarThickness: 28,
           },
         },
         plugins: {
