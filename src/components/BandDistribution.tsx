@@ -37,7 +37,7 @@ export function BandDistribution({ rows }: Props) {
       : isADAC()
       ? { high: hsl('blue'), moderate: hsl('yellow'), low: hsl('red') }
       : isLCPC()
-      ? { ideal: hsl('blue'), mature: hsl('amber'), progressive: hsl('orange'), basic: hsl('red') }
+      ? { ideal: hsl('blue'), mature: hsl('yellow'), progressive: hsl('orange'), basic: hsl('red') }
       : { elite: hsl('emerald'), compliant: hsl('green'), near: hsl('amber'), below: hsl('red') }
 
     for (const y of years) {
