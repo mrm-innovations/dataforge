@@ -51,4 +51,4 @@ npm run preview
 Issues and pull requests are welcome. Please open an issue for discussion before major changes.
 
 ## License
-Add your license of choice here (e.g., MIT). If unspecified, all rights reserved by default.
+All rights reserved.
