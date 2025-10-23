@@ -3,6 +3,7 @@ node_modules/
 
 # Build output
 dist/
+assets/
 
 # Logs
 npm-debug.log*

@@ -3,7 +3,7 @@
     "version":  "1.0.0",
     "description":  "",
     "main":  "index.js",
-    "scripts": {"dev": "vite", "dev:pages": "vite --open /dataforge/", "dev:apache": "vite --open /scorecard_v6/", "build": "vite build", "build:pages": "vite build --base=/dataforge/", "build:apache": "vite build --base=/scorecard_v6/", "preview": "vite preview"},
+    "scripts": {"dev": "vite", "dev:pages": "vite --open /dataforge/", "dev:apache": "vite --open /scorecard_v6/", "build": "vite build", "build:pages": "vite build --base=/dataforge/", "build:apache": "vite build --base=/scorecard_v6/", "deploy:apache": "npm run build:apache && node scripts/deploy-apache.js", "preview": "vite preview"},
     "keywords":  [
 
                  ],
@@ -41,5 +41,6 @@
                          "tailwind-merge":  "^3.3.1"
                      }
 }
+
 
 
