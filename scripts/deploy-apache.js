@@ -33,10 +33,19 @@ rmrf(path.join(webroot, 'assets'))
 
 // 2) Copy everything from dist into webroot (contents only)
 for (const entry of fs.readdirSync(dist)){
+  if (entry.toLowerCase() === 'src_entry.html') continue // do not overwrite source html
   const from = path.join(dist, entry)
   const to = path.join(webroot, entry)
   copyRecursive(from, to)
 }
 
-console.log('Deployed dist/ to Apache webroot. Open http://localhost/scorecard_v6')
+// 3) If build used src_entry.html as input, promote it to index.html (+404.html)
+const srcEntry = path.join(dist, 'src_entry.html')
+if (fs.existsSync(srcEntry)) {
+  const indexPath = path.join(webroot, 'index.html')
+  const fourOhFour = path.join(webroot, '404.html')
+  fs.copyFileSync(srcEntry, indexPath)
+  fs.copyFileSync(srcEntry, fourOhFour)
+}
 
+console.log('Deployed dist/ to Apache webroot. Open http://localhost/scorecard_v6')
