@@ -43,6 +43,14 @@ export function ProvinceChart({ rows }: { rows: any[] }) {
       data={data as any}
       options={{
         responsive: true,
+        datasets: {
+          bar: {
+            // Slightly slimmer bars than default
+            categoryPercentage: 0.6,
+            barPercentage: 0.75,
+            maxBarThickness: 24,
+          },
+        },
         plugins: {
           legend: { display: false },
           tooltip: {
@@ -56,4 +64,3 @@ export function ProvinceChart({ rows }: { rows: any[] }) {
     />
   )
 }
-
