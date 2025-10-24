@@ -1,6 +1,8 @@
 import React, { useMemo, useRef, useState } from 'react'
 import { store } from '@/lib/store'
 import { Button } from '@/components/ui/button'
+import { Label } from '@/components/ui/label'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 
 function normalizeName(s: string){
   return String(s || '')
@@ -162,10 +164,17 @@ export function SettingsView(){
         <h2 className="font-medium">Settings</h2>
       </div>
       <div className="flex flex-wrap items-end gap-2 mb-3">
-        <label className="text-sm">Audit</label>
-        <select value={audit} onChange={(e) => setAudit(e.target.value)} className="border rounded px-2 py-1 text-sm">
-          {audits.map((a) => <option key={a} value={a}>{a}</option>)}
-        </select>
+        <div className="flex flex-col gap-1 min-w-40">
+          <Label className="text-xs">Audit</Label>
+          <Select value={audit} onValueChange={(v) => setAudit(v)}>
+            <SelectTrigger><SelectValue placeholder="Select audit" /></SelectTrigger>
+            <SelectContent>
+              {audits.map((a) => (
+                <SelectItem key={a} value={a}>{a}</SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
         <Button onClick={exportJSON} variant="outline" size="sm">Export JSON</Button>
         <Button onClick={exportCSV} variant="outline" size="sm">Export CSV</Button>
         <label className="text-sm ml-4">Import (CSV/JSON)</label>
@@ -178,4 +187,3 @@ export function SettingsView(){
     </div>
   )
 }
-
