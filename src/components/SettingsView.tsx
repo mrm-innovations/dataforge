@@ -70,6 +70,13 @@ export function SettingsView(){
   const [log, setLog] = useState<string>('Ready.')
   const [uploading, setUploading] = useState<boolean>(false)
   const [picked, setPicked] = useState<string>('')
+  // New-audit options
+  const [metric, setMetric] = useState<'score' | 'status'>('score')
+  const [highThr, setHighThr] = useState<string>('85')
+  const [modThr, setModThr] = useState<string>('50')
+  const [passThr, setPassThr] = useState<string>('50')
+  const [inferYears, setInferYears] = useState<boolean>(true)
+  const [customYears, setCustomYears] = useState<string>('')
   const [unmatched, setUnmatched] = useState<Array<{ province: string; lgu: string; key: string }>>([])
   const [lastAuditKey, setLastAuditKey] = useState<string>('')
   const inputRef = useRef<HTMLInputElement | null>(null)
@@ -134,7 +141,11 @@ export function SettingsView(){
       }
 
       const sample = rows[0] || {}
-      const yearCols = Object.keys(sample).filter((k) => /^\d{4}$/.test(k))
+      let yearCols = Object.keys(sample).filter((k) => /^\d{4}$/.test(k))
+      if (!inferYears) {
+        const parsed = (customYears || '').split(/[,\s]+/).map(s => s.trim()).filter(Boolean)
+        if (parsed.length) yearCols = parsed
+      }
       const byKey = new Map<string, any>()
       ;(store.CANON?.lgus || []).forEach((g: any) => {
         const k = normalizeName(g.lgu || g.province)
@@ -147,9 +158,11 @@ export function SettingsView(){
       metaRoot.meta = metaRoot.meta || { audits: {} }
       metaRoot.meta.audits = metaRoot.meta.audits || {}
       if (!metaRoot.meta.audits[targetAudit]){
-        metaRoot.meta.audits[targetAudit] = { years: yearCols.map((y) => Number(y)), metric: 'score', bands: { high_functional: 85, moderate_functional: 50 } }
+        metaRoot.meta.audits[targetAudit] = metric === 'status'
+          ? { years: yearCols.map((y:any) => Number(y)), metric: 'status', status_values: ['Passer','Non-Passer'] }
+          : { years: yearCols.map((y:any) => Number(y)), metric: 'score', bands: { high_functional: Number(highThr) || 85, moderate_functional: Number(modThr) || 50 } }
         ;(store as any).AUDITS[targetAudit] = metaRoot.meta.audits[targetAudit]
-        addLog(`Created new audit meta: ${targetAudit} (years: ${yearCols.join(', ')})`)
+        addLog(`Created new audit meta: ${targetAudit} (metric: ${metric}; years: ${yearCols.join(', ')})`)
       }
       let matched = 0, total = 0
       const miss: Array<{ province: string; lgu: string; key: string }> = []
@@ -162,7 +175,22 @@ export function SettingsView(){
         if (!rec){ miss.push({ province: prov, lgu, key }); return }
         rec.results = rec.results || {}
         const target = rec.results[targetAudit] = rec.results[targetAudit] || {}
-        yearCols.forEach((y) => { target[y] = toNumber(r[y]) })
+        yearCols.forEach((y:any) => {
+          if (metric === 'status'){
+            const raw = r[String(y)]
+            const s = String(raw ?? '').trim().toLowerCase()
+            let val: 'Passer' | 'Non-Passer' | '' = ''
+            if (s === 'passer' || s === 'pass' || s === 'passed') val = 'Passer'
+            else if (s === 'non-passer' || s === 'fail' || s === 'failed') val = 'Non-Passer'
+            else {
+              const n = Number(String(raw ?? '').replace(/[%\s]+/g,''))
+              if (Number.isFinite(n)) val = n >= (Number(passThr)||50) ? 'Passer' : 'Non-Passer'
+            }
+            target[String(y)] = val
+          } else {
+            target[String(y)] = toNumber(r[y])
+          }
+        })
         matched++
       })
       setUnmatched(miss)
@@ -199,6 +227,70 @@ export function SettingsView(){
     <div className="p-4">
       <div className="flex items-center justify-between mb-3">
         <h2 className="font-medium">Settings</h2>
+      </div>
+      {/* New-audit options */}
+      <div className="flex flex-wrap items-end gap-3 mb-3">
+        <div className="flex flex-col gap-1 w-40">
+          <Label className="text-xs">Metric</Label>
+          <Select value={metric} onValueChange={(v) => setMetric(v as any)}>
+            <SelectTrigger><SelectValue placeholder="Metric" /></SelectTrigger>
+            <SelectContent>
+              <SelectItem value="score">Score (thresholds)</SelectItem>
+              <SelectItem value="status">Status (Passer/Non-Passer)</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+        {metric === 'score' ? (
+          <div className="flex items-end gap-3">
+            <div className="flex flex-col gap-1 w-28">
+              <Label className="text-xs">High ≥</Label>
+              <Input value={highThr} onChange={(e) => setHighThr(e.target.value)} placeholder="85" />
+            </div>
+            <div className="flex flex-col gap-1 w-28">
+              <Label className="text-xs">Moderate ≥</Label>
+              <Input value={modThr} onChange={(e) => setModThr(e.target.value)} placeholder="50" />
+            </div>
+          </div>
+        ) : (
+          <div className="flex items-end gap-3">
+            <div className="flex flex-col gap-1 w-36">
+              <Label className="text-xs">Pass threshold %</Label>
+              <Input value={passThr} onChange={(e) => setPassThr(e.target.value)} placeholder="50" />
+            </div>
+          </div>
+        )}
+        <div className="flex items-end gap-2">
+          <label className="text-xs inline-flex items-center gap-1 mb-1">
+            <input type="checkbox" checked={inferYears} onChange={(e) => setInferYears(e.target.checked)} />
+            Infer years from file
+          </label>
+          {!inferYears && (
+            <div className="flex flex-col gap-1 w-48">
+              <Label className="text-xs">Years (comma-separated)</Label>
+              <Input value={customYears} onChange={(e) => setCustomYears(e.target.value)} placeholder="2021,2022,2024" />
+            </div>
+          )}
+        </div>
+      </div>
+      {/* Persist canonical JSON to disk via File System Access API */}
+      <div className="mb-3">
+        <Button variant="outline" size="sm" onClick={async () => {
+          if (!window.confirm('Persist current canonical lg-audits.json to a file on disk?')) return;
+          const data = JSON.stringify(store.CANON, null, 2);
+          // @ts-ignore
+          if (window.showSaveFilePicker){
+            try {
+              // @ts-ignore
+              const handle = await window.showSaveFilePicker({ suggestedName: 'lg-audits.json', types: [{ description: 'JSON', accept: { 'application/json': ['.json'] } }] });
+              const w = await handle.createWritable(); await w.write(new Blob([data], { type: 'application/json' })); await w.close();
+              addLog('Saved canonical JSON via File System Access API.');
+            } catch (e:any) { addLog('Save cancelled or failed: ' + (e?.message||String(e))) }
+          } else {
+            const blob = new Blob([data], { type: 'application/json' });
+            const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'lg-audits.json'; a.click();
+            addLog('Browser does not support File System Access; downloaded file instead.');
+          }
+        }}>Persist lg-audits.json</Button>
       </div>
       {unmatched.length > 0 && (
         <div className="mb-3">
