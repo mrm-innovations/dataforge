@@ -57,6 +57,8 @@ export function SettingsView(){
   const [audit, setAudit] = useState<string>('ADAC')
   const [customKey, setCustomKey] = useState<string>('')
   const [log, setLog] = useState<string>('Ready.')
+  const [uploading, setUploading] = useState<boolean>(false)
+  const [picked, setPicked] = useState<string>('')
   const inputRef = useRef<HTMLInputElement | null>(null)
 
   const audits = useMemo(() => Object.keys(store.AUDITS || {}), [])
@@ -103,7 +105,9 @@ export function SettingsView(){
   async function onImportFileChange(e: React.ChangeEvent<HTMLInputElement>){
     const f = e.target.files?.[0]
     if (!f) return
+    setPicked(f.name)
     try {
+      setUploading(true)
       const text = await f.text()
       const ext = f.name.toLowerCase().split('.').pop()
       let rows: any[] = []
@@ -168,6 +172,7 @@ export function SettingsView(){
       addLog('Import failed: ' + (err?.message || String(err)))
     } finally {
       if (inputRef.current) inputRef.current.value = ''
+      setUploading(false)
     }
   }
 
@@ -194,9 +199,11 @@ export function SettingsView(){
         </div>
         <Button onClick={exportJSON} variant="outline" size="sm">Export JSON</Button>
         <Button onClick={exportCSV} variant="outline" size="sm">Export CSV</Button>
-        <label className="text-sm ml-4">Import (CSV/JSON)</label>
-        <input ref={inputRef} type="file" accept=".csv,.json" onChange={onImportFileChange} className="text-sm" />
+        <Button onClick={() => inputRef.current?.click()} size="sm">{uploading ? 'Importing…' : 'Import (CSV/JSON)'}</Button>
+        {picked && <div className="text-xs text-muted-foreground">{picked}</div>}
+        <input ref={inputRef} type="file" accept=".csv,.json" onChange={onImportFileChange} className="hidden" />
       </div>
+      {uploading && (<div className="h-1 w-full bg-blue-500/60 animate-pulse rounded mb-2" />)}
       <div className="border rounded bg-white">
         <div className="px-3 py-2 text-xs text-muted-foreground border-b">Logs</div>
         <pre className="p-3 text-xs whitespace-pre-wrap max-h-64 overflow-auto">{log}</pre>
