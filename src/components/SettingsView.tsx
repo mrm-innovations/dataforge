@@ -59,6 +59,8 @@ export function SettingsView(){
   const [log, setLog] = useState<string>('Ready.')
   const [uploading, setUploading] = useState<boolean>(false)
   const [picked, setPicked] = useState<string>('')
+  const [unmatched, setUnmatched] = useState<Array<{ province: string; lgu: string; key: string }>>([])
+  const [lastAuditKey, setLastAuditKey] = useState<string>('')
   const inputRef = useRef<HTMLInputElement | null>(null)
 
   const audits = useMemo(() => Object.keys(store.AUDITS || {}), [])
@@ -139,35 +141,23 @@ export function SettingsView(){
         addLog(`Created new audit meta: ${targetAudit} (years: ${yearCols.join(', ')})`)
       }
       let matched = 0, total = 0
-      const unmatched: Array<{ province: string; lgu: string; key: string }> = []
+      const miss: Array<{ province: string; lgu: string; key: string }> = []
       rows.forEach((r: any) => {
         total++
         const prov = r['Province/HUC'] || r['Province'] || r['province'] || ''
         const lgu = r['City/Municipality'] || r['LGU'] || r['lgu'] || ''
         const key = normalizeName(lgu || prov)
         const rec = byKey.get(key)
-        if (!rec){ unmatched.push({ province: prov, lgu, key }); return }
+        if (!rec){ miss.push({ province: prov, lgu, key }); return }
         rec.results = rec.results || {}
         const target = rec.results[targetAudit] = rec.results[targetAudit] || {}
         yearCols.forEach((y) => { target[y] = toNumber(r[y]) })
         matched++
       })
-
-      addLog(`Ingested ${targetAudit}: matched ${matched}/${total}. Unmatched: ${unmatched.length}.`)
-      if (unmatched.length){
-        const lines = unmatched.map(u => `${u.province}\t${u.lgu}\t(${u.key})`).join('\n')
-        const blob = new Blob([lines], { type: 'text/plain' })
-        const a = document.createElement('a')
-        a.href = URL.createObjectURL(blob)
-        a.download = `${targetAudit.toLowerCase()}-unmatched.txt`
-        a.click()
-      }
-      // Offer updated canonical JSON for download
-      const canonBlob = new Blob([JSON.stringify(store.CANON, null, 2)], { type: 'application/json' })
-      const a = document.createElement('a')
-      a.href = URL.createObjectURL(canonBlob)
-      a.download = 'lg-audits.updated.json'
-      a.click()
+      setUnmatched(miss)
+      setLastAuditKey(targetAudit)
+      setAudit(targetAudit)
+      addLog(`Ingested ${targetAudit}: matched ${matched}/${total}. Unmatched: ${miss.length}.`)
     } catch (err: any) {
       addLog('Import failed: ' + (err?.message || String(err)))
     } finally {
@@ -176,11 +166,61 @@ export function SettingsView(){
     }
   }
 
+  function downloadUnmatched(){
+    if (!unmatched.length || !lastAuditKey) return
+    const lines = unmatched.map(u => `${u.province}\t${u.lgu}\t(${u.key})`).join('\n')
+    const blob = new Blob([lines], { type: 'text/plain' })
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(blob)
+    a.download = `${lastAuditKey.toLowerCase()}-unmatched.txt`
+    a.click()
+  }
+
+  function downloadCanonical(){
+    const canonBlob = new Blob([JSON.stringify(store.CANON, null, 2)], { type: 'application/json' })
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(canonBlob)
+    a.download = 'lg-audits.updated.json'
+    a.click()
+  }
+
   return (
     <div className="p-4">
       <div className="flex items-center justify-between mb-3">
         <h2 className="font-medium">Settings</h2>
       </div>
+      {unmatched.length > 0 && (
+        <div className="mb-3">
+          <div className="flex items-center justify-between mb-2">
+            <div className="text-sm">Unmatched preview ({unmatched.length} rows)</div>
+            <div className="flex gap-2">
+              <Button variant="outline" size="sm" onClick={downloadUnmatched}>Download Unmatched</Button>
+              <Button variant="outline" size="sm" onClick={downloadCanonical}>Download Canonical JSON</Button>
+              <Button variant="outline" size="sm" onClick={exportJSON}>Save Audit JSON</Button>
+            </div>
+          </div>
+          <div className="overflow-auto border rounded">
+            <table className="w-full text-xs">
+              <thead className="bg-zinc-50">
+                <tr>
+                  <th className="text-left p-2 border-b">Province/HUC</th>
+                  <th className="text-left p-2 border-b">City/Municipality</th>
+                  <th className="text-left p-2 border-b">Match Key</th>
+                </tr>
+              </thead>
+              <tbody>
+                {unmatched.slice(0, 100).map((u, i) => (
+                  <tr key={i} className="odd:bg-white even:bg-zinc-50">
+                    <td className="p-2 border-b align-top">{u.province}</td>
+                    <td className="p-2 border-b align-top">{u.lgu}</td>
+                    <td className="p-2 border-b align-top text-muted-foreground">{u.key}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
       <div className="flex flex-wrap items-end gap-2 mb-3">
         <div className="flex flex-col gap-1 min-w-40">
           <Label className="text-xs">Audit</Label>
