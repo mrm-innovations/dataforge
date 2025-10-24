@@ -1,0 +1,532 @@
+[
+  {
+    "2019": 73,
+    "2020": 78,
+    "2021": 87.5,
+    "2022": 68,
+    "2023": 65,
+    "type": "Province",
+    "province": "Cotabato",
+    "lgu": "Cotabato"
+  },
+  {
+    "2019": 66,
+    "2020": 90,
+    "2021": 82.5,
+    "2022": 100,
+    "2023": 77,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Alamada"
+  },
+  {
+    "2019": null,
+    "2020": null,
+    "2021": 100,
+    "2022": 100,
+    "2023": 80,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Carmen"
+  },
+  {
+    "2019": null,
+    "2020": null,
+    "2021": 80,
+    "2022": 92.5,
+    "2023": 82,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Kabacan"
+  },
+  {
+    "2019": 70,
+    "2020": 85,
+    "2021": 85,
+    "2022": 95,
+    "2023": 85,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Libungan"
+  },
+  {
+    "2019": 98,
+    "2020": 97.5,
+    "2021": 100,
+    "2022": 85.5,
+    "2023": 85,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Magpet"
+  },
+  {
+    "2019": 30,
+    "2020": 85,
+    "2021": 82.5,
+    "2022": 95,
+    "2023": 85,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Makilala"
+  },
+  {
+    "2019": 78,
+    "2020": 85,
+    "2021": 70,
+    "2022": 92,
+    "2023": 87,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Matalam"
+  },
+  {
+    "2019": null,
+    "2020": null,
+    "2021": 85,
+    "2022": 95,
+    "2023": 87,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Midsayap"
+  },
+  {
+    "2019": 93,
+    "2020": 85,
+    "2021": 85,
+    "2022": 95,
+    "2023": 90,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "M'Lang"
+  },
+  {
+    "2019": 83,
+    "2020": 81,
+    "2021": 100,
+    "2022": 100,
+    "2023": 90,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Pigkawayan"
+  },
+  {
+    "2019": 80,
+    "2020": 80,
+    "2021": 85,
+    "2022": 88,
+    "2023": 90,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Pikit"
+  },
+  {
+    "2019": 90,
+    "2020": 95,
+    "2021": 100,
+    "2022": 100,
+    "2023": 90,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "President Roxas"
+  },
+  {
+    "2019": 48,
+    "2020": 68,
+    "2021": 82.5,
+    "2022": 95,
+    "2023": 92,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Tulunan"
+  },
+  {
+    "2019": 58,
+    "2020": 75,
+    "2021": 60,
+    "2022": 80.5,
+    "2023": 95,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Antipas"
+  },
+  {
+    "2019": 55,
+    "2020": 100,
+    "2021": 100,
+    "2022": 100,
+    "2023": 95,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Banisilan"
+  },
+  {
+    "2019": 50,
+    "2020": 75,
+    "2021": 95,
+    "2022": 100,
+    "2023": 95,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Aleosan"
+  },
+  {
+    "2019": 85,
+    "2020": 100,
+    "2021": 100,
+    "2022": 100,
+    "2023": 95,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Arakan"
+  },
+  {
+    "2019": 90,
+    "2020": 100,
+    "2021": 100,
+    "2022": 100,
+    "2023": 85,
+    "type": "Component City",
+    "province": "Cotabato",
+    "lgu": "City of Kidapawan"
+  },
+  {
+    "2019": 95,
+    "2020": 73,
+    "2021": 90.5,
+    "2022": 87.5,
+    "2023": 95,
+    "type": "Province",
+    "province": "South Cotabato",
+    "lgu": "South Cotabato"
+  },
+  {
+    "2019": 100,
+    "2020": 97.5,
+    "2021": 97.5,
+    "2022": 95,
+    "2023": 95,
+    "type": "Component City",
+    "province": "South Cotabato",
+    "lgu": "City of Koronadal"
+  },
+  {
+    "2019": 78,
+    "2020": 70,
+    "2021": 72.5,
+    "2022": 83,
+    "2023": 95,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Banga"
+  },
+  {
+    "2019": 90,
+    "2020": 80,
+    "2021": 97.5,
+    "2022": 90.5,
+    "2023": 95,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Norala"
+  },
+  {
+    "2019": 93,
+    "2020": 77.5,
+    "2021": 92.5,
+    "2022": 92.5,
+    "2023": 95,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Polomolok"
+  },
+  {
+    "2019": 100,
+    "2020": 97.5,
+    "2021": 95,
+    "2022": 98,
+    "2023": 97,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Surallah"
+  },
+  {
+    "2019": 100,
+    "2020": 100,
+    "2021": 97.5,
+    "2022": 93,
+    "2023": 97,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Tampakan"
+  },
+  {
+    "2019": 100,
+    "2020": 100,
+    "2021": 88,
+    "2022": 100,
+    "2023": 97,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Tantangan"
+  },
+  {
+    "2019": 86,
+    "2020": 55,
+    "2021": 70,
+    "2022": 80,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "T'Boli"
+  },
+  {
+    "2019": 85,
+    "2020": 86,
+    "2021": 92.5,
+    "2022": 98,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Tupi"
+  },
+  {
+    "2019": 78,
+    "2020": 84,
+    "2021": 88,
+    "2022": 82.5,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Santo Niño"
+  },
+  {
+    "2019": 63,
+    "2020": 85,
+    "2021": 95,
+    "2022": 80,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Lake Sebu"
+  },
+  {
+    "2019": 100,
+    "2020": 100,
+    "2021": 100,
+    "2022": 92,
+    "2023": 100,
+    "type": "Province",
+    "province": "Sultan Kudarat",
+    "lgu": "Sultan Kudarat"
+  },
+  {
+    "2019": 76,
+    "2020": 90,
+    "2021": 100,
+    "2022": 95,
+    "2023": 100,
+    "type": "Component City",
+    "province": "Sultan Kudarat",
+    "lgu": "City of Tacurong"
+  },
+  {
+    "2019": 90,
+    "2020": 90,
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Bagumbayan"
+  },
+  {
+    "2019": 95,
+    "2020": 96,
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Columbio"
+  },
+  {
+    "2019": 98,
+    "2020": 93,
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Esperanza"
+  },
+  {
+    "2019": 73,
+    "2020": 95,
+    "2021": 90,
+    "2022": 95,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Isulan"
+  },
+  {
+    "2019": 100,
+    "2020": 100,
+    "2021": 98,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Kalamansig"
+  },
+  {
+    "2019": 68,
+    "2020": 85,
+    "2021": 95,
+    "2022": 95.5,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Lebak"
+  },
+  {
+    "2019": 95,
+    "2020": 90,
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Lutayan"
+  },
+  {
+    "2019": 95,
+    "2020": 95,
+    "2021": 98,
+    "2022": 98,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Lambayong"
+  },
+  {
+    "2019": 98,
+    "2020": 98,
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Palimbang"
+  },
+  {
+    "2019": 10,
+    "2020": 85,
+    "2021": 88,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "President Quirino"
+  },
+  {
+    "2019": 100,
+    "2020": 100,
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Sen. Ninoy Aquino"
+  },
+  {
+    "2019": 95,
+    "2020": 90,
+    "2021": 95,
+    "2022": 92,
+    "2023": 100,
+    "type": "Province",
+    "province": "Sarangani",
+    "lgu": "Sarangani"
+  },
+  {
+    "2019": 100,
+    "2020": 100,
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Alabel"
+  },
+  {
+    "2019": 78,
+    "2020": 80,
+    "2021": 88,
+    "2022": 78,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Glan"
+  },
+  {
+    "2019": 73,
+    "2020": 78,
+    "2021": 98,
+    "2022": 93,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Kiamba"
+  },
+  {
+    "2019": 100,
+    "2020": 95,
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Maasim"
+  },
+  {
+    "2019": 68,
+    "2020": 65,
+    "2021": 95,
+    "2022": 95,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Maitum"
+  },
+  {
+    "2019": 90,
+    "2020": 80,
+    "2021": 100,
+    "2022": 97.5,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Malapatan"
+  },
+  {
+    "2019": 100,
+    "2020": 100,
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Malungon"
+  },
+  {
+    "2019": 90,
+    "2020": 82.5,
+    "2021": 85,
+    "2022": 90,
+    "2023": 100,
+    "type": "Highly Urbanized City",
+    "province": "HUC",
+    "lgu": "City of General Santos"
+  }
+]
