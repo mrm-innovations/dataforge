@@ -71,15 +71,8 @@ export async function loadCanon() {
     } catch {}
   }
   if (!canon) throw new Error(`Failed to load lg-audits.json (${lastStatus ?? 'network'})`)
-  // Optionally merge POC dataset if available
-  try {
-    const pocUrl = `${base}poc.json`
-    const r = await fetch(pocUrl, { cache: 'no-store' })
-    if (r.ok) {
-      const poc = await r.json()
-      mergePOC(canon, poc)
-    }
-  } catch {}
+  // Optional audit meta overrides (thresholds/labels)
+  await loadAuditConfig(canon, base)
   store.CANON = canon
   store.LGUS = canon.lgus || []
   store.AUDITS = canon.meta?.audits || {}
@@ -98,45 +91,32 @@ export async function loadCanon() {
 }
 
 function normalizeName(s: string){
-  return String(s || '')
+  // Handle common mojibake (Ã‘ -> n) then strip accents and punctuation
+  const fixed = String(s || '')
+    .replace(/Ã‘|Ã±/g, 'n')
+    .replace(/â€™|’|‘/g, "'")
+  return fixed
     .toLowerCase()
+    // remove parenthetical notes e.g., (Capital), (DADIANGAS)
+    .replace(/\s*\([^\)]*\)/g, '')
     .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
     .replace(/\s*\(capital\)/g,'')
     .replace(/^city of\s+/, '')
     .replace(/[^a-z0-9]+/g, '')
 }
 
-function mergePOC(canon: any, pocRows: any[]){
-  if (!canon.meta) canon.meta = { audits: {} }
-  if (!canon.meta.audits) canon.meta.audits = {}
-  if (!canon.meta.audits.POC) {
-    canon.meta.audits.POC = {
-      years: [2021, 2022, 2023],
-      metric: 'score',
-      bands: { high_functional: 85, moderate_functional: 50 },
-      labels: { band_high: 'High Performing', band_moderate: 'Moderate Performing', band_low: 'Low Performing' },
+async function loadAuditConfig(canon: any, base: string){
+  try {
+    const r = await fetch(`${base}audits.config.json`, { cache: 'no-store' })
+    if (!r.ok) return
+    const cfg = await r.json()
+    canon.meta = canon.meta || {}
+    canon.meta.audits = canon.meta.audits || {}
+    for (const [key, meta] of Object.entries(cfg || {})){
+      const cur = (canon.meta.audits as any)[key] || {}
+      ;(canon.meta.audits as any)[key] = { ...cur, ...meta }
     }
-  }
-  const byKey = new Map<string, any>()
-  for (const g of canon.lgus || []){
-    const k = normalizeName(g.lgu || g.province)
-    if (!byKey.has(k)) byKey.set(k, g)
-  }
-  for (const row of pocRows){
-    const prov = row.province || row.Province || ''
-    const lgu = row.lgu || row.City || row.Municipality || row["City/Municipality"] || ''
-    const key = normalizeName(lgu || prov)
-    const rec = byKey.get(key)
-    if (!rec) continue
-    rec.results = rec.results || {}
-    const target = (rec.results.POC = rec.results.POC || {})
-    ;['2021','2022','2023'].forEach((y) => {
-      const raw = row[y]
-      if (raw == null || raw === '') return
-      const v = typeof raw === 'number' ? raw : Number(String(raw).replace(/[%\s]+/g,''))
-      if (!Number.isNaN(v)) target[y] = v
-    })
-  }
+  } catch {}
 }
 
 export function setAudit(auditKey: string) {
