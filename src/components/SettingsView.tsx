@@ -2,6 +2,7 @@ import React, { useMemo, useRef, useState } from 'react'
 import { store } from '@/lib/store'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
+import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 
 function normalizeName(s: string){
@@ -54,6 +55,7 @@ function asObjects(header: string[], rows: string[][]){
 
 export function SettingsView(){
   const [audit, setAudit] = useState<string>('ADAC')
+  const [customKey, setCustomKey] = useState<string>('')
   const [log, setLog] = useState<string>('Ready.')
   const inputRef = useRef<HTMLInputElement | null>(null)
 
@@ -121,6 +123,17 @@ export function SettingsView(){
         const k = normalizeName(g.lgu || g.province)
         if (!byKey.has(k)) byKey.set(k, g)
       })
+      const targetAudit = (customKey || audit).trim().toUpperCase()
+      if (!targetAudit) throw new Error('Audit key is required (choose from list or enter a new key)')
+      // Ensure meta exists for new audits
+      const metaRoot: any = (store.CANON as any)
+      metaRoot.meta = metaRoot.meta || { audits: {} }
+      metaRoot.meta.audits = metaRoot.meta.audits || {}
+      if (!metaRoot.meta.audits[targetAudit]){
+        metaRoot.meta.audits[targetAudit] = { years: yearCols.map((y) => Number(y)), metric: 'score', bands: { high_functional: 85, moderate_functional: 50 } }
+        ;(store as any).AUDITS[targetAudit] = metaRoot.meta.audits[targetAudit]
+        addLog(`Created new audit meta: ${targetAudit} (years: ${yearCols.join(', ')})`)
+      }
       let matched = 0, total = 0
       const unmatched: Array<{ province: string; lgu: string; key: string }> = []
       rows.forEach((r: any) => {
@@ -131,18 +144,18 @@ export function SettingsView(){
         const rec = byKey.get(key)
         if (!rec){ unmatched.push({ province: prov, lgu, key }); return }
         rec.results = rec.results || {}
-        const target = rec.results[audit] = rec.results[audit] || {}
+        const target = rec.results[targetAudit] = rec.results[targetAudit] || {}
         yearCols.forEach((y) => { target[y] = toNumber(r[y]) })
         matched++
       })
 
-      addLog(`Ingested ${audit}: matched ${matched}/${total}. Unmatched: ${unmatched.length}.`)
+      addLog(`Ingested ${targetAudit}: matched ${matched}/${total}. Unmatched: ${unmatched.length}.`)
       if (unmatched.length){
         const lines = unmatched.map(u => `${u.province}\t${u.lgu}\t(${u.key})`).join('\n')
         const blob = new Blob([lines], { type: 'text/plain' })
         const a = document.createElement('a')
         a.href = URL.createObjectURL(blob)
-        a.download = `${audit.toLowerCase()}-unmatched.txt`
+        a.download = `${targetAudit.toLowerCase()}-unmatched.txt`
         a.click()
       }
       // Offer updated canonical JSON for download
@@ -174,6 +187,10 @@ export function SettingsView(){
               ))}
             </SelectContent>
           </Select>
+        </div>
+        <div className="flex flex-col gap-1 min-w-56">
+          <Label className="text-xs">Or New Audit Key (optional)</Label>
+          <Input value={customKey} onChange={(e) => setCustomKey(e.target.value)} placeholder="e.g., POC-2025" />
         </div>
         <Button onClick={exportJSON} variant="outline" size="sm">Export JSON</Button>
         <Button onClick={exportCSV} variant="outline" size="sm">Export CSV</Button>
