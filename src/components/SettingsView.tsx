@@ -53,6 +53,17 @@ function asObjects(header: string[], rows: string[][]){
   })
 }
 
+function getVal(row: any, candidates: string[]): string {
+  if (!row) return ''
+  const lowerMap = new Map<string, string>()
+  for (const k of Object.keys(row)) lowerMap.set(k.toLowerCase(), row[k])
+  for (const key of candidates) {
+    const v = lowerMap.get(key.toLowerCase())
+    if (v != null && String(v).trim() !== '') return String(v)
+  }
+  return ''
+}
+
 export function SettingsView(){
   const [audit, setAudit] = useState<string>('ADAC')
   const [customKey, setCustomKey] = useState<string>('')
@@ -144,8 +155,8 @@ export function SettingsView(){
       const miss: Array<{ province: string; lgu: string; key: string }> = []
       rows.forEach((r: any) => {
         total++
-        const prov = r['Province/HUC'] || r['Province'] || r['province'] || ''
-        const lgu = r['City/Municipality'] || r['LGU'] || r['lgu'] || ''
+        const prov = getVal(r, ['Province/HUC','PROVINCE/HUC','Province','PROVINCE','Prov','HUC','province','province/huc'])
+        const lgu  = getVal(r, ['City/Municipality','CITY/MUNICIPALITY','City/MUN','CITY/MUN','City','CITY','Municipality','MUNICIPALITY','LGU','lgu','city','municipality'])
         const key = normalizeName(lgu || prov)
         const rec = byKey.get(key)
         if (!rec){ miss.push({ province: prov, lgu, key }); return }
