@@ -31,8 +31,12 @@ export const store = {
 }
 
 export const metricIsStatus = () => store.AUDITS[store.state.audit]?.metric === 'status'
-export const isADAC = () => store.state.audit === 'ADAC'
-export const isLCPC = () => store.state.audit === 'LCPC'
+// Treat any audit with high/moderate functional thresholds as a 3-band score audit (ADAC-like)
+export const isADAC = () => {
+  const meta = store.AUDITS[store.state.audit] || {}
+  return String(store.state.audit).toUpperCase() === 'ADAC' || !!(meta?.bands?.high_functional)
+}
+export const isLCPC = () => String(store.state.audit).toUpperCase() === 'LCPC'
 
 // Per-audit variants (used by components that render other audits in tabs)
 export const metricIsStatusFor = (auditKey: string) => store.AUDITS[auditKey]?.metric === 'status'
@@ -67,6 +71,15 @@ export async function loadCanon() {
     } catch {}
   }
   if (!canon) throw new Error(`Failed to load lg-audits.json (${lastStatus ?? 'network'})`)
+  // Optionally merge POC dataset if available
+  try {
+    const pocUrl = `${base}poc.json`
+    const r = await fetch(pocUrl, { cache: 'no-store' })
+    if (r.ok) {
+      const poc = await r.json()
+      mergePOC(canon, poc)
+    }
+  } catch {}
   store.CANON = canon
   store.LGUS = canon.lgus || []
   store.AUDITS = canon.meta?.audits || {}
@@ -82,6 +95,48 @@ export async function loadCanon() {
   store.totals.provinces = new Set(provinceEntries.map((g) => g.lgu || g.province).filter(Boolean)).size
   const hucEntries = store.LGUS.filter((g) => typeOf(g.type) === 'highly urbanized city')
   store.totals.hucs = new Set(hucEntries.map((g) => g.lgu).filter(Boolean)).size
+}
+
+function normalizeName(s: string){
+  return String(s || '')
+    .toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/\s*\(capital\)/g,'')
+    .replace(/^city of\s+/, '')
+    .replace(/[^a-z0-9]+/g, '')
+}
+
+function mergePOC(canon: any, pocRows: any[]){
+  if (!canon.meta) canon.meta = { audits: {} }
+  if (!canon.meta.audits) canon.meta.audits = {}
+  if (!canon.meta.audits.POC) {
+    canon.meta.audits.POC = {
+      years: [2021, 2022, 2023],
+      metric: 'score',
+      bands: { high_functional: 85, moderate_functional: 50 },
+      labels: { band_high: 'High Performing', band_moderate: 'Moderate Performing', band_low: 'Low Performing' },
+    }
+  }
+  const byKey = new Map<string, any>()
+  for (const g of canon.lgus || []){
+    const k = normalizeName(g.lgu || g.province)
+    if (!byKey.has(k)) byKey.set(k, g)
+  }
+  for (const row of pocRows){
+    const prov = row.province || row.Province || ''
+    const lgu = row.lgu || row.City || row.Municipality || row["City/Municipality"] || ''
+    const key = normalizeName(lgu || prov)
+    const rec = byKey.get(key)
+    if (!rec) continue
+    rec.results = rec.results || {}
+    const target = (rec.results.POC = rec.results.POC || {})
+    ;['2021','2022','2023'].forEach((y) => {
+      const raw = row[y]
+      if (raw == null || raw === '') return
+      const v = typeof raw === 'number' ? raw : Number(String(raw).replace(/[%\s]+/g,''))
+      if (!Number.isNaN(v)) target[y] = v
+    })
+  }
 }
 
 export function setAudit(auditKey: string) {

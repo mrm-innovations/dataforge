@@ -168,7 +168,7 @@ export function MapView({ rows }: Props){
         if (isStatus) {
           // Two-band: red <50, green >=50 (no mid stop)
           provFillColor = [ 'case', ['==', ['get','hasValue'], true], [ 'step', ['get','value'], '#ef4444', 50, '#22c55e' ], '#e5e7eb' ]
-        } else if (auditUpper === 'ADAC') {
+        } else if ((store.AUDITS?.[audit]?.bands?.high_functional != null)) {
           provFillColor = [ 'case', ['==', ['get','hasValue'], true], [ 'step', ['get','value'], '#ef4444', (bands.moderate_functional ?? 50), '#f59e0b', (bands.high_functional ?? 85), '#22c55e' ], '#e5e7eb' ]
         } else if (auditUpper === 'LCPC') {
           // LCPC 4 bands: <20, 20–49, 50–79, >=80
@@ -291,7 +291,7 @@ export function MapView({ rows }: Props){
         if (isStatus) {
           // Two-band for status: red <50, green >=50
           fillColor = [ 'case', ['==', ['get','hasValue'], true], [ 'step', ['get','value'], '#ef4444', 50, '#22c55e' ], '#e5e7eb' ]
-        } else if (auditUpper === 'ADAC') {
+        } else if ((store.AUDITS?.[audit]?.bands?.high_functional != null)) {
           fillColor = [ 'case', ['==', ['get','hasValue'], true], [ 'step', ['get','value'], '#ef4444', (bands.moderate_functional ?? 50), '#f59e0b', (bands.high_functional ?? 85), '#22c55e' ], '#e5e7eb' ]
         } else if (auditUpper === 'LCPC') {
           // LCPC 4 bands: <20, 20–49, 50–79, >=80
@@ -357,7 +357,7 @@ export function MapView({ rows }: Props){
     if (isStatus) {
       // Two-band for status: red <50, green >=50
       fillColor = [ 'case', ['==', ['get','hasValue'], true], [ 'step', ['get','value'], '#ef4444', 50, '#22c55e' ], '#e5e7eb' ]
-    } else if (auditUpper === 'ADAC') {
+    } else if ((store.AUDITS?.[audit]?.bands?.high_functional != null)) {
       fillColor = [ 'case', ['==', ['get','hasValue'], true], [ 'step', ['get','value'], '#ef4444', (bands.moderate_functional ?? 50), '#f59e0b', (bands.high_functional ?? 85), '#22c55e' ], '#e5e7eb' ]
     } else if (auditUpper === 'LCPC') {
       fillColor = [ 'case', ['==', ['get','hasValue'], true], [ 'step', ['get','value'], '#ef4444', 20, '#f97316', 50, '#f59e0b', 80, '#22c55e' ], '#e5e7eb' ]
@@ -425,8 +425,8 @@ export function MapView({ rows }: Props){
                 </div>
               )
             }
-            const orange = auditUpper === 'ADAC' ? (bands.moderate_functional ?? 50) : (bands.near ?? 80)
-            const green = auditUpper === 'ADAC' ? (bands.high_functional ?? 85) : (bands.compliant ?? 90)
+            const orange = (store.AUDITS?.[audit]?.bands?.high_functional != null) ? (bands.moderate_functional ?? 50) : (bands.near ?? 80)
+            const green = (store.AUDITS?.[audit]?.bands?.high_functional != null) ? (bands.high_functional ?? 85) : (bands.compliant ?? 90)
             return (
               <div className="inline-flex items-center gap-3 border rounded-md px-2 py-1">
                 <span className="inline-flex items-center gap-1"><span style={{ background:'#ef4444', width:10, height:10, borderRadius:2, display:'inline-block' }}></span><span>{`< ${orange}`}</span></span>
@@ -450,4 +450,5 @@ export function MapView({ rows }: Props){
     </Card>
   )
 }
+
 
