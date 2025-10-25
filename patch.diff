@@ -1,0 +1,26 @@
+*** Begin Patch
+*** Update File: src/lib/store.ts
+@@
+-function normalizeName(s: string){
+-  return String(s || '')
+-    .toLowerCase()
+-    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+-    .replace(/\s*\(capital\)/g,'')
+-    .replace(/^city of\s+/, '')
+-    .replace(/[^a-z0-9]+/g, '')
+-}
++function normalizeName(s: string){
++  // Handle common mojibake (Ñ -> n) then strip accents and punctuation
++  const fixed = String(s || '')
++    .replace(/Ñ|ñ/g, 'n')
++    .replace(/’|�|�/g, "'")
++  return fixed
++    .toLowerCase()
++    // remove parenthetical notes e.g., (Capital), (DADIANGAS)
++    .replace(/\s*\([^\)]*\)/g, '')
++    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
++    .replace(/\s*\(capital\)/g,'')
++    .replace(/^city of\s+/, '')
++    .replace(/[^a-z0-9]+/g, '')
++}
+*** End Patch

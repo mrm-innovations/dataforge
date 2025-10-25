@@ -147,6 +147,10 @@ export function App() {
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="9" strokeWidth="2"/><path strokeWidth="2" strokeLinecap="round" d="M12 8h.01M11 12h2v5h-2z"/></svg>
               <span>About</span>
             </button>
+            <button onClick={() => setTab('settings')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='settings' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 7h16M6 12h12M8 17h8"/></svg>
+              <span>Settings</span>
+            </button>
             </nav>
             <div className="mt-auto px-5 py-3 border-t text-[11px] text-muted-foreground" style={{ borderColor: 'oklch(92.2% 0 0)' }}>
               <div>

@@ -1,0 +1,72 @@
+          style: styleUrl,
+          center: [124.8, 6.5],
+          zoom: 6,
+        })
+        mapRef.current = map
+        const base = (import.meta as any).env?.BASE_URL ?? '/'
+        const dir = `${location.pathname.replace(/\/[^/]*$/, '/') || '/'}`
+        const candidates = [
+          // Combined Provinces + HUC (preferred new name)
+          `${base}public/region12_province_huc.geojson`,
+          `${base}region12_province_huc.geojson`,
+          `${dir}public/region12_province_huc.geojson`,
+          `${dir}region12_province_huc.geojson`,
+          // Back-compat (old name with space)
+          `${base}public/region12_province%20_huc.geojson`,
+          `${base}region12_province%20_huc.geojson`,
+          `${dir}public/region12_province%20_huc.geojson`,
+          `${dir}region12_province%20_huc.geojson`,
+          // Generic Philippines provinces file (fallback)
+          `${base}public/ph-provinces.geojson`,
+          `${base}ph-provinces.geojson`,
+          `${dir}public/ph-provinces.geojson`,
+          `${dir}ph-provinces.geojson`,
+          `/public/ph-provinces.geojson`,
+          `/ph-provinces.geojson`,
+        ]
+        let geo: any | null = null
+        let lastStatus: number | null = null
+        for (const url of candidates){
+          try {
+            const r = await fetch(url, { cache: 'no-store' })
+            lastStatus = r.status
+            if (r.ok) { geo = await r.json(); break }
+          } catch {}
+        }
+        if (!geo) throw new Error(`Failed to load provinces GeoJSON (${lastStatus ?? 'network'})`)
+          const v = (r as any)['y'+latest] as number | null
+          valMap.set(lgu, v ?? null)
+        }
+      }
+    }
+    const base = (import.meta as any).env?.BASE_URL ?? '/'
+    const slug = province.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')
+    const candidates = [
+      `${base}lgus/${slug}.geojson`,
+      `/lgus/${slug}.geojson`,
+    ]
+    let geo: any | null = null
+    for (const url of candidates){
+      try {
+        const r = await fetch(url, { cache: 'no-store' })
+        if (r.ok){ geo = await r.json(); break }
+      } catch {}
+    }
+    if (!geo){
+      // No LGU shapes available; silently skip
+      return
+    }
+    const feats = (geo.features || []).map((f: any) => {
+      const props = f.properties || {}
+      const lgu = props.lgu || props.LGU || props.name || props.NAME_2 || props.NAME || ''
+      const v = valMap.get(String(lgu)) ?? null
+      return { ...f, properties: { ...props, lguName: lgu, provinceName: province, value: v, hasValue: v != null } }
+    })
+    map.addSource('lgus', { type: 'geojson', data: { type:'FeatureCollection', features: feats } })
+    // Thresholds for LGUs
+    const audit = store.state.audit
+    const meta = (store.AUDITS as any)?.[audit] || {}
+    const isStatus = meta.metric === 'status'
+    const bands = meta.bands || {}
+    const auditUpper = String(audit).toUpperCase()
+    let fillColor: any = [ 'case', ['==', ['get','hasValue'], true], [ 'step', ['get','value'], '#ef4444', (bands.near ?? 80), '#f59e0b', (bands.compliant ?? 90), '#22c55e' ], '#e5e7eb' ]

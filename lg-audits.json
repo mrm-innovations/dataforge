@@ -1,0 +1,2090 @@
+{
+  "meta": {
+    "audits": {
+      "ADAC": {
+        "years": [
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "metric": "score",
+        "bands": {
+          "high_functional": 85,
+          "moderate_functional": 50
+        },
+        "labels": {
+          "band_high": "High Functional",
+          "band_moderate": "Moderate Functional",
+          "band_low": "Low Functional"
+        }
+      },
+      "SGLG": {
+        "years": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2022,
+          2023,
+          2024
+        ],
+        "metric": "status",
+        "status_values": [
+          "Passer",
+          "Non-Passer"
+        ]
+      },
+      "LCPC": {
+        "years": [
+          2022,
+          2023,
+          2024
+        ],
+        "metric": "score",
+        "bands": {
+          "near": 20,
+          "compliant": 80,
+          "elite": 100
+        },
+        "labels": {
+          "below": "Basic (<20%)",
+          "near": "Progressive (≥20%)",
+          "compliant": "Mature (≥50%)",
+          "elite": "Ideal (≥80%)"
+        }
+      },
+      "POC": {
+        "years": [
+          2021,
+          2022,
+          2023
+        ],
+        "metric": "score",
+        "bands": {
+          "high_functional": 85,
+          "moderate_functional": 50
+        },
+        "labels": {
+          "band_high": "High Performing",
+          "band_moderate": "Moderate Performing",
+          "band_low": "Low Performing"
+        }
+      }
+    },
+    "region": "REGION 12",
+    "source_notes": "Merged from user provided LGU profiles (PSGC, type, income class, population), ADAC results (2019–2023), and SGLG assessments (2015–2024). Naming normalized (capitals, 'Sto.'→'Santo', 'Capital' notes removed)."
+  },
+  "lgus": [
+    {
+      "psgc": "1204700000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Cotabato",
+      "type": "Province",
+      "income_class": "1st",
+      "population": 1275185,
+      "results": {
+        "ADAC": {
+          "2019": 73,
+          "2020": 78,
+          "2021": 87.5,
+          "2022": 68,
+          "2023": 65
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Passer",
+          "2017": "Passer",
+          "2018": "Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 81.69,
+          "2023": 82.83,
+          "2024": 87.63
+        },
+        "POC": {
+          "2021": 88.46,
+          "2022": 95.54,
+          "2023": 95
+        }
+      }
+    },
+    {
+      "psgc": "1204701000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Alamada",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 68659,
+      "results": {
+        "ADAC": {
+          "2019": 66,
+          "2020": 90,
+          "2021": 82.5,
+          "2022": 100,
+          "2023": 77
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 92.86,
+          "2023": 90,
+          "2024": 97.66
+        },
+        "POC": {
+          "2021": 83.96,
+          "2022": 100,
+          "2023": 95
+        }
+      }
+    },
+    {
+      "psgc": "1204702000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Carmen",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 79140,
+      "results": {
+        "ADAC": {
+          "2021": 100,
+          "2022": 100,
+          "2023": 80
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 72.23,
+          "2023": 76.09,
+          "2024": 81.69
+        },
+        "POC": {
+          "2021": 100.44,
+          "2022": 100,
+          "2023": 94.75
+        }
+      }
+    },
+    {
+      "psgc": "1204703000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Kabacan",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 77164,
+      "results": {
+        "ADAC": {
+          "2021": 80,
+          "2022": 92.5,
+          "2023": 82
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Passer",
+          "2017": "Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 87.46,
+          "2023": 86,
+          "2024": 94.11
+        },
+        "POC": {
+          "2021": 71.04,
+          "2022": 100,
+          "2023": 96.25
+        }
+      }
+    },
+    {
+      "psgc": "1204705000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Libungan",
+      "type": "Municipality",
+      "income_class": "2nd",
+      "population": 56269,
+      "results": {
+        "ADAC": {
+          "2019": 70,
+          "2020": 85,
+          "2021": 85,
+          "2022": 95,
+          "2023": 85
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 57,
+          "2023": 84.83,
+          "2024": 100
+        },
+        "POC": {
+          "2021": 101.38,
+          "2022": 100,
+          "2023": 92.5
+        }
+      }
+    },
+    {
+      "psgc": "1204706000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Magpet",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 53800,
+      "results": {
+        "ADAC": {
+          "2019": 98,
+          "2020": 97.5,
+          "2021": 100,
+          "2022": 85.5,
+          "2023": 85
+        },
+        "SGLG": {
+          "2015": "Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Passer",
+          "2019": "Non-Passer",
+          "2022": "Passer",
+          "2023": "Non-Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 88.26,
+          "2023": 88.26,
+          "2024": 80.03
+        },
+        "POC": {
+          "2021": 100,
+          "2022": 100,
+          "2023": 93.39
+        }
+      }
+    },
+    {
+      "psgc": "1204707000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Makilala",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 87927,
+      "results": {
+        "ADAC": {
+          "2019": 30,
+          "2020": 85,
+          "2021": 82.5,
+          "2022": 95,
+          "2023": 85
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 86.46,
+          "2023": 86.86,
+          "2024": 82.94
+        },
+        "POC": {
+          "2021": 100.75,
+          "2022": 98.67,
+          "2023": 94.75
+        }
+      }
+    },
+    {
+      "psgc": "1204708000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Matalam",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 81355,
+      "results": {
+        "ADAC": {
+          "2019": 78,
+          "2020": 85,
+          "2021": 70,
+          "2022": 92,
+          "2023": 87
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 51.06,
+          "2023": 84.71,
+          "2024": 80.57
+        },
+        "POC": {
+          "2021": 100.75,
+          "2022": 100,
+          "2023": 98.25
+        }
+      }
+    },
+    {
+      "psgc": "1204709000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Midsayap",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 117365,
+      "results": {
+        "ADAC": {
+          "2021": 85,
+          "2022": 95,
+          "2023": 87
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Passer",
+          "2019": "Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 95.26,
+          "2023": 94,
+          "2024": 83.51
+        },
+        "POC": {
+          "2021": 98.13,
+          "2022": 85.1,
+          "2023": 95
+        }
+      }
+    },
+    {
+      "psgc": "1204710000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "M'Lang",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 98195,
+      "results": {
+        "ADAC": {
+          "2019": 93,
+          "2020": 85,
+          "2021": 85,
+          "2022": 95,
+          "2023": 90
+        },
+        "SGLG": {
+          "2015": "Passer",
+          "2016": "Passer",
+          "2017": "Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 82.06,
+          "2023": 86.26,
+          "2024": 96.46
+        },
+        "POC": {
+          "2021": 93.75,
+          "2022": 96.43,
+          "2023": 97.25
+        }
+      }
+    },
+    {
+      "psgc": "1204711000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Pigkawayan",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 52744,
+      "results": {
+        "ADAC": {
+          "2019": 83,
+          "2020": 81,
+          "2021": 100,
+          "2022": 100,
+          "2023": 90
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 88.23,
+          "2023": 96.46,
+          "2024": 96.4
+        },
+        "POC": {
+          "2021": 97.81,
+          "2022": 100,
+          "2023": 95
+        }
+      }
+    },
+    {
+      "psgc": "1204712000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Pikit",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 67024,
+      "results": {
+        "ADAC": {
+          "2019": 80,
+          "2020": 80,
+          "2021": 85,
+          "2022": 88,
+          "2023": 90
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 80.26,
+          "2023": 92.26,
+          "2024": 96.46
+        },
+        "POC": {
+          "2021": 99.5,
+          "2022": 96.43,
+          "2023": 95.75
+        }
+      }
+    },
+    {
+      "psgc": "1204713000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "President Roxas",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 52512,
+      "results": {
+        "ADAC": {
+          "2019": 90,
+          "2020": 95,
+          "2021": 100,
+          "2022": 100,
+          "2023": 90
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 74.83,
+          "2023": 85.23,
+          "2024": 92.31
+        },
+        "POC": {
+          "2021": 94.79,
+          "2022": 98.43,
+          "2023": 90.09
+        }
+      }
+    },
+    {
+      "psgc": "1204714000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Tulunan",
+      "type": "Municipality",
+      "income_class": "2nd",
+      "population": 60978,
+      "results": {
+        "ADAC": {
+          "2019": 48,
+          "2020": 68,
+          "2021": 82.5,
+          "2022": 95,
+          "2023": 92
+        },
+        "SGLG": {
+          "2015": "Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 85.77,
+          "2023": 92.51,
+          "2024": 93.03
+        },
+        "POC": {
+          "2021": 97.1,
+          "2022": 97.98,
+          "2023": 90.7
+        }
+      }
+    },
+    {
+      "psgc": "1204715000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Antipas",
+      "type": "Municipality",
+      "income_class": "2nd",
+      "population": 26817,
+      "results": {
+        "ADAC": {
+          "2019": 58,
+          "2020": 75,
+          "2021": 60,
+          "2022": 80.5,
+          "2023": 95
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 58.17,
+          "2023": 62,
+          "2024": 85.23
+        },
+        "POC": {
+          "2021": 86.02,
+          "2022": 97.81,
+          "2023": 90.53
+        }
+      }
+    },
+    {
+      "psgc": "1204716000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Banisilan",
+      "type": "Municipality",
+      "income_class": "2nd",
+      "population": 46995,
+      "results": {
+        "ADAC": {
+          "2019": 55,
+          "2020": 100,
+          "2021": 100,
+          "2022": 100,
+          "2023": 95
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 59.86,
+          "2023": 58.14,
+          "2024": 76.31
+        },
+        "POC": {
+          "2021": 89.08,
+          "2022": 90.75,
+          "2023": 90.85
+        }
+      }
+    },
+    {
+      "psgc": "1204717000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Aleosan",
+      "type": "Municipality",
+      "income_class": "3rd",
+      "population": 36892,
+      "results": {
+        "ADAC": {
+          "2019": 50,
+          "2020": 75,
+          "2021": 95,
+          "2022": 100,
+          "2023": 95
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 81.11,
+          "2023": 95.26,
+          "2024": 92.91
+        },
+        "POC": {
+          "2021": 86.88,
+          "2022": 100,
+          "2023": 92.13
+        }
+      }
+    },
+    {
+      "psgc": "1204718000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "Arakan",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 50558,
+      "results": {
+        "ADAC": {
+          "2019": 85,
+          "2020": 100,
+          "2021": 100,
+          "2022": 100,
+          "2023": 95
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 87.26,
+          "2023": 97.66,
+          "2024": 89.26
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 97.25
+        }
+      }
+    },
+    {
+      "psgc": "1204704000",
+      "region": "REGION 12",
+      "province": "Cotabato",
+      "lgu": "City of Kidapawan",
+      "type": "Component City",
+      "income_class": "3rd",
+      "population": 160791,
+      "results": {
+        "ADAC": {
+          "2019": 90,
+          "2020": 100,
+          "2021": 100,
+          "2022": 100,
+          "2023": 85
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Passer",
+          "2017": "Passer",
+          "2018": "Passer",
+          "2019": "Passer",
+          "2022": "Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 87.2,
+          "2023": 94,
+          "2024": 90.23
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 98.75
+        }
+      }
+    },
+    {
+      "psgc": "1206300000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "South Cotabato",
+      "type": "Province",
+      "income_class": "1st",
+      "population": 975476,
+      "results": {
+        "ADAC": {
+          "2019": 95,
+          "2020": 73,
+          "2021": 90.5,
+          "2022": 87.5,
+          "2023": 95
+        },
+        "SGLG": {
+          "2015": "Passer",
+          "2016": "Non-Passer",
+          "2017": "Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 69.46,
+          "2023": 69.46,
+          "2024": 82.23
+        },
+        "POC": {
+          "2021": 88.46,
+          "2022": 100,
+          "2023": 92.28
+        }
+      }
+    },
+    {
+      "psgc": "1206306000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "City of Koronadal",
+      "type": "Component City",
+      "income_class": "3rd",
+      "population": 195398,
+      "results": {
+        "ADAC": {
+          "2019": 100,
+          "2020": 97.5,
+          "2021": 97.5,
+          "2022": 95,
+          "2023": 95
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 89,
+          "2023": 78.1,
+          "2024": 82.54
+        },
+        "POC": {
+          "2021": 100.75,
+          "2022": 100,
+          "2023": 100
+        }
+      }
+    },
+    {
+      "psgc": "1206302000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "Banga",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 89164,
+      "results": {
+        "ADAC": {
+          "2019": 78,
+          "2020": 70,
+          "2021": 72.5,
+          "2022": 83,
+          "2023": 95
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 39,
+          "2023": 43.8,
+          "2024": 37.49
+        },
+        "POC": {
+          "2021": 96.67,
+          "2022": 100,
+          "2023": 79.93
+        }
+      }
+    },
+    {
+      "psgc": "1206311000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "Norala",
+      "type": "Municipality",
+      "income_class": "3rd",
+      "population": 46682,
+      "results": {
+        "ADAC": {
+          "2019": 90,
+          "2020": 80,
+          "2021": 97.5,
+          "2022": 90.5,
+          "2023": 95
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 53,
+          "2023": 76.5,
+          "2024": 66.57
+        },
+        "POC": {
+          "2021": 96.38,
+          "2022": 99.41,
+          "2023": 96.03
+        }
+      }
+    },
+    {
+      "psgc": "1206312000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "Polomolok",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 172605,
+      "results": {
+        "ADAC": {
+          "2019": 93,
+          "2020": 77.5,
+          "2021": 92.5,
+          "2022": 92.5,
+          "2023": 95
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Passer",
+          "2017": "Passer",
+          "2018": "Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 76,
+          "2023": 83.6,
+          "2024": 82.37
+        },
+        "POC": {
+          "2021": 93.58,
+          "2022": 96.83,
+          "2023": 85.59
+        }
+      }
+    },
+    {
+      "psgc": "1206313000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "Surallah",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 89340,
+      "results": {
+        "ADAC": {
+          "2019": 100,
+          "2020": 97.5,
+          "2021": 95,
+          "2022": 98,
+          "2023": 97
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Passer",
+          "2017": "Passer",
+          "2018": "Passer",
+          "2019": "Passer",
+          "2022": "Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 76,
+          "2023": 82,
+          "2024": 85.77
+        },
+        "POC": {
+          "2021": 100.75,
+          "2022": 96.21,
+          "2023": 99.25
+        }
+      }
+    },
+    {
+      "psgc": "1206314000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "Tampakan",
+      "type": "Municipality",
+      "income_class": "2nd",
+      "population": 41018,
+      "results": {
+        "ADAC": {
+          "2019": 100,
+          "2020": 100,
+          "2021": 97.5,
+          "2022": 93,
+          "2023": 97
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 53,
+          "2023": 66.6,
+          "2024": 94.17
+        },
+        "POC": {
+          "2021": 98.08,
+          "2022": 100,
+          "2023": 88.88
+        }
+      }
+    },
+    {
+      "psgc": "1206315000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "Tantangan",
+      "type": "Municipality",
+      "income_class": "3rd",
+      "population": 45744,
+      "results": {
+        "ADAC": {
+          "2019": 100,
+          "2020": 100,
+          "2021": 88,
+          "2022": 100,
+          "2023": 97
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 65,
+          "2023": 70.2,
+          "2024": 66.51
+        },
+        "POC": {
+          "2021": 87.63,
+          "2022": 100,
+          "2023": 88.53
+        }
+      }
+    },
+    {
+      "psgc": "1206316000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "T'Boli",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 101049,
+      "results": {
+        "ADAC": {
+          "2019": 86,
+          "2020": 55,
+          "2021": 70,
+          "2022": 80,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 0,
+          "2023": 56.2,
+          "2024": 86.31
+        },
+        "POC": {
+          "2021": 100.75,
+          "2022": 75.05,
+          "2023": 91.49
+        }
+      }
+    },
+    {
+      "psgc": "1206317000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "Tupi",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 73459,
+      "results": {
+        "ADAC": {
+          "2019": 85,
+          "2020": 86,
+          "2021": 92.5,
+          "2022": 98,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 77,
+          "2023": 75.1,
+          "2024": 68.94
+        },
+        "POC": {
+          "2021": 97,
+          "2022": 100,
+          "2023": 92.78
+        }
+      }
+    },
+    {
+      "psgc": "1206318000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "Santo Niño",
+      "type": "Municipality",
+      "income_class": "3rd",
+      "population": 39796,
+      "results": {
+        "ADAC": {
+          "2019": 78,
+          "2020": 84,
+          "2021": 88,
+          "2022": 82.5,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Passer",
+          "2016": "Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 64,
+          "2023": 60.6,
+          "2024": 90.51
+        },
+        "POC": {
+          "2021": 101.38,
+          "2022": 100,
+          "2023": 94.25
+        }
+      }
+    },
+    {
+      "psgc": "1206319000",
+      "region": "REGION 12",
+      "province": "South Cotabato",
+      "lgu": "Lake Sebu",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 81221,
+      "results": {
+        "ADAC": {
+          "2019": 63,
+          "2020": 85,
+          "2021": 95,
+          "2022": 80,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 39,
+          "2023": 43.2,
+          "2024": 94.06
+        },
+        "POC": {
+          "2021": 93.75,
+          "2022": 95.46,
+          "2023": 85.19
+        }
+      }
+    },
+    {
+      "psgc": "1206500000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Sultan Kudarat",
+      "type": "Province",
+      "income_class": "1st",
+      "population": 854052,
+      "results": {
+        "ADAC": {
+          "2019": 100,
+          "2020": 100,
+          "2021": 100,
+          "2022": 92,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 84.83,
+          "2023": 84.83,
+          "2024": 83.09
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 98.75
+        }
+      }
+    },
+    {
+      "psgc": "1206511000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "City of Tacurong",
+      "type": "Component City",
+      "income_class": "4th",
+      "population": 109319,
+      "results": {
+        "ADAC": {
+          "2019": 76,
+          "2020": 90,
+          "2021": 100,
+          "2022": 95,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Passer",
+          "2017": "Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 66,
+          "2023": 81.63,
+          "2024": 74.49
+        },
+        "POC": {
+          "2021": 101.38,
+          "2022": 100,
+          "2023": 95.57
+        }
+      }
+    },
+    {
+      "psgc": "1206501000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Bagumbayan",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 68947,
+      "results": {
+        "ADAC": {
+          "2019": 90,
+          "2020": 90,
+          "2021": 100,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Passer",
+          "2016": "Passer",
+          "2017": "Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 95.26,
+          "2023": 93.4,
+          "2024": 94.06
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 96.25
+        }
+      }
+    },
+    {
+      "psgc": "1206502000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Columbio",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 33527,
+      "results": {
+        "ADAC": {
+          "2019": 95,
+          "2020": 96,
+          "2021": 100,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Passer",
+          "2016": "Passer",
+          "2017": "Passer",
+          "2018": "Passer",
+          "2019": "Non-Passer",
+          "2022": "Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 79.31,
+          "2023": 80.34,
+          "2024": 80.71
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 98.39
+        }
+      }
+    },
+    {
+      "psgc": "1206503000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Esperanza",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 74696,
+      "results": {
+        "ADAC": {
+          "2019": 98,
+          "2020": 93,
+          "2021": 100,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 52.8,
+          "2023": 66.2,
+          "2024": 82.49
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 91.6
+        }
+      }
+    },
+    {
+      "psgc": "1206504000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Isulan",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 97490,
+      "results": {
+        "ADAC": {
+          "2019": 73,
+          "2020": 95,
+          "2021": 90,
+          "2022": 95,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 57.66,
+          "2023": 67.51,
+          "2024": 77.63
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 92.96
+        }
+      }
+    },
+    {
+      "psgc": "1206505000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Kalamansig",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 50900,
+      "results": {
+        "ADAC": {
+          "2019": 100,
+          "2020": 100,
+          "2021": 98,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 83.34,
+          "2023": 90.46,
+          "2024": 92.26
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 92.6
+        }
+      }
+    },
+    {
+      "psgc": "1206506000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Lebak",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 91344,
+      "results": {
+        "ADAC": {
+          "2019": 68,
+          "2020": 85,
+          "2021": 95,
+          "2022": 95.5,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 66.11,
+          "2023": 75.31,
+          "2024": 89.46
+        },
+        "POC": {
+          "2021": 101.38,
+          "2022": 100,
+          "2023": 92.85
+        }
+      }
+    },
+    {
+      "psgc": "1206507000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Lutayan",
+      "type": "Municipality",
+      "income_class": "2nd",
+      "population": 65644,
+      "results": {
+        "ADAC": {
+          "2019": 95,
+          "2020": 90,
+          "2021": 100,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Passer",
+          "2022": "Passer",
+          "2023": "Non-Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 83.6,
+          "2023": 82.86,
+          "2024": 83.74
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 96.25
+        }
+      }
+    },
+    {
+      "psgc": "1206508000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Lambayong",
+      "type": "Municipality",
+      "income_class": "2nd",
+      "population": 79739,
+      "results": {
+        "ADAC": {
+          "2019": 95,
+          "2020": 95,
+          "2021": 98,
+          "2022": 98,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Passer",
+          "2019": "Passer",
+          "2022": "Non-Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 63.71,
+          "2023": 86.86,
+          "2024": 85.06
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 91.6
+        }
+      }
+    },
+    {
+      "psgc": "1206509000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Palimbang",
+      "type": "Municipality",
+      "income_class": "2nd",
+      "population": 92828,
+      "results": {
+        "ADAC": {
+          "2019": 98,
+          "2020": 98,
+          "2021": 100,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 75.26,
+          "2023": 87.46,
+          "2024": 92.26
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 92.6
+        }
+      }
+    },
+    {
+      "psgc": "1206510000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "President Quirino",
+      "type": "Municipality",
+      "income_class": "3rd",
+      "population": 42244,
+      "results": {
+        "ADAC": {
+          "2019": 10,
+          "2020": 85,
+          "2021": 88,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 80.37,
+          "2023": 82.6,
+          "2024": 89.91
+        },
+        "POC": {
+          "2021": 101.38,
+          "2022": 100,
+          "2023": 95.57
+        }
+      }
+    },
+    {
+      "psgc": "1206512000",
+      "region": "REGION 12",
+      "province": "Sultan Kudarat",
+      "lgu": "Sen. Ninoy Aquino",
+      "type": "Municipality",
+      "income_class": "3rd",
+      "population": 47374,
+      "results": {
+        "ADAC": {
+          "2019": 100,
+          "2020": 100,
+          "2021": 100,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 76.86,
+          "2023": 64.46,
+          "2024": 81.26
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 92.49
+        }
+      }
+    },
+    {
+      "psgc": "1208000000",
+      "region": "REGION 12",
+      "province": "Sarangani",
+      "lgu": "Sarangani",
+      "type": "Province",
+      "income_class": "2nd",
+      "population": 558946,
+      "results": {
+        "ADAC": {
+          "2019": 95,
+          "2020": 90,
+          "2021": 95,
+          "2022": 92,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 67.14,
+          "2023": 67.14,
+          "2024": 70.71
+        },
+        "POC": {
+          "2021": 100.75,
+          "2022": 100,
+          "2023": 100
+        }
+      }
+    },
+    {
+      "psgc": "1208001000",
+      "region": "REGION 12",
+      "province": "Sarangani",
+      "lgu": "Alabel",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 88294,
+      "results": {
+        "ADAC": {
+          "2019": 100,
+          "2020": 100,
+          "2021": 100,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 76,
+          "2023": 71.74,
+          "2024": 57.17
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 88.67,
+          "2023": 94.67
+        }
+      }
+    },
+    {
+      "psgc": "1208002000",
+      "region": "REGION 12",
+      "province": "Sarangani",
+      "lgu": "Glan",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 109547,
+      "results": {
+        "ADAC": {
+          "2019": 78,
+          "2020": 80,
+          "2021": 88,
+          "2022": 78,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 54.2,
+          "2023": 65.94,
+          "2024": 78.25
+        },
+        "POC": {
+          "2021": 95.38,
+          "2022": 92,
+          "2023": 88.63
+        }
+      }
+    },
+    {
+      "psgc": "1208003000",
+      "region": "REGION 12",
+      "province": "Sarangani",
+      "lgu": "Kiamba",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 65774,
+      "results": {
+        "ADAC": {
+          "2019": 73,
+          "2020": 78,
+          "2021": 98,
+          "2022": 93,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Passer",
+          "2016": "Passer",
+          "2017": "Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 50,
+          "2023": 56.4,
+          "2024": 64.2
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 88.67,
+          "2023": 90.59
+        }
+      }
+    },
+    {
+      "psgc": "1208004000",
+      "region": "REGION 12",
+      "province": "Sarangani",
+      "lgu": "Maasim",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 64940,
+      "results": {
+        "ADAC": {
+          "2019": 100,
+          "2020": 95,
+          "2021": 100,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 59.7,
+          "2023": 72.34,
+          "2024": 65.28
+        },
+        "POC": {
+          "2021": 98.88,
+          "2022": 100,
+          "2023": 97.39
+        }
+      }
+    },
+    {
+      "psgc": "1208005000",
+      "region": "REGION 12",
+      "province": "Sarangani",
+      "lgu": "Maitum",
+      "type": "Municipality",
+      "income_class": "2nd",
+      "population": 44185,
+      "results": {
+        "ADAC": {
+          "2019": 68,
+          "2020": 65,
+          "2021": 95,
+          "2022": 95,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Non-Passer",
+          "2024": "Non-Passer"
+        },
+        "LCPC": {
+          "2022": 60,
+          "2023": 60.65,
+          "2024": 65.57
+        },
+        "POC": {
+          "2021": 96.71,
+          "2022": 75.82,
+          "2023": 92.52
+        }
+      }
+    },
+    {
+      "psgc": "1208006000",
+      "region": "REGION 12",
+      "province": "Sarangani",
+      "lgu": "Malapatan",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 80741,
+      "results": {
+        "ADAC": {
+          "2019": 90,
+          "2020": 80,
+          "2021": 100,
+          "2022": 97.5,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Non-Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 82.9,
+          "2023": 90.68,
+          "2024": 94.17
+        },
+        "POC": {
+          "2021": 100.44,
+          "2022": 100,
+          "2023": 99.32
+        }
+      }
+    },
+    {
+      "psgc": "1208007000",
+      "region": "REGION 12",
+      "province": "Sarangani",
+      "lgu": "Malungon",
+      "type": "Municipality",
+      "income_class": "1st",
+      "population": 105465,
+      "results": {
+        "ADAC": {
+          "2019": 100,
+          "2020": 100,
+          "2021": 100,
+          "2022": 100,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Passer",
+          "2023": "Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 65,
+          "2023": 72.94,
+          "2024": 84.17
+        },
+        "POC": {
+          "2021": 102,
+          "2022": 100,
+          "2023": 97.14
+        }
+      }
+    },
+    {
+      "psgc": "1230800000",
+      "region": "REGION 12",
+      "province": "HUC",
+      "lgu": "City of General Santos",
+      "type": "Highly Urbanized City",
+      "income_class": "1st",
+      "population": 697315,
+      "results": {
+        "ADAC": {
+          "2019": 90,
+          "2020": 82.5,
+          "2021": 85,
+          "2022": 90,
+          "2023": 100
+        },
+        "SGLG": {
+          "2015": "Non-Passer",
+          "2016": "Non-Passer",
+          "2017": "Non-Passer",
+          "2018": "Non-Passer",
+          "2019": "Non-Passer",
+          "2022": "Passer",
+          "2023": "Non-Passer",
+          "2024": "Passer"
+        },
+        "LCPC": {
+          "2022": 63.97,
+          "2023": 63.97,
+          "2024": 72.77
+        },
+        "POC": {
+          "2021": 66.27,
+          "2022": 98.08,
+          "2023": 87.48
+        }
+      }
+    }
+  ]
+}
