@@ -228,6 +228,51 @@ export function SettingsView(){
       <div className="flex items-center justify-between mb-3">
         <h2 className="font-medium">Settings</h2>
       </div>
+      {/* Finalize actions when everything matches */}
+      {lastAuditKey && unmatched.length === 0 && (
+        <div className="mb-3 flex items-center justify-between gap-2 rounded border p-2 bg-white">
+          <div className="text-sm">Finalize Import for <b>{lastAuditKey}</b> — all rows matched.</div>
+          <div className="flex gap-2">
+            <Button variant="outline" size="sm" onClick={() => {
+              // Save per‑audit JSON (prompt if key missing)
+              let key = (customKey || lastAuditKey || audit).trim().toUpperCase()
+              if (!key) { const k = window.prompt('Enter audit key'); if (!k) return; key = k.trim().toUpperCase() }
+              try {
+                const years = (store.AUDITS?.[key]?.years || []) as number[]
+                const rows = (store.CANON?.lgus || []).map((g: any) => {
+                  const rec = (g.results?.[key] || {}) as Record<string, any>
+                  const o: any = { type: g.type, province: g.province, lgu: g.lgu }
+                  years.forEach((y) => { o[String(y)] = rec[String(y)] ?? null })
+                  return o
+                })
+                const blob = new Blob([JSON.stringify(rows, null, 2)], { type: 'application/json' })
+                const a = document.createElement('a')
+                a.href = URL.createObjectURL(blob)
+                a.download = `${key.toLowerCase()}.json`
+                a.click()
+                
+              } catch (e: any) { addLog('Save Audit JSON failed: ' + (e?.message || String(e))) }
+            }}>Save Audit JSON</Button>
+            <Button variant="default" size="sm" onClick={async () => {
+              if (!window.confirm('Persist current canonical lg-audits.json to a file on disk?')) return;
+              const data = JSON.stringify(store.CANON, null, 2);
+              // @ts-ignore
+              if (window.showSaveFilePicker){
+                try {
+                  // @ts-ignore
+                  const handle = await window.showSaveFilePicker({ suggestedName: 'lg-audits.json', types: [{ description: 'JSON', accept: { 'application/json': ['.json'] } }] });
+                  const w = await handle.createWritable(); await w.write(new Blob([data], { type: 'application/json' })); await w.close();
+                  addLog('Saved canonical JSON via File System Access API.');
+                } catch (e:any) { addLog('Save cancelled or failed: ' + (e?.message||String(e))) }
+              } else {
+                const blob = new Blob([data], { type: 'application/json' });
+                const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'lg-audits.json'; a.click();
+                addLog('Browser does not support File System Access; downloaded file instead.');
+              }
+            }}>Persist lg-audits.json</Button>
+          </div>
+        </div>
+      )}
       {/* New-audit options */}
       <div className="flex flex-wrap items-end gap-3 mb-3">
         <div className="flex flex-col gap-1 w-40">
@@ -299,7 +344,6 @@ export function SettingsView(){
             <div className="flex gap-2">
               <Button variant="outline" size="sm" onClick={downloadUnmatched}>Download Unmatched</Button>
               <Button variant="outline" size="sm" onClick={downloadCanonical}>Download Canonical JSON</Button>
-              <Button variant="outline" size="sm" onClick={exportJSON}>Save Audit JSON</Button>
             </div>
           </div>
           <div className="overflow-auto border rounded">
