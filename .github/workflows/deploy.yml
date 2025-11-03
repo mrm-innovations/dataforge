@@ -28,9 +28,14 @@ jobs:
           node-version: 20
           cache: npm
       - name: Inject MapTiler key for Vite (.env.production)
-        if: ${{ secrets.MAPTILER_KEY != '' }}
+        env:
+          MAPTILER_KEY: ${{ secrets.MAPTILER_KEY }}
         run: |
-          echo "VITE_MAPTILER_KEY=${{ secrets.MAPTILER_KEY }}" > .env.production
+          if [ -n "$MAPTILER_KEY" ]; then
+            echo "VITE_MAPTILER_KEY=$MAPTILER_KEY" > .env.production
+          else
+            echo "No MAPTILER_KEY secret set; building without it.";
+          fi
       - name: Install dependencies
         run: npm ci
       - name: Build
