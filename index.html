@@ -6,13 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- MapTiler key: set via .env.local (VITE_MAPTILER_KEY) or leave this and set window.MAPTILER_KEY at runtime -->
-    <meta name="maptiler-key" content="fZ7GVJf9sV0DumEcoW2m" />
+    <!-- MapTiler key: set via Vite env (VITE_MAPTILER_KEY) or set window.MAPTILER_KEY at runtime -->
+    <meta name="maptiler-key" content="%VITE_MAPTILER_KEY%" />
     <title>DILG XII DataForge | Governance Dashboard</title>
-    <script type="module" crossorigin src="/scorecard_v6/dist/assets/src_entry-DKTI6DiZ.js"></script>
-    <link rel="stylesheet" crossorigin href="/scorecard_v6/dist/assets/src_entry-CEB0WiwO.css">
   </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
   </html>
