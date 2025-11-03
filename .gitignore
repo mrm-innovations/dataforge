@@ -31,3 +31,11 @@ temp/
 
 # Optional: keep an example env file tracked
 !.env.example
+.archive/
+dist/
+assets/
+datasets/
+/tmp-*.js
+/settings_*before*.*
+/TEMP_*
+

@@ -190,9 +190,48 @@ function getAdacBands() {
 
 import { hsl, HSL } from '@/lib/colors'
 
+export type Band = { key: string; label: string; min: number; color?: string }
+
+export function bandsArrayFor(auditKey: string): Band[] | null {
+  const meta = (store.AUDITS || {})[auditKey] || {}
+  const b = (meta as any).bands
+  if (Array.isArray(b)) return b as Band[]
+  if (b && typeof b === 'object' && (b.high_functional != null || b.moderate_functional != null)){
+    const high = Number(b.high_functional ?? 85)
+    const moderate = Number(b.moderate_functional ?? 50)
+    return [
+      { key: 'high', label: 'High Functional', min: high, color: hsl('green') },
+      { key: 'moderate', label: 'Moderate Functional', min: moderate, color: hsl('amber') },
+      { key: 'low', label: 'Low Functional', min: -Infinity, color: hsl('red') },
+    ]
+  }
+  if (String(auditKey).toUpperCase() === 'LCPC'){
+    return [
+      { key: 'ideal', label: 'Ideal', min: 80, color: hsl('green') },
+      { key: 'mature', label: 'Mature', min: 50, color: hsl('amber') },
+      { key: 'progressive', label: 'Progressive', min: 20, color: hsl('orange') },
+      { key: 'basic', label: 'Basic', min: -Infinity, color: hsl('red') },
+    ]
+  }
+  return null
+}
+
+function bandForValue(auditKey: string, value: number | null | undefined): Band | null {
+  if (value == null) return null
+  const bands = bandsArrayFor(auditKey)
+  if (!bands || !bands.length) return null
+  const sorted = bands.slice().sort((a, b) => b.min - a.min)
+  for (const band of sorted){
+    if (value >= band.min) return band
+  }
+  return sorted[sorted.length - 1] || null
+}
+
 export function colorForScore(value: number | null | undefined) {
   if (value == null) return 'transparent'
   if (metricIsStatus()) return value >= 90 ? hsl('green', 0.13) : hsl('red', 0.13)
+  const b = bandForValue(store.state.audit, value)
+  if (b?.color) return b.color
   if (isADAC()) {
     const { high, moderate } = getAdacBands()
     if (value >= high) return hsl('green', 0.13)
@@ -212,8 +251,54 @@ export function colorForScore(value: number | null | undefined) {
   return hsl('red', 0.13)
 }
 
+function softFromColor(raw: string, alpha = 0.13){
+  const s = String(raw || '').trim()
+  if (!s) return 'transparent'
+  if (/^hsl\(/i.test(s)){
+    const inner = s.replace(/^hsl\(/i,'').replace(/\)$/,'').trim()
+    return `hsl(${inner} / ${alpha})`
+  }
+  if (/^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(s)){
+    const hex = s.substring(1)
+    const n = hex.length === 3 ? hex.split('').map(ch => ch+ch).join('') : hex
+    const r = parseInt(n.substring(0,2),16)
+    const g = parseInt(n.substring(2,4),16)
+    const b = parseInt(n.substring(4,6),16)
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`
+  }
+  // Fallback: return as-is; browser may handle other css color formats
+  return s
+}
+
+export function colorForPill(value: number | null | undefined, alpha = 0.13) {
+  if (value == null) return 'transparent'
+  if (metricIsStatus()) return value >= 90 ? hsl('green', alpha) : hsl('red', alpha)
+  const b = bandForValue(store.state.audit, value)
+  if (b?.color) return softFromColor(b.color, alpha)
+  // fallbacks mirroring colorForScore
+  if (isADAC()) {
+    const { high, moderate } = getAdacBands()
+    if (value >= high) return hsl('green', alpha)
+    if (value >= moderate) return hsl('amber', alpha)
+    return hsl('red', alpha)
+  }
+  if (isLCPC()) {
+    if (value >= 80) return hsl('green', alpha)
+    if (value >= 50) return hsl('amber', alpha)
+    if (value >= 20) return hsl('orange', alpha)
+    return hsl('red', alpha)
+  }
+  const bands = store.AUDITS[store.state.audit]?.bands || { elite: 95, compliant: 90, near: 80 }
+  if (value >= bands.elite) return hsl('emerald', alpha)
+  if (value >= bands.compliant) return hsl('green', alpha)
+  if (value >= bands.near) return hsl('amber', alpha)
+  return hsl('red', alpha)
+}
+
 export function barColor(value: number) {
   if (metricIsStatus()) return value >= 90 ? hsl('green') : hsl('red')
+  const b = bandForValue(store.state.audit, value)
+  if (b?.color) return b.color
   if (isADAC()) {
     const { high, moderate } = getAdacBands()
     if (value >= high) return hsl('green')
@@ -235,6 +320,8 @@ export function barColor(value: number) {
 
 export function provColor(value: number | null | undefined) {
   if (metricIsStatus()) return (value ?? 0) >= 50 ? hsl('green') : hsl('red')
+  const b = bandForValue(store.state.audit, value ?? null)
+  if (b?.color) return b.color
   if (isADAC()) {
     const { high, moderate } = getAdacBands()
     if (value == null) return '#cbd5e1' // neutral fallback
@@ -267,6 +354,13 @@ export function complianceThreshold() {
 export type BandKey = 'pass' | 'fail' | 'high' | 'moderate' | 'low' | 'elite' | 'compliant' | 'near' | 'below' | 'ideal' | 'mature' | 'progressive' | 'basic'
 export function classifyBand(value: number | null | undefined): BandKey | null {
   if (value == null) return null
+  // Prefer array-based band metadata when available
+  const arr = bandsArrayFor(store.state.audit)
+  if (arr && arr.length){
+    const sorted = arr.slice().sort((a,b) => (b.min - a.min))
+    for (const b of sorted){ if (value >= b.min) return b.key as BandKey }
+    return sorted[sorted.length-1]?.key as BandKey
+  }
   if (metricIsStatus()) return value >= 90 ? 'pass' : 'fail'
   if (isADAC()){
     const { high, moderate } = getAdacBands()
@@ -289,6 +383,12 @@ export function classifyBand(value: number | null | undefined): BandKey | null {
 
 export function classifyBandFor(auditKey: string, value: number | null | undefined): BandKey | null {
   if (value == null) return null
+  const arr = bandsArrayFor(auditKey)
+  if (arr && arr.length){
+    const sorted = arr.slice().sort((a,b) => (b.min - a.min))
+    for (const b of sorted){ if (value >= b.min) return b.key as BandKey }
+    return sorted[sorted.length-1]?.key as BandKey
+  }
   if (metricIsStatusFor(auditKey)) return value >= 90 ? 'pass' : 'fail'
   if (isADACFor(auditKey)){
     const bands = (store.AUDITS?.ADAC?.bands || {})
@@ -335,11 +435,27 @@ export function bandLabelFromValue(value: number | null | undefined): string {
   return key ? bandLabel(key) : '-'
 }
 
+function stripParen(label: string){
+  return String(label || '').replace(/\s*\([^)]*\)\s*$/, '').trim()
+}
+
 export function bandLabelFor(auditKey: string, value: number | null | undefined): string {
   const key = classifyBandFor(auditKey, value)
   if (!key) return '-'
+  const meta = (store.AUDITS || {})[auditKey] || {}
+  const labels = (meta as any).labels || {}
+  const labelsShort = (meta as any).labels_short || {}
+  // Prefer audit-specific labels if provided
+  const directShort = (labelsShort as any)[key]
+  if (directShort) return String(directShort)
+  const direct = (labels as any)[key]
+  if (direct) return stripParen(String(direct))
+  // Support ADAC-like label keys band_high/band_moderate/band_low
+  if (key === 'high' && (labels as any)['band_high']) return stripParen(String((labels as any)['band_high']))
+  if (key === 'moderate' && (labels as any)['band_moderate']) return stripParen(String((labels as any)['band_moderate']))
+  if (key === 'low' && (labels as any)['band_low']) return stripParen(String((labels as any)['band_low']))
   if (isLCPCFor(auditKey)) {
-    // LCPC: plain category names only
+    // LCPC defaults: plain names
     switch (key) {
       case 'ideal': return 'Ideal'
       case 'mature': return 'Mature'

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { avg, fmt, metricIsStatus, statusToNum, store, yearsInScope, colorForScore, statusShort } from '@/lib/store'
+import { avg, fmt, metricIsStatus, statusToNum, store, yearsInScope, colorForPill, statusShort } from '@/lib/store'
 import { LguDialog } from '@/components/LguDialog'
 
 export function RecordsTable({ rows }: { rows: any[] }) {
@@ -42,7 +42,7 @@ export function RecordsTable({ rows }: { rows: any[] }) {
             const cells = years.map((y) => {
               const value = (row as any)['y' + y] as number | null
               const label = isStatus ? statusShort((row as any)['s' + y]) : fmt(value)
-              const bg = colorForScore(value)
+              const bg = colorForPill(value, 0.13)
               return (
                 <TableCell key={y} className="text-sm text-gray-700">
                   <div className="inline-block text-[11px] font-semibold rounded-md px-1.5 py-0.5" style={{ background: bg }}>{label}</div>

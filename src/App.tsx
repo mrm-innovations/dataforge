@@ -183,7 +183,7 @@ export function App() {
               </button>
               <div data-orientation="vertical" role="none" data-slot="separator" className="bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-px mx-2 data-[orientation=vertical]:h-4"></div>
               <h1 className="text-base font-medium">
-                {tab === 'dashboard' ? 'Dashboard' : tab === 'demography' ? 'Demography' : 'About'}
+                {tab === 'dashboard' ? 'Dashboard' : tab === 'demography' ? 'Demography' : tab === 'settings' ? 'Settings' : 'About'}
               </h1>
               <div className="ml-auto">
                 <button
@@ -220,20 +220,22 @@ export function App() {
         <main className="p-6 pt-20">
           <div className={`${wide ? 'w-full' : 'max-w-7xl mx-auto'} space-y-6`}>
 
-            <section className="rounded-xl border p-4 space-y-3">
-              <FilterBar onChange={() => { /* persist band filter */ force() }} onAuditChange={() => {
-                // if current bandFilter not applicable for audit, clear it
-                const audit = store.state.audit
-                const set = metricIsStatus() ? new Set(['pass','fail']) : (audit==='ADAC' ? new Set(['high','moderate','low']) : new Set(['elite','compliant','near','below']))
-                if (bandFilter && !set.has(bandFilter)) setBandFilter(null)
-              }} />
-              {bandFilter && (
-                <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 px-2 py-1 rounded-md inline-flex items-center gap-2">
-                  <span>Band filter: {bandFilter}</span>
-                  <button className="underline" onClick={() => setBandFilter(null)}>clear</button>
-                </div>
-              )}
-            </section>
+            {(tab === 'dashboard' || tab === 'demography') && (
+              <section className="rounded-xl border p-4 space-y-3">
+                <FilterBar onChange={() => { /* persist band filter */ force() }} onAuditChange={() => {
+                  // if current bandFilter not applicable for audit, clear it
+                  const audit = store.state.audit
+                  const set = metricIsStatus() ? new Set(['pass','fail']) : (audit==='ADAC' ? new Set(['high','moderate','low']) : new Set(['elite','compliant','near','below']))
+                  if (bandFilter && !set.has(bandFilter)) setBandFilter(null)
+                }} />
+                {bandFilter && (
+                  <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 px-2 py-1 rounded-md inline-flex items-center gap-2">
+                    <span>Band filter: {bandFilter}</span>
+                    <button className="underline" onClick={() => setBandFilter(null)}>clear</button>
+                  </div>
+                )}
+              </section>
+            )}
 
             {tab === 'dashboard' && (
               <>

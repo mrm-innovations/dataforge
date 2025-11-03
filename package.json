@@ -10,7 +10,8 @@
                     "build":  "vite build",
                     "build:pages":  "vite build --base=/dataforge/",
                     "build:apache":  "vite build -c vite.apache.config.ts",
-                    "deploy:apache":  "npm run build:apache \u0026\u0026 node scripts/deploy-apache.js",
+    "deploy:apache":  "npm run build:apache \u0026\u0026 node scripts/deploy-apache.js",
+    "clean": "node scripts/clean-workspace.js",
                     "export:audit": "node scripts/export-audit-json.js", "export:audit:csv": "node scripts/export-audit-csv.js",
                     "ingest:audit": "node scripts/ingest-audit.js",
                     "preview":  "vite preview"

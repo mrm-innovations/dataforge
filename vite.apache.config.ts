@@ -7,7 +7,7 @@ import path from 'node:path'
 // - Uses src_entry.html as the HTML input to avoid conflicts when
 //   the webroot index.html contains already-built tags
 export default defineConfig({
-  base: '/scorecard_v6/',
+  base: '/scorecard_v6/dist/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -20,4 +20,3 @@ export default defineConfig({
     },
   },
 })
-
