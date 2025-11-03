@@ -83,17 +83,30 @@ export function MapView({ rows }: Props){
   }, [rows, latest])
 
   useEffect(() => {
-    const metaKey = (document.querySelector('meta[name="maptiler-key"]') as HTMLMetaElement | null)?.content
+    const rawMeta = (document.querySelector('meta[name="maptiler-key"]') as HTMLMetaElement | null)?.content
+    const isPlaceholder = (s?: string) => {
+      if (!s) return true
+      const t = String(s).trim()
+      if (!t) return true
+      if (/VITE_MAPTILER_KEY/i.test(t)) return true
+      if (/^%.*%$/.test(t)) return true
+      return false
+    }
+    const metaKey = isPlaceholder(rawMeta) ? undefined : rawMeta
     const winKey = (window as any).MAPTILER_KEY as string | undefined
     const envKey = (import.meta as any).env?.VITE_MAPTILER_KEY as string | undefined
     const key = envKey || metaKey || winKey
-    if (!key){ setError('MapTiler key missing. Set VITE_MAPTILER_KEY, meta[name=maptiler-key], or window.MAPTILER_KEY.'); return }
     let disposed = false
     ;(async () => {
       try {
         const maplibregl = await loadMapLibre()
         if (disposed) return
-        const styleUrl = `https://api.maptiler.com/maps/streets-v2/style.json?key=${encodeURIComponent(key)}`
+        const styleUrl = key
+          ? `https://api.maptiler.com/maps/streets-v2/style.json?key=${encodeURIComponent(key)}`
+          : 'https://demotiles.maplibre.org/style.json'
+        if (!key) {
+          setError('Using fallback basemap (no MapTiler key). Set VITE_MAPTILER_KEY, meta[name=maptiler-key], or window.MAPTILER_KEY for production tiles.')
+        }
         const map = new maplibregl.Map({
           container: ref.current!,
           style: styleUrl,
@@ -450,5 +463,4 @@ export function MapView({ rows }: Props){
     </Card>
   )
 }
-
 
