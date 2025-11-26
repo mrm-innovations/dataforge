@@ -40,7 +40,7 @@ npm run preview
 - `public/` – Static assets served at root (e.g., GeoJSON files)
 - `index.html` – Vite entry HTML for dev
 - `vite.config.ts` – Default Vite configuration (base path is set to `/dataforge/` for GitHub Pages)
-- `vite.apache.config.ts` – Apache/XAMPP build config (base path `/scorecard_v7/dist/`)
+- `vite.apache.config.ts` – Apache/XAMPP build config (base path `/dataforge/dist/`)
 
 ## Deployment
 - GitHub Pages: this repo is configured to deploy via GitHub Actions on push to `main`.
@@ -49,8 +49,8 @@ npm run preview
 - Manual build: `npm run build` outputs to `dist/` if you need to deploy elsewhere.
 - Apache / XAMPP:
   1. Ensure mod_rewrite is enabled in Apache (enabled by default in XAMPP).
-  2. Run `npm run build:apache` to emit assets with the `/scorecard_v7/dist/` base.
-  3. The bundled SPA lives in `dist/src_entry.html`. `.htaccess` now points Apache’s `DirectoryIndex` and SPA fallback to that file, so visiting `http://localhost/scorecard_v7/` will load the compiled assets under `dist/`.
+  2. Run `npm run build:apache` to emit assets with the `/dataforge/dist/` base.
+  3. The bundled SPA lives in `dist/src_entry.html`. `.htaccess` now points Apache’s `DirectoryIndex` and SPA fallback to that file, so visiting `http://localhost/dataforge/` will load the compiled assets under `dist/`.
 
 ## Contributing
 Issues and pull requests are welcome. Please open an issue for discussion before major changes.
