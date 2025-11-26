@@ -1,0 +1,426 @@
+[
+  {
+    "2021": null,
+    "2022": null,
+    "2024": null,
+    "type": "Province",
+    "province": "Cotabato",
+    "lgu": "Cotabato"
+  },
+  {
+    "2021": 89.81,
+    "2022": 83.36,
+    "2024": 73.5,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Alamada"
+  },
+  {
+    "2021": 55.5,
+    "2022": 64.94,
+    "2024": 47.5,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Carmen"
+  },
+  {
+    "2021": 78.17,
+    "2022": 84.42,
+    "2024": 58.5,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Kabacan"
+  },
+  {
+    "2021": 60.45,
+    "2022": 68.25,
+    "2024": 65.5,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Libungan"
+  },
+  {
+    "2021": 76.5,
+    "2022": 84.47,
+    "2024": 62.5,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Magpet"
+  },
+  {
+    "2021": 86.97,
+    "2022": 76.66,
+    "2024": 69,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Makilala"
+  },
+  {
+    "2021": 70.82,
+    "2022": 62.79,
+    "2024": 50,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Matalam"
+  },
+  {
+    "2021": 87.83,
+    "2022": 88.16,
+    "2024": 76,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Midsayap"
+  },
+  {
+    "2021": 67.38,
+    "2022": 80.21,
+    "2024": 72,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "M'Lang"
+  },
+  {
+    "2021": 78.35,
+    "2022": 82.39,
+    "2024": 54,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Pigkawayan"
+  },
+  {
+    "2021": 59.35,
+    "2022": 75.33,
+    "2024": 61.5,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Pikit"
+  },
+  {
+    "2021": 63.12,
+    "2022": 68.2,
+    "2024": 58,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "President Roxas"
+  },
+  {
+    "2021": 83.31,
+    "2022": 83.75,
+    "2024": 71,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Tulunan"
+  },
+  {
+    "2021": 66.51,
+    "2022": 81.31,
+    "2024": 74,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Antipas"
+  },
+  {
+    "2021": 69.17,
+    "2022": 74.75,
+    "2024": 42.5,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Banisilan"
+  },
+  {
+    "2021": 79.38,
+    "2022": 84.12,
+    "2024": 70,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Aleosan"
+  },
+  {
+    "2021": 77.22,
+    "2022": 78.07,
+    "2024": 63,
+    "type": "Municipality",
+    "province": "Cotabato",
+    "lgu": "Arakan"
+  },
+  {
+    "2021": 86.2,
+    "2022": 90.63,
+    "2024": 74,
+    "type": "Component City",
+    "province": "Cotabato",
+    "lgu": "City of Kidapawan"
+  },
+  {
+    "2021": null,
+    "2022": null,
+    "2024": null,
+    "type": "Province",
+    "province": "South Cotabato",
+    "lgu": "South Cotabato"
+  },
+  {
+    "2021": 71.46,
+    "2022": 91.56,
+    "2024": 65.5,
+    "type": "Component City",
+    "province": "South Cotabato",
+    "lgu": "City of Koronadal"
+  },
+  {
+    "2021": 57.09,
+    "2022": 39.18,
+    "2024": 34,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Banga"
+  },
+  {
+    "2021": 87.5,
+    "2022": 86.14,
+    "2024": 57.5,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Norala"
+  },
+  {
+    "2021": 92.74,
+    "2022": 88.67,
+    "2024": 60.5,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Polomolok"
+  },
+  {
+    "2021": 89.94,
+    "2022": 86.81,
+    "2024": 71.5,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Surallah"
+  },
+  {
+    "2021": 73.36,
+    "2022": 71.71,
+    "2024": 65.5,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Tampakan"
+  },
+  {
+    "2021": 88.5,
+    "2022": 85.98,
+    "2024": 67.5,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Tantangan"
+  },
+  {
+    "2021": 56.1,
+    "2022": 74.12,
+    "2024": 36.5,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "T'Boli"
+  },
+  {
+    "2021": 87.2,
+    "2022": 86.67,
+    "2024": 64,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Tupi"
+  },
+  {
+    "2021": 65.5,
+    "2022": 71.5,
+    "2024": 67.5,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Santo Niño"
+  },
+  {
+    "2021": 70.32,
+    "2022": 53,
+    "2024": 54,
+    "type": "Municipality",
+    "province": "South Cotabato",
+    "lgu": "Lake Sebu"
+  },
+  {
+    "2021": null,
+    "2022": null,
+    "2024": null,
+    "type": "Province",
+    "province": "Sultan Kudarat",
+    "lgu": "Sultan Kudarat"
+  },
+  {
+    "2021": 87,
+    "2022": 89.79,
+    "2024": 70.5,
+    "type": "Component City",
+    "province": "Sultan Kudarat",
+    "lgu": "City of Tacurong"
+  },
+  {
+    "2021": 96,
+    "2022": 93.29,
+    "2024": 77,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Bagumbayan"
+  },
+  {
+    "2021": 86.75,
+    "2022": 81,
+    "2024": 70.5,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Columbio"
+  },
+  {
+    "2021": 88.01,
+    "2022": 87.58,
+    "2024": 65.5,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Esperanza"
+  },
+  {
+    "2021": 64.18,
+    "2022": 83.49,
+    "2024": 72.5,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Isulan"
+  },
+  {
+    "2021": 88.3,
+    "2022": 87,
+    "2024": 69,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Kalamansig"
+  },
+  {
+    "2021": 75.07,
+    "2022": 75.1,
+    "2024": 69.5,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Lebak"
+  },
+  {
+    "2021": 87,
+    "2022": 92,
+    "2024": 66.5,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Lutayan"
+  },
+  {
+    "2021": 88.14,
+    "2022": 88.71,
+    "2024": 74,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Lambayong"
+  },
+  {
+    "2021": 91.67,
+    "2022": 88.88,
+    "2024": 68,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Palimbang"
+  },
+  {
+    "2021": 89.34,
+    "2022": 92.33,
+    "2024": 72,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "President Quirino"
+  },
+  {
+    "2021": 75.65,
+    "2022": 67,
+    "2024": 70.5,
+    "type": "Municipality",
+    "province": "Sultan Kudarat",
+    "lgu": "Sen. Ninoy Aquino"
+  },
+  {
+    "2021": null,
+    "2022": null,
+    "2024": null,
+    "type": "Province",
+    "province": "Sarangani",
+    "lgu": "Sarangani"
+  },
+  {
+    "2021": 84.14,
+    "2022": 90.44,
+    "2024": 68,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Alabel"
+  },
+  {
+    "2021": 61.26,
+    "2022": 72.88,
+    "2024": 70,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Glan"
+  },
+  {
+    "2021": 64.84,
+    "2022": 84.11,
+    "2024": 70,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Kiamba"
+  },
+  {
+    "2021": 87.2,
+    "2022": 89.75,
+    "2024": 64,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Maasim"
+  },
+  {
+    "2021": 65.92,
+    "2022": 69.05,
+    "2024": 60.5,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Maitum"
+  },
+  {
+    "2021": 93.83,
+    "2022": 89.42,
+    "2024": 70.5,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Malapatan"
+  },
+  {
+    "2021": 86.65,
+    "2022": 89.7,
+    "2024": 67.5,
+    "type": "Municipality",
+    "province": "Sarangani",
+    "lgu": "Malungon"
+  },
+  {
+    "2021": 84.07,
+    "2022": 85.1,
+    "2024": 68.5,
+    "type": "Highly Urbanized City",
+    "province": "HUC",
+    "lgu": "City of General Santos"
+  }
+]

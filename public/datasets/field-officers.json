@@ -1,0 +1,612 @@
+[
+  {
+    "province": "Cotabato",
+    "assignment": "Provincial Office",
+    "name": "Inecita C. Kionisala",
+    "position": "LGOO VIII",
+    "designation": "Provincial Director",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Provincial Office",
+    "name": "Queenee Annisse A. Sucol",
+    "position": "LGOO VII",
+    "designation": "Outcome Manager",
+    "sex": "Female",
+    "contact": "",
+    "remarks": "Concurrent MLGOO of Matalam"
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Provincial Office",
+    "name": "Laila Amanda Maha U. Sulaik",
+    "position": "LGOO VI",
+    "designation": "Program Manager",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Makilala",
+    "name": "Lilibeth G. Layson",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "M'Lang",
+    "name": "Vince Kim T. Rojas",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Alamada",
+    "name": "Sarah L. Alamada",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Kabacan",
+    "name": "Helen Grace A. De Justo-Sayon",
+    "position": "LGOO III",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Magpet",
+    "name": "Ivy S. Cervantes",
+    "position": "LGOO VII",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Midsayap",
+    "name": "Emilia S. Dandoy",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Tulunan",
+    "name": "Mary Grace D. Santarin",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "President Roxas",
+    "name": "Darwin G. Agbon",
+    "position": "LGOO II",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": "Officer in Charge (OIC)"
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Arakan",
+    "name": "Jasmin F. Educalan",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Matalam",
+    "name": "Queenee Annisse A. Sucol",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": "Concurrent Outcome Manager"
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "City of Kidapawan",
+    "name": "Julia Judith A. Geveso",
+    "position": "LGOO VI",
+    "designation": "CLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Antipas",
+    "name": "Narciso M. Beceira Jr.",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Aleosan",
+    "name": "Jeanette C. Bingil",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Pikit",
+    "name": "Sadria S. Paglala",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Carmen",
+    "name": "Mary Joy J. Gayotin",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Pigcawayan",
+    "name": "Jesus Remus F. Laguting",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Banisilan",
+    "name": "Maguid G. Dagonaway",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Cotabato",
+    "assignment": "Libungan",
+    "name": "Mark L. Biescas",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "HUC",
+    "assignment": "City of General Santos",
+    "name": "Maria Theresa D. Bautista",
+    "position": "LGOO VII",
+    "designation": "City Director",
+    "sex": "Female",
+    "contact": "",
+    "remarks": "Officer in Charge (OIC)"
+  },
+  {
+    "province": "Sarangani",
+    "assignment": "Provincial Office",
+    "name": "Rilimin H. Sandoval",
+    "position": "LGOO VIII",
+    "designation": "Provincial Director",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sarangani",
+    "assignment": "Provincial Office",
+    "name": "Annalyn S. Doceo",
+    "position": "LGOO VII",
+    "designation": "Outcome Manager",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sarangani",
+    "assignment": "Provincial Office",
+    "name": "Sheryl D. Lantingan",
+    "position": "LGOO II",
+    "designation": "OIC Program Manager",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sarangani",
+    "assignment": "Malungon",
+    "name": "Zorayda G. Labus",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sarangani",
+    "assignment": "Alabel",
+    "name": "Melencio R. Balanag Jr.",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sarangani",
+    "assignment": "Maasim",
+    "name": "Rodolfo H. Jerez",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sarangani",
+    "assignment": "Malapatan",
+    "name": "Catherine A. Macion",
+    "position": "LGOO IV",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": "Officer in Charge (OIC)"
+  },
+  {
+    "province": "Sarangani",
+    "assignment": "Maitum",
+    "name": "Merlita E. Jomuad",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sarangani",
+    "assignment": "Kiamba",
+    "name": "Marife C. Tenorio",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sarangani",
+    "assignment": "Glan",
+    "name": "Ma. Fritzie A. Español",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Provincial Office",
+    "name": "Hayd Ali S. Suwaib",
+    "position": "LGOO VIII",
+    "designation": "Provincial Director",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Provincial Office",
+    "name": "Jermie A. Erie-Yeager",
+    "position": "LGOO VII",
+    "designation": "Outcome Manager",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Provincial Office",
+    "name": "Chrysanthea D. Zorilla-Manait",
+    "position": "LGOOV",
+    "designation": "Program Manager",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "City of Koronadal",
+    "name": "Jennifer C. Fernandez",
+    "position": "LGOO VI",
+    "designation": "CLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Polomolok",
+    "name": "Eleanor C. Magbanua",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Surallah",
+    "name": "Maria Fe T. Soto",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Tampakan",
+    "name": "Marijovy C. Manzano",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "T'boli",
+    "name": "Joel S. Molo",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Lake Sebu",
+    "name": "Deomedina C. Magdato",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Tantangan",
+    "name": "Fiorello G. Elizaga",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Norala",
+    "name": "Heidy A. Agustin",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Banga",
+    "name": "Debbie Grace D. Pendon",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Santo Niño",
+    "name": "Jennevieve Marie P. Ferry",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "South Cotabato",
+    "assignment": "Tupi",
+    "name": "Juanito B. Agullana",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Provincial Office",
+    "name": "Margarita H. Baynosa",
+    "position": "LGOO VIII",
+    "designation": "Provincial Director",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Provincial Office",
+    "name": "Augustus T. Tabugo",
+    "position": "LGOO VII",
+    "designation": "Outcome Manager",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Provincial Office",
+    "name": "Alex Nathan C. Garcia",
+    "position": "LGOO VI",
+    "designation": "Program Manager",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Sen. Ninoy Aquino",
+    "name": "Ricii C. Exiomo",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Lebak",
+    "name": "Almie G. Castillo",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Lambayong",
+    "name": "Rominnah M. Mua",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Bagumbayan",
+    "name": "Badrudin A. Madali",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Columbio",
+    "name": "Ismael K. Anual",
+    "position": "LGOO V",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Palimbang",
+    "name": "Decerel Dionisia F. Cornejo-Kempis",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Kalamansig",
+    "name": "Ali I. Abdullah",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "President Quirino",
+    "name": "Relmie T. Tamson",
+    "position": "LGOO V",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Isulan",
+    "name": "Ma. Bella P. Agullana",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Lutayan",
+    "name": "Maria Alma B. Engcong",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Female",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "City of Tacurong",
+    "name": "Ryan J. Alair",
+    "position": "LGOO VI",
+    "designation": "CLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  },
+  {
+    "province": "Sultan Kudarat",
+    "assignment": "Esperanza",
+    "name": "Roberto S. Petingco",
+    "position": "LGOO VI",
+    "designation": "MLGOO",
+    "sex": "Male",
+    "contact": "",
+    "remarks": ""
+  }
+]

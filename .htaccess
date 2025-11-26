@@ -1,0 +1,19 @@
+DirectoryIndex dist/index.html index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /dataforge/
+
+  # Map built asset requests to the files under dist/assets
+  RewriteRule ^assets/(.*)$ dist/assets/$1 [L]
+  # Serve JSON/GeoJSON/etc from dist for data fetches (avoid double-dist rewrite)
+  RewriteRule ^(?!dist/)(.+\.(json|geojson|csv|tsv|png|jpg|jpeg|svg))$ dist/$1 [L]
+
+  # Allow direct access to built assets and other real files
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Single-page app fallback -> built index
+  RewriteRule ^ dist/index.html [L]
+</IfModule>

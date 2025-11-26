@@ -1,0 +1,426 @@
+[
+  {
+    "psgc": "1204700000",
+    "province": "Cotabato",
+    "lgu": "Cotabato",
+    "type": "Province",
+    "income_class": "1st",
+    "population": 1275185
+  },
+  {
+    "psgc": "1204701000",
+    "province": "Cotabato",
+    "lgu": "Alamada",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 68659
+  },
+  {
+    "psgc": "1204702000",
+    "province": "Cotabato",
+    "lgu": "Carmen",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 79140
+  },
+  {
+    "psgc": "1204703000",
+    "province": "Cotabato",
+    "lgu": "Kabacan",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 77164
+  },
+  {
+    "psgc": "1204705000",
+    "province": "Cotabato",
+    "lgu": "Libungan",
+    "type": "Municipality",
+    "income_class": "2nd",
+    "population": 56269
+  },
+  {
+    "psgc": "1204706000",
+    "province": "Cotabato",
+    "lgu": "Magpet",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 53800
+  },
+  {
+    "psgc": "1204707000",
+    "province": "Cotabato",
+    "lgu": "Makilala",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 87927
+  },
+  {
+    "psgc": "1204708000",
+    "province": "Cotabato",
+    "lgu": "Matalam",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 81355
+  },
+  {
+    "psgc": "1204709000",
+    "province": "Cotabato",
+    "lgu": "Midsayap",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 117365
+  },
+  {
+    "psgc": "1204710000",
+    "province": "Cotabato",
+    "lgu": "M'Lang",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 98195
+  },
+  {
+    "psgc": "1204711000",
+    "province": "Cotabato",
+    "lgu": "Pigcawayan",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 52744
+  },
+  {
+    "psgc": "1204712000",
+    "province": "Cotabato",
+    "lgu": "Pikit",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 67024
+  },
+  {
+    "psgc": "1204713000",
+    "province": "Cotabato",
+    "lgu": "President Roxas",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 52512
+  },
+  {
+    "psgc": "1204714000",
+    "province": "Cotabato",
+    "lgu": "Tulunan",
+    "type": "Municipality",
+    "income_class": "2nd",
+    "population": 60978
+  },
+  {
+    "psgc": "1204715000",
+    "province": "Cotabato",
+    "lgu": "Antipas",
+    "type": "Municipality",
+    "income_class": "2nd",
+    "population": 26817
+  },
+  {
+    "psgc": "1204716000",
+    "province": "Cotabato",
+    "lgu": "Banisilan",
+    "type": "Municipality",
+    "income_class": "2nd",
+    "population": 46995
+  },
+  {
+    "psgc": "1204717000",
+    "province": "Cotabato",
+    "lgu": "Aleosan",
+    "type": "Municipality",
+    "income_class": "3rd",
+    "population": 36892
+  },
+  {
+    "psgc": "1204718000",
+    "province": "Cotabato",
+    "lgu": "Arakan",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 50558
+  },
+  {
+    "psgc": "1204704000",
+    "province": "Cotabato",
+    "lgu": "City of Kidapawan",
+    "type": "Component City",
+    "income_class": "3rd",
+    "population": 160791
+  },
+  {
+    "psgc": "1206300000",
+    "province": "South Cotabato",
+    "lgu": "South Cotabato",
+    "type": "Province",
+    "income_class": "1st",
+    "population": 975476
+  },
+  {
+    "psgc": "1206306000",
+    "province": "South Cotabato",
+    "lgu": "City of Koronadal",
+    "type": "Component City",
+    "income_class": "3rd",
+    "population": 195398
+  },
+  {
+    "psgc": "1206302000",
+    "province": "South Cotabato",
+    "lgu": "Banga",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 89164
+  },
+  {
+    "psgc": "1206311000",
+    "province": "South Cotabato",
+    "lgu": "Norala",
+    "type": "Municipality",
+    "income_class": "3rd",
+    "population": 46682
+  },
+  {
+    "psgc": "1206312000",
+    "province": "South Cotabato",
+    "lgu": "Polomolok",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 172605
+  },
+  {
+    "psgc": "1206313000",
+    "province": "South Cotabato",
+    "lgu": "Surallah",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 89340
+  },
+  {
+    "psgc": "1206314000",
+    "province": "South Cotabato",
+    "lgu": "Tampakan",
+    "type": "Municipality",
+    "income_class": "2nd",
+    "population": 41018
+  },
+  {
+    "psgc": "1206315000",
+    "province": "South Cotabato",
+    "lgu": "Tantangan",
+    "type": "Municipality",
+    "income_class": "3rd",
+    "population": 45744
+  },
+  {
+    "psgc": "1206316000",
+    "province": "South Cotabato",
+    "lgu": "T'Boli",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 101049
+  },
+  {
+    "psgc": "1206317000",
+    "province": "South Cotabato",
+    "lgu": "Tupi",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 73459
+  },
+  {
+    "psgc": "1206318000",
+    "province": "South Cotabato",
+    "lgu": "Santo Niño",
+    "type": "Municipality",
+    "income_class": "3rd",
+    "population": 39796
+  },
+  {
+    "psgc": "1206319000",
+    "province": "South Cotabato",
+    "lgu": "Lake Sebu",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 81221
+  },
+  {
+    "psgc": "1206500000",
+    "province": "Sultan Kudarat",
+    "lgu": "Sultan Kudarat",
+    "type": "Province",
+    "income_class": "1st",
+    "population": 854052
+  },
+  {
+    "psgc": "1206511000",
+    "province": "Sultan Kudarat",
+    "lgu": "City of Tacurong",
+    "type": "Component City",
+    "income_class": "4th",
+    "population": 109319
+  },
+  {
+    "psgc": "1206501000",
+    "province": "Sultan Kudarat",
+    "lgu": "Bagumbayan",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 68947
+  },
+  {
+    "psgc": "1206502000",
+    "province": "Sultan Kudarat",
+    "lgu": "Columbio",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 33527
+  },
+  {
+    "psgc": "1206503000",
+    "province": "Sultan Kudarat",
+    "lgu": "Esperanza",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 74696
+  },
+  {
+    "psgc": "1206504000",
+    "province": "Sultan Kudarat",
+    "lgu": "Isulan",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 97490
+  },
+  {
+    "psgc": "1206505000",
+    "province": "Sultan Kudarat",
+    "lgu": "Kalamansig",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 50900
+  },
+  {
+    "psgc": "1206506000",
+    "province": "Sultan Kudarat",
+    "lgu": "Lebak",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 91344
+  },
+  {
+    "psgc": "1206507000",
+    "province": "Sultan Kudarat",
+    "lgu": "Lutayan",
+    "type": "Municipality",
+    "income_class": "2nd",
+    "population": 65644
+  },
+  {
+    "psgc": "1206508000",
+    "province": "Sultan Kudarat",
+    "lgu": "Lambayong",
+    "type": "Municipality",
+    "income_class": "2nd",
+    "population": 79739
+  },
+  {
+    "psgc": "1206509000",
+    "province": "Sultan Kudarat",
+    "lgu": "Palimbang",
+    "type": "Municipality",
+    "income_class": "2nd",
+    "population": 92828
+  },
+  {
+    "psgc": "1206510000",
+    "province": "Sultan Kudarat",
+    "lgu": "President Quirino",
+    "type": "Municipality",
+    "income_class": "3rd",
+    "population": 42244
+  },
+  {
+    "psgc": "1206512000",
+    "province": "Sultan Kudarat",
+    "lgu": "Sen. Ninoy Aquino",
+    "type": "Municipality",
+    "income_class": "3rd",
+    "population": 47374
+  },
+  {
+    "psgc": "1208000000",
+    "province": "Sarangani",
+    "lgu": "Sarangani",
+    "type": "Province",
+    "income_class": "2nd",
+    "population": 558946
+  },
+  {
+    "psgc": "1208001000",
+    "province": "Sarangani",
+    "lgu": "Alabel",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 88294
+  },
+  {
+    "psgc": "1208002000",
+    "province": "Sarangani",
+    "lgu": "Glan",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 109547
+  },
+  {
+    "psgc": "1208003000",
+    "province": "Sarangani",
+    "lgu": "Kiamba",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 65774
+  },
+  {
+    "psgc": "1208004000",
+    "province": "Sarangani",
+    "lgu": "Maasim",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 64940
+  },
+  {
+    "psgc": "1208005000",
+    "province": "Sarangani",
+    "lgu": "Maitum",
+    "type": "Municipality",
+    "income_class": "2nd",
+    "population": 44185
+  },
+  {
+    "psgc": "1208006000",
+    "province": "Sarangani",
+    "lgu": "Malapatan",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 80741
+  },
+  {
+    "psgc": "1208007000",
+    "province": "Sarangani",
+    "lgu": "Malungon",
+    "type": "Municipality",
+    "income_class": "1st",
+    "population": 105465
+  },
+  {
+    "psgc": "1230800000",
+    "province": "HUC",
+    "lgu": "General Santos City",
+    "type": "Highly Urbanized City",
+    "income_class": "1st",
+    "population": 697315
+  }
+]
