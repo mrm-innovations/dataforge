@@ -11,9 +11,10 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js'
-import { store, statusToNum, fmt, bandLabelFor, metricIsStatus } from '@/lib/store'
+import { store, statusToNum, fmt, bandLabelFor, metricIsStatus, sglgSubindicatorFor } from '@/lib/store'
 import { Button } from '@/components/ui/button'
 import { hsl } from '@/lib/colors'
+import { SglgSubindicatorBreakdown } from './SglgSubindicatorBreakdown'
 
 ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Tooltip, Legend)
 
@@ -255,6 +256,12 @@ export function LguDialog({ open, onClose, lgu, province, initialAudit }: Props)
                               </div>
                             ) : null}
                           </div>
+                          {a === 'SGLG' && (
+                            <div className="mt-4 space-y-2">
+                              <div className="text-xs font-medium">Subindicator Breakdown (2024)</div>
+                              <SglgSubindicatorBreakdown record={sglgSubindicatorFor(province, lgu)} />
+                            </div>
+                          )}
                         </TabsContent>
                       )
                     })}

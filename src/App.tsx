@@ -18,7 +18,7 @@ import { MetricCards } from '@/components/MetricCards'
 import { DemographyView } from '@/components/DemographyView'
 import { MapView } from '@/components/MapView'
 import { ScoreComposition } from '@/components/ScoreComposition'
-import { loadCanon, setAudit, store, avg, fmt, metricIsStatus, filterRows, yearsInScope, actions, reloadDemography, sglgSubindicatorForCurrentSelection } from './lib/store'
+import { loadCanon, setAudit, store, avg, fmt, metricIsStatus, filterRows, yearsInScope, actions, reloadDemography } from './lib/store'
 import { hsl } from '@/lib/colors'
 
 ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Tooltip, Legend)
@@ -28,7 +28,6 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { LocalOfficialsView } from '@/components/LocalOfficialsView'
 import { FieldOfficersView, type FieldOfficer } from '@/components/FieldOfficersView'
-import { SglgSubindicatorBreakdown } from '@/components/SglgSubindicatorBreakdown'
 
 const GUEST_CODE = 'DOSEDBEST!'
 
@@ -203,7 +202,6 @@ export function App() {
     })
   }, [baseRows, bandFilter, latest])
   const years = yearsInScope()
-  const sglgSubindicator = useMemo(() => sglgSubindicatorForCurrentSelection(), [tick])
 
   const completeLogin = (next: Role) => {
     setRole(next)
@@ -614,16 +612,6 @@ export function App() {
                     <ScoreComposition rows={rows} />
                   </div>
                 </section>
-
-                {store.state.audit === 'SGLG' && (
-                  <section className="rounded-xl border p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <h2 className="font-medium">SGLG Subindicator Breakdown (2024)</h2>
-                      <div className="text-xs text-muted-foreground">Select an LGU to view pass/fail per area</div>
-                    </div>
-                    <SglgSubindicatorBreakdown record={sglgSubindicator} />
-                  </section>
-                )}
 
                 <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                   <div className="rounded-xl border p-4">

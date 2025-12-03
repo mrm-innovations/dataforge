@@ -156,6 +156,17 @@ export function sglgSubindicatorForCurrentSelection() {
   return null
 }
 
+export function sglgSubindicatorFor(province?: string, lgu?: string) {
+  const key = sglgKey(province, lgu)
+  if (key && store.SGLG_SUB_MAP[key]) return store.SGLG_SUB_MAP[key]
+  if (!province && lgu) {
+    const target = normalizeName(lgu)
+    const found = Object.entries(store.SGLG_SUB_MAP).find(([k]) => k.endsWith(`|${target}`))
+    return found?.[1] || null
+  }
+  return null
+}
+
 async function loadAuditConfig(canon: any, base: string){
   try {
     const r = await fetch(`${base}audits.config.json`, { cache: 'no-store' })
