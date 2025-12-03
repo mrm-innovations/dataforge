@@ -20,12 +20,24 @@ export type Row = {
   population: number | null
 } & Record<string, number | string | null>
 
+export type SglgSubindicator = {
+  region: string
+  province: string
+  lgu: string
+  year: number
+  overall: string | null
+  passed_areas: number | null
+  categories: Array<{ key: string; label: string; status: string }>
+}
+
 export const store = {
   CANON: null as Canon | null,
   LGUS: [] as Canon['lgus'],
   AUDITS: {} as Record<string, any>,
   YEARS: [] as number[],
   rawRows: [] as Row[],
+  SGLG_SUBS: [] as SglgSubindicator[],
+  SGLG_SUB_MAP: {} as Record<string, SglgSubindicator>,
   totals: { population: 0, provinces: 0, hucs: 0, lgus: 0 },
   state: { audit: 'ADAC', region: '', province: '', lgu: '', type: '', startYear: null, endYear: null } as State,
 }
@@ -81,6 +93,7 @@ export async function loadCanon() {
   store.LGUS = (canon.lgus || []).slice()
   store.AUDITS = canon.meta?.audits || {}
 
+  await loadSglgSubindicators(base)
   await loadDemographyOverlay(base)
   recomputeTotals()
 }
@@ -98,6 +111,49 @@ function normalizeName(s: string){
     .replace(/\s*\(capital\)/g,'')
     .replace(/^city of\s+/, '')
     .replace(/[^a-z0-9]+/g, '')
+}
+
+const sglgKey = (province?: string, lgu?: string) => `${normalizeName(province)}|${normalizeName(lgu)}`
+
+async function loadSglgSubindicators(base: string) {
+  const dir = `${location.pathname.replace(/\/[^/]*$/, '/') || '/'}`
+  const candidates = [`${base}sglg_subindicators_2024.json`, `${dir}sglg_subindicators_2024.json`, `/sglg_subindicators_2024.json`]
+  let data: SglgSubindicator[] | null = null
+  for (const url of candidates) {
+    try {
+      const resp = await fetch(url, { cache: 'no-store' })
+      if (resp.ok) {
+        const json = (await resp.json()) as any[]
+        data = Array.isArray(json) ? (json as SglgSubindicator[]) : null
+        break
+      }
+    } catch {}
+  }
+  if (!Array.isArray(data)) {
+    store.SGLG_SUBS = []
+    store.SGLG_SUB_MAP = {}
+    return
+  }
+  const map: Record<string, SglgSubindicator> = {}
+  data.forEach((rec) => {
+    const key = sglgKey(rec.province, rec.lgu)
+    if (key) map[key] = rec
+  })
+  store.SGLG_SUBS = data
+  store.SGLG_SUB_MAP = map
+}
+
+export function sglgSubindicatorForCurrentSelection() {
+  if (String(store.state.audit).toUpperCase() !== 'SGLG') return null
+  const key = sglgKey(store.state.province, store.state.lgu)
+  if (key && store.SGLG_SUB_MAP[key]) return store.SGLG_SUB_MAP[key]
+  // fallback match on LGU only if province not set
+  if (!store.state.province && store.state.lgu) {
+    const target = normalizeName(store.state.lgu)
+    const found = Object.entries(store.SGLG_SUB_MAP).find(([k]) => k.endsWith(`|${target}`))
+    return found?.[1] || null
+  }
+  return null
 }
 
 async function loadAuditConfig(canon: any, base: string){
