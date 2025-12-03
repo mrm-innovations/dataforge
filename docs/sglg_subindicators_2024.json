@@ -1,0 +1,3182 @@
+[
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Cotabato",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Alamada",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 7,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Carmen",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 5,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "failed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "failed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Kabacan",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "City of Kidapawan",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Libungan",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 8,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Magpet",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Makilala",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 3,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "failed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "failed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "failed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Matalam",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 6,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "failed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "failed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Midsayap",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "M'Lang",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Pigcawayan",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Pikit",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 6,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "failed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "failed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "failed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "President Roxas",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 7,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "failed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Tulunan",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 7,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "failed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "failed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Antipas",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 9,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Banisilan",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 4,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "failed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "failed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "failed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Aleosan",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Cotabato",
+    "lgu": "Arakan",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 6,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "failed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "South Cotabato",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "Banga",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 3,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "failed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "failed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "failed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "City of Koronadal",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "Norala",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 7,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "Polomolok",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "Surallah",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 6,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "Tampakan",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 6,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "failed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "Tantangan",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "T'Boli",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 6,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "failed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "Tupi",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "Santo Niño",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 6,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "South Cotabato",
+    "lgu": "Lake Sebu",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 6,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "failed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "failed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Sultan Kudarat",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Bagumbayan",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Columbio",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Esperanza",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 9,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Isulan",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 9,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Kalamansig",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Lebak",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 6,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "failed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Lutayan",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Lambayong",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Palimbang",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "President Quirino",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "City of Tacurong",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sultan Kudarat",
+    "lgu": "Sen. Ninoy Aquino",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 5,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "failed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "failed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "failed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sarangani",
+    "lgu": "Sarangani",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sarangani",
+    "lgu": "Alabel",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sarangani",
+    "lgu": "Glan",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 9,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sarangani",
+    "lgu": "Kiamba",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 9,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "failed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sarangani",
+    "lgu": "Maasim",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sarangani",
+    "lgu": "Maitum",
+    "year": 2024,
+    "overall": "failed",
+    "passed_areas": 9,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "failed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sarangani",
+    "lgu": "Malapatan",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "Sarangani",
+    "lgu": "Malungon",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "region": "REGION 12",
+    "province": "HUC",
+    "lgu": "General Santos City",
+    "year": 2024,
+    "overall": "passed",
+    "passed_areas": 10,
+    "categories": [
+      {
+        "key": "financial_admin",
+        "label": "Financial Administration",
+        "status": "passed"
+      },
+      {
+        "key": "disaster_prep",
+        "label": "Disaster Preparedness",
+        "status": "passed"
+      },
+      {
+        "key": "social_protection",
+        "label": "Social Protection",
+        "status": "passed"
+      },
+      {
+        "key": "health_compliance",
+        "label": "Health Compliance",
+        "status": "passed"
+      },
+      {
+        "key": "sustainable_education",
+        "label": "Sustainable Education",
+        "status": "passed"
+      },
+      {
+        "key": "business_friendliness",
+        "label": "Business Friendliness",
+        "status": "passed"
+      },
+      {
+        "key": "peace_order",
+        "label": "Safety, Peace, and Order",
+        "status": "passed"
+      },
+      {
+        "key": "environment",
+        "label": "Environmental Management",
+        "status": "passed"
+      },
+      {
+        "key": "tourism_culture_arts",
+        "label": "Tourism, Heritage Dev, Culture and the Arts",
+        "status": "passed"
+      },
+      {
+        "key": "youth_dev",
+        "label": "Youth Development",
+        "status": "passed"
+      }
+    ]
+  }
+]
