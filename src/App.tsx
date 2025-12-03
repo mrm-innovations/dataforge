@@ -94,7 +94,7 @@ function applyCanonicalNames(list: Official[]): Official[] {
 }
 
 export function App() {
-  const [, setTick] = useState(0)
+  const [tick, setTick] = useState(0)
   const [tab, setTab] = useState<'dashboard' | 'demography' | 'officials' | 'field-officers' | 'about' | 'settings'>('dashboard')
   const [role, setRole] = useState<Role>('none')
   const [authError, setAuthError] = useState<string>('')
