@@ -1,0 +1,3873 @@
+[
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "ALAMADA",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "CARMEN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "KABACAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "CITY OF KIDAPAWAN (Capital)",
+    "type": "CC",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "LIBUNGAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "MAGPET",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "MAKILALA",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "MATALAM",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "MIDSAYAP",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "M'LANG",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "PIGKAWAYAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "PIKIT",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "PRESIDENT ROXAS",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "TULUNAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "ANTIPAS",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "BANISILAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 0,
+    "gfh_status": "failed",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "ALEOSAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "COTABATO (NORTH COTABATO)",
+    "lgu": "ARAKAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "BANGA",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "CITY OF KORONADAL (Capital)",
+    "type": "CC",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "NORALA",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "POLOMOLOK",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "SURALLAH",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "TAMPAKAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "TANTANGAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "T'BOLI",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "TUPI",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "SANTO NIÑO",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SOUTH COTABATO",
+    "lgu": "LAKE SEBU",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "BAGUMBAYAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "COLUMBIO",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "ESPERANZA",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "ISULAN (Capital)",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "KALAMANSIG",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "LEBAK",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "LUTAYAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "LAMBAYONG (MARIANO MARCOS)",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "PALIMBANG",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "PRESIDENT QUIRINO",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "CITY OF TACURONG",
+    "type": "CC",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SULTAN KUDARAT",
+    "lgu": "SEN. NINOY AQUINO",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SARANGANI",
+    "lgu": "ALABEL (Capital)",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SARANGANI",
+    "lgu": "GLAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SARANGANI",
+    "lgu": "KIAMBA",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 0,
+    "overall_status": "failed",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SARANGANI",
+    "lgu": "MAASIM",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SARANGANI",
+    "lgu": "MAITUM",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SARANGANI",
+    "lgu": "MALAPATAN",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "SARANGANI",
+    "lgu": "MALUNGON",
+    "type": "M",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "CITY OF GENERAL SANTOS",
+    "lgu": "CITY OF GENERAL SANTOS (DADIANGAS)",
+    "type": "HUC",
+    "year": 2024,
+    "criteria": "financial_admin",
+    "overall_value": 1,
+    "overall_status": "met",
+    "gfh_value": 1,
+    "gfh_status": "met",
+    "indicators": [
+      {
+        "key": "coa_2022_process",
+        "label": "COA 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_2023_process",
+        "label": "COA 2023 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "coa_process",
+        "label": "COA Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fdp_process",
+        "label": "FDP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lrg_process",
+        "label": "LRG Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "nta",
+        "label": "National Tax Allotment",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "pcf_sglg_if_2022",
+        "label": "2022 PCF/SGLG IF",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "pcf_2019",
+        "label": "2019 PCF",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "pcf_process",
+        "label": "PCF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lgsf_process",
+        "label": "LGSF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "annual_budget_process",
+        "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  }
+]

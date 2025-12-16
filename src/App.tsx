@@ -28,6 +28,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { LocalOfficialsView } from '@/components/LocalOfficialsView'
 import { FieldOfficersView, type FieldOfficer } from '@/components/FieldOfficersView'
+import { SglgCriteriaTab } from '@/components/SglgCriteriaTab'
 
 const GUEST_CODE = 'DOSEDBEST!'
 
@@ -94,7 +95,7 @@ function applyCanonicalNames(list: Official[]): Official[] {
 
 export function App() {
   const [tick, setTick] = useState(0)
-  const [tab, setTab] = useState<'dashboard' | 'demography' | 'officials' | 'field-officers' | 'about' | 'settings'>('dashboard')
+  const [tab, setTab] = useState<'dashboard' | 'sglg' | 'demography' | 'officials' | 'field-officers' | 'about' | 'settings'>('dashboard')
   const [role, setRole] = useState<Role>('none')
   const [authError, setAuthError] = useState<string>('')
   const [guestCode, setGuestCode] = useState<string>('')
@@ -464,6 +465,14 @@ export function App() {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-8 9 8"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 21V9h6v12"/></svg>
                 <span>Dashboard</span>
               </button>
+              <button onClick={() => setTab('sglg')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 4l6 4-6 4-6-4 6-4z"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 12l6 4 6-4"/></svg>
+                <span>SGLG</span>
+              </button>
+              <button onClick={() => setTab('sglg')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 4l6 4-6 4-6-4 6-4z"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 12l6 4 6-4"/></svg>
+                <span>SGLG</span>
+              </button>
             <button onClick={() => setTab('demography')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='demography' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" d="M4 19v-6m6 6V5m6 14v-9"/></svg>
               <span>Demography</span>
@@ -520,10 +529,14 @@ export function App() {
               <h1 className="text-base font-medium">
                 {tab === 'dashboard'
                   ? 'Dashboard'
+                  : tab === 'sglg'
+                  ? 'SGLG'
                   : tab === 'demography'
                   ? 'Demography'
                   : tab === 'officials'
                   ? 'Local Officials'
+                  : tab === 'field-officers'
+                  ? 'Field Officers'
                   : tab === 'settings'
                   ? 'Settings'
                   : 'About'}
@@ -673,6 +686,16 @@ export function App() {
                   <RecordsTable rows={rows} />
                 </section>
               </>
+            )}
+
+            {tab === 'sglg' && (
+              <section className="rounded-xl border p-4 space-y-3">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-lg font-medium">SGLG Criteria</h2>
+                  <div className="text-xs text-muted-foreground">Filter LGUs by indicator/status</div>
+                </div>
+                <SglgCriteriaTab />
+              </section>
             )}
 
             {tab === 'officials' && officials && (

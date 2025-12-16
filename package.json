@@ -13,6 +13,7 @@
     "deploy:apache":  "npm run build:apache \u0026\u0026 node scripts/deploy-apache.js",
     "clean": "node scripts/clean-workspace.js",
                     "fetch:sglg-subindicators": "node scripts/fetch_sglg_subindicators.js",
+                    "fetch:sglg-fin-admin": "node scripts/fetch_sglg_financial_admin.js",
                     "export:audit": "node scripts/export-audit-json.js", "export:audit:csv": "node scripts/export-audit-csv.js",
                     "ingest:audit": "node scripts/ingest-audit.js",
                     "preview":  "vite preview"

@@ -30,6 +30,19 @@ export type SglgSubindicator = {
   categories: Array<{ key: string; label: string; status: string }>
 }
 
+export type SglgCriteriaRecord = {
+  province: string
+  lgu: string
+  type?: string
+  year: number
+  criteria: string
+  indicators: Array<{ key: string; label: string; value: number | null; status: string | null }>
+  overall_value?: number | null
+  overall_status?: string | null
+  gfh_value?: number | null
+  gfh_status?: string | null
+}
+
 export const store = {
   CANON: null as Canon | null,
   LGUS: [] as Canon['lgus'],
@@ -38,6 +51,8 @@ export const store = {
   rawRows: [] as Row[],
   SGLG_SUBS: [] as SglgSubindicator[],
   SGLG_SUB_MAP: {} as Record<string, SglgSubindicator>,
+  SGLG_CRITERIA: [] as Array<{ key: string; label: string; year: number }>,
+  SGLG_CRITERIA_DATA: {} as Record<string, SglgCriteriaRecord[]>,
   totals: { population: 0, provinces: 0, hucs: 0, lgus: 0 },
   state: { audit: 'ADAC', region: '', province: '', lgu: '', type: '', startYear: null, endYear: null } as State,
 }
@@ -93,6 +108,7 @@ export async function loadCanon() {
   store.LGUS = (canon.lgus || []).slice()
   store.AUDITS = canon.meta?.audits || {}
 
+  await loadSglgCriteria(base)
   await loadSglgSubindicators(base)
   await loadDemographyOverlay(base)
   recomputeTotals()
@@ -165,6 +181,39 @@ export function sglgSubindicatorFor(province?: string, lgu?: string) {
     return found?.[1] || null
   }
   return null
+}
+
+const SGLG_CRITERIA_FILES: Array<{ key: string; label: string; year: number; file: string }> = [
+  { key: 'financial_admin', label: 'Financial Administration', year: 2024, file: 'sglg_financial_admin_2024.json' },
+]
+
+async function loadSglgCriteria(base: string) {
+  const dir = `${location.pathname.replace(/\/[^/]*$/, '/') || '/'}`
+  const criteriaList: Array<{ key: string; label: string; year: number }> = []
+  const dataMap: Record<string, SglgCriteriaRecord[]> = {}
+
+  for (const item of SGLG_CRITERIA_FILES) {
+    const candidates = [`${base}${item.file}`, `${dir}${item.file}`, `/${item.file}`]
+    let records: SglgCriteriaRecord[] | null = null
+    for (const url of candidates) {
+      try {
+        const resp = await fetch(url, { cache: 'no-store' })
+        if (resp.ok) {
+          const json = (await resp.json()) as any[]
+          records = Array.isArray(json) ? (json as SglgCriteriaRecord[]) : null
+          break
+        }
+      } catch {}
+    }
+    if (records && records.length) {
+      const key = `${item.year}:${item.key}`
+      dataMap[key] = records
+      criteriaList.push({ key: item.key, label: item.label, year: item.year })
+    }
+  }
+
+  store.SGLG_CRITERIA = criteriaList
+  store.SGLG_CRITERIA_DATA = dataMap
 }
 
 async function loadAuditConfig(canon: any, base: string){
