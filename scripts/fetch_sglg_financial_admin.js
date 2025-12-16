@@ -107,7 +107,7 @@ async function main() {
   const rows = parseCsv(csvText)
   if (!rows.length) throw new Error('CSV empty')
   const [headerRow, ...dataRows] = rows
-  const headers = headerRow.map((h) => h.trim())
+  const headers = headerRow.map((h) => h.replace(/\s+/g, ' ').trim())
   const idx = (name) => headers.findIndex((h) => h.toLowerCase() === name.toLowerCase())
   const get = (r, name) => {
     const i = idx(name)
