@@ -469,10 +469,6 @@ export function App() {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 4l6 4-6 4-6-4 6-4z"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 12l6 4 6-4"/></svg>
                 <span>SGLG</span>
               </button>
-              <button onClick={() => setTab('sglg')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 4l6 4-6 4-6-4 6-4z"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 12l6 4 6-4"/></svg>
-                <span>SGLG</span>
-              </button>
             <button onClick={() => setTab('demography')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='demography' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" d="M4 19v-6m6 6V5m6 14v-9"/></svg>
               <span>Demography</span>
