@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { store } from '@/lib/store'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Label } from '@/components/ui/label'
@@ -24,6 +24,19 @@ export function SglgCriteriaTab() {
   const [year, setYear] = useState<number | null>(years[0] ?? null)
   const criteriaForYear = useMemo(() => criteriaList.filter((c) => c.year === year), [criteriaList, year])
   const [criteriaKey, setCriteriaKey] = useState<string>(criteriaForYear[0]?.key || '')
+
+  // Keep year/criteria in sync with loaded criteria list
+  useEffect(() => {
+    if (!criteriaList.length) return
+    const latestYear = years[0]
+    if (year == null || !years.includes(year)) setYear(latestYear)
+    const forYear = criteriaList.filter((c) => c.year === (year ?? latestYear))
+    if (forYear.length) {
+      if (!criteriaKey || !forYear.some((c) => c.key === criteriaKey)) {
+        setCriteriaKey(forYear[0].key)
+      }
+    }
+  }, [criteriaList, years, year, criteriaKey])
   const dataKey = year && criteriaKey ? `${year}:${criteriaKey}` : ''
   const records = dataKey ? store.SGLG_CRITERIA_DATA[dataKey] || [] : []
 
@@ -38,6 +51,11 @@ export function SglgCriteriaTab() {
   const [provinceFilter, setProvinceFilter] = useState<string>('__all__')
   const [typeFilter, setTypeFilter] = useState<string>('__all__')
   const [indicatorKey, setIndicatorKey] = useState<string>(allIndicators[0]?.key || '')
+  useEffect(() => {
+    if (allIndicators.length && (!indicatorKey || !allIndicators.some((i) => i.key === indicatorKey))) {
+      setIndicatorKey(allIndicators[0].key)
+    }
+  }, [allIndicators, indicatorKey])
   const [statusFilter, setStatusFilter] = useState<string>('__all__')
 
   const filtered = useMemo(() => {
