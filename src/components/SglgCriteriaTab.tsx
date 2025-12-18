@@ -135,18 +135,18 @@ export function SglgCriteriaTab() {
         <div className="flex flex-col gap-1">
           <Label className="text-xs">Criteria</Label>
           <Select value={criteriaKey} onValueChange={(v) => setCriteriaKey(v)}>
-            <SelectTrigger><SelectValue placeholder="Select criteria" /></SelectTrigger>
+            <SelectTrigger className="w-full justify-between text-left"><SelectValue placeholder="Select criteria" /></SelectTrigger>
             <SelectContent>
-              {criteriaForYear.map((c) => (<SelectItem key={c.key} value={c.key}>{c.label}</SelectItem>))}
+              {criteriaOptions.map((c) => (<SelectItem key={c.key} value={c.key}>{c.label}</SelectItem>))}
             </SelectContent>
           </Select>
         </div>
         <div className="flex flex-col gap-1">
           <Label className="text-xs">Indicator</Label>
           <Select value={indicatorKey} onValueChange={(v) => setIndicatorKey(v)}>
-            <SelectTrigger><SelectValue placeholder="Select indicator" /></SelectTrigger>
+            <SelectTrigger className="w-full justify-between text-left"><SelectValue placeholder="Select indicator" /></SelectTrigger>
             <SelectContent>
-              {allIndicators.map((i) => (<SelectItem key={i.key} value={i.key}>{i.label}</SelectItem>))}
+              {indicatorOptions.map((i) => (<SelectItem key={i.key} value={i.key}>{i.label}</SelectItem>))}
             </SelectContent>
           </Select>
         </div>
