@@ -23,14 +23,18 @@ export function SglgCriteriaTab() {
   const years = unique(criteriaList.map((c) => c.year)).sort((a, b) => b - a)
   const [year, setYear] = useState<number | null>(years[0] ?? null)
   const criteriaForYear = useMemo(() => criteriaList.filter((c) => c.year === year), [criteriaList, year])
-  const [criteriaKey, setCriteriaKey] = useState<string>(criteriaForYear[0]?.key || '')
+  const criteriaOptions = useMemo(
+    () => criteriaForYear.filter((c) => c.key && c.label),
+    [criteriaForYear],
+  )
+  const [criteriaKey, setCriteriaKey] = useState<string>(criteriaOptions[0]?.key || '')
 
   // Keep year/criteria in sync with loaded criteria list
   useEffect(() => {
     if (!criteriaList.length) return
     const latestYear = years[0]
     if (year == null || !years.includes(year)) setYear(latestYear)
-    const forYear = criteriaList.filter((c) => c.year === (year ?? latestYear))
+    const forYear = criteriaList.filter((c) => c.year === (year ?? latestYear)).filter((c) => c.key && c.label)
     if (forYear.length) {
       if (!criteriaKey || !forYear.some((c) => c.key === criteriaKey)) {
         setCriteriaKey(forYear[0].key)
@@ -44,18 +48,23 @@ export function SglgCriteriaTab() {
   const types = useMemo(() => unique(records.map((r) => (r.type || '').trim()).filter(Boolean)).sort(), [records])
   const allIndicators = useMemo(() => {
     const keys = new Map<string, string>()
-    records.forEach((r) => (r.indicators || []).forEach((i) => keys.set(i.key, i.label)))
+    records.forEach((r) => (r.indicators || []).forEach((i) => {
+      const k = (i.key || '').trim()
+      const lbl = (i.label || '').trim()
+      if (k && lbl) keys.set(k, lbl)
+    }))
     return Array.from(keys.entries()).map(([key, label]) => ({ key, label }))
   }, [records])
 
   const [provinceFilter, setProvinceFilter] = useState<string>('__all__')
   const [typeFilter, setTypeFilter] = useState<string>('__all__')
-  const [indicatorKey, setIndicatorKey] = useState<string>(allIndicators[0]?.key || '')
+  const indicatorOptions = useMemo(() => allIndicators.filter((i) => i.key && i.label), [allIndicators])
+  const [indicatorKey, setIndicatorKey] = useState<string>(indicatorOptions[0]?.key || '')
   useEffect(() => {
-    if (allIndicators.length && (!indicatorKey || !allIndicators.some((i) => i.key === indicatorKey))) {
-      setIndicatorKey(allIndicators[0].key)
+    if (indicatorOptions.length && (!indicatorKey || !indicatorOptions.some((i) => i.key === indicatorKey))) {
+      setIndicatorKey(indicatorOptions[0].key)
     }
-  }, [allIndicators, indicatorKey])
+  }, [indicatorOptions, indicatorKey])
   const [statusFilter, setStatusFilter] = useState<string>('__all__')
 
   const filtered = useMemo(() => {
