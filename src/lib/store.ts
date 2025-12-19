@@ -186,6 +186,7 @@ export function sglgSubindicatorFor(province?: string, lgu?: string) {
 const SGLG_CRITERIA_FILES: Array<{ key: string; label: string; year: number; file: string }> = [
   { key: 'financial_admin', label: 'Financial Administration', year: 2024, file: 'sglg_financial_admin_2024.json' },
   { key: 'disaster_prep', label: 'Disaster Preparedness', year: 2024, file: 'sglg_disaster_prep_2024.json' },
+  { key: 'social_protection', label: 'Social Protection and Sensitivity', year: 2024, file: 'sglg_social_protection_2024.json' },
 ]
 
 async function loadSglgCriteria(base: string) {
