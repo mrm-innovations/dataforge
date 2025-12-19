@@ -609,7 +609,7 @@ export function App() {
               <>
                 <MetricCards rows={rows} years={years} onBandFilter={(b) => setBandFilter(b)} />
 
-                <section className="grid grid-cols-1 xl:grid-cols-[minmax(0,1.6fr)_minmax(0,0.8fr)] gap-4">
+                <section className="grid grid-cols-1 xl:grid-cols-2 gap-4">
                   <MapView rows={rows} />
                   <div className="rounded-xl border p-4">
                     <div className="flex items-center justify-between mb-2">
