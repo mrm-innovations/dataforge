@@ -1,35 +1,33 @@
 #!/usr/bin/env node
 /**
- * Download SGLG 2024 Disaster Preparedness indicators and build JSON for the app.
- * Source sheet: 1hSiIggm7N20b7ORT9EJUFk9ivRkvjP9ShxYjvPtFMFQ (gid 0)
- * Output: public/sglg_disaster_prep_2024.json
+ * Download SGLG 2024 Health Compliance & Responsiveness indicators and build JSON for the app.
+ * Source sheet: 1-pTK_gXn1HpKFkJQH4k2qpYDOe0I1lwiCv2_qCIa3kg (gid 0)
+ * Output: public/sglg_health_compliance_2024.json
  */
 const https = require('https')
 const fs = require('node:fs')
 const path = require('node:path')
 
-const SHEET_ID = '1hSiIggm7N20b7ORT9EJUFk9ivRkvjP9ShxYjvPtFMFQ'
+const SHEET_ID = '1-pTK_gXn1HpKFkJQH4k2qpYDOe0I1lwiCv2_qCIa3kg'
 const GID = '0'
 const YEAR = 2024
-const CSV_PATH = path.join('datasets', 'sglg_disaster_prep_2024.csv')
-const OUTPUT_PATH = path.join('public', 'sglg_disaster_prep_2024.json')
+const CSV_PATH = path.join('datasets', 'sglg_health_compliance_2024.csv')
+const OUTPUT_PATH = path.join('public', 'sglg_health_compliance_2024.json')
 
 const COLUMNS = [
-  ['2023 National Gawad Kalasag (GK)', 'gk_2023', '2023 National Gawad Kalasag'],
-  ['Functional LDRRMC Process', 'functional_ldrrmc', 'Functional LDRRMC Process'],
-  ['LDRRMO Process', 'ldrrmo_process', 'LDRRMO Process'],
-  ['CLUP Processs', 'clup_process', 'CLUP Process'],
-  ['LDRRM PLAN', 'ldrrm_plan', 'LDRRM Plan'],
-  ['LCCAP', 'lccap', 'LCCAP'],
-  ['Contingency Plan Process', 'contingency_plan_process', 'Contingency Plan Process'],
-  ['LDRRM Fund Process', 'ldrrm_fund_process', 'LDRRM Fund Process'],
-  ['EWS Process', 'ews_process', 'EWS Process'],
-  ['pre-emptive and forced evacuation mechanism', 'evacuation_mechanism', 'Pre-emptive/Forced Evacuation Mechanism'],
-  ['Evac Management process Process', 'evac_management_process', 'Evac Management Process'],
-  ['LDRRM Operations Center', 'ldrrm_operations_center', 'LDRRM Operations Center'],
-  ['Incident Command System Process', 'ics_process', 'Incident Command System Process'],
-  ['CBDRRM PLAN Process', 'cbddrm_plan_process', 'CBDRRM Plan Process'],
-  ['GK SEAL Process', 'gk_seal_process', 'GK Seal Process'],
+  ['LIPH PROCESS', 'liph_process', 'LIPH Process'],
+  ['Drinking Water Process', 'drinking_water_process', 'Drinking Water Process'],
+  ['Sanitation Services Process', 'sanitation_services_process', 'Sanitation Services Process'],
+  ['TB Notification Rate Process', 'tb_notification_rate_process', 'TB Notification Rate Process'],
+  ['TB Success Rate Process', 'tb_success_rate_process', 'TB Success Rate Process'],
+  ['Stunting Rate Process', 'stunting_rate_process', 'Stunting Rate Process'],
+  ['Fully-immunized child (FIC) Process', 'fic_process', 'Fully-immunized child (FIC) Process'],
+  ['Prenatal check-ups in CY 2022 PRocess', 'prenatal_checkups_process', 'Prenatal check-ups in CY 2022 Process'],
+  ['Local Health Board Process', 'local_health_board_process', 'Local Health Board Process'],
+  ['PhilPen Process', 'philpen_process', 'PhilPen Process'],
+  ['Konsulta Provider Process', 'konsulta_provider_process', 'Konsulta Provider Process'],
+  ['DRMM-H Process', 'drmmh_process', 'DRMM-H Process'],
+  ['LESU', 'lesu', 'LESU'],
   ['Overall Process', 'overall_process', 'Overall Process'],
 ]
 
@@ -111,8 +109,7 @@ async function main() {
   const rows = parseCsv(csvText)
   if (!rows.length) throw new Error('CSV empty')
   const [headerRowRaw, ...dataRows] = rows
-  const headerRow = headerRowRaw.map((h) => h.replace(/\s+/g, ' ').trim())
-  const headers = headerRow
+  const headers = headerRowRaw.map((h) => h.replace(/\s+/g, ' ').trim())
   const idx = (name) => headers.findIndex((h) => h.toLowerCase() === name.toLowerCase())
   const get = (r, name) => {
     const i = idx(name)
@@ -136,7 +133,7 @@ async function main() {
       lgu,
       type,
       year: YEAR,
-      criteria: 'disaster_prep',
+      criteria: 'health_compliance',
       indicators,
     })
   }

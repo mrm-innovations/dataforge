@@ -468,7 +468,7 @@ export function LocalOfficialsView({ officials }: Props) {
                   <TableCell className="py-3 text-gray-900 font-medium">{formatOfficialName(o)}</TableCell>
                   <TableCell className="py-3">
                     <span
-                      className="inline-flex items-center px-2 py-0.5 rounded-md border text-[12px] font-medium"
+                      className="inline-flex items-center px-2 py-0.5 rounded-md border text-[12px] font-normal"
                       style={badgeStyle(sexColorMap[canonical] || sexColorMap.Unspecified)}
                     >
                       {canonical}
@@ -477,7 +477,7 @@ export function LocalOfficialsView({ officials }: Props) {
                   <TableCell className="py-3 text-gray-800">{party}</TableCell>
                   <TableCell className="py-3">
                     <span
-                      className="inline-flex items-center px-2 py-0.5 rounded-md border text-[12px] font-medium"
+                      className="inline-flex items-center px-2 py-0.5 rounded-md border text-[12px] font-normal"
                       style={badgeStyle(termColor(o.term))}
                     >
                       {term}

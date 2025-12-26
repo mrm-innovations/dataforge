@@ -1,0 +1,3341 @@
+[
+  {
+    "province": "Cotabato",
+    "lgu": "Alamada",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Aleosan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Antipas",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Arakan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Banisilan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Carmen",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "City of Kidapawan",
+    "type": "Component City",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Kabacan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Libungan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Magpet",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Makilala",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Matalam",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Midsayap",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "M'Lang",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Pigcawayan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Pikit",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "President Roxas",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Tulunan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Banga",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "City of Koronadal",
+    "type": "Component City",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Lake Sebu",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Norala",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Polomolok",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Santo Niño",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Surallah",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Tampakan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Tantangan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "T'Boli",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Tupi",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Bagumbayan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "City of Tacurong",
+    "type": "Component City",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Columbio",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Esperanza",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Isulan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Kalamansig",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Lambayong",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Lebak",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Lutayan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Palimbang",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "President Quirino",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Sen. Ninoy Aquino",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Alabel",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Glan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Kiamba",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Maasim",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Maitum",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Malapatan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Malungon",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "HUC",
+    "lgu": "General Santos City",
+    "type": "Highly Urbanized City",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Cotabato",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "South Cotabato",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Sultan Kudarat",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Sarangani",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "environmental_management",
+    "indicators": [
+      {
+        "key": "swmb",
+        "label": "Solid Waste Management Board (SWMB)",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "dumpsite_process",
+        "label": "Dumpsite Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "swmp_process",
+        "label": "SWMP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_mrf_process",
+        "label": "Functional MRF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "access_to_slf_process",
+        "label": "Access to SLF Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "biodiversity_conservation_process",
+        "label": "Biodiversity Conservation and Enhancement in Wetlands and Waterbodies Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "water_quality_management_process",
+        "label": "Water Quality Management Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "public_parks_green_spaces",
+        "label": "Public Parks and Green Spaces",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  }
+]

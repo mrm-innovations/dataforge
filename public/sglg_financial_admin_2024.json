@@ -11,18 +11,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -47,18 +35,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -75,6 +51,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -90,18 +78,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 0,
@@ -126,18 +102,6 @@
         "status": "failed"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -154,6 +118,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -169,18 +145,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -205,18 +169,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -231,6 +183,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -248,18 +212,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -284,18 +236,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -310,6 +250,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -327,18 +279,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 0,
@@ -363,18 +303,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -391,6 +319,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -406,18 +346,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -442,18 +370,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -468,6 +384,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -485,18 +413,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 0,
@@ -521,18 +437,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -549,6 +453,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -564,18 +480,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -600,18 +504,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -628,6 +520,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -643,18 +547,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -679,18 +571,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -705,6 +585,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -722,18 +614,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -758,18 +638,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -784,6 +652,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -801,18 +681,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -837,18 +705,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -863,6 +719,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -880,18 +748,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -916,18 +772,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -942,6 +786,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -959,18 +815,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -995,18 +839,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -1021,6 +853,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1038,18 +882,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -1074,18 +906,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -1100,6 +920,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1117,18 +949,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -1153,18 +973,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -1181,6 +989,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -1195,18 +1015,6 @@
     "gfh_value": 0,
     "gfh_status": "failed",
     "indicators": [
-      {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
       {
         "key": "coa_process",
         "label": "COA Process",
@@ -1232,18 +1040,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -1258,6 +1054,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 0,
         "status": "failed"
       }
@@ -1275,18 +1083,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -1311,18 +1107,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -1337,6 +1121,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1354,18 +1150,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -1390,18 +1174,6 @@
         "status": "failed"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -1418,6 +1190,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -1433,18 +1217,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -1469,18 +1241,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -1497,6 +1257,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -1511,18 +1283,6 @@
     "gfh_value": 1,
     "gfh_status": "met",
     "indicators": [
-      {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 1,
-        "status": "met"
-      },
       {
         "key": "coa_process",
         "label": "COA Process",
@@ -1548,18 +1308,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -1574,6 +1322,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1591,18 +1351,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -1627,18 +1375,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -1655,6 +1391,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -1669,18 +1417,6 @@
     "gfh_value": 1,
     "gfh_status": "met",
     "indicators": [
-      {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
       {
         "key": "coa_process",
         "label": "COA Process",
@@ -1706,18 +1442,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -1732,6 +1456,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1749,18 +1485,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -1785,18 +1509,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -1813,6 +1525,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -1827,18 +1551,6 @@
     "gfh_value": 1,
     "gfh_status": "met",
     "indicators": [
-      {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
       {
         "key": "coa_process",
         "label": "COA Process",
@@ -1864,18 +1576,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -1890,6 +1590,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1907,18 +1619,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -1943,18 +1643,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -1969,6 +1657,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1986,18 +1686,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2022,18 +1710,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -2048,6 +1724,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2065,18 +1753,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2101,18 +1777,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -2127,6 +1791,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2144,18 +1820,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2180,18 +1844,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -2208,6 +1860,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -2222,18 +1886,6 @@
     "gfh_value": 1,
     "gfh_status": "met",
     "indicators": [
-      {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
       {
         "key": "coa_process",
         "label": "COA Process",
@@ -2259,18 +1911,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -2285,6 +1925,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2302,18 +1954,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2338,18 +1978,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -2364,6 +1992,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2381,18 +2021,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2417,18 +2045,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -2443,6 +2059,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2460,18 +2088,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2496,18 +2112,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -2524,6 +2128,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -2539,18 +2155,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2575,18 +2179,6 @@
         "status": "failed"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -2603,6 +2195,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -2617,18 +2221,6 @@
     "gfh_value": 1,
     "gfh_status": "met",
     "indicators": [
-      {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 1,
-        "status": "met"
-      },
       {
         "key": "coa_process",
         "label": "COA Process",
@@ -2654,18 +2246,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -2680,6 +2260,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2697,18 +2289,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2733,18 +2313,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -2759,6 +2327,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 0,
         "status": "failed"
       }
@@ -2776,18 +2356,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2812,18 +2380,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -2838,6 +2394,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2855,18 +2423,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2891,18 +2447,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -2917,6 +2461,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2934,18 +2490,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -2970,18 +2514,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -2996,6 +2528,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3013,18 +2557,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3049,18 +2581,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -3075,6 +2595,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3092,18 +2624,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3128,18 +2648,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -3154,6 +2662,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3171,18 +2691,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3207,18 +2715,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -3233,6 +2729,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3250,18 +2758,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3286,18 +2782,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -3312,6 +2796,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3329,18 +2825,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3365,18 +2849,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -3391,6 +2863,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3408,18 +2892,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3444,18 +2916,6 @@
         "status": "failed"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -3472,6 +2932,18 @@
         "label": "Annual Budget Process",
         "value": 1,
         "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
       }
     ]
   },
@@ -3486,18 +2958,6 @@
     "gfh_value": 1,
     "gfh_status": "met",
     "indicators": [
-      {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
       {
         "key": "coa_process",
         "label": "COA Process",
@@ -3523,18 +2983,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -3549,6 +2997,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3566,18 +3026,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3602,18 +3050,6 @@
         "status": "met"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -3628,6 +3064,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3645,18 +3093,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3681,18 +3117,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -3707,6 +3131,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3724,18 +3160,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3760,18 +3184,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -3786,6 +3198,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3803,18 +3227,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3839,18 +3251,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -3865,6 +3265,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3882,18 +3294,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3918,18 +3318,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -3944,6 +3332,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3961,18 +3361,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -3997,18 +3385,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -4023,6 +3399,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -4040,18 +3428,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -4076,18 +3452,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 1,
@@ -4102,6 +3466,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -4119,18 +3495,6 @@
     "gfh_status": "met",
     "indicators": [
       {
-        "key": "coa_2022_process",
-        "label": "COA 2022 Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "coa_2023_process",
-        "label": "COA 2023 Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "coa_process",
         "label": "COA Process",
         "value": 1,
@@ -4155,18 +3519,6 @@
         "status": "consideration"
       },
       {
-        "key": "pcf_sglg_if_2022",
-        "label": "2022 PCF/SGLG IF",
-        "value": 3,
-        "status": "na"
-      },
-      {
-        "key": "pcf_2019",
-        "label": "2019 PCF",
-        "value": 3,
-        "status": "na"
-      },
-      {
         "key": "pcf_process",
         "label": "PCF Process",
         "value": 3,
@@ -4181,6 +3533,18 @@
       {
         "key": "annual_budget_process",
         "label": "Annual Budget Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gfh_process",
+        "label": "Good Financial Housekeeping",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }

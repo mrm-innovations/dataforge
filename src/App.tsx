@@ -26,9 +26,13 @@ ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Tooltip,
 import { SettingsView } from '@/components/SettingsView'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { LocalOfficialsView } from '@/components/LocalOfficialsView'
 import { FieldOfficersView, type FieldOfficer } from '@/components/FieldOfficersView'
 import { SglgCriteriaTab } from '@/components/SglgCriteriaTab'
+import { SglgOverview } from '@/components/SglgOverview'
+import { Download } from 'lucide-react'
 
 const GUEST_CODE = 'DOSEDBEST!'
 
@@ -95,7 +99,7 @@ function applyCanonicalNames(list: Official[]): Official[] {
 
 export function App() {
   const [tick, setTick] = useState(0)
-  const [tab, setTab] = useState<'dashboard' | 'sglg' | 'demography' | 'officials' | 'field-officers' | 'about' | 'settings'>('dashboard')
+  const [tab, setTab] = useState<'dashboard' | 'sglg-overview' | 'sglg' | 'demography' | 'officials' | 'field-officers' | 'about' | 'settings'>('dashboard')
   const [role, setRole] = useState<Role>('none')
   const [authError, setAuthError] = useState<string>('')
   const [guestCode, setGuestCode] = useState<string>('')
@@ -190,6 +194,10 @@ export function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
   const [wide, setWide] = useState(false)
+  const [demoProvince, setDemoProvince] = useState<string>('__all__')
+  const [demoType, setDemoType] = useState<string>('__all__')
+  const [demoIncomeClass, setDemoIncomeClass] = useState<string>('__all__')
+  const [demoSearch, setDemoSearch] = useState<string>('')
   const baseRows = filterRows()
   useEffect(() => {
     if (role !== 'admin' && tab === 'settings') setTab('dashboard')
@@ -203,6 +211,64 @@ export function App() {
     })
   }, [baseRows, bandFilter, latest])
   const years = yearsInScope()
+  const demographyBaseRows = useMemo(() => store.rawRows || [], [tick])
+  const demographyProvinces = useMemo(
+    () => Array.from(new Set(demographyBaseRows.map((r) => r.province).filter(Boolean))).sort(),
+    [demographyBaseRows],
+  )
+  const demographyTypes = useMemo(
+    () => Array.from(new Set(demographyBaseRows.map((r) => r.type).filter(Boolean))).sort(),
+    [demographyBaseRows],
+  )
+  const demographyClasses = useMemo(
+    () =>
+      Array.from(
+        new Set(
+          demographyBaseRows
+            .map((r) => String((r as any).income_class ?? '').trim())
+            .filter((v) => v.length > 0),
+        ),
+      ).sort(),
+    [demographyBaseRows],
+  )
+  const demographyRows = useMemo(() => {
+    const q = demoSearch.trim().toLowerCase()
+    return demographyBaseRows.filter((r) => {
+      if (demoProvince !== '__all__' && r.province !== demoProvince) return false
+      if (demoType !== '__all__' && r.type !== demoType) return false
+      if (demoIncomeClass !== '__all__') {
+        const cls = String((r as any).income_class ?? '').trim()
+        if (cls !== demoIncomeClass) return false
+      }
+      if (q) {
+        const hay = `${r.province || ''} ${r.lgu || ''} ${r.type || ''}`.toLowerCase()
+        if (!hay.includes(q)) return false
+      }
+      return true
+    })
+  }, [demographyBaseRows, demoProvince, demoType, demoIncomeClass, demoSearch])
+  const exportDemographyCsv = useCallback(() => {
+    const headers = ['Province', 'LGU', 'Type', 'Income Class', 'Population']
+    const escape = (val: any) => {
+      const s = String(val ?? '')
+      return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
+    }
+    const rowsData = demographyRows.map((r) => [
+      r.province || '',
+      r.lgu || '',
+      r.type || '',
+      (r as any).income_class || '',
+      r.population ?? '',
+    ])
+    const csv = [headers, ...rowsData].map((row) => row.map(escape).join(',')).join('\n')
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = 'demography.csv'
+    a.click()
+    URL.revokeObjectURL(url)
+  }, [demographyRows])
 
   const completeLogin = (next: Role) => {
     setRole(next)
@@ -465,9 +531,13 @@ export function App() {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-8 9 8"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 21V9h6v12"/></svg>
                 <span>Dashboard</span>
               </button>
+              <button onClick={() => setTab('sglg-overview')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg-overview' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h10"/></svg>
+                <span>SGLG Overview</span>
+              </button>
               <button onClick={() => setTab('sglg')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 4l6 4-6 4-6-4 6-4z"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 12l6 4 6-4"/></svg>
-                <span>SGLG</span>
+                <span>SGLG Criteria</span>
               </button>
             <button onClick={() => setTab('demography')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='demography' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" d="M4 19v-6m6 6V5m6 14v-9"/></svg>
@@ -525,8 +595,10 @@ export function App() {
               <h1 className="text-base font-medium">
                 {tab === 'dashboard'
                   ? 'Dashboard'
+                  : tab === 'sglg-overview'
+                  ? 'SGLG Overview'
                   : tab === 'sglg'
-                  ? 'SGLG'
+                  ? 'SGLG Criteria'
                   : tab === 'demography'
                   ? 'Demography'
                   : tab === 'officials'
@@ -574,7 +646,7 @@ export function App() {
         <main className="p-6 pt-20">
           <div className={`${wide ? 'w-full' : 'max-w-7xl mx-auto'} space-y-6`}>
 
-            {(tab === 'dashboard' || tab === 'demography') && (
+            {tab === 'dashboard' && (
               <section className="rounded-xl border p-4 space-y-3">
                 <FilterBar onChange={() => { /* persist band filter */ force() }} onAuditChange={() => {
                   // if current bandFilter not applicable for audit, clear it
@@ -684,6 +756,16 @@ export function App() {
               </>
             )}
 
+            {tab === 'sglg-overview' && (
+              <section className="rounded-xl border p-4 space-y-3">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-lg font-medium">SGLG Overview</h2>
+                  <div className="text-xs text-muted-foreground">All criteria in one view</div>
+                </div>
+                <SglgOverview />
+              </section>
+            )}
+
             {tab === 'sglg' && (
               <section className="rounded-xl border p-4 space-y-3">
                 <div className="flex items-center justify-between">
@@ -755,7 +837,62 @@ export function App() {
                     {demographyStatus}
                   </div>
                 )}
-                <DemographyView rows={rows} />
+                <div className="grid gap-3 md:grid-cols-4 lg:grid-cols-5">
+                  <div className="flex flex-col gap-1">
+                    <Label className="text-xs">Province</Label>
+                    <Select value={demoProvince} onValueChange={(v) => setDemoProvince(v)}>
+                      <SelectTrigger><SelectValue placeholder="All provinces" /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="__all__">All Provinces</SelectItem>
+                        {demographyProvinces.map((p) => (
+                          <SelectItem key={p} value={p}>{p}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <Label className="text-xs">LGU Type</Label>
+                    <Select value={demoType} onValueChange={(v) => setDemoType(v)}>
+                      <SelectTrigger><SelectValue placeholder="All types" /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="__all__">All Types</SelectItem>
+                        {demographyTypes.map((t) => (
+                          <SelectItem key={t} value={t}>{t}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <Label className="text-xs">Income Class</Label>
+                    <Select value={demoIncomeClass} onValueChange={(v) => setDemoIncomeClass(v)}>
+                      <SelectTrigger><SelectValue placeholder="All income classes" /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="__all__">All Income Classes</SelectItem>
+                        {demographyClasses.map((c) => (
+                          <SelectItem key={c} value={c}>{c}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <Label className="text-xs">Search</Label>
+                    <Input
+                      placeholder="Search LGU or province"
+                      value={demoSearch}
+                      onChange={(e) => setDemoSearch(e.target.value)}
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-wrap items-center gap-2 pt-1">
+                  <Button variant="outline" size="sm" onClick={() => { setDemoProvince('__all__'); setDemoType('__all__'); setDemoIncomeClass('__all__'); setDemoSearch('') }}>
+                    Reset filters
+                  </Button>
+                  <Button size="sm" onClick={exportDemographyCsv}>
+                    <Download className="h-4 w-4 mr-2" /> Export CSV
+                  </Button>
+                  <div className="text-xs text-muted-foreground">{demographyRows.length} records</div>
+                </div>
+                <DemographyView rows={demographyRows} />
               </section>
             )}
 

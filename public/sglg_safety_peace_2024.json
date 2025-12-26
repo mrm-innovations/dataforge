@@ -1,0 +1,2387 @@
+[
+  {
+    "province": "Cotabato",
+    "lgu": "Alamada",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Aleosan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Antipas",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Arakan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Banisilan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Carmen",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "City of Kidapawan",
+    "type": "Component City",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Kabacan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Libungan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Magpet",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Makilala",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Matalam",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Midsayap",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "M'Lang",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Pigcawayan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Pikit",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "President Roxas",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Tulunan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Banga",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "City of Koronadal",
+    "type": "Component City",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Lake Sebu",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Norala",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Polomolok",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Santo Niño",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Surallah",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Tampakan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Tantangan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "T'Boli",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Tupi",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Bagumbayan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "City of Tacurong",
+    "type": "Component City",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Columbio",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Esperanza",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Isulan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Kalamansig",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Lambayong",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Lebak",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Lutayan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Palimbang",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "President Quirino",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Sen. Ninoy Aquino",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Alabel",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Glan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Kiamba",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Maasim",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Maitum",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Malapatan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Malungon",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "HUC",
+    "lgu": "General Santos City",
+    "type": "HUC",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Cotabato",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "South Cotabato",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Sultan Kudarat",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Sarangani",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "safety_peace",
+    "indicators": [
+      {
+        "key": "poc_process",
+        "label": "POC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "adac_process",
+        "label": "ADAC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "support_to_pnp",
+        "label": "Support to PNP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "bpats_process",
+        "label": "BPATS Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "firecracker_regulation_process",
+        "label": "Firecracker and pyrotechnics regulation process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  }
+]

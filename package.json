@@ -16,6 +16,13 @@
                     "fetch:sglg-fin-admin": "node scripts/fetch_sglg_financial_admin.js",
                     "fetch:sglg-disaster-prep": "node scripts/fetch_sglg_disaster_prep.js",
                     "fetch:sglg-social-protection": "node scripts/fetch_sglg_social_protection.js",
+                    "fetch:sglg-health-compliance": "node scripts/fetch_sglg_health_compliance.js",
+                    "fetch:sglg-sustainable-education": "node scripts/fetch_sglg_sustainable_education.js",
+                    "fetch:sglg-business-friendliness": "node scripts/fetch_sglg_business_friendliness.js",
+                    "fetch:sglg-safety-peace": "node scripts/fetch_sglg_safety_peace.js",
+                    "fetch:sglg-tourism-culture": "node scripts/fetch_sglg_tourism_culture.js",
+                    "fetch:sglg-youth-development": "node scripts/fetch_sglg_youth_development.js",
+                    "fetch:sglg-environmental-management": "node scripts/fetch_sglg_environmental_management.js",
                     "export:audit": "node scripts/export-audit-json.js", "export:audit:csv": "node scripts/export-audit-csv.js",
                     "ingest:audit": "node scripts/ingest-audit.js",
                     "preview":  "vite preview"

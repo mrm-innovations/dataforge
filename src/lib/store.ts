@@ -184,9 +184,16 @@ export function sglgSubindicatorFor(province?: string, lgu?: string) {
 }
 
 const SGLG_CRITERIA_FILES: Array<{ key: string; label: string; year: number; file: string }> = [
-  { key: 'financial_admin', label: 'Financial Administration', year: 2024, file: 'sglg_financial_admin_2024.json' },
+  { key: 'financial_admin', label: 'Financial Administration and Sustainability', year: 2024, file: 'sglg_financial_admin_2024.json' },
   { key: 'disaster_prep', label: 'Disaster Preparedness', year: 2024, file: 'sglg_disaster_prep_2024.json' },
   { key: 'social_protection', label: 'Social Protection and Sensitivity', year: 2024, file: 'sglg_social_protection_2024.json' },
+  { key: 'health_compliance', label: 'Health Compliance and Responsiveness', year: 2024, file: 'sglg_health_compliance_2024.json' },
+  { key: 'sustainable_education', label: 'Sustainable Education', year: 2024, file: 'sglg_sustainable_education_2024.json' },
+  { key: 'business_friendliness', label: 'Business-Friendliness and Competitiveness', year: 2024, file: 'sglg_business_friendliness_2024.json' },
+  { key: 'safety_peace', label: 'Safety, Peace and Order', year: 2024, file: 'sglg_safety_peace_2024.json' },
+  { key: 'environmental_management', label: 'Environmental Management', year: 2024, file: 'sglg_environmental_management_2024.json' },
+  { key: 'tourism_culture', label: 'Tourism, Heritage Development, Culture and Arts', year: 2024, file: 'sglg_tourism_culture_2024.json' },
+  { key: 'youth_development', label: 'Youth Development', year: 2024, file: 'sglg_youth_development_2024.json' },
 ]
 
 async function loadSglgCriteria(base: string) {

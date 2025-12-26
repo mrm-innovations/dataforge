@@ -13,44 +13,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -79,18 +43,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -111,24 +63,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -163,8 +97,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -184,44 +118,8 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -250,18 +148,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -282,24 +168,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -334,8 +202,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -355,44 +223,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -421,18 +253,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -453,24 +273,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -505,8 +307,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -526,44 +328,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -592,18 +358,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -624,24 +378,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -676,8 +412,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -697,44 +433,8 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -763,18 +463,6 @@
         "status": "failed"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 2,
@@ -795,24 +483,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -847,8 +517,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 0,
         "status": "failed"
       }
@@ -868,44 +538,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -934,18 +568,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -966,24 +588,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -1018,8 +622,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1039,44 +643,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -1105,18 +673,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -1137,24 +693,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -1189,8 +727,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1210,44 +748,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -1276,18 +778,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -1308,24 +798,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -1360,8 +832,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1381,44 +853,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -1447,18 +883,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -1479,24 +903,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -1531,8 +937,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1552,44 +958,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -1618,18 +988,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -1650,24 +1008,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -1702,8 +1042,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -1723,44 +1063,8 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -1789,18 +1093,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -1821,24 +1113,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -1873,8 +1147,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 0,
         "status": "failed"
       }
@@ -1894,46 +1168,10 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
         "value": 0,
         "status": "failed"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
-        "value": 1,
-        "status": "met"
       },
       {
         "key": "ldrrmo_process",
@@ -1960,18 +1198,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -1992,24 +1218,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -2044,8 +1252,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 0,
         "status": "failed"
       }
@@ -2065,44 +1273,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -2131,18 +1303,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -2163,24 +1323,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -2215,8 +1357,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2236,44 +1378,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -2302,18 +1408,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -2334,24 +1428,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -2386,8 +1462,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2407,44 +1483,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -2473,18 +1513,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -2505,24 +1533,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -2557,8 +1567,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2578,44 +1588,8 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -2644,18 +1618,6 @@
         "status": "failed"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -2676,24 +1638,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -2728,8 +1672,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 0,
         "status": "failed"
       }
@@ -2749,44 +1693,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -2815,18 +1723,6 @@
         "status": "failed"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 2,
@@ -2847,24 +1743,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -2899,8 +1777,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -2920,44 +1798,8 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -2986,18 +1828,6 @@
         "status": "failed"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -3018,24 +1848,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -3070,8 +1882,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 0,
         "status": "failed"
       }
@@ -3091,46 +1903,10 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
         "value": 0,
         "status": "failed"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
-        "value": 1,
-        "status": "met"
       },
       {
         "key": "ldrrmo_process",
@@ -3157,18 +1933,6 @@
         "status": "failed"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -3189,24 +1953,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -3241,8 +1987,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 0,
         "status": "failed"
       }
@@ -3262,44 +2008,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -3328,18 +2038,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -3360,24 +2058,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -3412,179 +2092,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
-        "value": 1,
-        "status": "met"
-      }
-    ]
-  },
-  {
-    "province": "HUC",
-    "lgu": "General Santos City",
-    "type": "Highly Urbanized City",
-    "year": 2024,
-    "criteria": "disaster_prep",
-    "indicators": [
-      {
-        "key": "gk_2023",
-        "label": "2023 National Gawad Kalasag",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "functional_ldrrmc",
-        "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_process",
-        "label": "LDRRMO Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "clup_process",
-        "label": "CLUP Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_plan",
-        "label": "LDRRM Plan",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "lccap",
-        "label": "LCCAP",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_process",
-        "label": "Contingency Plan Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_fund_process",
-        "label": "LDRRM Fund Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ews_process",
-        "label": "EWS Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evacuation_mechanism",
-        "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_management_process",
-        "label": "Evac Management Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_operations_center",
-        "label": "LDRRM Operations Center",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ics_process",
-        "label": "Incident Command System Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "cbddrm_plan_process",
-        "label": "CBDRRM Plan Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "gk_seal_process",
-        "label": "GK Seal Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3604,44 +2113,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -3670,18 +2143,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -3702,24 +2163,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -3754,8 +2197,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3775,44 +2218,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -3841,18 +2248,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -3873,24 +2268,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -3925,8 +2302,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -3946,44 +2323,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -4012,18 +2353,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -4044,24 +2373,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -4096,8 +2407,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -4117,44 +2428,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -4183,18 +2458,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -4215,24 +2478,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -4267,8 +2512,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -4288,44 +2533,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -4354,18 +2563,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -4386,24 +2583,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -4438,8 +2617,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -4459,44 +2638,8 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -4525,18 +2668,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -4557,24 +2688,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -4609,8 +2722,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -4630,44 +2743,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -4696,18 +2773,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -4728,24 +2793,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -4780,8 +2827,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -4801,44 +2848,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -4867,18 +2878,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -4899,24 +2898,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -4951,8 +2932,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -4972,44 +2953,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -5038,18 +2983,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -5070,24 +3003,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -5122,8 +3037,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -5143,44 +3058,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -5209,18 +3088,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -5241,24 +3108,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -5293,8 +3142,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -5314,44 +3163,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -5380,18 +3193,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -5412,24 +3213,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -5464,8 +3247,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -5485,44 +3268,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -5551,18 +3298,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -5583,24 +3318,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -5635,8 +3352,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -5656,44 +3373,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -5722,18 +3403,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -5754,24 +3423,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -5806,8 +3457,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -5827,44 +3478,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -5893,18 +3508,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 2,
@@ -5925,24 +3528,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -5977,8 +3562,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -5998,44 +3583,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -6064,18 +3613,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -6096,24 +3633,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -6148,8 +3667,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -6169,44 +3688,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -6235,18 +3718,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -6267,24 +3738,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -6319,8 +3772,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -6340,44 +3793,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -6406,18 +3823,6 @@
         "status": "failed"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -6438,24 +3843,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -6490,8 +3877,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 0,
         "status": "failed"
       }
@@ -6511,44 +3898,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -6577,18 +3928,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -6609,24 +3948,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -6661,8 +3982,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -6682,44 +4003,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -6748,18 +4033,6 @@
         "status": "met"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -6780,24 +4053,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -6832,8 +4087,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -6853,44 +4108,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -6919,18 +4138,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -6951,24 +4158,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -7003,8 +4192,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -7024,46 +4213,10 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
         "value": 0,
         "status": "failed"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
-        "value": 1,
-        "status": "met"
       },
       {
         "key": "ldrrmo_process",
@@ -7090,18 +4243,6 @@
         "status": "failed"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -7124,24 +4265,6 @@
         "label": "Pre-emptive/Forced Evacuation Mechanism",
         "value": 1,
         "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
-        "value": 0,
-        "status": "failed"
       },
       {
         "key": "evac_management_process",
@@ -7174,8 +4297,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 0,
         "status": "failed"
       }
@@ -7195,44 +4318,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -7261,18 +4348,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -7293,24 +4368,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -7345,8 +4402,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -7366,44 +4423,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -7432,18 +4453,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 0,
-        "status": "failed"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 0,
-        "status": "failed"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 2,
@@ -7464,24 +4473,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -7516,8 +4507,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -7537,44 +4528,8 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -7603,18 +4558,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -7635,24 +4578,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -7687,8 +4612,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -7708,44 +4633,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -7774,18 +4663,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -7806,24 +4683,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -7858,8 +4717,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -7879,44 +4738,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 2,
-        "status": "consideration"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -7945,18 +4768,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -7977,24 +4788,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -8029,8 +4822,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -8050,44 +4843,8 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -8116,18 +4873,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -8148,24 +4893,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -8200,8 +4927,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -8221,44 +4948,8 @@
         "status": "failed"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -8287,18 +4978,6 @@
         "status": "consideration"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -8319,24 +4998,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -8371,8 +5032,113 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "HUC",
+    "lgu": "General Santos City",
+    "type": "Highly Urbanized City",
+    "year": 2024,
+    "criteria": "disaster_prep",
+    "indicators": [
+      {
+        "key": "gk_2023",
+        "label": "2023 National Gawad Kalasag",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "functional_ldrrmc",
+        "label": "Functional LDRRMC Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "ldrrmo_process",
+        "label": "LDRRMO Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "clup_process",
+        "label": "CLUP Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "ldrrm_plan",
+        "label": "LDRRM Plan",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lccap",
+        "label": "LCCAP",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "contingency_plan_process",
+        "label": "Contingency Plan Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "ldrrm_fund_process",
+        "label": "LDRRM Fund Process",
+        "value": 2,
+        "status": "consideration"
+      },
+      {
+        "key": "ews_process",
+        "label": "EWS Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "evacuation_mechanism",
+        "label": "Pre-emptive/Forced Evacuation Mechanism",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "evac_management_process",
+        "label": "Evac Management Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "ldrrm_operations_center",
+        "label": "LDRRM Operations Center",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "ics_process",
+        "label": "Incident Command System Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "cbddrm_plan_process",
+        "label": "CBDRRM Plan Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "gk_seal_process",
+        "label": "GK Seal Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -8392,44 +5158,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -8458,18 +5188,6 @@
         "status": "na"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -8490,24 +5208,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -8542,8 +5242,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -8563,44 +5263,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -8629,18 +5293,6 @@
         "status": "na"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -8661,24 +5313,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -8713,8 +5347,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -8734,44 +5368,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -8800,18 +5398,6 @@
         "status": "na"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -8832,24 +5418,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -8884,8 +5452,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }
@@ -8905,44 +5473,8 @@
         "status": "met"
       },
       {
-        "key": "ldrrmc_composition",
-        "label": "LDRRMC Composition Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmc_meetings",
-        "label": "LDRRMC Meetings Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "functional_ldrrmc",
         "label": "Functional LDRRMC Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrm_officer",
-        "label": "LDRRM Officer Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_staff",
-        "label": "LDRRMO Staff Complement Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_workspace",
-        "label": "LDRRMO Workspace",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "ldrrmo_sar_er",
-        "label": "LDRRMO SAR/ER",
         "value": 1,
         "status": "met"
       },
@@ -8971,18 +5503,6 @@
         "status": "na"
       },
       {
-        "key": "contingency_plan_top1",
-        "label": "Contingency Plan (Top 1 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "contingency_plan_top2",
-        "label": "Contingency Plan (Top 2 hazard)",
-        "value": 1,
-        "status": "met"
-      },
-      {
         "key": "contingency_plan_process",
         "label": "Contingency Plan Process",
         "value": 1,
@@ -9003,24 +5523,6 @@
       {
         "key": "evacuation_mechanism",
         "label": "Pre-emptive/Forced Evacuation Mechanism",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_facilities",
-        "label": "Evac Facilities",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "evac_center_process",
-        "label": "Evac Center Process",
-        "value": 1,
-        "status": "met"
-      },
-      {
-        "key": "prepositioned_goods",
-        "label": "Prepositioned goods/resources/services",
         "value": 1,
         "status": "met"
       },
@@ -9055,8 +5557,8 @@
         "status": "met"
       },
       {
-        "key": "dp_processing",
-        "label": "DP Processing",
+        "key": "overall_process",
+        "label": "Overall Process",
         "value": 1,
         "status": "met"
       }

@@ -1,0 +1,4931 @@
+[
+  {
+    "province": "Cotabato",
+    "lgu": "Alamada",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Carmen",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Kabacan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "City of Kidapawan",
+    "type": "Component City",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Libungan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Magpet",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Makilala",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Matalam",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Midsayap",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "M'Lang",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Pigcawayan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Pikit",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 0,
+        "status": "failed"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "President Roxas",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Tulunan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Antipas",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Banisilan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Aleosan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Arakan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Banga",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "City of Koronadal",
+    "type": "Component City",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Norala",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Polomolok",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Surallah",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Tampakan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Tantangan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "T'Boli",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Tupi",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Santo Niño",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "Lake Sebu",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Bagumbayan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Columbio",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Esperanza",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Isulan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Kalamansig",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Lebak",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Lutayan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Lambayong",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Palimbang",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "President Quirino",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "City of Tacurong",
+    "type": "Component City",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Sen. Ninoy Aquino",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Alabel",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Glan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Kiamba",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Maasim",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Maitum",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Malapatan",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Malungon",
+    "type": "Municipality",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "HUC",
+    "lgu": "General Santos City",
+    "type": "Highly Urbanized City",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 0,
+        "status": "failed"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 1,
+        "status": "met"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 1,
+        "status": "met"
+      }
+    ]
+  },
+  {
+    "province": "Cotabato",
+    "lgu": "Cotabato",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 3,
+        "status": "na"
+      }
+    ]
+  },
+  {
+    "province": "South Cotabato",
+    "lgu": "South Cotabato",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 3,
+        "status": "na"
+      }
+    ]
+  },
+  {
+    "province": "Sultan Kudarat",
+    "lgu": "Sultan Kudarat",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 3,
+        "status": "na"
+      }
+    ]
+  },
+  {
+    "province": "Sarangani",
+    "lgu": "Sarangani",
+    "type": "Province",
+    "year": 2024,
+    "criteria": "health_compliance",
+    "indicators": [
+      {
+        "key": "liph_process",
+        "label": "LIPH Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "drinking_water_process",
+        "label": "Drinking Water Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "sanitation_services_process",
+        "label": "Sanitation Services Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "tb_notification_rate_process",
+        "label": "TB Notification Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "tb_success_rate_process",
+        "label": "TB Success Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "stunting_rate_process",
+        "label": "Stunting Rate Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "fic_process",
+        "label": "Fully-immunized child (FIC) Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "prenatal_checkups_process",
+        "label": "Prenatal check-ups in CY 2022 Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "local_health_board_process",
+        "label": "Local Health Board Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "philpen_process",
+        "label": "PhilPen Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "konsulta_provider_process",
+        "label": "Konsulta Provider Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "drmmh_process",
+        "label": "DRMM-H Process",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "lesu",
+        "label": "LESU",
+        "value": 3,
+        "status": "na"
+      },
+      {
+        "key": "overall_process",
+        "label": "Overall Process",
+        "value": 3,
+        "status": "na"
+      }
+    ]
+  }
+]

@@ -15,17 +15,15 @@ const CSV_PATH = path.join('datasets', 'sglg_financial_admin_2024.csv')
 const OUTPUT_PATH = path.join('public', 'sglg_financial_admin_2024.json')
 
 const COLUMNS = [
-  ['[NGA] COA 2022 PROCESS', 'coa_2022_process', 'COA 2022 Process'],
-  ['[NGA] COA 2023 PROCESS', 'coa_2023_process', 'COA 2023 Process'],
   ['COA PROCESS', 'coa_process', 'COA Process'],
   ['FDP PROCESS', 'fdp_process', 'FDP Process'],
   ['LRG PROCESS', 'lrg_process', 'LRG Process'],
   ['National Tax Allotment', 'nta', 'National Tax Allotment'],
-  ['2022 PCF/SGLG IF', 'pcf_sglg_if_2022', '2022 PCF/SGLG IF'],
-  ['2019 PCF', 'pcf_2019', '2019 PCF'],
   ['PCF PROCESS', 'pcf_process', 'PCF Process'],
   ['LGSF PROCESS', 'lgsf_process', 'LGSF Process'],
   ['Annual Budget PROCESS', 'annual_budget_process', 'Annual Budget Process'],
+  ['Good Financial Housekeeping', 'gfh_process', 'Good Financial Housekeeping'],
+  ['Overall Process', 'overall_process', 'Overall Process'],
 ]
 
 function fetchCsv(url) {
@@ -124,7 +122,7 @@ async function main() {
       const { value, status } = normStatusFromValue(get(r, col))
       return { key, label, value, status }
     }).filter((x) => x.value !== null)
-    const overallRaw = get(r, 'FAS OVERALL PROCESS')
+    const overallRaw = get(r, 'Overall Process')
     const gfhRaw = get(r, 'Good Financial Housekeeping')
     const overall = normStatusFromValue(overallRaw)
     const gfh = normStatusFromValue(gfhRaw)
