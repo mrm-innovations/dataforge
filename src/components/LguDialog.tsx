@@ -12,6 +12,7 @@ import {
   Legend,
 } from 'chart.js'
 import { store, statusToNum, fmt, bandLabelFor, metricIsStatus, sglgSubindicatorFor } from '@/lib/store'
+import { buildGovernanceScorecardHtml, openScorecardPdf } from '@/lib/scorecardPdf'
 import { Button } from '@/components/ui/button'
 import { hsl } from '@/lib/colors'
 import { SglgSubindicatorBreakdown } from './SglgSubindicatorBreakdown'
@@ -55,7 +56,6 @@ export function LguDialog({ open, onClose, lgu, province, initialAudit }: Props)
     const urlAudit = initialAudit && audits.includes(initialAudit) ? initialAudit : null
     setActiveAudit(urlAudit || audits[0])
   }, [audits, initialAudit])
-
   const closeBtnRef = useRef<HTMLButtonElement | null>(null)
   useEffect(() => { if (open) closeBtnRef.current?.focus() }, [open])
 
@@ -71,17 +71,24 @@ export function LguDialog({ open, onClose, lgu, province, initialAudit }: Props)
             <header className="flex items-center justify-between p-5 border-b">
               <div>
                 <div id="lgu-dialog-title" className="text-lg font-semibold leading-snug">{lgu}</div>
-                <div className="text-xs text-muted-foreground">Press Esc to close</div>
+                <div className="text-xs text-muted-foreground">
+                  {(canon?.province || province)} / {canon?.type || '-'}
+                </div>
               </div>
-              <button
-                ref={closeBtnRef}
-                className="inline-flex items-center justify-center w-8 h-8 rounded-md border transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] outline-none"
-                onClick={() => { clearParams(); onClose() }}
-                aria-label="Close dialog"
-                title="Close (Esc)"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" d="M6 18L18 6M6 6l12 12"/></svg>
-              </button>
+              <div className="flex items-center gap-2">
+                <Button size="sm" onClick={() => { void exportGovernanceScorecard(lgu, province, canon, audits) }}>
+                  Download Governance Scorecard
+                </Button>
+                <button
+                  ref={closeBtnRef}
+                  className="inline-flex items-center justify-center w-8 h-8 rounded-md border transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] outline-none"
+                  onClick={() => { clearParams(); onClose() }}
+                  aria-label="Close dialog"
+                  title="Close (Esc)"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+              </div>
             </header>
 
             <div className="p-5 grid grid-cols-1 gap-4">
@@ -122,22 +129,22 @@ export function LguDialog({ open, onClose, lgu, province, initialAudit }: Props)
                     <Badge label={`Pop: ${canon?.population != null ? fmt(Number(canon.population), 0) : '-'}`} colorKey="blue" />
                   </div>
                 </div>
-                <div className="mt-3 space-y-1">
+                <div className="mt-3 grid grid-cols-2 gap-2 text-[13px]">
                   <div className="flex items-center gap-2">
-                    <span className="text-muted-foreground text-[12px] w-24">PSGC</span>
-                    <span className="text-foreground text-[13px]">{(canon as any)?.psgc || '—'}</span>
+                    <span className="text-muted-foreground text-[12px] w-20">PSGC</span>
+                    <span className="text-foreground">{(canon as any)?.psgc || '-'}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-muted-foreground text-[12px] w-24">Region</span>
-                    <span className="text-foreground text-[13px]">{canon?.region || '—'}</span>
+                    <span className="text-muted-foreground text-[12px] w-20">Region</span>
+                    <span className="text-foreground">{canon?.region || '-'}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-muted-foreground text-[12px] w-24">Province</span>
-                    <span className="text-foreground text-[13px]">{canon?.province || province}</span>
+                    <span className="text-muted-foreground text-[12px] w-20">Province</span>
+                    <span className="text-foreground">{canon?.province || province}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-muted-foreground text-[12px] w-24">LGU</span>
-                    <span className="text-foreground text-[13px]">{canon?.lgu || lgu}</span>
+                    <span className="text-muted-foreground text-[12px] w-20">LGU</span>
+                    <span className="text-foreground">{canon?.lgu || lgu}</span>
                   </div>
                 </div>
               </section>
@@ -193,17 +200,23 @@ export function LguDialog({ open, onClose, lgu, province, initialAudit }: Props)
                         ],
                       }
                       const kpiBadge = (val: number | null) => (
-                        <span className={`text-[11px] px-1.5 py-0.5 rounded-md border ${val == null ? 'text-zinc-500' : val >= 0 ? 'text-emerald-700 border-emerald-200 bg-emerald-50' : 'text-rose-700 border-rose-200 bg-rose-50'}`}>
-                          {val == null ? '—' : `${val>0?'+':''}${fmt(val, metric==='status'?0:1)}${metric==='status'?'%':''}`}
+                        <span className={`text-[11px] ${val == null ? 'text-zinc-500' : val >= 0 ? 'text-emerald-700' : 'text-rose-700'}`}>
+                          {val == null ? '-' : `${val > 0 ? '+' : ''}${fmt(val, metric === 'status' ? 0 : 1)}${metric === 'status' ? '%' : ''}`}
                         </span>
                       )
                       return (
                         <TabsContent key={a} value={a} className="mt-2">
-                          <div className="flex items-center justify-between gap-2 mb-2">
-                            <div className="text-xs text-muted-foreground inline-flex items-center gap-3">
-                              <span>Latest: <strong className="text-foreground">{latestVal == null ? '-' : `${fmt(latestVal, metric==='status'?0:1)}${metric==='status'?'%':''}`}</strong></span>
-                              <span>Change: {kpiBadge(change)}</span>
-                              <span>Coverage: <strong>{fmt(coverage,0)}%</strong></span>
+                          <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <div className="inline-flex flex-wrap items-center gap-2 text-[11px] text-zinc-700">
+                              <span className="inline-flex items-center gap-1 rounded-full border bg-zinc-50 px-2 py-1">
+                                Latest: <strong className="text-foreground">{latestVal == null ? '-' : `${fmt(latestVal, metric==='status'?0:1)}${metric==='status'?'%':''}`}</strong>
+                              </span>
+                              <span className="inline-flex items-center gap-1 rounded-full border bg-zinc-50 px-2 py-1">
+                                Change: {kpiBadge(change)}
+                              </span>
+                              <span className="inline-flex items-center gap-1 rounded-full border bg-zinc-50 px-2 py-1">
+                                Coverage: <strong className="text-foreground">{fmt(coverage,0)}%</strong>
+                              </span>
                             </div>
                             <div className="inline-flex gap-2">
                               <Button size="sm" variant="outline" onClick={() => exportCsv(lgu, province, a, years, raw, metric)}>Export CSV</Button>
@@ -211,18 +224,20 @@ export function LguDialog({ open, onClose, lgu, province, initialAudit }: Props)
                             </div>
                           </div>
                           {years.length ? (
-                            <div style={{ height: 260 }}>
-                              <Line
-                                data={chart as any}
-                                options={{
-                                  responsive: true,
-                                  maintainAspectRatio: false,
-                                  scales: {
-                                    y: metric === 'status' ? { suggestedMin: 0, suggestedMax: 100, ticks: { callback: (v) => `${v}%` } } : {},
-                                  },
-                                  plugins: { legend: { display: false } },
-                                }}
-                              />
+                            <div className="rounded-md border bg-zinc-50/50 p-2">
+                              <div style={{ height: 260 }}>
+                                <Line
+                                  data={chart as any}
+                                  options={{
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    scales: {
+                                      y: metric === 'status' ? { suggestedMin: 0, suggestedMax: 100, ticks: { callback: (v) => `${v}%` } } : {},
+                                    },
+                                    plugins: { legend: { display: false } },
+                                  }}
+                                />
+                              </div>
                             </div>
                           ) : (
                             <div className="text-xs text-muted-foreground">No data</div>
@@ -256,12 +271,6 @@ export function LguDialog({ open, onClose, lgu, province, initialAudit }: Props)
                               </div>
                             ) : null}
                           </div>
-                          {a === 'SGLG' && (
-                            <div className="mt-4 space-y-2">
-                              <div className="text-xs font-medium">Subindicator Breakdown (2024)</div>
-                              <SglgSubindicatorBreakdown record={sglgSubindicatorFor(province, lgu)} />
-                            </div>
-                          )}
                         </TabsContent>
                       )
                     })}
@@ -301,6 +310,132 @@ function exportCsv(lgu: string, province: string, audit: string, years: number[]
   URL.revokeObjectURL(url)
 }
 
+async function exportGovernanceScorecard(lgu: string, province: string, canon: any, auditsList: string[]) {
+  const auditKeys = ['ADAC', 'LCPC', 'POC'].filter((k) => auditsList.includes(k))
+  const auditRows = auditKeys.map((key) => {
+    const meta = (store.AUDITS as any)[key] || {}
+    const years: number[] = (meta.years || [])
+    const metric = meta.metric
+    const raw = (canon as any)?.results?.[key] || {}
+    const series = years.map((y) => raw?.[String(y)] ?? null)
+    const lastIdx = (() => {
+      for (let i = series.length - 1; i >= 0; i--) {
+        if (series[i] != null) return i
+      }
+      return -1
+    })()
+    const latestYear = lastIdx >= 0 ? String(years[lastIdx]) : '-'
+    const latestRaw = lastIdx >= 0 ? raw?.[String(years[lastIdx])] : null
+    let value = '-'
+    let label = '-'
+    if (metric === 'status') {
+      const numeric = statusToNum(latestRaw)
+      value = numeric == null ? (latestRaw ? String(latestRaw) : '-') : (numeric === 1 ? 'Passed' : 'Failed')
+      label = '-'
+    } else {
+      value = latestRaw == null ? '-' : fmt(Number(latestRaw), 1)
+      label = latestRaw == null ? '-' : bandLabelFor(key, Number(latestRaw))
+    }
+    const present = series.filter((v) => v != null).length
+    const coverage = years.length ? `${present}/${years.length} (${fmt((present / years.length) * 100, 0)}%)` : '-'
+    return { audit: key, latestYear, value, label, coverage }
+  })
+
+  const sglgYears = store.SGLG_CRITERIA.map((c) => c.year)
+  const sglgYear = sglgYears.length ? Math.max(...sglgYears) : null
+  const criteriaForYear = sglgYear ? store.SGLG_CRITERIA.filter((c) => c.year === sglgYear) : []
+  const normalize = (value: string | null | undefined) => String(value || '').trim().toLowerCase()
+  const matches = (rec: any) => {
+    if (normalize(rec?.lgu) !== normalize(lgu)) return false
+    if (province && normalize(rec?.province) !== normalize(province)) return false
+    return true
+  }
+  const normStatusFromValue = (val: unknown): string | null => {
+    const n = Number(val)
+    if (!Number.isFinite(n)) return null
+    if (n === 0) return 'failed'
+    if (n === 1) return 'met'
+    if (n === 2) return 'consideration'
+    if (n === 3) return 'na'
+    return null
+  }
+  const resolveOverallStatus = (record: any): string | null => {
+    if (record?.overall_status) return record.overall_status
+    const indicators = Array.isArray(record?.indicators) ? record.indicators : []
+    const overallIndicator = indicators.find((i: any) => i?.key === 'overall_process' || String(i?.label || '').toLowerCase() === 'overall process')
+    if (overallIndicator) return overallIndicator.status || normStatusFromValue(overallIndicator.value)
+    const statuses = indicators.map((i: any) => i?.status || normStatusFromValue(i?.value)).filter(Boolean) as string[]
+    if (!statuses.length) return null
+    if (statuses.includes('failed')) return 'failed'
+    if (statuses.includes('consideration')) return 'consideration'
+    if (statuses.every((s) => s === 'na')) return 'na'
+    return 'met'
+  }
+  const statusLabel = (status: string | null | undefined) => {
+    if (!status) return 'N/A'
+    if (status === 'met') return 'Met'
+    if (status === 'failed') return 'Failed'
+    if (status === 'consideration') return 'Consideration'
+    if (status === 'na') return 'N/A'
+    return status
+  }
+
+  const criteriaData = criteriaForYear.map((criteria) => {
+    const key = `${sglgYear}:${criteria.key}`
+    const records = store.SGLG_CRITERIA_DATA[key] || []
+    const record = records.find((r: any) => matches(r))
+    const indicators = Array.isArray(record?.indicators) ? record.indicators : []
+    const overall = resolveOverallStatus(record)
+    const failedIndicators = indicators.filter((i: any) => (i?.status || normStatusFromValue(i?.value)) === 'failed')
+    const considerationIndicators = indicators.filter((i: any) => (i?.status || normStatusFromValue(i?.value)) === 'consideration')
+    return {
+      label: criteria.label,
+      overall,
+      failedIndicators,
+      considerationIndicators,
+    }
+  })
+
+  const sglgTotals = criteriaData.reduce(
+    (acc, entry) => {
+      if (entry.overall === 'failed') acc.failed += 1
+      else if (entry.overall === 'consideration') acc.consideration += 1
+      else if (entry.overall === 'met') acc.met += 1
+      else acc.na += 1
+      return acc
+    },
+    { met: 0, failed: 0, consideration: 0, na: 0 },
+  )
+
+  const sglgRows = criteriaData.map((row) => ({
+    label: row.label,
+    overall: statusLabel(row.overall),
+    failedIndicators: row.failedIndicators.map((i: any) => i.label || i.key).join(', '),
+    considerationIndicators: row.considerationIndicators.map((i: any) => i.label || i.key).join(', '),
+  }))
+
+  const metaRows: Array<[string, string]> = [
+    ['Province', canon?.province || province],
+    ['Region', canon?.region || '-'],
+    ['Type', canon?.type || '-'],
+    ['Income Class', canon?.income_class || '-'],
+    ['Population', canon?.population != null ? fmt(Number(canon.population), 0) : '-'],
+  ]
+
+  const title = `${lgu} - Governance Scorecard`
+  const subtitle = `${auditKeys.join(' / ')}${sglgYear ? ` / SGLG ${sglgYear}` : ''}`
+  const html = buildGovernanceScorecardHtml({
+    title,
+    subtitle,
+    metaRows,
+    auditRows,
+    sglgTotals,
+    sglgRows,
+  })
+
+  await openScorecardPdf(html, `${lgu}_Governance_Scorecard.pdf`)
+}
+
 function copyLink(lgu: string, province: string, audit: string){
   const url = new URL(window.location.href)
   url.searchParams.set('lgu', lgu)
@@ -337,3 +472,5 @@ function Badge({ label, colorKey }: { label: string; colorKey: string }){
     </span>
   )
 }
+
+

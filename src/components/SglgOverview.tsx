@@ -6,8 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Download } from 'lucide-react'
-
-type CriteriaInfo = { key: string; label: string; year: number }
+import { buildSglgScorecardHtml, openScorecardPdf } from '@/lib/scorecardPdf'
 
 type LguRow = {
   province: string
@@ -104,10 +103,44 @@ export function SglgOverview() {
 
   const [provinceFilter, setProvinceFilter] = useState('__all__')
   const [typeFilter, setTypeFilter] = useState('__all__')
+  const [criteriaFocusKey, setCriteriaFocusKey] = useState('__all__')
   const [statusFilter, setStatusFilter] = useState('__all__')
   const [search, setSearch] = useState('')
 
   const criteriaCount = criteriaForYear.length
+  const criteriaOptions = useMemo(
+    () => criteriaForYear.filter((c) => c.key && c.label),
+    [criteriaForYear],
+  )
+  const criteriaFocusLabel = criteriaFocusKey !== '__all__' ? criteriaLabelMap.get(criteriaFocusKey) || criteriaFocusKey : null
+  const statusOptions = useMemo(() => {
+    if (criteriaFocusKey === '__all__') {
+      return [
+        { value: '__all__', label: 'All' },
+        { value: 'failed_any', label: 'Failed (any)' },
+        { value: 'failed_2plus', label: 'Failed (2+)' },
+        { value: 'consideration_any', label: 'Consideration (any)' },
+        { value: 'met_all', label: 'Met all' },
+      ]
+    }
+    return [
+      { value: '__all__', label: 'All' },
+      { value: 'failed', label: 'Failed' },
+      { value: 'consideration', label: 'Consideration' },
+      { value: 'met', label: 'Met' },
+      { value: 'na', label: 'N/A' },
+    ]
+  }, [criteriaFocusKey])
+
+  useEffect(() => {
+    if (criteriaFocusKey === '__all__') {
+      const allowed = new Set(['__all__', 'failed_any', 'failed_2plus', 'consideration_any', 'met_all'])
+      if (!allowed.has(statusFilter)) setStatusFilter('__all__')
+      return
+    }
+    const allowed = new Set(['__all__', 'failed', 'consideration', 'met', 'na'])
+    if (!allowed.has(statusFilter)) setStatusFilter('__all__')
+  }, [criteriaFocusKey, statusFilter])
 
   const summarized = useMemo(() => {
     return lguRows.map((row) => {
@@ -146,6 +179,12 @@ export function SglgOverview() {
       .filter((r) => (provinceFilter === '__all__' ? true : r.province === provinceFilter))
       .filter((r) => (typeFilter === '__all__' ? true : r.type === typeFilter))
       .filter((r) => {
+        const criteriaStatus = criteriaFocusKey === '__all__' ? null : (r.statuses[criteriaFocusKey] || null)
+        if (criteriaFocusKey !== '__all__') {
+          if (!criteriaStatus) return false
+          if (statusFilter === '__all__') return true
+          return criteriaStatus === statusFilter
+        }
         if (statusFilter === '__all__') return true
         if (statusFilter === 'failed_any') return r.failedCount > 0
         if (statusFilter === 'failed_2plus') return r.failedCount >= 2
@@ -158,7 +197,7 @@ export function SglgOverview() {
         const hay = `${r.province} ${r.lgu} ${r.type}`.toLowerCase()
         return hay.includes(q)
       })
-  }, [summarized, provinceFilter, typeFilter, statusFilter, search, criteriaCount])
+  }, [summarized, provinceFilter, typeFilter, criteriaFocusKey, statusFilter, search, criteriaCount])
 
   const criteriaSummary = useMemo(() => {
     return criteriaForYear.map((criteria) => {
@@ -194,6 +233,10 @@ export function SglgOverview() {
       'Criteria Missing',
       'Failed Criteria',
     ]
+    if (criteriaFocusKey !== '__all__') {
+      headers.push('Criteria Focus')
+      headers.push('Criteria Status')
+    }
     const lines = [headers.map((s) => `"${s}"`).join(',')]
     filtered.forEach((r) => {
       const row = [
@@ -208,6 +251,12 @@ export function SglgOverview() {
         r.missingCount,
         r.failedCriteria.join('; '),
       ]
+      if (criteriaFocusKey !== '__all__') {
+        const criteriaLabel = criteriaLabelMap.get(criteriaFocusKey) || criteriaFocusKey
+        const criteriaStatus = r.statuses[criteriaFocusKey] || ''
+        row.push(criteriaLabel)
+        row.push(STATUS_LABELS[criteriaStatus] || criteriaStatus)
+      }
       lines.push(row.map((s) => `"${String(s).replace(/"/g, '""')}"`).join(','))
     })
     const blob = new Blob([lines.join('\n') + '\n'], { type: 'text/csv;charset=utf-8;' })
@@ -221,13 +270,83 @@ export function SglgOverview() {
     URL.revokeObjectURL(url)
   }
 
+  const exportScorecard = async (row: { province: string; lgu: string; type: string }) => {
+    if (!year || !criteriaForYear.length) {
+      window.alert('No SGLG criteria datasets loaded.')
+      return
+    }
+    const canon = store.LGUS.find((g) => g.lgu === row.lgu && g.province === row.province)
+      || store.LGUS.find((g) => g.lgu === row.lgu)
+      || null
+    const fmtNum = (val: number | null | undefined) => (val == null ? '-' : Number(val).toLocaleString('en-PH'))
+
+    const criteriaData = criteriaForYear.map((criteria) => {
+      const key = `${year}:${criteria.key}`
+      const records = store.SGLG_CRITERIA_DATA[key] || []
+      const record = records.find((r: any) => {
+        return String(r?.lgu || '').trim().toLowerCase() === String(row.lgu || '').trim().toLowerCase()
+          && String(r?.province || '').trim().toLowerCase() === String(row.province || '').trim().toLowerCase()
+      })
+      const indicators = Array.isArray(record?.indicators) ? record.indicators : []
+      const overall = resolveOverallStatus(record)
+      const failedIndicators = indicators.filter((i: any) => (i?.status || normStatusFromValue(i?.value)) === 'failed')
+      const considerationIndicators = indicators.filter((i: any) => (i?.status || normStatusFromValue(i?.value)) === 'consideration')
+      return {
+        label: criteria.label,
+        overall,
+        failedIndicators,
+        considerationIndicators,
+      }
+    })
+
+    const totals = criteriaData.reduce(
+      (acc, entry) => {
+        if (entry.overall === 'failed') acc.failed += 1
+        else if (entry.overall === 'consideration') acc.consideration += 1
+        else if (entry.overall === 'met') acc.met += 1
+        else acc.na += 1
+        return acc
+      },
+      { met: 0, failed: 0, consideration: 0, na: 0 },
+    )
+
+    const statusLabel = (status: string | null | undefined) => {
+      if (!status) return 'N/A'
+      return STATUS_LABELS[status] || status
+    }
+
+    const metaRows = [
+      ['Province', canon?.province || row.province],
+      ['Region', canon?.region || '-'],
+      ['Type', canon?.type || row.type || '-'],
+      ['Income Class', canon?.income_class || '-'],
+      ['Population', canon?.population != null ? fmtNum(Number(canon.population)) : '-'],
+    ]
+
+    const rows = criteriaData.map((entry) => ({
+      label: entry.label,
+      overall: statusLabel(entry.overall),
+      failedIndicators: entry.failedIndicators.map((i: any) => i.label || i.key).join(', '),
+      considerationIndicators: entry.considerationIndicators.map((i: any) => i.label || i.key).join(', '),
+    }))
+
+    const header = `${row.lgu} - SGLG ${year} Scorecard`
+    const html = buildSglgScorecardHtml({
+      title: header,
+      totals,
+      metaRows,
+      rows,
+    })
+    await openScorecardPdf(html, `${row.lgu}_SGLG_${year}.pdf`)
+  }
+
   if (!year || !criteriaForYear.length) {
     return <div className="text-sm text-muted-foreground">No SGLG criteria datasets loaded.</div>
   }
 
   return (
     <div className="space-y-5">
-      <div className="grid gap-3 md:grid-cols-5">
+      <div className="grid gap-3 md:grid-cols-6">
         <div className="flex flex-col gap-1">
           <Label className="text-xs">Year</Label>
           <Select value={String(year)} onValueChange={(v) => setYear(Number(v))}>
@@ -258,15 +377,23 @@ export function SglgOverview() {
           </Select>
         </div>
         <div className="flex flex-col gap-1">
+          <Label className="text-xs">Criteria Focus</Label>
+          <Select value={criteriaFocusKey} onValueChange={(v) => setCriteriaFocusKey(v)}>
+            <SelectTrigger><SelectValue placeholder="All criteria" /></SelectTrigger>
+            <SelectContent>
+              <SelectItem value="__all__">All Criteria</SelectItem>
+              {criteriaOptions.map((c) => (<SelectItem key={c.key} value={c.key}>{c.label}</SelectItem>))}
+            </SelectContent>
+          </Select>
+        </div>
+        <div className="flex flex-col gap-1">
           <Label className="text-xs">Status Focus</Label>
           <Select value={statusFilter} onValueChange={(v) => setStatusFilter(v)}>
             <SelectTrigger><SelectValue placeholder="All" /></SelectTrigger>
             <SelectContent>
-              <SelectItem value="__all__">All</SelectItem>
-              <SelectItem value="failed_any">Failed (any)</SelectItem>
-              <SelectItem value="failed_2plus">Failed (2+)</SelectItem>
-              <SelectItem value="consideration_any">Consideration (any)</SelectItem>
-              <SelectItem value="met_all">Met all</SelectItem>
+              {statusOptions.map((opt) => (
+                <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+              ))}
             </SelectContent>
           </Select>
         </div>
@@ -275,6 +402,17 @@ export function SglgOverview() {
           <Input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search LGU or province" />
         </div>
       </div>
+
+      {criteriaFocusLabel && (
+        <div className="flex items-center gap-2 text-xs">
+          <span className="inline-flex items-center gap-2 rounded-full border px-3 py-1 bg-zinc-50 text-zinc-700">
+            Focus: {criteriaFocusLabel}
+            <button className="text-zinc-500 hover:text-zinc-900" onClick={() => setCriteriaFocusKey('__all__')}>
+              Clear
+            </button>
+          </span>
+        </div>
+      )}
 
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
         <Card>
@@ -326,7 +464,15 @@ export function SglgOverview() {
             </thead>
             <tbody>
               {criteriaSummary.map((row) => (
-                <tr key={row.criteria.key} className="odd:bg-white even:bg-zinc-50">
+                <tr
+                  key={row.criteria.key}
+                  className={`odd:bg-white even:bg-zinc-50 hover:bg-indigo-50 cursor-pointer ${criteriaFocusKey === row.criteria.key ? 'bg-indigo-50' : ''}`}
+                  onClick={() => {
+                    setCriteriaFocusKey(row.criteria.key)
+                    setStatusFilter('__all__')
+                  }}
+                  role="button"
+                >
                   <td className="p-2 border-b">{row.criteria.label}</td>
                   <td className="p-2 border-b text-right">{row.met}</td>
                   <td className="p-2 border-b text-right">{row.consideration}</td>
@@ -351,6 +497,7 @@ export function SglgOverview() {
                 setProvinceFilter('__all__')
                 setTypeFilter('__all__')
                 setStatusFilter('__all__')
+                setCriteriaFocusKey('__all__')
                 setSearch('')
               }}
             >
@@ -371,7 +518,11 @@ export function SglgOverview() {
                 <th className="text-right p-2 border-b">Failed</th>
                 <th className="text-right p-2 border-b">Consideration</th>
                 <th className="text-left p-2 border-b">Status</th>
+                {criteriaFocusKey !== '__all__' && (
+                  <th className="text-left p-2 border-b">Criteria Status</th>
+                )}
                 <th className="text-left p-2 border-b">Failed Criteria</th>
+                <th className="text-left p-2 border-b">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -386,7 +537,17 @@ export function SglgOverview() {
                   <td className="p-2 border-b">
                     <StatusPill status={r.overall} />
                   </td>
+                  {criteriaFocusKey !== '__all__' && (
+                    <td className="p-2 border-b">
+                      <StatusPill status={r.statuses[criteriaFocusKey] || null} />
+                    </td>
+                  )}
                   <td className="p-2 border-b">{r.failedCriteria.length ? r.failedCriteria.join(', ') : '-'}</td>
+                  <td className="p-2 border-b">
+                    <Button size="sm" variant="outline" onClick={() => { void exportScorecard(r) }}>
+                      Scorecard
+                    </Button>
+                  </td>
                 </tr>
               ))}
             </tbody>
