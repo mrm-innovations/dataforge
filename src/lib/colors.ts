@@ -60,6 +60,9 @@ export function applyAlpha(color: string, alpha: number) {
   return raw
 }
 
+export const softenPalette = (colors: string[], alpha = 0.75) =>
+  colors.map((c) => applyAlpha(c, alpha))
+
 // Default palette for multi-series charts
 export const chartPalette = [
   hsl('indigo'),

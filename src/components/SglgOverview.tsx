@@ -347,10 +347,10 @@ export function SglgOverview() {
   }
 
   const baseCardClass = 'hover:shadow-sm transition border'
-  const scopeCardClass = 'bg-emerald-50 border-emerald-300'
+  const scopeCardClass = 'bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)]'
   const failAnyCardClass = 'bg-amber-50 border-amber-300'
   const fail2CardClass = 'bg-rose-50 border-rose-300'
-  const avgCardClass = 'bg-sky-50 border-sky-300'
+  const avgCardClass = totals.avgMet >= (criteriaCount / 2) ? 'bg-emerald-50 border-emerald-300' : 'bg-rose-50 border-rose-300'
 
   return (
     <div className="space-y-5">

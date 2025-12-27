@@ -11,7 +11,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { chartPalette, hsl } from '@/lib/colors'
+import { applyAlpha, chartPalette, hsl, softenPalette } from '@/lib/colors'
 import { Download, Flag, Sparkles, Users, UserCheck } from 'lucide-react'
 ChartJS.register(ArcElement, Tooltip, Legend)
 export type Official = {
@@ -29,18 +29,18 @@ type Props = {
   officials: Official[]
 }
 const sexColorMap: Record<string, string> = {
-  Female: hsl('rose'),
-  Male: hsl('blue'),
-  Unspecified: hsl('violet', 0.35),
+  Female: applyAlpha(hsl('rose'), 0.75),
+  Male: applyAlpha(hsl('sky'), 0.75),
+  Unspecified: applyAlpha(hsl('slate'), 0.35),
 }
 
 const termColorMap: Record<string, string> = {
-  'NEWLY ELECTED': hsl('orange'),
-  '1ST TERMER': hsl('indigo'),
-  '2ND TERMER': hsl('violet'),
-  '3RD TERMER': hsl('cyan'),
-  COMEBACKING: hsl('green'),
-  UNKNOWN: hsl('rose', 0.35),
+  'NEWLY ELECTED': applyAlpha(hsl('amber'), 0.75),
+  '1ST TERMER': applyAlpha(hsl('indigo'), 0.75),
+  '2ND TERMER': applyAlpha(hsl('violet'), 0.75),
+  '3RD TERMER': applyAlpha(hsl('cyan'), 0.75),
+  COMEBACKING: applyAlpha(hsl('emerald'), 0.75),
+  UNKNOWN: applyAlpha(hsl('slate'), 0.35),
 }
 
 function withAlpha(color: string, alpha: number) {
@@ -181,11 +181,11 @@ export function LocalOfficialsView({ officials }: Props) {
       map[key] = (map[key] || 0) + 1
     })
     const entries = Object.entries(map).sort((a, b) => b[1] - a[1]).slice(0, 10)
-    return {
-      labels: entries.map((e) => e[0]),
-      values: entries.map((e) => e[1]),
-      colors: entries.map((_, idx) => chartPalette[idx % chartPalette.length]),
-    }
+      return {
+        labels: entries.map((e) => e[0]),
+        values: entries.map((e) => e[1]),
+        colors: softenPalette(entries.map((_, idx) => chartPalette[idx % chartPalette.length]), 0.75),
+      }
   }, [filtered])
   const termCounts = useMemo(() => {
     const map: Record<string, number> = {}

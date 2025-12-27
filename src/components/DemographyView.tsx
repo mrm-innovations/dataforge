@@ -14,7 +14,7 @@ import {
 } from 'chart.js'
 import { fmt } from '@/lib/store'
 import { store } from '@/lib/store'
-import { hsl } from '@/lib/colors'
+import { applyAlpha, hsl } from '@/lib/colors'
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend, ArcElement)
 
@@ -90,7 +90,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
       groups[key] = (groups[key] || 0) + (Number(r.population) || 0)
     })
     const entries = Object.entries(groups).sort((a, b) => b[1] - a[1])
-    const palette = [hsl('blue'), hsl('yellow'), hsl('orange')]
+    const palette = [hsl('blue'), hsl('yellow'), hsl('orange')].map((c) => applyAlpha(c, 0.75))
     return {
       labels: entries.map((e) => e[0]),
       data: entries.map((e) => e[1]),
@@ -145,11 +145,11 @@ export function DemographyView({ rows }: { rows: Row[] }){
     const labels = CLASS_ORDER.slice()
     const colorForType = (t: string) => {
       const key = String(t || '').trim().toLowerCase()
-      if (key === 'province') return hsl('indigo')
-      if (key === 'municipality') return hsl('blue')
-      if (key === 'component city') return hsl('orange')
-      if (key === 'highly urbanized city') return hsl('yellow')
-      return hsl('indigo')
+      if (key === 'province') return applyAlpha(hsl('indigo'), 0.75)
+      if (key === 'municipality') return applyAlpha(hsl('blue'), 0.75)
+      if (key === 'component city') return applyAlpha(hsl('orange'), 0.75)
+      if (key === 'highly urbanized city') return applyAlpha(hsl('yellow'), 0.75)
+      return applyAlpha(hsl('indigo'), 0.75)
     }
     const datasets = types.map((t) => ({
       label: t === 'highly urbanized city' ? 'HUC' : t.charAt(0).toUpperCase() + t.slice(1),
@@ -256,7 +256,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
           <CardContent className="p-4">
             <div className="text-sm font-medium mb-2">Population by Province</div>
             {provinceBar.labels.length ? (
-              <Bar data={{ labels: provinceBar.labels, datasets: [{ label: 'Population', data: provinceBar.data, backgroundColor: hsl('blue'), borderRadius: 8, maxBarThickness: 48 }] }} options={{ responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => fmt(ctx.parsed.y, 0) } } }, scales: { y: { beginAtZero: true } } }} />
+              <Bar data={{ labels: provinceBar.labels, datasets: [{ label: 'Population', data: provinceBar.data, backgroundColor: applyAlpha(hsl('blue'), 0.75), borderRadius: 8, maxBarThickness: 48 }] }} options={{ responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => fmt(ctx.parsed.y, 0) } } }, scales: { y: { beginAtZero: true } } }} />
             ) : (<div className="text-sm text-muted-foreground">No data</div>)}
           </CardContent>
         </Card>
@@ -303,7 +303,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
             <div className="text-sm font-medium mb-2">Top 10 by Population</div>
             {topLGUs.length ? (
               <Bar
-                data={{ labels: topLGUs.map(r => r.lgu), datasets: [{ data: topLGUs.map(r => r.population), backgroundColor: hsl('blue'), borderRadius: 8 }] }}
+                data={{ labels: topLGUs.map(r => r.lgu), datasets: [{ data: topLGUs.map(r => r.population), backgroundColor: applyAlpha(hsl('blue'), 0.75), borderRadius: 8 }] }}
                 options={{
                   responsive: true,
                   indexAxis: 'y',
