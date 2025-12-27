@@ -50,12 +50,26 @@ def to_number(value: str):
         return None
 
 
-def load_audit(path: Path, years):
+def extract_years(fieldnames):
+    years = []
+    for name in fieldnames or []:
+        raw = (name or "").strip()
+        if raw.isdigit() and len(raw) == 4:
+            year = int(raw)
+            if 1900 <= year <= 2100:
+                years.append(year)
+    return sorted(set(years))
+
+
+def load_audit(path: Path, fallback_years):
     if not path.exists():
-        return {}
+        return {}, fallback_years
     mapping = {}
     with path.open(encoding="utf-8") as f:
         reader = csv.DictReader(f)
+        years = extract_years(reader.fieldnames)
+        if not years:
+            years = fallback_years
         for row in reader:
             province = row.get("Province") or row.get("PROVINCE") or row.get("province")
             lgu = row.get("LGU") or row.get("Lgu") or row.get("lgu")
@@ -69,7 +83,7 @@ def load_audit(path: Path, years):
                     result[str(year)] = raw
             if result:
                 mapping[key] = result
-    return mapping
+    return mapping, years
 
 
 def load_demography():
@@ -102,7 +116,12 @@ def load_demography():
 
 def main():
     demography = load_demography()
-    audit_maps = {key: load_audit(meta["path"], meta["years"]) for key, meta in AUDIT_SHEETS.items()}
+    audit_maps = {}
+    audit_years = {}
+    for key, meta in AUDIT_SHEETS.items():
+        mapping, years = load_audit(meta["path"], meta["years"])
+        audit_maps[key] = mapping
+        audit_years[key] = years
 
     for entry in demography:
         key = f"{normalize(entry['province'])}|{normalize(entry['lgu'])}"
@@ -125,7 +144,7 @@ def main():
     meta = {
         "audits": {
             "ADAC": {
-                "years": AUDIT_SHEETS["ADAC"]["years"],
+                "years": audit_years["ADAC"],
                 "metric": "score",
                 "bands": {"high_functional": 85, "moderate_functional": 50},
                 "labels": {
@@ -135,12 +154,12 @@ def main():
                 },
             },
             "SGLG": {
-                "years": AUDIT_SHEETS["SGLG"]["years"],
+                "years": audit_years["SGLG"],
                 "metric": "status",
                 "status_values": ["Passer", "Non-Passer"],
             },
-            "POC": {"years": AUDIT_SHEETS["POC"]["years"], "metric": "score"},
-            "LCPC": {"years": AUDIT_SHEETS["LCPC"]["years"], "metric": "score"},
+            "POC": {"years": audit_years["POC"], "metric": "score"},
+            "LCPC": {"years": audit_years["LCPC"], "metric": "score"},
         },
         "region": REGION_NAME,
     }
