@@ -29,18 +29,18 @@ type Props = {
   officials: Official[]
 }
 const sexColorMap: Record<string, string> = {
+  Male: applyAlpha(hsl('blue'), 0.75),
   Female: applyAlpha(hsl('rose'), 0.75),
-  Male: applyAlpha(hsl('sky'), 0.75),
   Unspecified: applyAlpha(hsl('slate'), 0.35),
 }
 
 const termColorMap: Record<string, string> = {
-  'NEWLY ELECTED': applyAlpha(hsl('amber'), 0.75),
-  '1ST TERMER': applyAlpha(hsl('indigo'), 0.75),
-  '2ND TERMER': applyAlpha(hsl('violet'), 0.75),
-  '3RD TERMER': applyAlpha(hsl('cyan'), 0.75),
-  COMEBACKING: applyAlpha(hsl('emerald'), 0.75),
-  UNKNOWN: applyAlpha(hsl('slate'), 0.35),
+  'NEWLY ELECTED': hsl('amber'),
+  '1ST TERMER': hsl('sky'),
+  '2ND TERMER': hsl('emerald'),
+  '3RD TERMER': hsl('indigo'),
+  COMEBACKING: hsl('rose'),
+  UNKNOWN: hsl('slate'),
 }
 
 function withAlpha(color: string, alpha: number) {
@@ -60,8 +60,8 @@ function badgeStyle(color: string) {
   const base = color || '#475569'
   return {
     color: base,
-    backgroundColor: withAlpha(base, 0.12),
-    borderColor: withAlpha(base, 0.3),
+    backgroundColor: withAlpha(base, 0.18),
+    borderColor: withAlpha(base, 0.45),
   }
 }
 
@@ -69,6 +69,11 @@ function termColor(term: string | null | undefined) {
   if (!term) return '#475569'
   const normalized = term.trim().toUpperCase()
   return termColorMap[normalized] || '#475569'
+}
+
+function termChartColor(term: string | null | undefined) {
+  const base = termColor(term)
+  return /unknown/i.test(String(term || '')) ? applyAlpha(base, 0.35) : applyAlpha(base, 0.75)
 }
 function canonicalSex(value: string | null | undefined): 'Female' | 'Male' | 'Unspecified' {
   const normalized = (value || '').trim().toLowerCase()
@@ -181,10 +186,20 @@ export function LocalOfficialsView({ officials }: Props) {
       map[key] = (map[key] || 0) + 1
     })
     const entries = Object.entries(map).sort((a, b) => b[1] - a[1]).slice(0, 10)
+      const partyPalette = [
+        hsl('emerald'),
+        hsl('amber'),
+        hsl('rose'),
+        hsl('sky'),
+        hsl('indigo'),
+        hsl('teal'),
+        hsl('orange'),
+        hsl('violet'),
+      ]
       return {
         labels: entries.map((e) => e[0]),
         values: entries.map((e) => e[1]),
-        colors: softenPalette(entries.map((_, idx) => chartPalette[idx % chartPalette.length]), 0.75),
+        colors: softenPalette(entries.map((_, idx) => partyPalette[idx % partyPalette.length]), 0.75),
       }
   }, [filtered])
   const termCounts = useMemo(() => {
@@ -194,11 +209,11 @@ export function LocalOfficialsView({ officials }: Props) {
       map[key] = (map[key] || 0) + 1
     })
     const entries = Object.entries(map).sort((a, b) => b[1] - a[1])
-    return {
-      labels: entries.map(([label]) => toTitleCase(label)),
-      values: entries.map(([, value]) => value),
-      colors: entries.map(([label]) => termColor(label)),
-    }
+      return {
+        labels: entries.map(([label]) => toTitleCase(label)),
+        values: entries.map(([, value]) => value),
+        colors: entries.map(([label]) => termChartColor(label)),
+      }
   }, [filtered])
   const neoCount = filtered.filter((o) => /newly/i.test(o.term)).length
   const femaleCount = filtered.filter((o) => canonicalSex(o.sex) === 'Female').length
