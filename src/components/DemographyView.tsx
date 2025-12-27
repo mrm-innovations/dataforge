@@ -120,6 +120,16 @@ export function DemographyView({ rows }: { rows: Row[] }){
 
   const CLASS_ORDER = ['1st','2nd','3rd','4th','5th','6th','Unclassified'] as const
 
+  const incomeClassPillClass = (label: string) => {
+    if (label === '1st') return 'bg-emerald-100 text-emerald-800 border-emerald-200'
+    if (label === '2nd') return 'bg-sky-100 text-sky-800 border-sky-200'
+    if (label === '3rd') return 'bg-indigo-100 text-indigo-800 border-indigo-200'
+    if (label === '4th') return 'bg-amber-100 text-amber-800 border-amber-200'
+    if (label === '5th') return 'bg-orange-100 text-orange-800 border-orange-200'
+    if (label === '6th') return 'bg-rose-100 text-rose-800 border-rose-200'
+    return 'bg-slate-100 text-slate-700 border-slate-200'
+  }
+
   // Grouped counts by income class × type
   const classDist = useMemo(() => {
     const byType: Record<string, Record<string, number>> = {}
@@ -327,7 +337,13 @@ export function DemographyView({ rows }: { rows: Row[] }){
                       <TableCell className="p-2 border-b text-sm text-gray-700">{r.province || '--'}</TableCell>
                       <TableCell className="p-2 border-b text-sm text-gray-700">{r.lgu || '--'}</TableCell>
                       <TableCell className="p-2 border-b text-sm text-gray-700">{r.type || '--'}</TableCell>
-                      <TableCell className="p-2 border-b text-sm text-gray-700">{r.income_class || '--'}</TableCell>
+                      <TableCell className="p-2 border-b text-sm text-gray-700">
+                        {r.income_class ? (
+                          <span className={`inline-flex items-center rounded border px-2 py-0.5 text-xs font-normal ${incomeClassPillClass(normalizeClass(r.income_class))}`}>
+                            {normalizeClass(r.income_class)}
+                          </span>
+                        ) : '--'}
+                      </TableCell>
                       <TableCell className="p-2 border-b text-sm text-gray-700 text-right">{Number.isFinite(r.population) ? fmt(r.population,0) : '--'}</TableCell>
                     </TableRow>
                   ))}

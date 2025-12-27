@@ -466,14 +466,7 @@ export function LocalOfficialsView({ officials }: Props) {
                   <TableCell className="py-3 text-gray-800">{toTitleCase(o.lgu)}</TableCell>
                   <TableCell className="py-3 text-gray-800">{toTitleCase(o.position)}</TableCell>
                   <TableCell className="py-3 text-gray-900 font-medium">{formatOfficialName(o)}</TableCell>
-                  <TableCell className="py-3">
-                    <span
-                      className="inline-flex items-center px-2 py-0.5 rounded-md border text-xs font-normal"
-                      style={badgeStyle(sexColorMap[canonical] || sexColorMap.Unspecified)}
-                    >
-                      {canonical}
-                    </span>
-                  </TableCell>
+                  <TableCell className="py-3 text-gray-800">{canonical}</TableCell>
                   <TableCell className="py-3 text-gray-800">{party}</TableCell>
                   <TableCell className="py-3">
                     <span
