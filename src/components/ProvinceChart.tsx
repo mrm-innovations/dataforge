@@ -7,7 +7,8 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js'
-import { avg, fmt, metricIsStatus, provColor, store } from '@/lib/store'
+import { avg, barColor, fmt, metricIsStatus, store } from '@/lib/store'
+import { applyAlpha } from '@/lib/colors'
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend)
 
@@ -32,7 +33,7 @@ export function ProvinceChart({ rows }: { rows: any[] }) {
       {
         label: metricIsStatus() ? `Pass Rate ${latest}` : `Avg ${latest}`,
         data: entries.map((e) => e.avg) as number[],
-        backgroundColor: entries.map((e) => provColor(e.avg)),
+        backgroundColor: entries.map((e) => applyAlpha(barColor(e.avg ?? 0), 0.75)),
         borderRadius: 8,
       },
     ],

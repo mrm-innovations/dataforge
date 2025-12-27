@@ -26,6 +26,40 @@ export function hsl(keyOrRaw: HslKey | string, alpha?: number) {
   return alpha == null ? `hsl(${raw})` : `hsl(${raw} / ${alpha})`
 }
 
+export function applyAlpha(color: string, alpha: number) {
+  const raw = String(color || '').trim()
+  if (!raw) return raw
+  if (raw.startsWith('hsl(')) {
+    const inner = raw.slice(4, -1).trim()
+    const base = inner.split('/')[0].trim()
+    return `hsl(${base} / ${alpha})`
+  }
+  if (raw.startsWith('hsla(')) {
+    const inner = raw.slice(5, -1).trim()
+    const base = inner.split('/')[0].trim()
+    return `hsl(${base} / ${alpha})`
+  }
+  if (raw.startsWith('#')) {
+    const normalized = raw.replace('#', '')
+    const value = normalized.length === 3 ? normalized.split('').map((c) => c + c).join('') : normalized.padEnd(6, '0')
+    const num = parseInt(value.slice(0, 6), 16)
+    const r = (num >> 16) & 255
+    const g = (num >> 8) & 255
+    const b = num & 255
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`
+  }
+  if (raw.startsWith('rgb(')) {
+    const inner = raw.slice(4, -1).trim()
+    return `rgba(${inner}, ${alpha})`
+  }
+  if (raw.startsWith('rgba(')) {
+    const inner = raw.slice(5, -1).trim()
+    const base = inner.split(',').slice(0, 3).map((s) => s.trim()).join(', ')
+    return `rgba(${base}, ${alpha})`
+  }
+  return raw
+}
+
 // Default palette for multi-series charts
 export const chartPalette = [
   hsl('indigo'),

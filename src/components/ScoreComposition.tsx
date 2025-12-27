@@ -16,7 +16,7 @@ import {
   isADAC,
   isLCPC,
 } from '@/lib/store'
-import { hsl } from '@/lib/colors'
+import { applyAlpha, hsl } from '@/lib/colors'
 
 ChartJS.register(ArcElement, Tooltip, Legend)
 
@@ -64,19 +64,19 @@ export function ScoreComposition({ rows }: Props) {
       : (['elite', 'compliant', 'near', 'below'] as const)
 
     const defaultColors: Record<string, string> = {
-      pass: hsl('green'),
-      fail: hsl('red'),
-      high: hsl('green'),
+      pass: hsl('emerald'),
+      fail: hsl('rose'),
+      high: hsl('emerald'),
       moderate: hsl('amber'),
-      low: hsl('red'),
+      low: hsl('rose'),
       elite: hsl('emerald'),
       compliant: hsl('green'),
       near: hsl('amber'),
-      below: hsl('red'),
-      ideal: hsl('blue'),
-      mature: hsl('yellow'),
+      below: hsl('rose'),
+      ideal: hsl('emerald'),
+      mature: hsl('amber'),
       progressive: hsl('orange'),
-      basic: hsl('red'),
+      basic: hsl('rose'),
     }
 
     const slices: Slice[] = []
@@ -85,7 +85,8 @@ export function ScoreComposition({ rows }: Props) {
       if (!data || data.count === 0) continue
       const label = bandLabelForKey(store.state.audit, key) || key
       const colorFromBand = bandsMeta?.find((b) => b.key === key)?.color
-      const color = colorFromBand || defaultColors[key] || hsl('indigo')
+      const baseColor = colorFromBand || defaultColors[key] || hsl('indigo')
+      const color = applyAlpha(baseColor, 0.85)
       slices.push({
         key,
         label,

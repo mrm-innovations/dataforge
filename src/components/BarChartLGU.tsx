@@ -8,7 +8,7 @@ import {
   Legend,
 } from 'chart.js'
 import { barColor, fmt, metricIsStatus, store } from '@/lib/store'
-import { hsl } from '@/lib/colors'
+import { applyAlpha } from '@/lib/colors'
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend)
 
@@ -28,7 +28,7 @@ export function BarChartLGU({ rows }: { rows: any[] }) {
       {
         label: metricIsStatus() ? `${latest} Pass %` : `${latest} Score`,
         data: items.map((i) => i.value) as number[],
-        backgroundColor: hsl('blue'),
+        backgroundColor: items.map((i) => applyAlpha(barColor(i.value ?? 0), 0.75)),
         borderRadius: 8,
       },
     ],

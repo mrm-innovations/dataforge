@@ -16,10 +16,8 @@ import { BandDistribution } from '@/components/BandDistribution'
 import { RecordsTable } from '@/components/RecordsTable'
 import { MetricCards } from '@/components/MetricCards'
 import { DemographyView } from '@/components/DemographyView'
-import { MapView } from '@/components/MapView'
-import { ScoreComposition } from '@/components/ScoreComposition'
-import { loadCanon, setAudit, store, avg, fmt, metricIsStatus, filterRows, yearsInScope, actions, reloadDemography } from './lib/store'
-import { hsl } from '@/lib/colors'
+import { loadCanon, setAudit, store, avg, fmt, metricIsStatus, filterRows, yearsInScope, actions, reloadDemography, complianceThreshold } from './lib/store'
+import { applyAlpha, hsl } from '@/lib/colors'
 
 ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Tooltip, Legend)
 
@@ -211,6 +209,53 @@ export function App() {
     })
   }, [baseRows, bandFilter, latest])
   const years = yearsInScope()
+  const provinceAnalytics = useMemo(() => {
+    const latestYear = store.state.endYear
+    const prevYear = latestYear != null ? (store.YEARS.filter((y) => y < latestYear).slice(-1)[0] ?? null) : null
+    const threshold = complianceThreshold()
+    const byProvince = new Map<string, any[]>()
+    rows.forEach((r) => {
+      const key = r.province || '-'
+      const group = byProvince.get(key) || []
+      group.push(r)
+      byProvince.set(key, group)
+    })
+    const result = Array.from(byProvince.entries()).map(([province, group]) => {
+      const latestVals = latestYear == null ? [] : group.map((r) => (r as any)['y' + latestYear] as number | null).filter((v) => v != null) as number[]
+      const prevVals = prevYear == null ? [] : group.map((r) => (r as any)['y' + prevYear] as number | null).filter((v) => v != null) as number[]
+      const avgLatest = avg(latestVals)
+      const avgPrev = avg(prevVals)
+      const change = avgLatest != null && avgPrev != null ? avgLatest - avgPrev : null
+      const compliant = latestVals.length ? (latestVals.filter((v) => v >= threshold).length / latestVals.length) * 100 : null
+      let present = 0
+      for (const r of group) {
+        for (const y of years) {
+          if ((r as any)['y' + y] != null) present += 1
+        }
+      }
+      const denom = group.length * years.length
+      const coverage = denom ? (present / denom) * 100 : null
+      const top = latestYear == null ? null : group
+        .map((r) => ({ lgu: r.lgu, value: (r as any)['y' + latestYear] as number | null }))
+        .filter((i) => i.value != null)
+        .sort((a, b) => (b.value ?? 0) - (a.value ?? 0))[0] || null
+      const bottom = latestYear == null ? null : group
+        .map((r) => ({ lgu: r.lgu, value: (r as any)['y' + latestYear] as number | null }))
+        .filter((i) => i.value != null)
+        .sort((a, b) => (a.value ?? 0) - (b.value ?? 0))[0] || null
+      return {
+        province,
+        lguCount: group.length,
+        avgLatest,
+        change,
+        compliant,
+        coverage,
+        topLgu: top?.lgu || '-',
+        bottomLgu: bottom?.lgu || '-',
+      }
+    })
+    return result.sort((a, b) => (b.avgLatest ?? -1) - (a.avgLatest ?? -1))
+  }, [rows, years])
   const demographyBaseRows = useMemo(() => store.rawRows || [], [tick])
   const demographyProvinces = useMemo(
     () => Array.from(new Set(demographyBaseRows.map((r) => r.province).filter(Boolean))).sort(),
@@ -420,16 +465,17 @@ export function App() {
     })
     const datasets = Object.entries(groups).map(([type, group]) => {
       const key = String(type || '').trim().toLowerCase()
-      const color = key === 'province' ? hsl('green')
-        : key === 'municipality' ? hsl('blue')
-        : key === 'component city' ? hsl('orange')
-        : key === 'highly urbanized city' ? hsl('yellow')
+      const color = key === 'province' ? hsl('emerald')
+        : key === 'municipality' ? hsl('amber')
+        : key === 'component city' ? hsl('rose')
+        : key === 'highly urbanized city' ? hsl('teal')
         : hsl('indigo')
+      const softened = applyAlpha(color, 0.8)
       return {
         label: type,
         data: years.map((y) => avg((group as any[]).map((r) => (r as any)['y' + y] as number | null)) ?? null),
-        borderColor: color,
-        backgroundColor: color,
+        borderColor: softened,
+        backgroundColor: softened,
         tension: 0.25,
         spanGaps: true,
       }
@@ -681,16 +727,40 @@ export function App() {
               <>
                 <MetricCards rows={rows} years={years} onBandFilter={(b) => setBandFilter(b)} />
 
-                <section className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-                  <MapView rows={rows} />
-                  <div className="rounded-xl border p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <h2 className="font-medium">Score Composition</h2>
-                      <div className="text-xs text-muted-foreground">
-                        {store.state.audit}
-                      </div>
-                    </div>
-                    <ScoreComposition rows={rows} />
+                <section className="rounded-xl border p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <h2 className="font-medium">Province Analytics</h2>
+                    <div className="text-xs text-muted-foreground">Latest year overview</div>
+                  </div>
+                  <div className="overflow-auto rounded-md border">
+                    <table className="w-full text-sm">
+                      <thead className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
+                        <tr>
+                          <th className="text-left p-2 border-b font-medium">Province</th>
+                          <th className="text-right p-2 border-b font-medium">LGUs</th>
+                          <th className="text-right p-2 border-b font-medium">{metricIsStatus() ? 'Avg Pass %' : 'Avg Score'}</th>
+                          <th className="text-right p-2 border-b font-medium">YoY Change</th>
+                          <th className="text-right p-2 border-b font-medium">Compliance %</th>
+                          <th className="text-right p-2 border-b font-medium">Coverage %</th>
+                          <th className="text-left p-2 border-b font-medium">Top LGU</th>
+                          <th className="text-left p-2 border-b font-medium">Lowest LGU</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {provinceAnalytics.map((row, idx) => (
+                          <tr key={row.province} className={idx % 2 ? 'bg-zinc-50' : 'bg-white'}>
+                            <td className="p-2 border-b">{row.province}</td>
+                            <td className="p-2 border-b text-right">{row.lguCount}</td>
+                            <td className="p-2 border-b text-right">{row.avgLatest == null ? '-' : metricIsStatus() ? `${fmt(row.avgLatest, 0)}%` : fmt(row.avgLatest)}</td>
+                            <td className="p-2 border-b text-right">{row.change == null ? '-' : `${row.change >= 0 ? '+' : ''}${metricIsStatus() ? fmt(row.change, 0) + '%' : fmt(row.change)}`}</td>
+                            <td className="p-2 border-b text-right">{row.compliant == null ? '-' : `${fmt(row.compliant, 0)}%`}</td>
+                            <td className="p-2 border-b text-right">{row.coverage == null ? '-' : `${fmt(row.coverage, 0)}%`}</td>
+                            <td className="p-2 border-b">{row.topLgu}</td>
+                            <td className="p-2 border-b">{row.bottomLgu}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </section>
 

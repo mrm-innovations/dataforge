@@ -9,7 +9,7 @@ import {
   Legend,
 } from 'chart.js'
 import { classifyBand, isADAC, isLCPC, metricIsStatus, yearsInScope, fmt, bandsArrayFor, bandLabelForKey, store } from '@/lib/store'
-import { hsl } from '@/lib/colors'
+import { applyAlpha, hsl } from '@/lib/colors'
 import { Button } from '@/components/ui/button'
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend)
@@ -35,14 +35,28 @@ export function BandDistribution({ rows }: Props) {
       ? (['ideal','mature','progressive','basic'] as const)
       : (['elite','compliant','near','below'] as const)
 
-    const defaultColors: Record<string,string> = { high: hsl('blue'), moderate: hsl('yellow'), low: hsl('red'), elite: hsl('emerald'), compliant: hsl('green'), near: hsl('amber'), below: hsl('red'), ideal: hsl('blue'), mature: hsl('yellow'), progressive: hsl('orange'), basic: hsl('red'), pass: hsl('green'), fail: hsl('red') }
+    const defaultColors: Record<string,string> = {
+      high: hsl('emerald'),
+      moderate: hsl('amber'),
+      low: hsl('rose'),
+      elite: hsl('emerald'),
+      compliant: hsl('green'),
+      near: hsl('amber'),
+      below: hsl('rose'),
+      ideal: hsl('emerald'),
+      mature: hsl('amber'),
+      progressive: hsl('orange'),
+      basic: hsl('rose'),
+      pass: hsl('emerald'),
+      fail: hsl('rose'),
+    }
     const catColors: Record<string, string> = {}
-    if (metricIsStatus()) { catColors.pass = hsl('green'); catColors.fail = hsl('red') }
+    if (metricIsStatus()) { catColors.pass = hsl('emerald'); catColors.fail = hsl('rose') }
     else if (bands && bands.length) {
       bands.forEach(b => { catColors[b.key] = b.color || defaultColors[b.key] || hsl('sky') })
-    } else if (isADAC()) { Object.assign(catColors, { high: hsl('blue'), moderate: hsl('yellow'), low: hsl('red') }) }
-    else if (isLCPC()) { Object.assign(catColors, { ideal: hsl('blue'), mature: hsl('yellow'), progressive: hsl('orange'), basic: hsl('red') }) }
-    else { Object.assign(catColors, { elite: hsl('emerald'), compliant: hsl('green'), near: hsl('amber'), below: hsl('red') }) }
+    } else if (isADAC()) { Object.assign(catColors, { high: hsl('emerald'), moderate: hsl('amber'), low: hsl('rose') }) }
+    else if (isLCPC()) { Object.assign(catColors, { ideal: hsl('emerald'), mature: hsl('amber'), progressive: hsl('orange'), basic: hsl('rose') }) }
+    else { Object.assign(catColors, { elite: hsl('emerald'), compliant: hsl('green'), near: hsl('amber'), below: hsl('rose') }) }
 
     for (const y of years) {
       byYear.set(y, { denom: 0, buckets: Object.fromEntries(catOrder.map((k) => [k, 0])) as Record<string, number> })
@@ -62,7 +76,7 @@ export function BandDistribution({ rows }: Props) {
     const labels = years.map(String)
     const datasets = (catOrder as readonly string[]).map((cat) => ({
       label: resolveBandLabel(cat),
-      backgroundColor: catColors[cat],
+      backgroundColor: applyAlpha(catColors[cat], 0.75),
       stack: 'bands',
       data: years.map((y) => 0),
       metaCounts: years.map((y) => 0),
