@@ -217,7 +217,9 @@ export function SglgOverview() {
     const failedAny = summarized.filter((r) => r.failedCount > 0).length
     const failed2plus = summarized.filter((r) => r.failedCount >= 2).length
     const avgMet = totalLGUs ? summarized.reduce((s, r) => s + r.metCount, 0) / totalLGUs : 0
-    return { totalLGUs, failedAny, failed2plus, avgMet }
+    const failedAnyPct = totalLGUs ? (failedAny / totalLGUs) * 100 : 0
+    const failed2plusPct = totalLGUs ? (failed2plus / totalLGUs) * 100 : 0
+    return { totalLGUs, failedAny, failed2plus, avgMet, failedAnyPct, failed2plusPct }
   }, [summarized])
 
   const downloadCsv = () => {
@@ -344,7 +346,11 @@ export function SglgOverview() {
     return <div className="text-sm text-muted-foreground">No SGLG criteria datasets loaded.</div>
   }
 
-  const cardClass = 'bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)] hover:shadow-sm transition'
+  const baseCardClass = 'hover:shadow-sm transition border'
+  const scopeCardClass = 'bg-emerald-50 border-emerald-300'
+  const failAnyCardClass = 'bg-amber-50 border-amber-300'
+  const fail2CardClass = 'bg-rose-50 border-rose-300'
+  const avgCardClass = 'bg-sky-50 border-sky-300'
 
   return (
     <div className="space-y-5">
@@ -404,6 +410,25 @@ export function SglgOverview() {
           <Input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search LGU or province" />
         </div>
       </div>
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <div className="flex items-center gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => {
+              setProvinceFilter('__all__')
+              setTypeFilter('__all__')
+              setStatusFilter('__all__')
+              setCriteriaFocusKey('__all__')
+              setSearch('')
+            }}
+          >
+            Reset filters
+          </Button>
+          <Button size="sm" onClick={downloadCsv}><Download className="h-4 w-4 mr-2" /> CSV</Button>
+        </div>
+        <div className="text-xs text-muted-foreground">{filtered.length} LGUs</div>
+      </div>
 
       {criteriaFocusLabel && (
         <div className="flex items-center gap-2 text-xs">
@@ -417,31 +442,44 @@ export function SglgOverview() {
       )}
 
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-        <Card className={cardClass}>
+          <Card className={`${baseCardClass} ${scopeCardClass}`}>
           <CardContent className="p-4">
             <div className="text-xs text-muted-foreground">LGUs in Scope</div>
             <div className="text-2xl font-semibold mt-1">{totals.totalLGUs}</div>
             <div className="text-xs text-muted-foreground mt-1">{criteriaCount} criteria loaded</div>
           </CardContent>
         </Card>
-        <Card className={cardClass}>
+          <Card className={`${baseCardClass} ${failAnyCardClass}`}>
           <CardContent className="p-4">
             <div className="text-xs text-muted-foreground">LGUs Failing (Any)</div>
             <div className="text-2xl font-semibold mt-1">{totals.failedAny}</div>
-            <div className="text-xs text-muted-foreground mt-1">Need attention</div>
+            <div className="text-xs text-muted-foreground mt-1">
+              Need attention{totals.totalLGUs ? ` · ${Math.round(totals.failedAnyPct)}% of LGUs` : ''}
+            </div>
           </CardContent>
         </Card>
-        <Card className={cardClass}>
+          <Card className={`${baseCardClass} ${fail2CardClass}`}>
           <CardContent className="p-4">
             <div className="text-xs text-muted-foreground">LGUs Failing (2+)</div>
             <div className="text-2xl font-semibold mt-1">{totals.failed2plus}</div>
-            <div className="text-xs text-muted-foreground mt-1">High priority</div>
+            <div className="text-xs text-muted-foreground mt-1">
+              High priority{totals.totalLGUs ? ` · ${Math.round(totals.failed2plusPct)}% of LGUs` : ''}
+            </div>
           </CardContent>
         </Card>
-        <Card className={cardClass}>
+          <Card className={`${baseCardClass} ${avgCardClass}`}>
           <CardContent className="p-4">
             <div className="text-xs text-muted-foreground">Avg Criteria Met</div>
-            <div className="text-2xl font-semibold mt-1">{totals.avgMet.toFixed(1)}</div>
+            <div className="text-2xl font-semibold mt-1">
+              {criteriaCount ? (
+                <>
+                  {totals.avgMet.toFixed(1)}
+                  <span className="text-sm font-normal text-muted-foreground"> / {criteriaCount}</span>
+                </>
+              ) : (
+                '-'
+              )}
+            </div>
             <div className="text-xs text-muted-foreground mt-1">Per LGU</div>
           </CardContent>
         </Card>
@@ -491,23 +529,6 @@ export function SglgOverview() {
       <div className="rounded-xl border p-4 space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="text-sm font-medium">LGU Overview</div>
-          <div className="flex items-center gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => {
-                setProvinceFilter('__all__')
-                setTypeFilter('__all__')
-                setStatusFilter('__all__')
-                setCriteriaFocusKey('__all__')
-                setSearch('')
-              }}
-            >
-              Reset filters
-            </Button>
-            <Button size="sm" onClick={downloadCsv}><Download className="h-4 w-4 mr-2" /> CSV</Button>
-            <div className="text-xs text-muted-foreground">{filtered.length} LGUs</div>
-          </div>
         </div>
         <div className="rounded border overflow-auto">
           <table className="w-full text-sm">

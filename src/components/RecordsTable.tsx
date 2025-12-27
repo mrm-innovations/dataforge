@@ -74,7 +74,7 @@ export function RecordsTable({ rows }: { rows: any[] }) {
               const label = isStatus ? statusShort((row as any)['s' + y]) : fmt(value)
               return (
                 <TableCell key={y} className="p-2 border-b text-sm text-gray-700">
-                  <div className={`inline-flex items-center rounded border px-2 py-0.5 text-xs font-medium ${pillClassesForValue(value)}`}>
+                  <div className={`inline-flex items-center rounded border px-2 py-0.5 text-xs font-normal ${pillClassesForValue(value)}`}>
                     {label}
                   </div>
                 </TableCell>
