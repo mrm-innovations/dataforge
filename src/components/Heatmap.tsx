@@ -28,7 +28,7 @@ export function Heatmap({ rows }: { rows: any[] }) {
                 const bg = colorForScore(value)
                 return (
                   <TableCell key={y}>
-                    <div className="text-[11px] font-semibold rounded-md px-1.5 py-0.5 inline-block" style={{ background: bg }}>
+                    <div className="text-xs font-semibold rounded-md px-1.5 py-0.5 inline-block" style={{ background: bg }}>
                       {label}
                     </div>
                   </TableCell>
@@ -41,4 +41,3 @@ export function Heatmap({ rows }: { rows: any[] }) {
     </div>
   )
 }
-

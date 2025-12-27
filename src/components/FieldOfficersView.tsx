@@ -4,7 +4,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Input } from '@/components/ui/input'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { hsl } from '@/lib/colors'
-import { Users, UserCheck, ClipboardList } from 'lucide-react'
+import { ClipboardList, Download, Users, UserCheck } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export type FieldOfficer = {
@@ -149,7 +149,7 @@ export function FieldOfficersView({ officers }: Props) {
             Reset Filters
           </Button>
           <Button size="sm" onClick={exportCsv} disabled={!filtered.length}>
-            Export CSV
+            <Download className="h-4 w-4 mr-2" /> CSV
           </Button>
         </div>
       </div>
@@ -209,17 +209,17 @@ export function FieldOfficersView({ officers }: Props) {
         </div>
       </div>
 
-      <div className="rounded-xl border bg-white">
+      <div className="rounded-xl border bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)]">
         <Table className="text-sm">
           <TableHeader style={{ background: 'oklch(98.5% 0 0)' }}>
             <TableRow style={{ borderColor: 'oklch(92.2% 0 0)' }}>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Province / HUC</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Assignment / Office</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Name</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Position</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Designation</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Sex</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Contact Information</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Province / HUC</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Assignment / Office</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Name</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Position</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Designation</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Sex</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Contact Information</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -296,7 +296,7 @@ function MiniStat({
   accent: string
 }) {
   return (
-    <div className="rounded-xl border bg-white p-4 shadow-sm">
+    <div className="rounded-xl border bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)] p-4 shadow-sm">
       <div className="flex items-start justify-between gap-3">
         <div>
           <div className="text-xs text-muted-foreground">{label}</div>

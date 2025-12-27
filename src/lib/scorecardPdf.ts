@@ -11,8 +11,8 @@ type ScorecardTotals = {
 type ScorecardRow = {
   label: string
   overall: string
-  failedIndicators: string
-  considerationIndicators: string
+  failedIndicators: string[] | string
+  considerationIndicators: string[] | string
 }
 
 type ScorecardData = {
@@ -28,7 +28,20 @@ type GovernanceAuditRow = {
   latestYear: string
   value: string
   label: string
+  change: string
   coverage: string
+  isSummary?: boolean
+}
+
+type GovernancePrioritySummary = {
+  failedCriteria: number
+  failedIndicators: number
+  topGap: string
+}
+
+type GovernanceScore = {
+  value: string
+  note?: string
 }
 
 type GovernanceScorecardData = {
@@ -38,6 +51,12 @@ type GovernanceScorecardData = {
   auditRows: GovernanceAuditRow[]
   sglgTotals: ScorecardTotals
   sglgRows: ScorecardRow[]
+  prioritySummary?: GovernancePrioritySummary
+  overallScore?: GovernanceScore
+  topFailedIndicators?: Array<{ label: string; count: number }>
+  recommendations?: string[]
+  coverageNotes?: string[]
+  sglgYear?: number | null
 }
 
 function escapeHtml(value: string) {
@@ -54,12 +73,20 @@ export function buildSglgScorecardHtml(data: ScorecardData) {
     `<tr><th>${escapeHtml(label)}</th><td>${escapeHtml(value || '-')}</td></tr>`
   )).join('')
 
+  const renderIndicators = (value: string[] | string) => {
+    if (Array.isArray(value)) {
+      if (!value.length) return '-'
+      return `<ul class="indicator-list">${value.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
+    }
+    return value ? escapeHtml(value) : '-'
+  }
+
   const rowsHtml = data.rows.map((row) => (
     `<tr>
       <td>${escapeHtml(row.label)}</td>
       <td>${escapeHtml(row.overall)}</td>
-      <td>${escapeHtml(row.failedIndicators || '-')}</td>
-      <td>${escapeHtml(row.considerationIndicators || '-')}</td>
+      <td>${renderIndicators(row.failedIndicators)}</td>
+      <td>${renderIndicators(row.considerationIndicators)}</td>
     </tr>`
   )).join('')
 
@@ -76,6 +103,8 @@ export function buildSglgScorecardHtml(data: ScorecardData) {
       .pill { border: 1px solid #e5e7eb; border-radius: 999px; padding: 4px 10px; background: #f9fafb; }
       .subtitle { font-size: 12px; color: #6b7280; margin-bottom: 12px; }
       .footer { margin-top: 16px; font-size: 11px; color: #6b7280; padding-bottom: 24px; }
+      .indicator-list { margin: 0; padding-left: 16px; }
+      .indicator-list li { margin: 0 0 4px; }
     </style>
     <div>
       <h1>${escapeHtml(data.title)}</h1>
@@ -118,26 +147,44 @@ export function buildGovernanceScorecardHtml(data: GovernanceScorecardData) {
     `<tr><th>${escapeHtml(label)}</th><td>${escapeHtml(value || '-')}</td></tr>`
   )).join('')
 
+  const renderIndicators = (value: string[] | string) => {
+    if (Array.isArray(value)) {
+      if (!value.length) return '-'
+      return `<ul class="indicator-list">${value.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
+    }
+    return value ? escapeHtml(value) : '-'
+  }
+
   const auditRows = data.auditRows.length
     ? data.auditRows.map((row) => (
-    `<tr>
+    `<tr${row.isSummary ? ' class="summary-row"' : ''}>
       <td>${escapeHtml(row.audit)}</td>
       <td>${escapeHtml(row.latestYear)}</td>
       <td>${escapeHtml(row.value)}</td>
       <td>${escapeHtml(row.label)}</td>
+      <td>${escapeHtml(row.change)}</td>
       <td>${escapeHtml(row.coverage)}</td>
     </tr>`
   )).join('')
-    : `<tr><td colspan="5">No audit data</td></tr>`
+    : `<tr><td colspan="6">No audit data</td></tr>`
 
   const sglgRows = data.sglgRows.map((row) => (
     `<tr>
       <td>${escapeHtml(row.label)}</td>
       <td>${escapeHtml(row.overall)}</td>
-      <td>${escapeHtml(row.failedIndicators || '-')}</td>
-      <td>${escapeHtml(row.considerationIndicators || '-')}</td>
+      <td>${renderIndicators(row.failedIndicators)}</td>
+      <td>${renderIndicators(row.considerationIndicators)}</td>
     </tr>`
   )).join('')
+
+  const priority = data.prioritySummary
+  const overallScore = data.overallScore
+  const recommendations = data.recommendations && data.recommendations.length
+    ? `<div class="recommendations"><ul class="indicator-list">${data.recommendations.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div>`
+    : `<div class="recommendations"><div class="note">Maintain current strengths and monitor considerations.</div></div>`
+  const coverageNotes = data.coverageNotes && data.coverageNotes.length
+    ? `<ul class="indicator-list">${data.coverageNotes.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
+    : `<div class="note">All audits have full coverage.</div>`
 
   return `
     <style>
@@ -152,10 +199,37 @@ export function buildGovernanceScorecardHtml(data: GovernanceScorecardData) {
       .pill { border: 1px solid #e5e7eb; border-radius: 999px; padding: 4px 10px; background: #f9fafb; }
       .subtitle { font-size: 12px; color: #6b7280; margin-bottom: 12px; }
       .footer { margin-top: 16px; font-size: 11px; color: #6b7280; padding-bottom: 24px; }
+      .score-block { border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px 12px; background: #f9fafb; margin: 12px 0; }
+      .score-title { font-size: 12px; color: #6b7280; margin-bottom: 4px; }
+      .score-value { font-size: 20px; font-weight: 700; }
+      .note { font-size: 11px; color: #6b7280; margin-top: 4px; }
+      .summary-row td { font-weight: 600; background: #f9fafb; }
+      .indicator-list { margin: 0; padding-left: 16px; }
+      .recommendations .indicator-list { font-size: 11px; line-height: 1.4; }
+      .indicator-list li { margin: 0 0 4px; }
+      .legend { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; font-size: 11px; }
+      .legend .pill { padding: 3px 8px; }
     </style>
     <div>
       <h1>${escapeHtml(data.title)}</h1>
       ${data.subtitle ? `<div class="subtitle">${escapeHtml(data.subtitle)}</div>` : ''}
+
+      ${overallScore ? `
+        <div class="score-block">
+          <div class="score-title">Total Governance Score</div>
+          <div class="score-value">${escapeHtml(overallScore.value)}</div>
+          ${overallScore.note ? `<div class="note">${escapeHtml(overallScore.note)}</div>` : ''}
+        </div>
+      ` : ''}
+
+      ${priority ? `
+        <div class="summary">
+          <div class="pill">Failed criteria: ${priority.failedCriteria}</div>
+          <div class="pill">Failed indicators: ${priority.failedIndicators}</div>
+          <div class="pill">Top gap: ${escapeHtml(priority.topGap)}</div>
+        </div>
+      ` : ''}
+
       <h2>LGU Profile</h2>
       <table>
         <tbody>
@@ -171,15 +245,20 @@ export function buildGovernanceScorecardHtml(data: GovernanceScorecardData) {
             <th>Latest Year</th>
             <th>Status / Value</th>
             <th>Label</th>
+            <th>Change</th>
             <th>Coverage</th>
           </tr>
         </thead>
         <tbody>
-          ${auditRows || `<tr><td colspan="5">No audit data</td></tr>`}
+          ${auditRows || `<tr><td colspan="6">No audit data</td></tr>`}
         </tbody>
       </table>
+      <div class="note">Coverage indicates year availability for each audit; SGLG reflects criteria count for the year.</div>
 
-      <h2>SGLG Summary (2024)</h2>
+      <h2>Coverage Notes</h2>
+      ${coverageNotes}
+
+      <h2>SGLG Summary (${data.sglgYear || 'Latest'})</h2>
       <div class="summary">
         <div class="pill">Met: ${data.sglgTotals.met}</div>
         <div class="pill">Failed: ${data.sglgTotals.failed}</div>
@@ -199,11 +278,32 @@ export function buildGovernanceScorecardHtml(data: GovernanceScorecardData) {
           ${sglgRows}
         </tbody>
       </table>
+
+      <h2>Recommended Focus Areas</h2>
+      ${recommendations}
+
       <div class="footer">
         Generated by DataForge. Use this scorecard for planning and intervention tracking.
       </div>
     </div>
   `
+}
+
+export function openScorecardHtml(html: string, title: string) {
+  const win = window.open('', '_blank')
+  if (!win) return
+  win.document.open()
+  win.document.write(`<!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>${escapeHtml(title)}</title>
+    </head>
+    <body>${html}</body>
+  </html>`)
+  win.document.close()
+  win.focus()
 }
 
 export async function openScorecardPdf(html: string, filename: string) {

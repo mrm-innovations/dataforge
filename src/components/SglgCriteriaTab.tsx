@@ -192,15 +192,15 @@ export function SglgCriteriaTab() {
       </div>
 
       <div className="rounded border overflow-auto">
-        <table className="w-full text-xs">
-          <thead className="bg-zinc-50">
+        <table className="w-full text-sm">
+          <thead className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
             <tr>
-              <th className="text-left p-2 border-b">Province</th>
-              <th className="text-left p-2 border-b">LGU</th>
-              <th className="text-left p-2 border-b">Type</th>
-              <th className="text-left p-2 border-b">Indicator</th>
-              <th className="text-left p-2 border-b">Value</th>
-              <th className="text-left p-2 border-b">Status</th>
+              <th className="text-left p-2 border-b font-medium">Province</th>
+              <th className="text-left p-2 border-b font-medium">LGU</th>
+              <th className="text-left p-2 border-b font-medium">Type</th>
+              <th className="text-left p-2 border-b font-medium">Indicator</th>
+              <th className="text-left p-2 border-b font-medium">Value</th>
+              <th className="text-left p-2 border-b font-medium">Status</th>
             </tr>
           </thead>
           <tbody>
@@ -230,5 +230,5 @@ function StatusPill({ status }: { status: string | null | undefined }) {
     : status === 'met' ? 'bg-emerald-100 text-emerald-800 border-emerald-200'
     : status === 'consideration' ? 'bg-amber-100 text-amber-800 border-amber-200'
     : 'bg-slate-100 text-slate-700 border-slate-200'
-  return <span className={`px-2 py-0.5 rounded border text-[11px] ${color}`}>{label}</span>
+  return <span className={`px-2 py-0.5 rounded border text-xs ${color}`}>{label}</span>
 }

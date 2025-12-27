@@ -2,28 +2,10 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Card, CardContent } from '@/components/ui/card'
 import { avg, store } from '@/lib/store'
 import { LguDialog } from '@/components/LguDialog'
-
-declare global { interface Window { maplibregl?: any } }
+import maplibregl from 'maplibre-gl'
+import 'maplibre-gl/dist/maplibre-gl.css'
 
 type Props = { rows: any[] }
-
-function loadMapLibre(): Promise<any> {
-  if (window.maplibregl) return Promise.resolve(window.maplibregl)
-  return new Promise((resolve, reject) => {
-    // CSS
-    const link = document.createElement('link')
-    link.rel = 'stylesheet'
-    link.href = 'https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css'
-    document.head.appendChild(link)
-    // JS
-    const s = document.createElement('script')
-    s.src = 'https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'
-    s.async = true
-    s.onload = () => resolve((window as any).maplibregl)
-    s.onerror = () => reject(new Error('Failed to load MapLibre'))
-    document.head.appendChild(s)
-  })
-}
 
 export function MapView({ rows }: Props){
   const ref = useRef<HTMLDivElement | null>(null)
@@ -99,7 +81,6 @@ export function MapView({ rows }: Props){
     let disposed = false
     ;(async () => {
       try {
-        const maplibregl = await loadMapLibre()
         if (disposed) return
         const styleUrl = key
           ? `https://api.maptiler.com/maps/streets-v2/style.json?key=${encodeURIComponent(key)}`
@@ -463,4 +444,3 @@ export function MapView({ rows }: Props){
     </Card>
   )
 }
-

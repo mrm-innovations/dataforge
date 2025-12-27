@@ -12,7 +12,7 @@ import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { chartPalette, hsl } from '@/lib/colors'
-import { Flag, Sparkles, Users, UserCheck } from 'lucide-react'
+import { Download, Flag, Sparkles, Users, UserCheck } from 'lucide-react'
 ChartJS.register(ArcElement, Tooltip, Legend)
 export type Official = {
   province: string
@@ -351,7 +351,7 @@ export function LocalOfficialsView({ officials }: Props) {
           Reset filters
         </Button>
         <Button size="sm" onClick={exportCsv} disabled={!filtered.length}>
-          Export CSV
+          <Download className="h-4 w-4 mr-2" /> CSV
         </Button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -442,17 +442,17 @@ export function LocalOfficialsView({ officials }: Props) {
         </div>
       </div>
 
-      <div className="rounded-xl border bg-white">
+      <div className="rounded-xl border bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)]">
         <Table className="text-sm">
           <TableHeader style={{ background: 'oklch(98.5% 0 0)' }}>
             <TableRow style={{ borderColor: 'oklch(92.2% 0 0)' }}>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Province</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">LGU</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Position</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Name</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Sex</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Party</TableHead>
-              <TableHead className="text-[11px] uppercase tracking-wide text-muted-foreground">Term</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Province</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">LGU</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Position</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Name</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Sex</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Party</TableHead>
+              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Term</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -468,7 +468,7 @@ export function LocalOfficialsView({ officials }: Props) {
                   <TableCell className="py-3 text-gray-900 font-medium">{formatOfficialName(o)}</TableCell>
                   <TableCell className="py-3">
                     <span
-                      className="inline-flex items-center px-2 py-0.5 rounded-md border text-[12px] font-normal"
+                      className="inline-flex items-center px-2 py-0.5 rounded-md border text-xs font-normal"
                       style={badgeStyle(sexColorMap[canonical] || sexColorMap.Unspecified)}
                     >
                       {canonical}
@@ -477,7 +477,7 @@ export function LocalOfficialsView({ officials }: Props) {
                   <TableCell className="py-3 text-gray-800">{party}</TableCell>
                   <TableCell className="py-3">
                     <span
-                      className="inline-flex items-center px-2 py-0.5 rounded-md border text-[12px] font-normal"
+                      className="inline-flex items-center px-2 py-0.5 rounded-md border text-xs font-normal"
                       style={badgeStyle(termColor(o.term))}
                     >
                       {term}
@@ -527,7 +527,7 @@ function StatCard({
   accent: string
 }) {
   return (
-    <div className="rounded-xl border bg-white p-4 shadow-sm hover:shadow-md transition">
+    <div className="rounded-xl border bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)] p-4 shadow-sm hover:shadow-md transition">
       <div className="flex items-start justify-between gap-3">
         <div>
           <div className="text-xs text-muted-foreground tracking-wide">{label}</div>

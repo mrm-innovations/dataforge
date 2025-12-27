@@ -787,7 +787,7 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
           </div>
           <div className="overflow-x-auto rounded border">
             <table className="min-w-full text-xs">
-              <thead className="bg-muted/40 text-[11px] uppercase tracking-wide">
+              <thead className="bg-muted/40 text-xs uppercase tracking-wide">
                 <tr>
                   <th className="text-left px-3 py-2">Dataset</th>
                   <th className="text-left px-3 py-2">Sheet ID / GID</th>
@@ -800,15 +800,15 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
                   <tr key={src.key} className="odd:bg-white even:bg-muted/20 align-top">
                     <td className="px-3 py-2">
                       <div className="text-sm font-medium">{src.title}</div>
-                      <p className="text-[11px] text-muted-foreground">{src.description}</p>
+                      <p className="text-xs text-muted-foreground">{src.description}</p>
                     </td>
-                    <td className="px-3 py-2 text-[11px]">
+                    <td className="px-3 py-2 text-xs">
                       <div className="font-mono break-all">{src.sheetId}</div>
                       <div className="text-muted-foreground">gid: {src.gid || '0'}</div>
                     </td>
                     <td className="px-3 py-2">
                       <div className="text-xs font-medium">{src.usedIn}</div>
-                      <p className="text-[11px] text-muted-foreground">{src.refreshHint}</p>
+                      <p className="text-xs text-muted-foreground">{src.refreshHint}</p>
                     </td>
                     <td className="px-3 py-2">
                       <div className="flex flex-wrap gap-2">
@@ -827,7 +827,7 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
               </tbody>
             </table>
           </div>
-          <p className="text-[11px] text-muted-foreground">
+          <p className="text-xs text-muted-foreground">
             Tip: Keep the header row stable (rename columns instead of deleting). After editing a sheet, click the Refresh action on the related tab to regenerate the JSON caches.
           </p>
         </div>

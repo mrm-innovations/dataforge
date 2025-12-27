@@ -5,8 +5,8 @@ import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
-import { Download } from 'lucide-react'
-import { buildSglgScorecardHtml, openScorecardPdf } from '@/lib/scorecardPdf'
+import { Download, ExternalLink } from 'lucide-react'
+import { buildSglgScorecardHtml, openScorecardHtml } from '@/lib/scorecardPdf'
 
 type LguRow = {
   province: string
@@ -270,7 +270,7 @@ export function SglgOverview() {
     URL.revokeObjectURL(url)
   }
 
-  const exportScorecard = async (row: { province: string; lgu: string; type: string }) => {
+  const exportScorecard = (row: { province: string; lgu: string; type: string }) => {
     if (!year || !criteriaForYear.length) {
       window.alert('No SGLG criteria datasets loaded.')
       return
@@ -326,8 +326,8 @@ export function SglgOverview() {
     const rows = criteriaData.map((entry) => ({
       label: entry.label,
       overall: statusLabel(entry.overall),
-      failedIndicators: entry.failedIndicators.map((i: any) => i.label || i.key).join(', '),
-      considerationIndicators: entry.considerationIndicators.map((i: any) => i.label || i.key).join(', '),
+      failedIndicators: entry.failedIndicators.map((i: any) => i.label || i.key),
+      considerationIndicators: entry.considerationIndicators.map((i: any) => i.label || i.key),
     }))
 
     const header = `${row.lgu} - SGLG ${year} Scorecard`
@@ -337,12 +337,14 @@ export function SglgOverview() {
       metaRows,
       rows,
     })
-    await openScorecardPdf(html, `${row.lgu}_SGLG_${year}.pdf`)
+    openScorecardHtml(html, header)
   }
 
   if (!year || !criteriaForYear.length) {
     return <div className="text-sm text-muted-foreground">No SGLG criteria datasets loaded.</div>
   }
+
+  const cardClass = 'bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)] hover:shadow-sm transition'
 
   return (
     <div className="space-y-5">
@@ -415,28 +417,28 @@ export function SglgOverview() {
       )}
 
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-        <Card>
+        <Card className={cardClass}>
           <CardContent className="p-4">
             <div className="text-xs text-muted-foreground">LGUs in Scope</div>
             <div className="text-2xl font-semibold mt-1">{totals.totalLGUs}</div>
             <div className="text-xs text-muted-foreground mt-1">{criteriaCount} criteria loaded</div>
           </CardContent>
         </Card>
-        <Card>
+        <Card className={cardClass}>
           <CardContent className="p-4">
             <div className="text-xs text-muted-foreground">LGUs Failing (Any)</div>
             <div className="text-2xl font-semibold mt-1">{totals.failedAny}</div>
             <div className="text-xs text-muted-foreground mt-1">Need attention</div>
           </CardContent>
         </Card>
-        <Card>
+        <Card className={cardClass}>
           <CardContent className="p-4">
             <div className="text-xs text-muted-foreground">LGUs Failing (2+)</div>
             <div className="text-2xl font-semibold mt-1">{totals.failed2plus}</div>
             <div className="text-xs text-muted-foreground mt-1">High priority</div>
           </CardContent>
         </Card>
-        <Card>
+        <Card className={cardClass}>
           <CardContent className="p-4">
             <div className="text-xs text-muted-foreground">Avg Criteria Met</div>
             <div className="text-2xl font-semibold mt-1">{totals.avgMet.toFixed(1)}</div>
@@ -451,15 +453,15 @@ export function SglgOverview() {
           <div className="text-xs text-muted-foreground">{criteriaCount} criteria</div>
         </div>
         <div className="overflow-auto rounded-md border">
-          <table className="w-full text-xs">
-            <thead className="bg-zinc-50">
+          <table className="w-full text-sm">
+            <thead className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
               <tr>
-                <th className="text-left p-2 border-b">Criteria</th>
-                <th className="text-right p-2 border-b">Met</th>
-                <th className="text-right p-2 border-b">Consideration</th>
-                <th className="text-right p-2 border-b">Failed</th>
-                <th className="text-right p-2 border-b">N/A</th>
-                <th className="text-right p-2 border-b">Total</th>
+                <th className="text-left p-2 border-b font-medium">Criteria</th>
+                <th className="text-right p-2 border-b font-medium">Met</th>
+                <th className="text-right p-2 border-b font-medium">Consideration</th>
+                <th className="text-right p-2 border-b font-medium">Failed</th>
+                <th className="text-right p-2 border-b font-medium">N/A</th>
+                <th className="text-right p-2 border-b font-medium">Total</th>
               </tr>
             </thead>
             <tbody>
@@ -508,21 +510,21 @@ export function SglgOverview() {
           </div>
         </div>
         <div className="rounded border overflow-auto">
-          <table className="w-full text-xs">
-            <thead className="bg-zinc-50">
+          <table className="w-full text-sm">
+            <thead className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
               <tr>
-                <th className="text-left p-2 border-b">Province</th>
-                <th className="text-left p-2 border-b">LGU</th>
-                <th className="text-left p-2 border-b">Type</th>
-                <th className="text-right p-2 border-b">Met</th>
-                <th className="text-right p-2 border-b">Failed</th>
-                <th className="text-right p-2 border-b">Consideration</th>
-                <th className="text-left p-2 border-b">Status</th>
+                <th className="text-left p-2 border-b font-medium">Province</th>
+                <th className="text-left p-2 border-b font-medium">LGU</th>
+                <th className="text-left p-2 border-b font-medium">Type</th>
+                <th className="text-right p-2 border-b font-medium">Met</th>
+                <th className="text-right p-2 border-b font-medium">Failed</th>
+                <th className="text-right p-2 border-b font-medium">Consideration</th>
+                <th className="text-left p-2 border-b font-medium">Status</th>
                 {criteriaFocusKey !== '__all__' && (
-                  <th className="text-left p-2 border-b">Criteria Status</th>
+                  <th className="text-left p-2 border-b font-medium">Criteria Status</th>
                 )}
-                <th className="text-left p-2 border-b">Failed Criteria</th>
-                <th className="text-left p-2 border-b">Actions</th>
+                <th className="text-left p-2 border-b font-medium">Failed Criteria</th>
+                <th className="text-left p-2 border-b font-medium">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -544,8 +546,15 @@ export function SglgOverview() {
                   )}
                   <td className="p-2 border-b">{r.failedCriteria.length ? r.failedCriteria.join(', ') : '-'}</td>
                   <td className="p-2 border-b">
-                    <Button size="sm" variant="outline" onClick={() => { void exportScorecard(r) }}>
-                      Scorecard
+                    <Button
+                      size="icon"
+                      variant="outline"
+                      onClick={() => { void exportScorecard(r) }}
+                      aria-label="Open scorecard"
+                      title="Open scorecard"
+                    >
+                      <ExternalLink />
+                      <span className="sr-only">Open scorecard</span>
                     </Button>
                   </td>
                 </tr>
@@ -568,5 +577,5 @@ function StatusPill({ status }: { status: string | null | undefined }) {
     : status === 'met' ? 'bg-emerald-100 text-emerald-800 border-emerald-200'
     : status === 'consideration' ? 'bg-amber-100 text-amber-800 border-amber-200'
     : 'bg-slate-100 text-slate-700 border-slate-200'
-  return <span className={`px-2 py-0.5 rounded border text-[11px] ${color}`}>{label}</span>
+  return <span className={`px-2 py-0.5 rounded border text-xs ${color}`}>{label}</span>
 }

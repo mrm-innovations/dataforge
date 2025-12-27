@@ -888,7 +888,7 @@ export function App() {
                     Reset filters
                   </Button>
                   <Button size="sm" onClick={exportDemographyCsv}>
-                    <Download className="h-4 w-4 mr-2" /> Export CSV
+                    <Download className="h-4 w-4 mr-2" /> CSV
                   </Button>
                   <div className="text-xs text-muted-foreground">{demographyRows.length} records</div>
                 </div>

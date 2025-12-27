@@ -153,6 +153,9 @@ export function DemographyView({ rows }: { rows: Row[] }){
 
   // (Removed) Pass/Compliance rate by income class
 
+  const cardClass = 'bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)] hover:shadow-sm transition'
+  const panelClass = 'rounded-xl border p-4'
+
   // Small stat card component for consistent layout
   const StatCard = ({
     title,
@@ -161,7 +164,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
     tooltip,
     icon,
   }: { title: string; value: string; subtext?: string; tooltip?: string; icon?: ReactNode }) => (
-    <Card className="hover:shadow-sm transition">
+    <Card className={cardClass}>
       <CardContent className="p-4">
         <div className="flex items-start justify-between">
           <div className="text-xs text-muted-foreground inline-flex items-center gap-1">
@@ -185,7 +188,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
             </div>
           )}
         </div>
-        <div className="text-3xl font-semibold mt-1">{value}</div>
+        <div className="text-2xl font-semibold mt-1">{value}</div>
         {subtext && <div className="text-xs text-muted-foreground mt-1">{subtext}</div>}
       </CardContent>
     </Card>
@@ -239,7 +242,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <Card>
+        <Card className={panelClass}>
           <CardContent className="p-4">
             <div className="text-sm font-medium mb-2">Population by Province</div>
             {provinceBar.labels.length ? (
@@ -247,7 +250,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
             ) : (<div className="text-sm text-muted-foreground">No data</div>)}
           </CardContent>
         </Card>
-        <Card>
+        <Card className={panelClass}>
           <CardContent className="p-4">
             <div className="text-sm font-medium mb-2">Population by LGU Type</div>
             {typeDoughnut.labels.length ? (
@@ -268,7 +271,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <Card>
+        <Card className={panelClass}>
           <CardContent className="p-4">
             <div className="text-sm font-medium mb-2">Income Class Distribution</div>
             {classDist.datasets.length ? (
@@ -285,7 +288,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className={panelClass}>
           <CardContent className="p-4">
             <div className="text-sm font-medium mb-2">Top 10 by Population</div>
             {topLGUs.length ? (
@@ -304,28 +307,28 @@ export function DemographyView({ rows }: { rows: Row[] }){
       </div>
 
       <div className="grid grid-cols-1 gap-4">
-        <Card>
+        <Card className={panelClass}>
           <CardContent className="p-4">
             <div className="text-sm font-medium mb-2">Directory</div>
             <div className="overflow-auto rounded-md border">
               <Table>
-                <TableHeader style={{ background: 'oklch(98.5% 0 0)' }}>
-                  <TableRow style={{ borderColor: 'oklch(92.2% 0 0)' }}>
-                    <TableHead>PROVINCE</TableHead>
-                    <TableHead>LGU</TableHead>
-                    <TableHead>TYPE</TableHead>
-                    <TableHead>INCOME</TableHead>
-                    <TableHead className="text-right">POPULATION</TableHead>
+                <TableHeader className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
+                  <TableRow>
+                    <TableHead className="text-left p-2 border-b font-medium">Province</TableHead>
+                    <TableHead className="text-left p-2 border-b font-medium">LGU</TableHead>
+                    <TableHead className="text-left p-2 border-b font-medium">Type</TableHead>
+                    <TableHead className="text-left p-2 border-b font-medium">Income</TableHead>
+                    <TableHead className="text-right p-2 border-b font-medium">Population</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {working.slice().sort((a,b)=> (Number(b.population)||0) - (Number(a.population)||0)).map((r:any)=> (
-                    <TableRow key={r.lgu+':'+r.province}>
-                      <TableCell className="text-sm text-gray-700">{r.province || '--'}</TableCell>
-                      <TableCell className="text-sm text-gray-700">{r.lgu || '--'}</TableCell>
-                      <TableCell className="text-sm text-gray-700">{r.type || '--'}</TableCell>
-                      <TableCell className="text-sm text-gray-700">{r.income_class || '--'}</TableCell>
-                      <TableCell className="text-sm text-gray-700 text-right">{Number.isFinite(r.population) ? fmt(r.population,0) : '--'}</TableCell>
+                  {working.slice().sort((a,b)=> (Number(b.population)||0) - (Number(a.population)||0)).map((r:any, idx)=> (
+                    <TableRow key={r.lgu+':'+r.province} className={idx % 2 ? 'bg-zinc-50' : 'bg-white'}>
+                      <TableCell className="p-2 border-b text-sm text-gray-700">{r.province || '--'}</TableCell>
+                      <TableCell className="p-2 border-b text-sm text-gray-700">{r.lgu || '--'}</TableCell>
+                      <TableCell className="p-2 border-b text-sm text-gray-700">{r.type || '--'}</TableCell>
+                      <TableCell className="p-2 border-b text-sm text-gray-700">{r.income_class || '--'}</TableCell>
+                      <TableCell className="p-2 border-b text-sm text-gray-700 text-right">{Number.isFinite(r.population) ? fmt(r.population,0) : '--'}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

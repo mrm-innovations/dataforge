@@ -68,9 +68,11 @@ export function MetricCards({ rows, years }: Props){
     )
   }
 
+  const cardClass = 'hover:shadow-sm transition bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)]'
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <Card className="hover:shadow-sm transition">
+      <Card className={cardClass}>
         <CardContent className="p-4">
           <div className="flex items-start justify-between">
             <div className="text-xs text-muted-foreground inline-flex items-center gap-1">
@@ -84,9 +86,9 @@ export function MetricCards({ rows, years }: Props){
                 </Tooltip>
               </TooltipProvider>
             </div>
-            <div className={`text-[11px] px-1.5 py-0.5 rounded-md border ${rateChange == null ? 'text-zinc-500' : rateChange >= 0 ? 'text-emerald-700 border-emerald-200 bg-emerald-50' : 'text-rose-700 border-rose-200 bg-rose-50'}`}>{badge(rateChange,'pct')}</div>
+            <div className={`text-xs px-1.5 py-0.5 rounded-md border ${rateChange == null ? 'text-zinc-500' : rateChange >= 0 ? 'text-emerald-700 border-emerald-200 bg-emerald-50' : 'text-rose-700 border-rose-200 bg-rose-50'}`}>{badge(rateChange,'pct')}</div>
           </div>
-          <div className="text-3xl font-semibold mt-1">{rate == null ? '-' : `${fmt(rate,0)}%`}</div>
+          <div className="text-2xl font-semibold mt-1">{rate == null ? '-' : `${fmt(rate,0)}%`}</div>
           <div className="mt-2 font-medium text-sm inline-flex items-center gap-1">
             {rateChange == null ? 'No prior year' : rateChange >= 0 ? 'Trending up this year' : 'Down this year'}
             <NoteArrow change={rateChange} />
@@ -99,7 +101,7 @@ export function MetricCards({ rows, years }: Props){
         </CardContent>
       </Card>
 
-      <Card className="hover:shadow-sm transition">
+      <Card className={cardClass}>
         <CardContent className="p-4">
           <div className="flex items-start justify-between">
             <div className="text-xs text-muted-foreground inline-flex items-center gap-1">
@@ -113,15 +115,15 @@ export function MetricCards({ rows, years }: Props){
                 </Tooltip>
               </TooltipProvider>
             </div>
-            <div className={`text-[11px] px-1.5 py-0.5 rounded-md border ${medChange == null ? 'text-zinc-500' : medChange >= 0 ? 'text-emerald-700 border-emerald-200 bg-emerald-50' : 'text-rose-700 border-rose-200 bg-rose-50'}`}>{badge(medChange, metricIsStatus()?'pct':'pts')}</div>
+            <div className={`text-xs px-1.5 py-0.5 rounded-md border ${medChange == null ? 'text-zinc-500' : medChange >= 0 ? 'text-emerald-700 border-emerald-200 bg-emerald-50' : 'text-rose-700 border-rose-200 bg-rose-50'}`}>{badge(medChange, metricIsStatus()?'pct':'pts')}</div>
           </div>
-          <div className="text-3xl font-semibold mt-1">{med == null ? '-' : metricIsStatus()? `${fmt(med,0)}%` : fmt(med)}</div>
+          <div className="text-2xl font-semibold mt-1">{med == null ? '-' : metricIsStatus()? `${fmt(med,0)}%` : fmt(med)}</div>
           <div className="mt-2 font-medium text-sm inline-flex items-center gap-1">{medChange == null ? 'No prior year' : medChange >= 0 ? 'Strong central tendency' : 'Median softened'}<NoteArrow change={medChange} /></div>
           <div className="text-xs text-muted-foreground">P50 of latest-year distribution</div>
         </CardContent>
       </Card>
 
-      <Card className="hover:shadow-sm transition">
+      <Card className={cardClass}>
         <CardContent className="p-4">
           <div className="flex items-start justify-between">
             <div className="text-xs text-muted-foreground inline-flex items-center gap-1">
@@ -135,15 +137,15 @@ export function MetricCards({ rows, years }: Props){
                 </Tooltip>
               </TooltipProvider>
             </div>
-            <div className={`text-[11px] px-1.5 py-0.5 rounded-md border ${covChange == null ? 'text-zinc-500' : covChange >= 0 ? 'text-emerald-700 border-emerald-200 bg-emerald-50' : 'text-rose-700 border-rose-200 bg-rose-50'}`}>{badge(covChange,'pct')}</div>
+            <div className={`text-xs px-1.5 py-0.5 rounded-md border ${covChange == null ? 'text-zinc-500' : covChange >= 0 ? 'text-emerald-700 border-emerald-200 bg-emerald-50' : 'text-rose-700 border-rose-200 bg-rose-50'}`}>{badge(covChange,'pct')}</div>
           </div>
-          <div className="text-3xl font-semibold mt-1">{fmt(coverage.percent,0)}%</div>
+          <div className="text-2xl font-semibold mt-1">{fmt(coverage.percent,0)}%</div>
           <div className="mt-2 font-medium text-sm inline-flex items-center gap-1">{covChange == null ? 'No prior year' : covChange >= 0 ? 'Data completeness improved' : 'Coverage dipped'}<NoteArrow change={covChange} /></div>
           <div className="text-xs text-muted-foreground">{coverage.present}/{coverage.denom} cells present</div>
         </CardContent>
       </Card>
 
-      <Card className="hover:shadow-sm transition">
+      <Card className={cardClass}>
         <CardContent className="p-4">
           <div className="flex items-start justify-between">
             <div className="text-xs text-muted-foreground inline-flex items-center gap-1">
@@ -157,9 +159,9 @@ export function MetricCards({ rows, years }: Props){
                 </Tooltip>
               </TooltipProvider>
             </div>
-            <div className={`text-[11px] px-1.5 py-0.5 rounded-md border ${growth >= 0 ? 'text-emerald-700 border-emerald-200 bg-emerald-50' : 'text-rose-700 border-rose-200 bg-rose-50'}`}>{growth>=0?`+${metricIsStatus()?fmt(growth,0)+'%':fmt(growth)+' pts'}`:`${metricIsStatus()?fmt(growth,0)+'%':fmt(growth)+' pts'}`}</div>
+            <div className={`text-xs px-1.5 py-0.5 rounded-md border ${growth >= 0 ? 'text-emerald-700 border-emerald-200 bg-emerald-50' : 'text-rose-700 border-rose-200 bg-rose-50'}`}>{growth>=0?`+${metricIsStatus()?fmt(growth,0)+'%':fmt(growth)+' pts'}`:`${metricIsStatus()?fmt(growth,0)+'%':fmt(growth)+' pts'}`}</div>
           </div>
-          <div className="text-3xl font-semibold mt-1">{metricIsStatus()? `${fmt(growth,0)}%` : `${fmt(growth)} pts`}</div>
+          <div className="text-2xl font-semibold mt-1">{metricIsStatus()? `${fmt(growth,0)}%` : `${fmt(growth)} pts`}</div>
           <div className="mt-2 font-medium text-sm inline-flex items-center gap-1">{growth>=0?'Steady performance increase':'Performance decline'}<NoteArrow change={growth} /></div>
           <div className="text-xs text-muted-foreground">Across {years.length} years</div>
         </CardContent>

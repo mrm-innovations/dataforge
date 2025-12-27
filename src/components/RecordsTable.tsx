@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { avg, fmt, metricIsStatus, statusToNum, store, yearsInScope, colorForPill, statusShort } from '@/lib/store'
-import { LguDialog } from '@/components/LguDialog'
+import { Button } from '@/components/ui/button'
+import { ExternalLink } from 'lucide-react'
+import { avg, fmt, isADAC, isLCPC, metricIsStatus, statusToNum, store, yearsInScope, statusShort } from '@/lib/store'
+import { LguDialog, openGovernanceScorecard } from '@/components/LguDialog'
 
 export function RecordsTable({ rows }: { rows: any[] }) {
   const [selected, setSelected] = useState<{ lgu: string; province: string } | null>(null)
@@ -9,6 +11,33 @@ export function RecordsTable({ rows }: { rows: any[] }) {
   const isStatus = metricIsStatus()
   const summaryLabel = isStatus ? 'Avg Pass Rate' : 'Avg Score'
   const sorted = rows.slice().sort((a, b) => (((b as any)['y' + store.state.endYear!] ?? -1) - ((a as any)['y' + store.state.endYear!] ?? -1)))
+
+  const pillClassesForValue = (value: number | null | undefined) => {
+    if (value == null) return 'bg-slate-100 text-slate-700 border-slate-200'
+    if (metricIsStatus()) {
+      return value >= 90
+        ? 'bg-emerald-100 text-emerald-800 border-emerald-200'
+        : 'bg-rose-100 text-rose-800 border-rose-200'
+    }
+    if (isADAC()) {
+      const bands = (store.AUDITS?.ADAC?.bands || {})
+      const high = Number(bands.high_functional ?? 85)
+      const moderate = Number(bands.moderate_functional ?? 50)
+      if (value >= high) return 'bg-emerald-100 text-emerald-800 border-emerald-200'
+      if (value >= moderate) return 'bg-amber-100 text-amber-800 border-amber-200'
+      return 'bg-rose-100 text-rose-800 border-rose-200'
+    }
+    if (isLCPC()) {
+      if (value >= 80) return 'bg-emerald-100 text-emerald-800 border-emerald-200'
+      if (value >= 50) return 'bg-amber-100 text-amber-800 border-amber-200'
+      return 'bg-rose-100 text-rose-800 border-rose-200'
+    }
+    const bands = store.AUDITS[store.state.audit]?.bands || { elite: 95, compliant: 90, near: 80 }
+    if (value >= bands.elite) return 'bg-emerald-100 text-emerald-800 border-emerald-200'
+    if (value >= bands.compliant) return 'bg-green-100 text-green-800 border-green-200'
+    if (value >= bands.near) return 'bg-amber-100 text-amber-800 border-amber-200'
+    return 'bg-rose-100 text-rose-800 border-rose-200'
+  }
 
   // Auto-open from URL params if present
   useEffect(() => {
@@ -25,27 +54,29 @@ export function RecordsTable({ rows }: { rows: any[] }) {
   return (
     <div className="overflow-auto rounded-md border">
       <Table>
-        <TableHeader style={{ background: 'oklch(98.5% 0 0)' }}>
-          <TableRow style={{ borderColor: 'oklch(92.2% 0 0)' }}>
-            <TableHead>REGION</TableHead>
-            <TableHead>PROVINCE</TableHead>
-            <TableHead>LGU</TableHead>
-            <TableHead>TYPE</TableHead>
+        <TableHeader className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
+          <TableRow>
+            <TableHead className="text-left p-2 border-b font-medium">Region</TableHead>
+            <TableHead className="text-left p-2 border-b font-medium">Province</TableHead>
+            <TableHead className="text-left p-2 border-b font-medium">LGU</TableHead>
+            <TableHead className="text-left p-2 border-b font-medium">Type</TableHead>
             {years.map((y) => (
-              <TableHead key={y}>{y}</TableHead>
+              <TableHead key={y} className="text-left p-2 border-b font-medium">{y}</TableHead>
             ))}
-            <TableHead className="font-bold">{summaryLabel}</TableHead>
+            <TableHead className="text-left p-2 border-b font-medium">{summaryLabel}</TableHead>
+            <TableHead className="text-left p-2 border-b font-medium">Actions</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          {sorted.map((row) => {
+          {sorted.map((row, idx) => {
             const cells = years.map((y) => {
               const value = (row as any)['y' + y] as number | null
               const label = isStatus ? statusShort((row as any)['s' + y]) : fmt(value)
-              const bg = colorForPill(value, 0.13)
               return (
-                <TableCell key={y} className="text-sm text-gray-700">
-                  <div className="inline-block text-[11px] font-semibold rounded-md px-1.5 py-0.5" style={{ background: bg }}>{label}</div>
+                <TableCell key={y} className="p-2 border-b text-sm text-gray-700">
+                  <div className={`inline-flex items-center rounded border px-2 py-0.5 text-xs font-medium ${pillClassesForValue(value)}`}>
+                    {label}
+                  </div>
                 </TableCell>
               )
             })
@@ -55,22 +86,41 @@ export function RecordsTable({ rows }: { rows: any[] }) {
             return (
               <TableRow
                 key={(row as any).lgu}
-                className="hover:bg-indigo-50/40"
+                className={`${idx % 2 ? 'bg-zinc-50' : 'bg-white'} hover:bg-indigo-50/40 cursor-pointer`}
+                onClick={() => setSelected({ lgu: (row as any).lgu, province: (row as any).province })}
+                tabIndex={0}
+                role="button"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault()
+                    setSelected({ lgu: (row as any).lgu, province: (row as any).province })
+                  }
+                }}
+                aria-label={`Open profile for ${(row as any).lgu}`}
               >
-                <TableCell className="text-sm text-gray-700">{(row as any).region}</TableCell>
-                <TableCell className="text-sm text-gray-700">{(row as any).province}</TableCell>
-                <TableCell
-                  className="text-sm text-gray-700 underline decoration-dotted underline-offset-2 cursor-pointer"
-                  onClick={() => setSelected({ lgu: (row as any).lgu, province: (row as any).province })}
-                  tabIndex={0}
-                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setSelected({ lgu: (row as any).lgu, province: (row as any).province }) }}
-                  aria-label={`Open profile for ${(row as any).lgu}`}
-                >
+                <TableCell className="p-2 border-b text-sm text-gray-700">{(row as any).region}</TableCell>
+                <TableCell className="p-2 border-b text-sm text-gray-700">{(row as any).province}</TableCell>
+                <TableCell className="p-2 border-b text-sm text-gray-700">
                   {(row as any).lgu}
                 </TableCell>
-                <TableCell className="text-sm text-gray-700">{(row as any).type}</TableCell>
+                <TableCell className="p-2 border-b text-sm text-gray-700">{(row as any).type}</TableCell>
                 {cells}
-                <TableCell className="text-sm font-semibold text-gray-900">{summaryText}</TableCell>
+                <TableCell className="p-2 border-b text-sm font-semibold text-gray-900">{summaryText}</TableCell>
+                <TableCell className="p-2 border-b">
+                  <Button
+                    size="icon"
+                    variant="outline"
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      openGovernanceScorecard((row as any).lgu, (row as any).province)
+                    }}
+                    aria-label={`Open scorecard for ${(row as any).lgu}`}
+                    title="Open scorecard"
+                  >
+                    <ExternalLink />
+                    <span className="sr-only">Open scorecard</span>
+                  </Button>
+                </TableCell>
               </TableRow>
             )
           })}
