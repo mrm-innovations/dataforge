@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import subprocess
 import sys
+import time
 import urllib.request
 from pathlib import Path
 
@@ -13,7 +14,8 @@ AUDIT_SHEETS = {
 
 
 def download(name: str, sheet_id: str, gid: str):
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}"
+    cache_bust = int(time.time() * 1000)
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}&cachebust={cache_bust}"
     data = urllib.request.urlopen(url).read()
     path = Path("datasets") / f"{name}.csv"
     path.write_bytes(data)

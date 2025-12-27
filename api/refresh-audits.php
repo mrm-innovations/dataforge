@@ -63,6 +63,35 @@ if ($exit !== 0) {
   echo json_encode(['ok' => false, 'error' => trim($stderr ?: $stdout)]);
   exit;
 }
-echo json_encode(['ok' => true, 'output' => trim($stdout)]);
+
+// If built assets are served from /dist, sync refreshed outputs there too.
+$root = realpath(__DIR__ . '/..');
+$warnings = [];
+if ($root) {
+  $dist = $root . DIRECTORY_SEPARATOR . 'dist';
+  $lgAudits = $root . DIRECTORY_SEPARATOR . 'lg-audits.json';
+  if (is_dir($dist) && is_file($lgAudits)) {
+    $target = $dist . DIRECTORY_SEPARATOR . 'lg-audits.json';
+    if (!@copy($lgAudits, $target)) {
+      $warnings[] = 'Failed to copy lg-audits.json to dist.';
+    }
+  }
+  $datasetsDir = $root . DIRECTORY_SEPARATOR . 'datasets';
+  $distDatasets = $dist . DIRECTORY_SEPARATOR . 'datasets';
+  if (is_dir($datasetsDir) && is_dir($dist)) {
+    if (!is_dir($distDatasets)) {
+      @mkdir($distDatasets, 0755, true);
+    }
+    foreach (['adac.csv', 'lcpc.csv', 'poc.csv', 'sglg.csv'] as $name) {
+      $src = $datasetsDir . DIRECTORY_SEPARATOR . $name;
+      $dst = $distDatasets . DIRECTORY_SEPARATOR . $name;
+      if (is_file($src) && !@copy($src, $dst)) {
+        $warnings[] = "Failed to copy {$name} to dist.";
+      }
+    }
+  }
+}
+
+echo json_encode(['ok' => true, 'output' => trim($stdout), 'warnings' => $warnings]);
 exit;
 ?>

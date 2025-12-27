@@ -13,7 +13,7 @@ AUDIT_SHEETS = {
     "ADAC": {
         "path": Path("datasets/adac.csv"),
         "metric": "score",
-        "years": [2019, 2020, 2021, 2022, 2023],
+        "years": [2019, 2020, 2021, 2022, 2023, 2024],
     },
     "SGLG": {
         "path": Path("datasets/sglg.csv"),
@@ -57,7 +57,9 @@ def load_audit(path: Path, years):
     with path.open(encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            key = f"{normalize(row.get('Province'))}|{normalize(row.get('LGU'))}"
+            province = row.get("Province") or row.get("PROVINCE") or row.get("province")
+            lgu = row.get("LGU") or row.get("Lgu") or row.get("lgu")
+            key = f"{normalize(province)}|{normalize(lgu)}"
             if not key.strip("|"):
                 continue
             result = {}
