@@ -3,7 +3,8 @@
 
 // Single admin account
 define('ADMIN_USER', 'mbmanait');
-define('ADMIN_PASS_HASH', '$2y$10$ve66RYfWG/oZK/LxgzwCTu8OG/GFGOJQmOZe.AssqxGlZslwNbQCu');
+define('ADMIN_PASS_HASH', '$2y$10$LyW7NE0iOaHSKvB/SmJFPux3iJ7Qe4x1ic66g8uGstNKHUKyXuKoe');
+define('PYTHON_BIN', 'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python311\\python.exe');
 
 // Bearer token used by save-json endpoint
 define('API_TOKEN', 'y8yUTX0sWgtpcCHzGXCETu6aLLJb7do4rXNEmO24Cbl1TWclKCUuIaLYFPvqDN0N');

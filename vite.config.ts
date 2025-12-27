@@ -7,6 +7,18 @@ export default defineConfig(({ command }) => ({
   // Use root base in dev so assets resolve at /, and /dataforge/ for production builds.
   base: command === 'serve' ? '/' : '/dataforge/',
   plugins: [react()],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost/dataforge',
+        changeOrigin: true,
+      },
+      '/lg-audits.json': {
+        target: 'http://localhost/dataforge',
+        changeOrigin: true,
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
