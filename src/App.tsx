@@ -572,41 +572,53 @@ export function App() {
                 </div>
               </div>
             </div>
-            <nav className="flex-1 overflow-y-auto p-4 space-y-1">
-              <button onClick={() => setTab('dashboard')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='dashboard' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-8 9 8"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 21V9h6v12"/></svg>
-                <span>Dashboard</span>
-              </button>
-              <button onClick={() => setTab('sglg-overview')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg-overview' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h10"/></svg>
-                <span>SGLG Overview</span>
-              </button>
-              <button onClick={() => setTab('sglg')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 4l6 4-6 4-6-4 6-4z"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 12l6 4 6-4"/></svg>
-                <span>SGLG Criteria</span>
-              </button>
-            <button onClick={() => setTab('demography')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='demography' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" d="M4 19v-6m6 6V5m6 14v-9"/></svg>
-              <span>Demography</span>
-            </button>
-            <button onClick={() => setTab('officials')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='officials' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M23 21v-2a4 4 0 0 0-3-3.87"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              <span>Local Officials</span>
-            </button>
-            <button onClick={() => setTab('field-officers')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='field-officers' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M7 21V7.5a1.5 1.5 0 0 1 3 0V21"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M14 21v-9.5a1.5 1.5 0 0 1 3 0V21"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 21h18"/></svg>
-              <span>Field Officers</span>
-            </button>
-            <button onClick={() => setTab('about')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='about' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="9" strokeWidth="2"/><path strokeWidth="2" strokeLinecap="round" d="M12 8h.01M11 12h2v5h-2z"/></svg>
-              <span>About</span>
-            </button>
-            {role === 'admin' && (
-              <button onClick={() => setTab('settings')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='settings' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 7h16M6 12h12M8 17h8"/></svg>
-                <span>Settings</span>
-              </button>
-            )}
+            <nav className="flex-1 overflow-y-auto p-4 space-y-3">
+              <div>
+                <div className="px-3 text-[11px] font-semibold uppercase tracking-wide text-zinc-500">Main</div>
+                <button onClick={() => setTab('dashboard')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='dashboard' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-8 9 8"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 21V9h6v12"/></svg>
+                  <span>Dashboard</span>
+                </button>
+              </div>
+              <div>
+                <div className="px-3 text-[11px] font-semibold uppercase tracking-wide text-zinc-500">SGLG</div>
+                  <button onClick={() => setTab('sglg-overview')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg-overview' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  <span>SGLG Overview</span>
+                </button>
+                  <button onClick={() => setTab('sglg')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  <span>SGLG Criteria</span>
+                </button>
+              </div>
+              <div>
+                <div className="px-3 text-[11px] font-semibold uppercase tracking-wide text-zinc-500">Reference</div>
+                  <button onClick={() => setTab('demography')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='demography' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  <span>Demography</span>
+                </button>
+                  <button onClick={() => setTab('officials')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='officials' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  <span>Local Officials</span>
+                </button>
+                  <button onClick={() => setTab('field-officers')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='field-officers' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  <span>Field Officers</span>
+                </button>
+              </div>
+              <div>
+                <div className="px-3 text-[11px] font-semibold uppercase tracking-wide text-zinc-500">Other</div>
+                <button onClick={() => setTab('about')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='about' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="9" strokeWidth="2"/><path strokeWidth="2" strokeLinecap="round" d="M12 8h.01M11 12h2v5h-2z"/></svg>
+                  <span>About</span>
+                </button>
+                {role === 'admin' && (
+                  <button onClick={() => setTab('settings')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='settings' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 7h16M6 12h12M8 17h8"/></svg>
+                    <span>Settings</span>
+                  </button>
+                )}
+              </div>
             </nav>
             <div className="mt-auto px-5 py-3 border-t text-[11px] text-muted-foreground" style={{ borderColor: 'oklch(92.2% 0 0)' }}>
               <div>
@@ -966,14 +978,80 @@ export function App() {
               </section>
             )}
 
-            {tab === 'about' && (
-              <section className="rounded-xl border p-4">
-                <h2 className="font-medium mb-2">About GovDash XII</h2>
-                <p className="text-sm text-muted-foreground">
-                  Built with Vite, React, shadcn/ui, Tailwind, and Chart.js. Data source: <code>lg-audits.json</code> served from the site root.
-                </p>
-              </section>
-            )}
+              {tab === 'about' && (
+                <section className="space-y-4">
+                  <div className="rounded-xl border p-5 space-y-3">
+                    <div>
+                      <h2 className="text-lg font-semibold">About DataForge — DILG Region XII</h2>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        DataForge is the internal analytics workspace for DILG Region XII. It consolidates governance performance
+                        data so the region can monitor results, compare LGUs, and plan targeted interventions based on evidence.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-medium">DILG mandate and role</h3>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        The Department of the Interior and Local Government (DILG) is mandated to promote peace and order, ensure
+                        public safety, and strengthen local governance. This platform supports that mandate by providing clear,
+                        consistent performance signals that help provincial and municipal offices prioritize technical assistance,
+                        policy guidance, and capacity building.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-medium">LGRRC relevance</h3>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        The Local Governance Regional Resource Center (LGRRC) is a DILG knowledge management hub that curates tools,
+                        references, and learning resources. DataForge complements the LGRRC by turning raw performance datasets into
+                        usable insights that can inform training, guidance materials, and field coaching.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="rounded-xl border p-4">
+                      <h3 className="text-sm font-medium">Purpose</h3>
+                      <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1">
+                        <li>Track audit performance across years and provinces.</li>
+                        <li>Surface priority gaps for planning and intervention.</li>
+                        <li>Provide LGU-level and provincial reference views.</li>
+                        <li>Support the LGRRC as a knowledge management hub for evidence-based guidance.</li>
+                      </ul>
+                    </div>
+                    <div className="rounded-xl border p-4">
+                      <h3 className="text-sm font-medium">Data sources</h3>
+                      <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1">
+                        <li>Audit datasets: ADAC, SGLG, LCPC, POC.</li>
+                        <li>Demography and LGU profiles.</li>
+                        <li>Local Officials and Field Officers directories.</li>
+                      </ul>
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Admins can refresh datasets from the dashboard tools.
+                      </p>
+                    </div>
+                    <div className="rounded-xl border p-4">
+                      <h3 className="text-sm font-medium">Key terms</h3>
+                      <div className="mt-2 text-sm text-muted-foreground space-y-1">
+                        <div><span className="font-medium text-foreground">Compliance rate</span> — share of LGUs meeting the audit threshold.</div>
+                        <div><span className="font-medium text-foreground">Coverage</span> — data completeness across LGU-year cells.</div>
+                        <div><span className="font-medium text-foreground">Avg criteria met</span> — average SGLG criteria passed per LGU.</div>
+                      </div>
+                    </div>
+                    <div className="rounded-xl border p-4">
+                      <h3 className="text-sm font-medium">Support</h3>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        For access or questions, contact <a className="underline" href="mailto:mbmanait@dilg.gov.ph">mbmanait@dilg.gov.ph</a>.
+                      </p>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        The Local Governance Regional Resource Center (LGRRC) is a knowledge management hub of the DILG that
+                        curates tools, references, and learning resources to improve local governance performance across the region.
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-3">
+                        Built with Vite, React, shadcn/ui, Tailwind, and Chart.js. Primary data source: <code>lg-audits.json</code>.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              )}
             {role === 'admin' && tab === 'settings' && (
               <section className="rounded-xl border p-0 overflow-hidden">
                 <SettingsView authed={role === 'admin'} />
@@ -992,33 +1070,53 @@ export function App() {
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" d="M6 18L18 6M6 6l12 12"/></svg>
                 </button>
               </div>
-              <nav className="space-y-1">
-                <button onClick={() => { setTab('dashboard'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='dashboard' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-8 9 8"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 21V9h6v12"/></svg>
-                  <span>Dashboard</span>
-                </button>
-                <button onClick={() => { setTab('demography'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='demography' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" d="M4 19v-6m6 6V5m6 14v-9"/></svg>
-                  <span>Demography</span>
-                </button>
-                <button onClick={() => { setTab('officials'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='officials' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M23 21v-2a4 4 0 0 0-3-3.87"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                  <span>Local Officials</span>
-                </button>
-                <button onClick={() => { setTab('field-officers'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='field-officers' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M7 21V7.5a1.5 1.5 0 0 1 3 0V21"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M14 21v-9.5a1.5 1.5 0 0 1 3 0V21"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 21h18"/></svg>
-                  <span>Field Officers</span>
-                </button>
-                <button onClick={() => { setTab('about'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='about' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="9" strokeWidth="2"/><path strokeWidth="2" strokeLinecap="round" d="M12 8h.01M11 12h2v5h-2z"/></svg>
-                  <span>About</span>
-                </button>
-                {role === 'admin' && (
-                  <button onClick={() => { setTab('settings'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='settings' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 7h16M6 12h12M8 17h8"/></svg>
-                    <span>Settings</span>
+              <nav className="space-y-3">
+                <div>
+                  <div className="px-3 text-[11px] font-semibold uppercase tracking-wide text-zinc-500">Main</div>
+                  <button onClick={() => { setTab('dashboard'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='dashboard' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-8 9 8"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 21V9h6v12"/></svg>
+                    <span>Dashboard</span>
                   </button>
-                )}
+                </div>
+                <div>
+                  <div className="px-3 text-[11px] font-semibold uppercase tracking-wide text-zinc-500">SGLG</div>
+                  <button onClick={() => { setTab('sglg-overview'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg-overview' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <span>SGLG Overview</span>
+                  </button>
+                  <button onClick={() => { setTab('sglg'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='sglg' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <span>SGLG Criteria</span>
+                  </button>
+                </div>
+                <div>
+                  <div className="px-3 text-[11px] font-semibold uppercase tracking-wide text-zinc-500">Reference</div>
+                  <button onClick={() => { setTab('demography'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='demography' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <span>Demography</span>
+                  </button>
+                  <button onClick={() => { setTab('officials'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='officials' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <span>Local Officials</span>
+                  </button>
+                  <button onClick={() => { setTab('field-officers'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='field-officers' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <span>Field Officers</span>
+                  </button>
+                </div>
+                <div>
+                  <div className="px-3 text-[11px] font-semibold uppercase tracking-wide text-zinc-500">Other</div>
+                  <button onClick={() => { setTab('about'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='about' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="9" strokeWidth="2"/><path strokeWidth="2" strokeLinecap="round" d="M12 8h.01M11 12h2v5h-2z"/></svg>
+                    <span>About</span>
+                  </button>
+                  {role === 'admin' && (
+                    <button onClick={() => { setTab('settings'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='settings' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 7h16M6 12h12M8 17h8"/></svg>
+                      <span>Settings</span>
+                    </button>
+                  )}
+                </div>
               </nav>
               <div className="mt-4 pt-3 border-t text-[11px] text-muted-foreground" style={{ borderColor: 'oklch(92.2% 0 0)' }}>
                 <div>

@@ -1,8 +1,11 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import { Doughnut } from 'react-chartjs-2'
+import { Bar, Doughnut } from 'react-chartjs-2'
 import {
   Chart as ChartJS,
   ArcElement,
+  BarElement,
+  CategoryScale,
+  LinearScale,
   Tooltip,
   Legend,
 } from 'chart.js'
@@ -11,9 +14,9 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { applyAlpha, chartPalette, hsl, softenPalette } from '@/lib/colors'
+import { applyAlpha, hsl } from '@/lib/colors'
 import { Download, Flag, Sparkles, Users, UserCheck } from 'lucide-react'
-ChartJS.register(ArcElement, Tooltip, Legend)
+ChartJS.register(ArcElement, BarElement, CategoryScale, LinearScale, Tooltip, Legend)
 export type Official = {
   province: string
   lgu: string
@@ -28,10 +31,12 @@ export type Official = {
 type Props = {
   officials: Official[]
 }
+const neutralSlate = '#64748b'
+
 const sexColorMap: Record<string, string> = {
   Male: applyAlpha(hsl('blue'), 0.75),
   Female: applyAlpha(hsl('rose'), 0.75),
-  Unspecified: applyAlpha(hsl('slate'), 0.35),
+  Unspecified: applyAlpha(neutralSlate, 0.35),
 }
 
 const termColorMap: Record<string, string> = {
@@ -40,7 +45,7 @@ const termColorMap: Record<string, string> = {
   '2ND TERMER': hsl('emerald'),
   '3RD TERMER': hsl('indigo'),
   COMEBACKING: hsl('rose'),
-  UNKNOWN: hsl('slate'),
+  UNKNOWN: neutralSlate,
 }
 
 function withAlpha(color: string, alpha: number) {
@@ -185,22 +190,28 @@ export function LocalOfficialsView({ officials }: Props) {
       const key = o.party?.trim() || 'Independent'
       map[key] = (map[key] || 0) + 1
     })
-    const entries = Object.entries(map).sort((a, b) => b[1] - a[1]).slice(0, 10)
-      const partyPalette = [
-        hsl('emerald'),
-        hsl('amber'),
-        hsl('rose'),
-        hsl('sky'),
-        hsl('indigo'),
-        hsl('teal'),
-        hsl('orange'),
-        hsl('violet'),
-      ]
-      return {
-        labels: entries.map((e) => e[0]),
-        values: entries.map((e) => e[1]),
-        colors: softenPalette(entries.map((_, idx) => partyPalette[idx % partyPalette.length]), 0.75),
-      }
+    const entries = Object.entries(map).sort((a, b) => b[1] - a[1])
+    const top = entries.slice(0, 8)
+    const otherTotal = entries.slice(8).reduce((sum, [, value]) => sum + value, 0)
+    const partyPalette = [
+      hsl('emerald'),
+      hsl('amber'),
+      hsl('rose'),
+      hsl('sky'),
+      hsl('indigo'),
+      hsl('teal'),
+      hsl('orange'),
+      hsl('violet'),
+    ]
+    const labels = top.map((e) => e[0])
+    const values = top.map((e) => e[1])
+    const colors = top.map((_, idx) => applyAlpha(partyPalette[idx % partyPalette.length], 0.75))
+    if (otherTotal > 0) {
+      labels.push('Other')
+      values.push(otherTotal)
+      colors.push(applyAlpha(neutralSlate, 0.25))
+    }
+    return { labels, values, colors }
   }, [filtered])
   const termCounts = useMemo(() => {
     const map: Record<string, number> = {}
@@ -405,24 +416,45 @@ export function LocalOfficialsView({ officials }: Props) {
         </div>
         <div className="rounded-xl border p-4">
           <h3 className="text-sm font-medium mb-2">Party distribution</h3>
-          <Doughnut
-            data={{
-              labels: partyCounts.labels,
-              datasets: [
-                {
-                  data: partyCounts.values,
-                  backgroundColor: partyCounts.colors,
-                  borderWidth: 0,
+          <div style={{ height: 280 }}>
+            <Bar
+              data={{
+                labels: partyCounts.labels,
+                datasets: [
+                  {
+                    data: partyCounts.values,
+                    backgroundColor: partyCounts.colors,
+                    borderRadius: 6,
+                    maxBarThickness: 26,
+                  },
+                ],
+              }}
+              options={{
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                plugins: {
+                  legend: { display: false },
+                  tooltip: {
+                    callbacks: {
+                      label: (ctx) => `${ctx.parsed.x}`,
+                    },
+                  },
                 },
-              ],
-            }}
-            options={{
-              cutout: '72%',
-              plugins: {
-                legend: { position: 'top' },
-              },
-            }}
-          />
+                scales: {
+                  x: {
+                    beginAtZero: true,
+                    ticks: { precision: 0, color: '#64748b' },
+                    grid: { color: 'rgba(148, 163, 184, 0.25)' },
+                  },
+                  y: {
+                    ticks: { autoSkip: false, color: '#64748b', font: { size: 11 } },
+                    grid: { display: false },
+                  },
+                },
+              }}
+            />
+          </div>
         </div>
         <div className="rounded-xl border p-4">
           <h3 className="text-sm font-medium mb-2">Term distribution</h3>

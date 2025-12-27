@@ -13,10 +13,6 @@ export default defineConfig(({ command }) => ({
         target: 'http://localhost/dataforge',
         changeOrigin: true,
       },
-      '/lg-audits.json': {
-        target: 'http://localhost/dataforge',
-        changeOrigin: true,
-      },
     },
   },
   resolve: {

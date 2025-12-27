@@ -5,7 +5,7 @@ import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
-import { Download, ExternalLink } from 'lucide-react'
+import { AlertOctagon, AlertTriangle, CheckCircle, Download, ExternalLink, Users } from 'lucide-react'
 import { buildSglgScorecardHtml, openScorecardHtml } from '@/lib/scorecardPdf'
 
 type LguRow = {
@@ -444,14 +444,24 @@ export function SglgOverview() {
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
           <Card className={`${baseCardClass} ${scopeCardClass}`}>
           <CardContent className="p-4">
-            <div className="text-xs text-muted-foreground">LGUs in Scope</div>
+            <div className="flex items-start justify-between">
+              <div className="text-xs text-muted-foreground">LGUs in Scope</div>
+              <div className="rounded-md border p-1.5 text-zinc-600" style={{ background: 'rgba(15, 23, 42, 0.03)' }}>
+                <Users className="h-4 w-4" />
+              </div>
+            </div>
             <div className="text-2xl font-semibold mt-1">{totals.totalLGUs}</div>
             <div className="text-xs text-muted-foreground mt-1">{criteriaCount} criteria loaded</div>
           </CardContent>
         </Card>
           <Card className={`${baseCardClass} ${failAnyCardClass}`}>
           <CardContent className="p-4">
-            <div className="text-xs text-muted-foreground">LGUs Failing (Any)</div>
+            <div className="flex items-start justify-between">
+              <div className="text-xs text-muted-foreground">LGUs Failing (Any)</div>
+              <div className="rounded-md border p-1.5 text-amber-700 bg-amber-50">
+                <AlertTriangle className="h-4 w-4" />
+              </div>
+            </div>
             <div className="text-2xl font-semibold mt-1">{totals.failedAny}</div>
             <div className="text-xs text-muted-foreground mt-1">
               Need attention{totals.totalLGUs ? ` · ${Math.round(totals.failedAnyPct)}% of LGUs` : ''}
@@ -460,7 +470,12 @@ export function SglgOverview() {
         </Card>
           <Card className={`${baseCardClass} ${fail2CardClass}`}>
           <CardContent className="p-4">
-            <div className="text-xs text-muted-foreground">LGUs Failing (2+)</div>
+            <div className="flex items-start justify-between">
+              <div className="text-xs text-muted-foreground">LGUs Failing (2+)</div>
+              <div className="rounded-md border p-1.5 text-rose-700 bg-rose-50">
+                <AlertOctagon className="h-4 w-4" />
+              </div>
+            </div>
             <div className="text-2xl font-semibold mt-1">{totals.failed2plus}</div>
             <div className="text-xs text-muted-foreground mt-1">
               High priority{totals.totalLGUs ? ` · ${Math.round(totals.failed2plusPct)}% of LGUs` : ''}
@@ -469,7 +484,12 @@ export function SglgOverview() {
         </Card>
           <Card className={`${baseCardClass} ${avgCardClass}`}>
           <CardContent className="p-4">
-            <div className="text-xs text-muted-foreground">Avg Criteria Met</div>
+            <div className="flex items-start justify-between">
+              <div className="text-xs text-muted-foreground">Avg Criteria Met</div>
+              <div className={`rounded-md border p-1.5 ${totals.avgMet >= (criteriaCount / 2) ? 'text-emerald-700 bg-emerald-50' : 'text-rose-700 bg-rose-50'}`}>
+                <CheckCircle className="h-4 w-4" />
+              </div>
+            </div>
             <div className="text-2xl font-semibold mt-1">
               {criteriaCount ? (
                 <>
