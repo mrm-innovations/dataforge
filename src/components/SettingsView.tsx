@@ -85,6 +85,15 @@ const SHEET_SOURCES: Array<SheetSource & { url: string }> = [
     usedIn: 'Dashboard > LCPC audit',
     refreshHint: 'Settings > Metrics & Imports > Refresh Audits.',
   },
+  {
+    key: 'cflga',
+    title: 'CFLGA',
+    description: 'CFLGA pass/fail results (2019, 2021, 2022, 2024).',
+    sheetId: '12uG3QO0c8e9O3buPLxPzvFixK1iiqr-LHJ08VCj1O4w',
+    gid: '0',
+    usedIn: 'Dashboard > CFLGA audit',
+    refreshHint: 'Settings > Metrics & Imports > Refresh Audits.',
+  },
 ].map((src) => ({ ...src, url: sheetLink(src.sheetId, src.gid || '0') }))
 
 function normalizeName(s: string){

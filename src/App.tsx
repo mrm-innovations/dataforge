@@ -1020,7 +1020,7 @@ export function App() {
                     <div className="rounded-xl border p-4">
                       <h3 className="text-sm font-medium">Data sources</h3>
                       <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1">
-                        <li>Audit datasets: ADAC, SGLG, LCPC, POC.</li>
+                        <li>Audit datasets: ADAC, SGLG, LCPC, POC, CFLGA.</li>
                         <li>Demography and LGU profiles.</li>
                         <li>Local Officials and Field Officers directories.</li>
                       </ul>

@@ -30,6 +30,11 @@ AUDIT_SHEETS = {
         "metric": "score",
         "years": [2022, 2023, 2024],
     },
+    "CFLGA": {
+        "path": Path("datasets/cflga.csv"),
+        "metric": "status",
+        "years": [2019, 2021, 2022, 2024],
+    },
 }
 REGION_NAME = "REGION 12"
 
@@ -160,6 +165,11 @@ def main():
             },
             "POC": {"years": audit_years["POC"], "metric": "score"},
             "LCPC": {"years": audit_years["LCPC"], "metric": "score"},
+            "CFLGA": {
+                "years": audit_years["CFLGA"],
+                "metric": "status",
+                "status_values": ["Passer", "Non-Passer"],
+            },
         },
         "region": REGION_NAME,
     }

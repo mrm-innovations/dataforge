@@ -334,7 +334,10 @@ export function openGovernanceScorecard(lgu: string, province: string, canon?: a
     || store.LGUS.find((g) => g.lgu === lgu)
     || null
   const availableAudits = auditsList && auditsList.length ? auditsList : Object.keys(store.AUDITS || {})
-  const auditKeys = ['ADAC', 'LCPC', 'POC'].filter((k) => availableAudits.includes(k))
+  const lguType = String(resolvedCanon?.type || '').trim().toLowerCase()
+  const auditKeys = ['ADAC', 'LCPC', 'POC', 'CFLGA']
+    .filter((k) => availableAudits.includes(k))
+    .filter((k) => !(lguType === 'province' && k === 'CFLGA'))
   const auditRows = auditKeys.map((key) => {
     const meta = (store.AUDITS as any)[key] || {}
     const years: number[] = (meta.years || [])

@@ -183,8 +183,8 @@ export function buildGovernanceScorecardHtml(data: GovernanceScorecardData) {
     ? `<div class="recommendations"><ul class="indicator-list">${data.recommendations.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div>`
     : `<div class="recommendations"><div class="note">Maintain current strengths and monitor considerations.</div></div>`
   const coverageNotes = data.coverageNotes && data.coverageNotes.length
-    ? `<ul class="indicator-list">${data.coverageNotes.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
-    : `<div class="note">All audits have full coverage.</div>`
+    ? `<div class="coverage-notes"><ul class="indicator-list">${data.coverageNotes.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div>`
+    : `<div class="coverage-notes"><div class="note">All audits have full coverage.</div></div>`
 
   return `
     <style>
@@ -206,6 +206,7 @@ export function buildGovernanceScorecardHtml(data: GovernanceScorecardData) {
       .summary-row td { font-weight: 600; background: #f9fafb; }
       .indicator-list { margin: 0; padding-left: 16px; }
       .recommendations .indicator-list { font-size: 11px; line-height: 1.4; }
+      .coverage-notes .indicator-list { font-size: 11px; line-height: 1.4; }
       .indicator-list li { margin: 0 0 4px; }
       .legend { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; font-size: 11px; }
       .legend .pill { padding: 3px 8px; }

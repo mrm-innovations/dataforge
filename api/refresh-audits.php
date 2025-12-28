@@ -82,7 +82,7 @@ if ($root) {
     if (!is_dir($distDatasets)) {
       @mkdir($distDatasets, 0755, true);
     }
-    foreach (['adac.csv', 'lcpc.csv', 'poc.csv', 'sglg.csv'] as $name) {
+    foreach (['adac.csv', 'lcpc.csv', 'poc.csv', 'sglg.csv', 'cflga.csv'] as $name) {
       $src = $datasetsDir . DIRECTORY_SEPARATOR . $name;
       $dst = $distDatasets . DIRECTORY_SEPARATOR . $name;
       if (is_file($src) && !@copy($src, $dst)) {
