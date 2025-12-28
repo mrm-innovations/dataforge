@@ -30,6 +30,7 @@ import { LocalOfficialsView } from '@/components/LocalOfficialsView'
 import { FieldOfficersView, type FieldOfficer } from '@/components/FieldOfficersView'
 import { SglgCriteriaTab } from '@/components/SglgCriteriaTab'
 import { SglgOverview } from '@/components/SglgOverview'
+import { ScenarioBuilder } from '@/components/ScenarioBuilder'
 import { Download } from 'lucide-react'
 
 const GUEST_CODE = 'DOSEDBEST!'
@@ -97,7 +98,7 @@ function applyCanonicalNames(list: Official[]): Official[] {
 
 export function App() {
   const [tick, setTick] = useState(0)
-  const [tab, setTab] = useState<'dashboard' | 'sglg-overview' | 'sglg' | 'demography' | 'officials' | 'field-officers' | 'about' | 'settings'>('dashboard')
+  const [tab, setTab] = useState<'dashboard' | 'scenario' | 'sglg-overview' | 'sglg' | 'demography' | 'officials' | 'field-officers' | 'about' | 'settings'>('dashboard')
   const [role, setRole] = useState<Role>('none')
   const [authError, setAuthError] = useState<string>('')
   const [guestCode, setGuestCode] = useState<string>('')
@@ -579,6 +580,10 @@ export function App() {
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-8 9 8"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 21V9h6v12"/></svg>
                   <span>Dashboard</span>
                 </button>
+                <button onClick={() => setTab('scenario')} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='scenario' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 6h16"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 12h16"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 18h10"/></svg>
+                  <span>Scenarios</span>
+                </button>
               </div>
               <div>
                 <div className="px-3 text-[11px] font-semibold uppercase tracking-wide text-zinc-500">SGLG</div>
@@ -653,6 +658,8 @@ export function App() {
               <h1 className="text-base font-medium">
                 {tab === 'dashboard'
                   ? 'Dashboard'
+                  : tab === 'scenario'
+                  ? 'Scenarios'
                   : tab === 'sglg-overview'
                   ? 'SGLG Overview'
                   : tab === 'sglg'
@@ -836,6 +843,10 @@ export function App() {
                   <RecordsTable rows={rows} />
                 </section>
               </>
+            )}
+
+            {tab === 'scenario' && (
+              <ScenarioBuilder officials={officials || []} fieldOfficers={fieldOfficers || []} />
             )}
 
             {tab === 'sglg-overview' && (
@@ -1076,6 +1087,10 @@ export function App() {
                   <button onClick={() => { setTab('dashboard'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='dashboard' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-8 9 8"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 21V9h6v12"/></svg>
                     <span>Dashboard</span>
+                  </button>
+                  <button onClick={() => { setTab('scenario'); setSidebarOpen(false) }} className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium inline-flex items-center gap-2 ${tab==='scenario' ? 'bg-zinc-100 text-zinc-900' : 'text-zinc-700 hover:bg-[#f5f5f5]'}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" aria-hidden="true"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 6h16"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 12h16"/><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 18h10"/></svg>
+                    <span>Scenarios</span>
                   </button>
                 </div>
                 <div>

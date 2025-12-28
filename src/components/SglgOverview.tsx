@@ -36,6 +36,12 @@ function normStatusFromValue(val: unknown): string | null {
   return null
 }
 
+function resolveIndicatorStatus(indicator: any): string {
+  const status = indicator?.status || normStatusFromValue(indicator?.value)
+  if (status === 'met' || status === 'failed' || status === 'consideration' || status === 'na') return status
+  return 'na'
+}
+
 function resolveOverallStatus(record: any): string | null {
   if (record?.overall_status) return record.overall_status
   const indicators = Array.isArray(record?.indicators) ? record.indicators : []
@@ -208,9 +214,46 @@ export function SglgOverview() {
       const failed = statuses.filter((s) => s === 'failed').length
       const consideration = statuses.filter((s) => s === 'consideration').length
       const na = statuses.filter((s) => s === 'na').length
-      return { criteria, met, failed, consideration, na, total: records.length }
+      const total = records.length
+      const indicatorMap = new Map<string, { key: string; label: string; met: number; failed: number; consideration: number; na: number; total: number }>()
+      records.forEach((rec: any) => {
+        const indicators = Array.isArray(rec?.indicators) ? rec.indicators : []
+        indicators.forEach((indicator: any) => {
+          const key = String(indicator?.key || indicator?.label || '').trim()
+          if (!key) return
+          const label = String(indicator?.label || indicator?.key || key).trim()
+          let entry = indicatorMap.get(key)
+          if (!entry) {
+            entry = { key, label, met: 0, failed: 0, consideration: 0, na: 0, total }
+            indicatorMap.set(key, entry)
+          }
+          const status = resolveIndicatorStatus(indicator)
+          if (status === 'met') entry.met += 1
+          else if (status === 'failed') entry.failed += 1
+          else if (status === 'consideration') entry.consideration += 1
+          else entry.na += 1
+        })
+      })
+      indicatorMap.forEach((entry) => {
+        const counted = entry.met + entry.failed + entry.consideration + entry.na
+        const missing = total - counted
+        if (missing > 0) entry.na += missing
+      })
+      const indicators = Array.from(indicatorMap.values())
+      return { criteria, met, failed, consideration, na, total, indicators }
     })
   }, [criteriaForYear, year])
+  const [expandedCriteria, setExpandedCriteria] = useState<Record<string, boolean>>({})
+  const expandedCount = criteriaSummary.filter((row) => expandedCriteria[row.criteria.key]).length
+  const toggleCriteria = (key: string) => {
+    setExpandedCriteria((prev) => ({ ...prev, [key]: !prev[key] }))
+  }
+  const expandAllCriteria = () => {
+    const next: Record<string, boolean> = {}
+    criteriaSummary.forEach((row) => { next[row.criteria.key] = true })
+    setExpandedCriteria(next)
+  }
+  const collapseAllCriteria = () => setExpandedCriteria({})
 
   const totals = useMemo(() => {
     const totalLGUs = summarized.length
@@ -509,7 +552,25 @@ export function SglgOverview() {
       <div className="rounded-xl border p-4 space-y-3">
         <div className="flex items-center justify-between">
           <div className="text-sm font-medium">Criteria Summary</div>
-          <div className="text-xs text-muted-foreground">{criteriaCount} criteria</div>
+          <div className="text-xs text-muted-foreground flex items-center gap-3">
+            <span>{criteriaCount} criteria</span>
+            <button
+              type="button"
+              className="underline text-xs disabled:opacity-50"
+              onClick={expandAllCriteria}
+              disabled={expandedCount === criteriaSummary.length || criteriaSummary.length === 0}
+            >
+              Expand all
+            </button>
+            <button
+              type="button"
+              className="underline text-xs disabled:opacity-50"
+              onClick={collapseAllCriteria}
+              disabled={expandedCount === 0}
+            >
+              Collapse all
+            </button>
+          </div>
         </div>
         <div className="overflow-auto rounded-md border">
           <table className="w-full text-sm">
@@ -524,24 +585,78 @@ export function SglgOverview() {
               </tr>
             </thead>
             <tbody>
-              {criteriaSummary.map((row) => (
-                <tr
-                  key={row.criteria.key}
-                  className={`odd:bg-white even:bg-zinc-50 hover:bg-indigo-50 cursor-pointer ${criteriaFocusKey === row.criteria.key ? 'bg-indigo-50' : ''}`}
-                  onClick={() => {
-                    setCriteriaFocusKey(row.criteria.key)
-                    setStatusFilter('__all__')
-                  }}
-                  role="button"
-                >
-                  <td className="p-2 border-b">{row.criteria.label}</td>
-                  <td className="p-2 border-b text-right">{row.met}</td>
-                  <td className="p-2 border-b text-right">{row.consideration}</td>
-                  <td className="p-2 border-b text-right">{row.failed}</td>
-                  <td className="p-2 border-b text-right">{row.na}</td>
-                  <td className="p-2 border-b text-right">{row.total}</td>
-                </tr>
-              ))}
+              {criteriaSummary.map((row) => {
+                const isOpen = !!expandedCriteria[row.criteria.key]
+                return (
+                  <React.Fragment key={row.criteria.key}>
+                    <tr
+                      className={`odd:bg-white even:bg-zinc-50 hover:bg-indigo-50 cursor-pointer ${criteriaFocusKey === row.criteria.key ? 'bg-indigo-50' : ''}`}
+                      onClick={() => {
+                        setCriteriaFocusKey(row.criteria.key)
+                        setStatusFilter('__all__')
+                      }}
+                      role="button"
+                    >
+                      <td className="p-2 border-b">
+                        <button
+                          type="button"
+                          className="inline-flex items-center justify-center w-5 h-5 mr-2 border rounded text-xs"
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            toggleCriteria(row.criteria.key)
+                          }}
+                          title={isOpen ? 'Collapse indicators' : 'Expand indicators'}
+                          aria-label={isOpen ? 'Collapse indicators' : 'Expand indicators'}
+                        >
+                          {isOpen ? '-' : '+'}
+                        </button>
+                        {row.criteria.label}
+                      </td>
+                      <td className="p-2 border-b text-right">{row.met}</td>
+                      <td className="p-2 border-b text-right">{row.consideration}</td>
+                      <td className="p-2 border-b text-right">{row.failed}</td>
+                      <td className="p-2 border-b text-right">{row.na}</td>
+                      <td className="p-2 border-b text-right">{row.total}</td>
+                    </tr>
+                    {isOpen && (
+                      <tr className="bg-zinc-50/60">
+                        <td className="p-2 border-b" colSpan={6}>
+                          {row.indicators.length ? (
+                            <div className="rounded border bg-white">
+                              <table className="w-full text-xs">
+                                <thead className="bg-zinc-50 text-[11px] uppercase tracking-wide text-muted-foreground">
+                                  <tr>
+                                    <th className="text-left p-2 border-b font-medium">Indicator</th>
+                                    <th className="text-right p-2 border-b font-medium">Met</th>
+                                    <th className="text-right p-2 border-b font-medium">Consideration</th>
+                                    <th className="text-right p-2 border-b font-medium">Failed</th>
+                                    <th className="text-right p-2 border-b font-medium">N/A</th>
+                                    <th className="text-right p-2 border-b font-medium">Total</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {row.indicators.map((indicator) => (
+                                    <tr key={indicator.key} className="odd:bg-white even:bg-zinc-50">
+                                      <td className="p-2 border-b">{indicator.label}</td>
+                                      <td className="p-2 border-b text-right">{indicator.met}</td>
+                                      <td className="p-2 border-b text-right">{indicator.consideration}</td>
+                                      <td className="p-2 border-b text-right">{indicator.failed}</td>
+                                      <td className="p-2 border-b text-right">{indicator.na}</td>
+                                      <td className="p-2 border-b text-right">{indicator.total}</td>
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+                          ) : (
+                            <div className="text-xs text-muted-foreground">No indicators available for this criteria.</div>
+                          )}
+                        </td>
+                      </tr>
+                    )}
+                  </React.Fragment>
+                )
+              })}
             </tbody>
           </table>
         </div>

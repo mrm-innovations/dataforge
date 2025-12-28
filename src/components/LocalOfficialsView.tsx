@@ -61,6 +61,16 @@ function withAlpha(color: string, alpha: number) {
   return `color-mix(in srgb, ${color} ${Math.round(alpha * 100)}%, transparent)`
 }
 
+function fixMojibake(value: string | null | undefined) {
+  const text = String(value || '')
+  if (!/[\u00C2\u00C3\u00E2]/.test(text)) return text
+  try {
+    return new TextDecoder('utf-8').decode(Uint8Array.from(text, (ch) => ch.charCodeAt(0)))
+  } catch {
+    return text
+  }
+}
+
 function badgeStyle(color: string) {
   const base = color || '#475569'
   return {
@@ -88,8 +98,8 @@ function canonicalSex(value: string | null | undefined): 'Female' | 'Male' | 'Un
   return 'Unspecified'
 }
 function toTitleCase(value: string | null | undefined) {
-  const lower = String(value || '').toLowerCase()
-  return lower.replace(/\b\w/g, (match) => match.toUpperCase())
+  const lower = fixMojibake(value).toLowerCase()
+  return lower.replace(/(^|[\s\-'])(\p{L})/gu, (_match, sep, letter) => `${sep}${letter.toUpperCase()}`)
 }
 function splitSuffix(firstName: string | null | undefined) {
   const trimmed = (firstName || '').trim()
@@ -100,23 +110,23 @@ function splitSuffix(firstName: string | null | undefined) {
   return { base: trimmed, suffix: '' }
 }
 function formatMiddleInitial(value: string | null | undefined) {
-  const trimmed = (value || '').trim()
+  const trimmed = fixMojibake(value).trim()
   if (!trimmed) return ''
   const sanitized = trimmed.replace(/\.+$/, '')
   return `${sanitized}.`
 }
 function formatOfficialName(official: Official) {
-  const { base, suffix } = splitSuffix(official.first_name)
+  const { base, suffix } = splitSuffix(fixMojibake(official.first_name))
   const parts = [toTitleCase(base)]
   const middle = formatMiddleInitial(official.middle_initial)
   if (middle) parts.push(middle)
-  parts.push(formatLastName(official.last_name))
+  parts.push(formatLastName(fixMojibake(official.last_name)))
   const name = parts.filter(Boolean).join(' ').replace(/\s+/g, ' ').trim()
   return suffix ? `${name} ${suffix}` : name
 }
 
 function formatLastName(value: string | null | undefined) {
-  const base = toTitleCase(value || '')
+  const base = toTitleCase(fixMojibake(value) || '')
   const tokens = base.split(/\s+/)
   const roman = /^[IVXLCDM]+\.?$/i
   return tokens
@@ -159,10 +169,11 @@ export function LocalOfficialsView({ officials }: Props) {
       if (termFilter !== 'All Terms' && normalizedTerm !== termFilter) return false
       if (!search) return true
       const term = search.toLowerCase()
+      const nameMatch = formatOfficialName(o).toLowerCase().includes(term)
       return (
         o.lgu.toLowerCase().includes(term) ||
         o.position.toLowerCase().includes(term) ||
-        `${o.first_name} ${o.last_name}`.toLowerCase().includes(term)
+        nameMatch
       )
     })
   }, [officials, province, search, lguFilter, positionFilter, sexFilter, partyFilter, termFilter])
