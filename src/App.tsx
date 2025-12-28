@@ -306,7 +306,7 @@ export function App() {
       r.population ?? '',
     ])
     const csv = [headers, ...rowsData].map((row) => row.map(escape).join(',')).join('\n')
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' })
+    const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url

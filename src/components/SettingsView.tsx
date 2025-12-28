@@ -420,7 +420,7 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
       })
       const esc = (s: any) => { const v = String(s); return /[",\n]/.test(v) ? '"' + v.replace(/"/g,'""') + '"' : v }
       const csv = header.map(esc).join(',') + '\n' + rows.map(r => r.map(esc).join(',')).join('\n') + '\n'
-      const blob = new Blob([csv], { type: 'text/csv' })
+      const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' })
       const a = document.createElement('a')
       a.href = URL.createObjectURL(blob)
       a.download = `${audit.toLowerCase()}.csv`
@@ -1188,7 +1188,8 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
                     }
                     lines.push([u.key, u.province, u.lgu, u.suggest||'', conf].map(esc).join(','))
                   })
-                  const blob = new Blob([lines.join('\n') + '\n'], { type: 'text/csv' })
+                  const csv = lines.join('\n') + '\n'
+                  const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' })
                   const a = document.createElement('a')
                   a.href = URL.createObjectURL(blob)
                   a.download = `${(customKey||audit||'audit').toLowerCase()}-aliases.csv`
