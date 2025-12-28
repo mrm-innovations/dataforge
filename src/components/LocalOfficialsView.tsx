@@ -537,14 +537,7 @@ export function LocalOfficialsView({ officials }: Props) {
                   <TableCell className="py-3 text-gray-900 font-medium">{formatOfficialName(o)}</TableCell>
                   <TableCell className="py-3 text-gray-800">{canonical}</TableCell>
                   <TableCell className="py-3 text-gray-800">{party}</TableCell>
-                  <TableCell className="py-3">
-                    <span
-                      className="inline-flex items-center px-2 py-0.5 rounded-md border text-xs font-normal"
-                      style={badgeStyle(termColor(o.term))}
-                    >
-                      {term}
-                    </span>
-                  </TableCell>
+                  <TableCell className="py-3 text-gray-800">{term}</TableCell>
                 </TableRow>
               )
             })}
@@ -611,13 +604,22 @@ function StatCard({
   )
 }
 type SelectOption = { value: string; label: string }
+function formatOptionLabel(value: string) {
+  const trimmed = value.trim()
+  if (!trimmed) return ''
+  const lettersOnly = trimmed.replace(/[^A-Za-z]/g, '')
+  if (trimmed === trimmed.toUpperCase() && lettersOnly.length > 0 && lettersOnly.length <= 5) {
+    return trimmed
+  }
+  return toTitleCase(trimmed)
+}
 function buildOptions(values: Array<string | null | undefined>, allLabel: string): SelectOption[] {
   const map = new Map<string, { value: string; label: string }>()
   values.forEach((raw) => {
     const value = (raw || '').trim()
     if (!value) return
     const key = value.toLowerCase()
-    if (!map.has(key)) map.set(key, { value, label: toTitleCase(value) })
+    if (!map.has(key)) map.set(key, { value, label: formatOptionLabel(value) })
   })
   return [{ value: allLabel, label: allLabel }, ...Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label))]
 }
