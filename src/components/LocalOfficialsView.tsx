@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { forwardRef, useEffect, useImperativeHandle, useMemo, useState } from 'react'
 import { Bar, Doughnut } from 'react-chartjs-2'
 import {
   Chart as ChartJS,
@@ -15,7 +15,7 @@ import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { applyAlpha, hsl } from '@/lib/colors'
-import { Download, Flag, Sparkles, Users, UserCheck } from 'lucide-react'
+import { Flag, Sparkles, Users, UserCheck } from 'lucide-react'
 ChartJS.register(ArcElement, BarElement, CategoryScale, LinearScale, Tooltip, Legend)
 export type Official = {
   province: string
@@ -30,22 +30,27 @@ export type Official = {
 }
 type Props = {
   officials: Official[]
+  onFilteredCountChange?: (count: number) => void
 }
 const neutralSlate = '#64748b'
+export type LocalOfficialsActions = {
+  resetFilters: () => void
+  exportCsv: () => void
+}
 
 const sexColorMap: Record<string, string> = {
   Male: 'oklch(74.6% 0.16 232.661)',
   Female: 'oklch(71.2% 0.194 13.428)',
-  Unspecified: applyAlpha(neutralSlate, 0.35),
+  Unspecified: neutralSlate,
 }
 
 const termColorMap: Record<string, string> = {
-  'NEWLY ELECTED': '#fbbf24', // amber-400
-  '1ST TERMER': '#fbbf24', // amber-400
-  '2ND TERMER': '#a3e635', // lime-400
-  '3RD TERMER': '#34d399', // emerald-400
-  COMEBACKING: '#fb7185', // rose-400
-  UNKNOWN: '#fbbf24', // amber-400
+  'NEWLY ELECTED': 'oklch(74.6% 0.16 232.661)', // sky-400
+  '1ST TERMER': 'oklch(74.6% 0.16 232.661)', // sky-400
+  '2ND TERMER': 'oklch(70.2% 0.183 293.541)', // violet-400
+  '3RD TERMER': 'oklch(74% 0.238 322.16)', // fuchsia-400
+  COMEBACKING: 'oklch(71.2% 0.194 13.428)', // rose-400
+  UNKNOWN: 'oklch(74.6% 0.16 232.661)', // sky-400
 }
 
 function withAlpha(color: string, alpha: number) {
@@ -134,7 +139,7 @@ function formatLastName(value: string | null | undefined) {
     .join(' ')
 }
 const PAGE_SIZE = 50
-export function LocalOfficialsView({ officials }: Props) {
+export const LocalOfficialsView = forwardRef<LocalOfficialsActions, Props>(({ officials, onFilteredCountChange }, ref) => {
   const provinceOptions = useMemo(() => buildOptions(officials.map((o) => o.province), 'All Provinces'), [officials])
   const [province, setProvince] = useState<string>('All Provinces')
   const [search, setSearch] = useState<string>('')
@@ -182,6 +187,9 @@ export function LocalOfficialsView({ officials }: Props) {
     const start = page * PAGE_SIZE
     return filtered.slice(start, start + PAGE_SIZE)
   }, [filtered, page])
+  useEffect(() => {
+    onFilteredCountChange?.(filtered.length)
+  }, [filtered.length, onFilteredCountChange])
   const sexCounts = useMemo(() => {
     const map: Record<string, number> = {}
     filtered.forEach((o) => {
@@ -281,6 +289,17 @@ export function LocalOfficialsView({ officials }: Props) {
     },
   ]
 
+  const resetFilters = () => {
+    setSearch('')
+    setProvince('All Provinces')
+    setLguFilter('All LGUs')
+    setPositionFilter('All Positions')
+    setSexFilter('All Sex')
+    setPartyFilter('All Parties')
+    setTermFilter('All Terms')
+    setPage(0)
+  }
+
   const exportCsv = () => {
     const headers = ['Province', 'LGU', 'Position', 'Name', 'Sex', 'Party', 'Term']
     const rows = filtered.map((o) => [
@@ -312,6 +331,7 @@ export function LocalOfficialsView({ officials }: Props) {
     document.body.removeChild(link)
     setTimeout(() => URL.revokeObjectURL(url), 0)
   }
+  useImperativeHandle(ref, () => ({ resetFilters, exportCsv }), [resetFilters, exportCsv])
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-6 gap-3">
@@ -382,26 +402,6 @@ export function LocalOfficialsView({ officials }: Props) {
           </Select>
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-end gap-2">
-        <Button
-          variant="outline"
-          onClick={() => {
-            setSearch('')
-            setProvince('All Provinces')
-            setLguFilter('All LGUs')
-            setPositionFilter('All Positions')
-            setSexFilter('All Sex')
-            setPartyFilter('All Parties')
-            setTermFilter('All Terms')
-            setPage(0)
-          }}
-        >
-          Reset filters
-        </Button>
-        <Button size="sm" onClick={exportCsv} disabled={!filtered.length}>
-          <Download className="h-4 w-4 mr-2" /> CSV
-        </Button>
-      </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {statCards.map((card) => (
           <StatCard
@@ -423,7 +423,9 @@ export function LocalOfficialsView({ officials }: Props) {
               datasets: [
                 {
                   data: activeSexLabels.map((label) => sexCounts[label]),
-                  backgroundColor: activeSexLabels.map((label) => sexColorMap[label]),
+                  backgroundColor: activeSexLabels.map((label) =>
+                    applyAlpha(sexColorMap[label], label === 'Unspecified' ? 0.35 : 0.75),
+                  ),
                   borderWidth: 0,
                 },
               ],
@@ -567,7 +569,7 @@ export function LocalOfficialsView({ officials }: Props) {
       </div>
     </div>
   )
-}
+})
 function StatCard({
   label,
   value,
@@ -603,6 +605,7 @@ function StatCard({
     </div>
   )
 }
+LocalOfficialsView.displayName = 'LocalOfficialsView'
 type SelectOption = { value: string; label: string }
 function formatOptionLabel(value: string) {
   const trimmed = value.trim()

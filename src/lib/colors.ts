@@ -52,6 +52,16 @@ export function applyAlpha(color: string, alpha: number) {
     const inner = raw.slice(4, -1).trim()
     return `rgba(${inner}, ${alpha})`
   }
+  if (raw.startsWith('oklch(')) {
+    const inner = raw.slice(6, -1).trim()
+    const base = inner.split('/')[0].trim()
+    return `oklch(${base} / ${alpha})`
+  }
+  if (raw.startsWith('oklab(')) {
+    const inner = raw.slice(6, -1).trim()
+    const base = inner.split('/')[0].trim()
+    return `oklab(${base} / ${alpha})`
+  }
   if (raw.startsWith('rgba(')) {
     const inner = raw.slice(5, -1).trim()
     const base = inner.split(',').slice(0, 3).map((s) => s.trim()).join(', ')

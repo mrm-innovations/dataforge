@@ -1,11 +1,10 @@
-import { useMemo, useState } from 'react'
+import { forwardRef, useEffect, useImperativeHandle, useMemo, useState } from 'react'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Input } from '@/components/ui/input'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { hsl } from '@/lib/colors'
-import { ClipboardList, Download, Users, UserCheck } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { ClipboardList, Users, UserCheck } from 'lucide-react'
 
 export type FieldOfficer = {
   province: string
@@ -20,11 +19,17 @@ export type FieldOfficer = {
 
 type Props = {
   officers: FieldOfficer[]
+  onFilteredCountChange?: (count: number) => void
 }
 
 const PAGE_SIZE = 25
 
-export function FieldOfficersView({ officers }: Props) {
+export type FieldOfficersActions = {
+  resetFilters: () => void
+  exportCsv: () => void
+}
+
+export const FieldOfficersView = forwardRef<FieldOfficersActions, Props>(({ officers, onFilteredCountChange }, ref) => {
   const [province, setProvince] = useState('All Provinces')
   const [assignment, setAssignment] = useState('All Offices')
   const [designation, setDesignation] = useState('All Designations')
@@ -69,6 +74,10 @@ export function FieldOfficersView({ officers }: Props) {
     const start = page * PAGE_SIZE
     return filtered.slice(start, start + PAGE_SIZE)
   }, [filtered, page])
+
+  useEffect(() => {
+    onFilteredCountChange?.(filtered.length)
+  }, [filtered.length, onFilteredCountChange])
 
   const resetFilters = () => {
     setProvince('All Provinces')
@@ -121,6 +130,8 @@ export function FieldOfficersView({ officers }: Props) {
     setTimeout(() => URL.revokeObjectURL(url), 0)
   }
 
+  useImperativeHandle(ref, () => ({ resetFilters, exportCsv }), [resetFilters, exportCsv])
+
   const femaleCount = filtered.filter((o) => o.sex.toLowerCase().startsWith('f')).length
   const assignmentCount = new Set(filtered.map((o) => o.assignment)).size
   const designationCount = new Set(filtered.map((o) => o.designation)).size
@@ -134,26 +145,6 @@ export function FieldOfficersView({ officers }: Props) {
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        {stats.map((card) => (
-          <MiniStat key={card.label} {...card} />
-        ))}
-      </div>
-
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="text-xs text-muted-foreground">
-          {filtered.length} officers across {assignmentCount} offices
-        </div>
-        <div className="flex gap-2">
-          <Button variant="outline" size="sm" onClick={resetFilters}>
-            Reset Filters
-          </Button>
-          <Button size="sm" onClick={exportCsv} disabled={!filtered.length}>
-            <Download className="h-4 w-4 mr-2" /> CSV
-          </Button>
-        </div>
-      </div>
-
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
         <div className="flex flex-col gap-1">
           <Label className="text-xs">Province / HUC</Label>
@@ -207,6 +198,16 @@ export function FieldOfficersView({ officers }: Props) {
             placeholder="Search name, office, designation"
           />
         </div>
+      </div>
+
+      <div className="text-xs text-muted-foreground">
+        {filtered.length} officers across {assignmentCount} offices
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        {stats.map((card) => (
+          <MiniStat key={card.label} {...card} />
+        ))}
       </div>
 
       <div className="rounded-xl border bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)]">
@@ -273,7 +274,8 @@ export function FieldOfficersView({ officers }: Props) {
       </div>
     </div>
   )
-}
+})
+FieldOfficersView.displayName = 'FieldOfficersView'
 
 function buildOptions(values: Array<string | null | undefined>, allLabel: string) {
   const entries = Array.from(

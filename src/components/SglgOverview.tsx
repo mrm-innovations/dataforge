@@ -1,11 +1,11 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { forwardRef, useEffect, useImperativeHandle, useMemo, useState } from 'react'
 import { store } from '@/lib/store'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
-import { AlertOctagon, AlertTriangle, CheckCircle, Download, ExternalLink, Users } from 'lucide-react'
+import { AlertOctagon, AlertTriangle, CheckCircle, ExternalLink, Users } from 'lucide-react'
 import { buildSglgScorecardHtml, openScorecardHtml } from '@/lib/scorecardPdf'
 
 type LguRow = {
@@ -57,7 +57,16 @@ function resolveOverallStatus(record: any): string | null {
   return 'met'
 }
 
-export function SglgOverview() {
+type Props = {
+  onFilteredCountChange?: (count: number) => void
+}
+
+export type SglgOverviewActions = {
+  resetFilters: () => void
+  exportCsv: () => void
+}
+
+export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFilteredCountChange }, ref) => {
   const criteriaList = store.SGLG_CRITERIA
   const years = unique(criteriaList.map((c) => c.year)).sort((a, b) => b - a)
   const [year, setYear] = useState<number | null>(years[0] ?? null)
@@ -205,6 +214,10 @@ export function SglgOverview() {
       })
   }, [summarized, provinceFilter, typeFilter, criteriaFocusKey, statusFilter, search, criteriaCount])
 
+  useEffect(() => {
+    onFilteredCountChange?.(filtered.length)
+  }, [filtered.length, onFilteredCountChange])
+
   const criteriaSummary = useMemo(() => {
     return criteriaForYear.map((criteria) => {
       const key = year && criteria.key ? `${year}:${criteria.key}` : ''
@@ -265,6 +278,14 @@ export function SglgOverview() {
     return { totalLGUs, failedAny, failed2plus, avgMet, failedAnyPct, failed2plusPct }
   }, [summarized])
 
+  const resetFilters = () => {
+    setProvinceFilter('__all__')
+    setTypeFilter('__all__')
+    setStatusFilter('__all__')
+    setCriteriaFocusKey('__all__')
+    setSearch('')
+  }
+
   const downloadCsv = () => {
     const headers = [
       'Province',
@@ -315,6 +336,8 @@ export function SglgOverview() {
     a.remove()
     URL.revokeObjectURL(url)
   }
+
+  useImperativeHandle(ref, () => ({ resetFilters, exportCsv: downloadCsv }), [resetFilters, downloadCsv])
 
   const exportScorecard = (row: { province: string; lgu: string; type: string }) => {
     if (!year || !criteriaForYear.length) {
@@ -454,25 +477,7 @@ export function SglgOverview() {
           <Input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search LGU or province" />
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-between gap-2">
-        <div className="flex items-center gap-2">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => {
-              setProvinceFilter('__all__')
-              setTypeFilter('__all__')
-              setStatusFilter('__all__')
-              setCriteriaFocusKey('__all__')
-              setSearch('')
-            }}
-          >
-            Reset filters
-          </Button>
-          <Button size="sm" onClick={downloadCsv}><Download className="h-4 w-4 mr-2" /> CSV</Button>
-        </div>
-        <div className="text-xs text-muted-foreground">{filtered.length} LGUs</div>
-      </div>
+      <div className="text-xs text-muted-foreground">{filtered.length} LGUs</div>
 
       {criteriaFocusLabel && (
         <div className="flex items-center gap-2 text-xs">
@@ -725,7 +730,8 @@ export function SglgOverview() {
       </div>
     </div>
   )
-}
+})
+SglgOverview.displayName = 'SglgOverview'
 
 function StatusPill({ status }: { status: string | null | undefined }) {
   if (!status) return <span className="text-muted-foreground">-</span>

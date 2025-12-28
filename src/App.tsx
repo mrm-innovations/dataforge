@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Line } from 'react-chartjs-2'
 import {
   Chart as ChartJS,
@@ -26,10 +26,10 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { LocalOfficialsView } from '@/components/LocalOfficialsView'
-import { FieldOfficersView, type FieldOfficer } from '@/components/FieldOfficersView'
-import { SglgCriteriaTab } from '@/components/SglgCriteriaTab'
-import { SglgOverview } from '@/components/SglgOverview'
+import { LocalOfficialsView, type LocalOfficialsActions } from '@/components/LocalOfficialsView'
+import { FieldOfficersView, type FieldOfficer, type FieldOfficersActions } from '@/components/FieldOfficersView'
+import { SglgCriteriaTab, type SglgCriteriaActions } from '@/components/SglgCriteriaTab'
+import { SglgOverview, type SglgOverviewActions } from '@/components/SglgOverview'
 import { ScenarioBuilder } from '@/components/ScenarioBuilder'
 import { Download } from 'lucide-react'
 
@@ -118,6 +118,14 @@ export function App() {
   const [refreshingAudits, setRefreshingAudits] = useState(false)
   const [auditsStatus, setAuditsStatus] = useState<string>('')
   const [canonReady, setCanonReady] = useState<boolean>(false)
+  const [officialsFilteredCount, setOfficialsFilteredCount] = useState<number>(0)
+  const localOfficialsActions = useRef<LocalOfficialsActions | null>(null)
+  const [fieldOfficersFilteredCount, setFieldOfficersFilteredCount] = useState<number>(0)
+  const fieldOfficersActions = useRef<FieldOfficersActions | null>(null)
+  const [sglgCriteriaFilteredCount, setSglgCriteriaFilteredCount] = useState<number>(0)
+  const sglgCriteriaActions = useRef<SglgCriteriaActions | null>(null)
+  const [sglgOverviewFilteredCount, setSglgOverviewFilteredCount] = useState<number>(0)
+  const sglgOverviewActions = useRef<SglgOverviewActions | null>(null)
   const force = () => setTick((t) => t + 1)
 
   const apiBase = () => {
@@ -466,12 +474,12 @@ export function App() {
     })
     const datasets = Object.entries(groups).map(([type, group]) => {
       const key = String(type || '').trim().toLowerCase()
-      const color = key === 'province' ? hsl('emerald')
-        : key === 'municipality' ? hsl('amber')
-        : key === 'component city' ? hsl('rose')
-        : key === 'highly urbanized city' ? hsl('teal')
+      const color = key === 'province' ? 'oklch(74.6% 0.16 232.661)' // sky-400
+        : key === 'municipality' ? 'oklch(70.2% 0.183 293.541)' // violet-400
+        : key === 'component city' ? 'oklch(74% 0.238 322.16)' // fuchsia-400
+        : key === 'highly urbanized city' ? 'oklch(71.2% 0.194 13.428)' // rose-400
         : hsl('indigo')
-      const softened = applyAlpha(color, 0.8)
+      const softened = applyAlpha(color, 0.75)
       return {
         label: type,
         data: years.map((y) => avg((group as any[]).map((r) => (r as any)['y' + y] as number | null)) ?? null),
@@ -808,7 +816,17 @@ export function App() {
                         scales: {
                           y: metricIsStatus() ? { suggestedMin: 0, suggestedMax: 100, ticks: { callback: (v) => `${v}%` } } : {},
                         },
-                        plugins: { legend: { position: 'bottom' } },
+                        plugins: {
+                          legend: {
+                            position: 'bottom',
+                            labels: {
+                              usePointStyle: true,
+                              pointStyle: 'circle',
+                              boxWidth: 10,
+                              boxHeight: 10,
+                            },
+                          },
+                        },
                       }}
                     />
                   ) : (
@@ -851,37 +869,99 @@ export function App() {
 
             {tab === 'sglg-overview' && (
               <section className="rounded-xl border p-4 space-y-3">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-lg font-medium">SGLG Overview</h2>
-                  <div className="text-xs text-muted-foreground">All criteria in one view</div>
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <h2 className="text-lg font-medium">SGLG Overview</h2>
+                    <div className="text-xs text-muted-foreground">All criteria in one view</div>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => sglgOverviewActions.current?.resetFilters()}
+                    >
+                      Reset filters
+                    </Button>
+                    <Button
+                      size="sm"
+                      onClick={() => sglgOverviewActions.current?.exportCsv()}
+                      disabled={!sglgOverviewFilteredCount}
+                    >
+                      <Download className="h-4 w-4 mr-2" /> CSV
+                    </Button>
+                  </div>
                 </div>
-                <SglgOverview />
+                <SglgOverview
+                  ref={sglgOverviewActions}
+                  onFilteredCountChange={setSglgOverviewFilteredCount}
+                />
               </section>
             )}
 
             {tab === 'sglg' && (
               <section className="rounded-xl border p-4 space-y-3">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-lg font-medium">SGLG Criteria</h2>
-                  <div className="text-xs text-muted-foreground">Filter LGUs by indicator/status</div>
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <h2 className="text-lg font-medium">SGLG Criteria</h2>
+                    <div className="text-xs text-muted-foreground">Filter LGUs by indicator/status</div>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => sglgCriteriaActions.current?.resetFilters()}
+                    >
+                      Reset filters
+                    </Button>
+                    <Button
+                      size="sm"
+                      onClick={() => sglgCriteriaActions.current?.exportCsv()}
+                      disabled={!sglgCriteriaFilteredCount}
+                    >
+                      <Download className="h-4 w-4 mr-2" /> CSV
+                    </Button>
+                  </div>
                 </div>
-                <SglgCriteriaTab />
+                <SglgCriteriaTab
+                  ref={sglgCriteriaActions}
+                  onFilteredCountChange={setSglgCriteriaFilteredCount}
+                />
               </section>
             )}
 
             {tab === 'officials' && officials && (
               <section className="rounded-xl border p-4 space-y-2">
                 <div className="flex flex-wrap items-center justify-between gap-3">
-                  <h2 className="text-lg font-medium">Local Officials (2025–2028)</h2>
-                  {role === 'admin' && (
-                    <Button size="sm" variant="outline" onClick={refreshLocalOfficials} disabled={refreshingOfficials}>
-                      {refreshingOfficials ? 'Refreshing…' : 'Refresh Directory'}
+                  <h2 className="text-lg font-medium">Local Officials (2025-2028)</h2>
+                  <div className="flex flex-wrap items-center gap-2">
+                    {role === 'admin' && (
+                      <Button size="sm" variant="outline" onClick={refreshLocalOfficials} disabled={refreshingOfficials}>
+                        {refreshingOfficials ? 'Refreshing…' : 'Refresh Directory'}
+                      </Button>
+                    )}
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => localOfficialsActions.current?.resetFilters()}
+                    >
+                      Reset filters
                     </Button>
-                  )}
+                    <Button
+                      size="sm"
+                      onClick={() => localOfficialsActions.current?.exportCsv()}
+                      disabled={!officialsFilteredCount}
+                    >
+                      <Download className="h-4 w-4 mr-2" /> CSV
+                    </Button>
+                  </div>
                 </div>
                 {officialsStatus && <div className="text-xs text-green-600">{officialsStatus}</div>}
                 {officialsError && <div className="text-xs text-red-600">{officialsError}</div>}
-                <LocalOfficialsView officials={officials} />
+                <LocalOfficialsView
+                  ref={localOfficialsActions}
+                  officials={officials}
+                  onFilteredCountChange={setOfficialsFilteredCount}
+                />
               </section>
             )}
             {tab === 'officials' && !officials && (
@@ -894,11 +974,27 @@ export function App() {
               <section className="rounded-xl border p-4 space-y-3">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <h2 className="text-lg font-medium">Field Officers Directory</h2>
-                  {role === 'admin' && (
-                    <Button size="sm" variant="outline" onClick={refreshFieldOfficersDirectory} disabled={refreshingFieldOfficers}>
-                      {refreshingFieldOfficers ? 'Refreshing…' : 'Refresh Directory'}
+                  <div className="flex flex-wrap items-center gap-2">
+                    {role === 'admin' && (
+                      <Button size="sm" variant="outline" onClick={refreshFieldOfficersDirectory} disabled={refreshingFieldOfficers}>
+                        {refreshingFieldOfficers ? 'Refreshing...' : 'Refresh Directory'}
+                      </Button>
+                    )}
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => fieldOfficersActions.current?.resetFilters()}
+                    >
+                      Reset filters
                     </Button>
-                  )}
+                    <Button
+                      size="sm"
+                      onClick={() => fieldOfficersActions.current?.exportCsv()}
+                      disabled={!fieldOfficersFilteredCount}
+                    >
+                      <Download className="h-4 w-4 mr-2" /> CSV
+                    </Button>
+                  </div>
                 </div>
                 {fieldOfficersStatus && (
                   <div className="text-xs text-green-600">{fieldOfficersStatus}</div>
@@ -906,7 +1002,11 @@ export function App() {
                 {fieldOfficersError && (
                   <div className="text-xs text-red-600">{fieldOfficersError}</div>
                 )}
-                <FieldOfficersView officers={fieldOfficers} />
+                <FieldOfficersView
+                  ref={fieldOfficersActions}
+                  officers={fieldOfficers}
+                  onFilteredCountChange={setFieldOfficersFilteredCount}
+                />
               </section>
             )}
             {tab === 'field-officers' && !fieldOfficers && (
@@ -919,11 +1019,23 @@ export function App() {
               <section className="rounded-xl border p-4 space-y-3">
                 <div className="flex flex-wrap items-center justify-between">
                   <h2 className="text-lg font-medium">Demography</h2>
-                  {role === 'admin' && (
-                    <Button size="sm" variant="outline" onClick={refreshDemography} disabled={refreshingDemography}>
-                      {refreshingDemography ? 'Refreshing…' : 'Refresh Demography'}
+                  <div className="flex flex-wrap items-center gap-2">
+                    {role === 'admin' && (
+                      <Button size="sm" variant="outline" onClick={refreshDemography} disabled={refreshingDemography}>
+                        {refreshingDemography ? 'Refreshing...' : 'Refresh Demography'}
+                      </Button>
+                    )}
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => { setDemoProvince('__all__'); setDemoType('__all__'); setDemoIncomeClass('__all__'); setDemoSearch('') }}
+                    >
+                      Reset filters
                     </Button>
-                  )}
+                    <Button size="sm" onClick={exportDemographyCsv}>
+                      <Download className="h-4 w-4 mr-2" /> CSV
+                    </Button>
+                  </div>
                 </div>
                 {demographyStatus && (
                   <div className={`text-xs ${demographyStatus.includes('failed') ? 'text-red-600' : 'text-green-600'}`}>
@@ -976,15 +1088,7 @@ export function App() {
                     />
                   </div>
                 </div>
-                <div className="flex flex-wrap items-center gap-2 pt-1">
-                  <Button variant="outline" size="sm" onClick={() => { setDemoProvince('__all__'); setDemoType('__all__'); setDemoIncomeClass('__all__'); setDemoSearch('') }}>
-                    Reset filters
-                  </Button>
-                  <Button size="sm" onClick={exportDemographyCsv}>
-                    <Download className="h-4 w-4 mr-2" /> CSV
-                  </Button>
-                  <div className="text-xs text-muted-foreground">{demographyRows.length} records</div>
-                </div>
+                <div className="text-xs text-muted-foreground">{demographyRows.length} records</div>
                 <DemographyView rows={demographyRows} />
               </section>
             )}

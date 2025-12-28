@@ -1,9 +1,7 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { forwardRef, useEffect, useImperativeHandle, useMemo, useState } from 'react'
 import { store } from '@/lib/store'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Label } from '@/components/ui/label'
-import { Button } from '@/components/ui/button'
-import { Download } from 'lucide-react'
 
 type CriteriaInfo = { key: string; label: string; year: number }
 
@@ -18,7 +16,16 @@ function unique<T>(arr: T[]) {
   return Array.from(new Set(arr))
 }
 
-export function SglgCriteriaTab() {
+type Props = {
+  onFilteredCountChange?: (count: number) => void
+}
+
+export type SglgCriteriaActions = {
+  resetFilters: () => void
+  exportCsv: () => void
+}
+
+export const SglgCriteriaTab = forwardRef<SglgCriteriaActions, Props>(({ onFilteredCountChange }, ref) => {
   const criteriaList = store.SGLG_CRITERIA
   const years = unique(criteriaList.map((c) => c.year)).sort((a, b) => b - a)
   const [year, setYear] = useState<number | null>(years[0] ?? null)
@@ -82,6 +89,16 @@ export function SglgCriteriaTab() {
       })
   }, [records, indicatorKey, provinceFilter, typeFilter, statusFilter])
 
+  useEffect(() => {
+    onFilteredCountChange?.(filtered.length)
+  }, [filtered.length, onFilteredCountChange])
+
+  const resetFilters = () => {
+    setProvinceFilter('__all__')
+    setTypeFilter('__all__')
+    setStatusFilter('__all__')
+  }
+
   const downloadCsv = () => {
     const lines = [
       ['Province', 'LGU', 'Type', 'Criteria', 'Indicator', 'Value', 'Status']
@@ -116,6 +133,8 @@ export function SglgCriteriaTab() {
     a.remove()
     URL.revokeObjectURL(url)
   }
+
+  useImperativeHandle(ref, () => ({ resetFilters, exportCsv: downloadCsv }), [resetFilters, downloadCsv])
 
   if (!year || !criteriaList.length) {
     return <div className="text-sm text-muted-foreground">No SGLG criteria datasets loaded.</div>
@@ -186,11 +205,7 @@ export function SglgCriteriaTab() {
         </div>
       </div>
 
-      <div className="flex items-center gap-2">
-        <Button variant="outline" size="sm" onClick={() => { setProvinceFilter('__all__'); setTypeFilter('__all__'); setStatusFilter('__all__') }}>Reset filters</Button>
-        <Button size="sm" onClick={downloadCsv}><Download className="h-4 w-4 mr-2" /> CSV</Button>
-        <div className="text-xs text-muted-foreground">{filtered.length} LGUs</div>
-      </div>
+      <div className="text-xs text-muted-foreground">{filtered.length} LGUs</div>
 
       <div className="rounded border overflow-auto">
         <table className="w-full text-sm">
@@ -222,7 +237,8 @@ export function SglgCriteriaTab() {
       </div>
     </div>
   )
-}
+})
+SglgCriteriaTab.displayName = 'SglgCriteriaTab'
 
 function StatusPill({ status }: { status: string | null | undefined }) {
   if (!status) return <span className="text-muted-foreground">-</span>
