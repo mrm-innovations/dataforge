@@ -67,6 +67,14 @@ function sglgKey(province: string, lgu: string) {
   return `${normalizeName(province)}|${normalizeName(lgu)}`
 }
 
+function normalizeCityName(lgu: string) {
+  return normalizeName(lgu).replace(/city$/, '')
+}
+
+function sglgCityKey(province: string, lgu: string) {
+  return `${normalizeName(province)}|${normalizeCityName(lgu)}`
+}
+
 function fixMojibake(value: string | null | undefined) {
   const text = String(value || '')
   if (!/[\u00C2\u00C3\u00E2]/.test(text)) return text
@@ -236,6 +244,23 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
     return joined
   }, [fieldOfficersList])
 
+  const cityDirectorMap = useMemo(() => {
+    const map = new Map<string, string[]>()
+    fieldOfficersList.forEach((officer) => {
+      const designation = (officer.designation || '').trim().toLowerCase()
+      if (designation !== 'city director') return
+      const key = sglgCityKey(officer.province || '', officer.assignment || '')
+      const name = String(officer.name || '').trim()
+      if (!key || !name) return
+      const list = map.get(key) || []
+      if (!list.includes(name)) list.push(name)
+      map.set(key, list)
+    })
+    const joined = new Map<string, string>()
+    map.forEach((names, key) => joined.set(key, names.join(', ')))
+    return joined
+  }, [fieldOfficersList])
+
   const indicatorOptions = useMemo(() => {
     if (!sglgYear || !criteriaKey) return [] as Array<{ key: string; label: string }>
     const dataKey = `${sglgYear}:${criteriaKey}`
@@ -339,7 +364,9 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
         const hay = `${g.province || ''} ${g.lgu || ''} ${g.type || ''}`.toLowerCase()
         if (!hay.includes(q)) return
       }
-      const isProvince = String(g.type || '').trim().toLowerCase() === 'province'
+      const typeValue = String(g.type || '').trim().toLowerCase()
+      const isProvince = typeValue === 'province'
+      const isHuc = typeValue === 'highly urbanized city'
       const key = sglgKey(g.province || '', g.lgu || '')
       const indicator = indicatorMap.get(key)
       const indicatorStatusValue = indicator?.status || (isProvince ? 'na' : null)
@@ -390,7 +417,9 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
       const mlgooName = mlgooMap.get(key) || ''
       const provinceKey = normalizeName(g.province || '')
       const provincialDirectorName = isProvince ? (provincialDirectorMap.get(provinceKey) || '') : ''
-      const fieldOfficerName = [mlgooName, provincialDirectorName].filter(Boolean).join(', ')
+      const cityDirectorKey = isHuc ? sglgCityKey(g.province || '', g.lgu || '') : ''
+      const cityDirectorName = isHuc ? (cityDirectorMap.get(cityDirectorKey) || '') : ''
+      const fieldOfficerName = isProvince ? provincialDirectorName : (isHuc ? cityDirectorName : mlgooName)
 
       rows.push({
         province: g.province || '',
@@ -418,6 +447,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
     lceMap,
     mlgooMap,
     provincialDirectorMap,
+    cityDirectorMap,
     provinceFilter,
     typeFilter,
     search,
@@ -458,7 +488,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
       'Type',
       'Income Class',
       'Current LCE',
-      'Field Officer',
+      'Current Field Officer',
     ]
     const lines = [headers.map((h) => `"${h}"`).join(',')]
     results.forEach((row) => {
@@ -721,7 +751,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
               <th className="text-left p-2 border-b font-medium">Type</th>
               <th className="text-left p-2 border-b font-medium">Income Class</th>
               <th className="text-left p-2 border-b font-medium">Current LCE</th>
-              <th className="text-left p-2 border-b font-medium">Field Officer</th>
+              <th className="text-left p-2 border-b font-medium">Current Field Officer</th>
             </tr>
           </thead>
           <tbody>
