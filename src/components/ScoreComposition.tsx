@@ -63,20 +63,26 @@ export function ScoreComposition({ rows }: Props) {
       ? (['ideal', 'mature', 'progressive', 'basic'] as const)
       : (['elite', 'compliant', 'near', 'below'] as const)
 
+    const palette = {
+      emerald400: '#34d399',
+      amber400: '#fbbf24',
+      orange400: '#fb923c',
+      rose400: '#fb7185',
+    }
     const defaultColors: Record<string, string> = {
-      pass: hsl('emerald'),
-      fail: hsl('rose'),
-      high: hsl('emerald'),
-      moderate: hsl('amber'),
-      low: hsl('rose'),
-      elite: hsl('emerald'),
-      compliant: hsl('green'),
-      near: hsl('amber'),
-      below: hsl('rose'),
-      ideal: hsl('emerald'),
-      mature: hsl('amber'),
-      progressive: hsl('orange'),
-      basic: hsl('rose'),
+      pass: palette.emerald400,
+      fail: palette.rose400,
+      high: palette.emerald400,
+      moderate: palette.amber400,
+      low: palette.rose400,
+      elite: palette.emerald400,
+      compliant: palette.emerald400,
+      near: palette.amber400,
+      below: palette.rose400,
+      ideal: palette.emerald400,
+      mature: palette.amber400,
+      progressive: palette.orange400,
+      basic: palette.rose400,
     }
 
     const slices: Slice[] = []

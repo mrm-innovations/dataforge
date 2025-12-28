@@ -320,17 +320,17 @@ export function bandsArrayFor(auditKey: string): Band[] | null {
     const high = Number(b.high_functional ?? 85)
     const moderate = Number(b.moderate_functional ?? 50)
     return [
-      { key: 'high', label: 'High Functional', min: high, color: hsl('green') },
-      { key: 'moderate', label: 'Moderate Functional', min: moderate, color: hsl('amber') },
-      { key: 'low', label: 'Low Functional', min: -Infinity, color: hsl('red') },
+      { key: 'high', label: 'High Functional', min: high, color: '#34d399' },
+      { key: 'moderate', label: 'Moderate Functional', min: moderate, color: '#fbbf24' },
+      { key: 'low', label: 'Low Functional', min: -Infinity, color: '#fb7185' },
     ]
   }
   if (String(auditKey).toUpperCase() === 'LCPC'){
     return [
-      { key: 'ideal', label: 'Ideal', min: 80, color: hsl('green') },
-      { key: 'mature', label: 'Mature', min: 50, color: hsl('amber') },
-      { key: 'progressive', label: 'Progressive', min: 20, color: hsl('orange') },
-      { key: 'basic', label: 'Basic', min: -Infinity, color: hsl('red') },
+      { key: 'ideal', label: 'Ideal', min: 80, color: '#34d399' },
+      { key: 'mature', label: 'Mature', min: 50, color: '#fbbf24' },
+      { key: 'progressive', label: 'Progressive', min: 20, color: '#fb923c' },
+      { key: 'basic', label: 'Basic', min: -Infinity, color: '#fb7185' },
     ]
   }
   return null

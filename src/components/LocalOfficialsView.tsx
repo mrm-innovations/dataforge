@@ -34,18 +34,18 @@ type Props = {
 const neutralSlate = '#64748b'
 
 const sexColorMap: Record<string, string> = {
-  Male: applyAlpha(hsl('blue'), 0.75),
-  Female: applyAlpha(hsl('rose'), 0.75),
+  Male: 'oklch(74.6% 0.16 232.661)',
+  Female: 'oklch(71.2% 0.194 13.428)',
   Unspecified: applyAlpha(neutralSlate, 0.35),
 }
 
 const termColorMap: Record<string, string> = {
-  'NEWLY ELECTED': hsl('amber'),
-  '1ST TERMER': hsl('sky'),
-  '2ND TERMER': hsl('emerald'),
-  '3RD TERMER': hsl('indigo'),
-  COMEBACKING: hsl('rose'),
-  UNKNOWN: neutralSlate,
+  'NEWLY ELECTED': '#fbbf24', // amber-400
+  '1ST TERMER': '#fbbf24', // amber-400
+  '2ND TERMER': '#a3e635', // lime-400
+  '3RD TERMER': '#34d399', // emerald-400
+  COMEBACKING: '#fb7185', // rose-400
+  UNKNOWN: '#fbbf24', // amber-400
 }
 
 function withAlpha(color: string, alpha: number) {
@@ -194,14 +194,23 @@ export function LocalOfficialsView({ officials }: Props) {
     const top = entries.slice(0, 8)
     const otherTotal = entries.slice(8).reduce((sum, [, value]) => sum + value, 0)
     const partyPalette = [
-      hsl('emerald'),
-      hsl('amber'),
-      hsl('rose'),
-      hsl('sky'),
-      hsl('indigo'),
-      hsl('teal'),
-      hsl('orange'),
-      hsl('violet'),
+      '#f87171', // red-400
+      '#fb923c', // orange-400
+      '#fbbf24', // amber-400
+      '#facc15', // yellow-400
+      '#a3e635', // lime-400
+      '#4ade80', // green-400
+      '#34d399', // emerald-400
+      '#2dd4bf', // teal-400
+      '#22d3ee', // cyan-400
+      '#38bdf8', // sky-400
+      '#60a5fa', // blue-400
+      '#818cf8', // indigo-400
+      '#a78bfa', // violet-400
+      '#c084fc', // purple-400
+      '#e879f9', // fuchsia-400
+      '#f472b6', // pink-400
+      '#fb7185', // rose-400
     ]
     const labels = top.map((e) => e[0])
     const values = top.map((e) => e[1])
@@ -219,7 +228,9 @@ export function LocalOfficialsView({ officials }: Props) {
       const key = (o.term || 'Unknown').toUpperCase()
       map[key] = (map[key] || 0) + 1
     })
-    const entries = Object.entries(map).sort((a, b) => b[1] - a[1])
+    const entries = Object.entries(map)
+      .filter(([label]) => label !== '1ST TERMER')
+      .sort((a, b) => b[1] - a[1])
       return {
         labels: entries.map(([label]) => toTitleCase(label)),
         values: entries.map(([, value]) => value),
