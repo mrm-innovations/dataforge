@@ -420,8 +420,8 @@ export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFiltered
   const avgCardClass = totals.avgMet >= (criteriaCount / 2) ? 'bg-emerald-50 border-emerald-300' : 'bg-rose-50 border-rose-300'
 
   return (
-    <div className="space-y-5">
-      <div className="grid gap-3 md:grid-cols-6">
+    <div className="space-y-6">
+      <div className="grid gap-4 md:grid-cols-6">
         <div className="flex flex-col gap-1">
           <Label className="text-xs">Year</Label>
           <Select value={String(year)} onValueChange={(v) => setYear(Number(v))}>
@@ -490,7 +490,7 @@ export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFiltered
         </div>
       )}
 
-      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <Card className={`${baseCardClass} ${scopeCardClass}`}>
           <CardContent className="p-4">
             <div className="flex items-start justify-between">
@@ -581,12 +581,12 @@ export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFiltered
           <table className="w-full text-sm">
             <thead className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
               <tr>
-                <th className="text-left p-2 border-b font-medium">Criteria</th>
-                <th className="text-right p-2 border-b font-medium">Met</th>
-                <th className="text-right p-2 border-b font-medium">Consideration</th>
-                <th className="text-right p-2 border-b font-medium">Failed</th>
-                <th className="text-right p-2 border-b font-medium">N/A</th>
-                <th className="text-right p-2 border-b font-medium">Total</th>
+                <th className="text-left px-4 py-3 border-b font-medium">Criteria</th>
+                <th className="text-right px-4 py-3 border-b font-medium">Met</th>
+                <th className="text-right px-4 py-3 border-b font-medium">Consideration</th>
+                <th className="text-right px-4 py-3 border-b font-medium">Failed</th>
+                <th className="text-right px-4 py-3 border-b font-medium">N/A</th>
+                <th className="text-right px-4 py-3 border-b font-medium">Total</th>
               </tr>
             </thead>
             <tbody>
@@ -602,7 +602,7 @@ export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFiltered
                       }}
                       role="button"
                     >
-                      <td className="p-2 border-b">
+                      <td className="px-4 py-3 border-b">
                         <button
                           type="button"
                           className="inline-flex items-center justify-center w-5 h-5 mr-2 border rounded text-xs"
@@ -617,37 +617,37 @@ export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFiltered
                         </button>
                         {row.criteria.label}
                       </td>
-                      <td className="p-2 border-b text-right">{row.met}</td>
-                      <td className="p-2 border-b text-right">{row.consideration}</td>
-                      <td className="p-2 border-b text-right">{row.failed}</td>
-                      <td className="p-2 border-b text-right">{row.na}</td>
-                      <td className="p-2 border-b text-right">{row.total}</td>
+                      <td className="px-4 py-3 border-b text-right">{row.met}</td>
+                      <td className="px-4 py-3 border-b text-right">{row.consideration}</td>
+                      <td className="px-4 py-3 border-b text-right">{row.failed}</td>
+                      <td className="px-4 py-3 border-b text-right">{row.na}</td>
+                      <td className="px-4 py-3 border-b text-right">{row.total}</td>
                     </tr>
                     {isOpen && (
                       <tr className="bg-zinc-50/60">
-                        <td className="p-2 border-b" colSpan={6}>
+                        <td className="px-4 py-3 border-b" colSpan={6}>
                           {row.indicators.length ? (
                             <div className="rounded border bg-white">
                               <table className="w-full text-xs">
                                 <thead className="bg-zinc-50 text-[11px] uppercase tracking-wide text-muted-foreground">
                                   <tr>
-                                    <th className="text-left p-2 border-b font-medium">Indicator</th>
-                                    <th className="text-right p-2 border-b font-medium">Met</th>
-                                    <th className="text-right p-2 border-b font-medium">Consideration</th>
-                                    <th className="text-right p-2 border-b font-medium">Failed</th>
-                                    <th className="text-right p-2 border-b font-medium">N/A</th>
-                                    <th className="text-right p-2 border-b font-medium">Total</th>
+                                    <th className="text-left px-4 py-3 border-b font-medium">Indicator</th>
+                                    <th className="text-right px-4 py-3 border-b font-medium">Met</th>
+                                    <th className="text-right px-4 py-3 border-b font-medium">Consideration</th>
+                                    <th className="text-right px-4 py-3 border-b font-medium">Failed</th>
+                                    <th className="text-right px-4 py-3 border-b font-medium">N/A</th>
+                                    <th className="text-right px-4 py-3 border-b font-medium">Total</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   {row.indicators.map((indicator) => (
                                     <tr key={indicator.key} className="odd:bg-white even:bg-zinc-50">
-                                      <td className="p-2 border-b">{indicator.label}</td>
-                                      <td className="p-2 border-b text-right">{indicator.met}</td>
-                                      <td className="p-2 border-b text-right">{indicator.consideration}</td>
-                                      <td className="p-2 border-b text-right">{indicator.failed}</td>
-                                      <td className="p-2 border-b text-right">{indicator.na}</td>
-                                      <td className="p-2 border-b text-right">{indicator.total}</td>
+                                      <td className="px-4 py-3 border-b">{indicator.label}</td>
+                                      <td className="px-4 py-3 border-b text-right">{indicator.met}</td>
+                                      <td className="px-4 py-3 border-b text-right">{indicator.consideration}</td>
+                                      <td className="px-4 py-3 border-b text-right">{indicator.failed}</td>
+                                      <td className="px-4 py-3 border-b text-right">{indicator.na}</td>
+                                      <td className="px-4 py-3 border-b text-right">{indicator.total}</td>
                                     </tr>
                                   ))}
                                 </tbody>
@@ -675,39 +675,39 @@ export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFiltered
           <table className="w-full text-sm">
             <thead className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
               <tr>
-                <th className="text-left p-2 border-b font-medium">Province</th>
-                <th className="text-left p-2 border-b font-medium">LGU</th>
-                <th className="text-left p-2 border-b font-medium">Type</th>
-                <th className="text-right p-2 border-b font-medium">Met</th>
-                <th className="text-right p-2 border-b font-medium">Failed</th>
-                <th className="text-right p-2 border-b font-medium">Consideration</th>
-                <th className="text-left p-2 border-b font-medium">Status</th>
+                <th className="text-left px-4 py-3 border-b font-medium">Province</th>
+                <th className="text-left px-4 py-3 border-b font-medium">LGU</th>
+                <th className="text-left px-4 py-3 border-b font-medium">Type</th>
+                <th className="text-right px-4 py-3 border-b font-medium">Met</th>
+                <th className="text-right px-4 py-3 border-b font-medium">Failed</th>
+                <th className="text-right px-4 py-3 border-b font-medium">Consideration</th>
+                <th className="text-left px-4 py-3 border-b font-medium">Status</th>
                 {criteriaFocusKey !== '__all__' && (
-                  <th className="text-left p-2 border-b font-medium">Criteria Status</th>
+                  <th className="text-left px-4 py-3 border-b font-medium">Criteria Status</th>
                 )}
-                <th className="text-left p-2 border-b font-medium">Failed Criteria</th>
-                <th className="text-left p-2 border-b font-medium">Actions</th>
+                <th className="text-left px-4 py-3 border-b font-medium">Failed Criteria</th>
+                <th className="text-left px-4 py-3 border-b font-medium">Actions</th>
               </tr>
             </thead>
             <tbody>
               {filtered.slice(0, 400).map((r, idx) => (
                 <tr key={`${r.province}-${r.lgu}-${idx}`} className={idx % 2 ? 'bg-zinc-50' : 'bg-white'}>
-                  <td className="p-2 border-b">{r.province}</td>
-                  <td className="p-2 border-b">{r.lgu}</td>
-                  <td className="p-2 border-b">{r.type || '-'}</td>
-                  <td className="p-2 border-b text-right">{r.metCount}/{criteriaCount}</td>
-                  <td className="p-2 border-b text-right">{r.failedCount}</td>
-                  <td className="p-2 border-b text-right">{r.considerationCount}</td>
-                  <td className="p-2 border-b">
+                  <td className="px-4 py-3 border-b">{r.province}</td>
+                  <td className="px-4 py-3 border-b">{r.lgu}</td>
+                  <td className="px-4 py-3 border-b">{r.type || '-'}</td>
+                  <td className="px-4 py-3 border-b text-right">{r.metCount}/{criteriaCount}</td>
+                  <td className="px-4 py-3 border-b text-right">{r.failedCount}</td>
+                  <td className="px-4 py-3 border-b text-right">{r.considerationCount}</td>
+                  <td className="px-4 py-3 border-b">
                     <StatusPill status={r.overall} />
                   </td>
                   {criteriaFocusKey !== '__all__' && (
-                    <td className="p-2 border-b">
+                    <td className="px-4 py-3 border-b">
                       <StatusPill status={r.statuses[criteriaFocusKey] || null} />
                     </td>
                   )}
-                  <td className="p-2 border-b">{r.failedCriteria.length ? r.failedCriteria.join(', ') : '-'}</td>
-                  <td className="p-2 border-b">
+                  <td className="px-4 py-3 border-b">{r.failedCriteria.length ? r.failedCriteria.join(', ') : '-'}</td>
+                  <td className="px-4 py-3 border-b">
                     <Button
                       size="icon"
                       variant="outline"

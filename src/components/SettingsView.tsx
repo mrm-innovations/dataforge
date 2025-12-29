@@ -928,18 +928,18 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
               <table className="w-full text-xs">
                 <thead className="bg-zinc-50">
                   <tr>
-                    <th className="text-left p-2 border-b">Order</th>
-                    <th className="text-left p-2 border-b">Key</th>
-                    <th className="text-left p-2 border-b">Label</th>
-                    <th className="text-left p-2 border-b">Min threshold</th>
-                    <th className="text-left p-2 border-b">Color</th>
-                    <th className="text-left p-2 border-b">Actions</th>
+                    <th className="text-left px-4 py-3 border-b">Order</th>
+                    <th className="text-left px-4 py-3 border-b">Key</th>
+                    <th className="text-left px-4 py-3 border-b">Label</th>
+                    <th className="text-left px-4 py-3 border-b">Min threshold</th>
+                    <th className="text-left px-4 py-3 border-b">Color</th>
+                    <th className="text-left px-4 py-3 border-b">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   {editBands.map((b, i) => (
                     <tr key={i} className="odd:bg-white even:bg-zinc-50">
-                      <td className="p-2 border-b">
+                      <td className="px-4 py-3 border-b">
                         <div className="flex gap-1">
                           <Button size="sm" variant="ghost" onClick={() => {
                             if (i === 0) return; const arr = editBands.slice(); const t = arr[i-1]; arr[i-1]=arr[i]; arr[i]=t; setEditBands(arr)
@@ -949,16 +949,16 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
                           }}>↓</Button>
                         </div>
                       </td>
-                      <td className="p-2 border-b"><Input value={b.key} onChange={(e)=>{
+                      <td className="px-4 py-3 border-b"><Input value={b.key} onChange={(e)=>{
                         const arr = editBands.slice(); arr[i] = { ...b, key: e.target.value }; setEditBands(arr)
                       }} /></td>
-                      <td className="p-2 border-b"><Input value={b.label} onChange={(e)=>{
+                      <td className="px-4 py-3 border-b"><Input value={b.label} onChange={(e)=>{
                         const arr = editBands.slice(); arr[i] = { ...b, label: e.target.value }; setEditBands(arr)
                       }} /></td>
-                      <td className="p-2 border-b"><Input value={b.min} onChange={(e)=>{
+                      <td className="px-4 py-3 border-b"><Input value={b.min} onChange={(e)=>{
                         const arr = editBands.slice(); arr[i] = { ...b, min: e.target.value }; setEditBands(arr)
                       }} placeholder="e.g. 85 or -Infinity" /></td>
-                      <td className="p-2 border-b">
+                      <td className="px-4 py-3 border-b">
                         <div className="flex items-center gap-2">
                           <Input className="w-40" value={b.color || ''} onChange={(e)=>{
                             const arr = editBands.slice(); arr[i] = { ...b, color: e.target.value }; setEditBands(arr)
@@ -968,7 +968,7 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
                           }} />
                         </div>
                       </td>
-                      <td className="p-2 border-b">
+                      <td className="px-4 py-3 border-b">
                         <Button size="sm" variant="outline" onClick={() => {
                           const arr = editBands.slice(); arr.splice(i,1); setEditBands(arr)
                         }}>Remove</Button>
@@ -1237,21 +1237,21 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
             <table className="w-full text-xs">
               <thead className="bg-zinc-50">
                 <tr>
-                  <th className="text-left p-2 border-b">Province/HUC</th>
-                  <th className="text-left p-2 border-b">City/Municipality</th>
-                  <th className="text-left p-2 border-b">Match Key</th>
-                  <th className="text-left p-2 border-b">Suggested</th>
-                  <th className="text-left p-2 border-b">Action</th>
+                  <th className="text-left px-4 py-3 border-b">Province/HUC</th>
+                  <th className="text-left px-4 py-3 border-b">City/Municipality</th>
+                  <th className="text-left px-4 py-3 border-b">Match Key</th>
+                  <th className="text-left px-4 py-3 border-b">Suggested</th>
+                  <th className="text-left px-4 py-3 border-b">Action</th>
                 </tr>
               </thead>
               <tbody>
                 {unmatched.slice(0, 100).map((u, i) => (
                   <tr key={i} className="odd:bg-white even:bg-zinc-50">
-                    <td className="p-2 border-b align-top">{u.province}</td>
-                    <td className="p-2 border-b align-top">{u.lgu}</td>
-                    <td className="p-2 border-b align-top text-muted-foreground">{u.key}</td>
-                    <td className="p-2 border-b align-top">{u.suggest} {u.score!=null && (<span className="text-muted-foreground">({Math.round((u.score||0)*100)}%)</span>)}</td>
-                    <td className="p-2 border-b align-top">
+                    <td className="px-4 py-3 border-b align-top">{u.province}</td>
+                    <td className="px-4 py-3 border-b align-top">{u.lgu}</td>
+                    <td className="px-4 py-3 border-b align-top text-muted-foreground">{u.key}</td>
+                    <td className="px-4 py-3 border-b align-top">{u.suggest} {u.score!=null && (<span className="text-muted-foreground">({Math.round((u.score||0)*100)}%)</span>)}</td>
+                    <td className="px-4 py-3 border-b align-top">
                       {u.suggest && u.key ? (
                         <Button size="sm" variant="outline" onClick={() => {
                           const next = { ...aliases, [u.key]: u.suggest || '' }

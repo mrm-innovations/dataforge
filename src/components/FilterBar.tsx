@@ -47,7 +47,7 @@ export function FilterBar({ onChange, onAuditChange }: Props) {
   const ALL = '__all__'
 
   return (
-    <div className="grid gap-3 md:grid-cols-6">
+    <div className="grid gap-4 md:grid-cols-6">
       <div className="flex flex-col gap-1">
         <Label className="text-xs">Audit</Label>
         <Select value={state.audit} onValueChange={(v) => (actions.setAuditKey(v), onAuditChange?.(), onChange?.())}>
@@ -108,7 +108,7 @@ export function FilterBar({ onChange, onAuditChange }: Props) {
         </Select>
       </div>
       {/* Column 6: Start/End Year side-by-side (shorter width) */}
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-4">
         <div className="flex flex-col gap-1 min-w-0">
           <Label className="text-xs">Start Year</Label>
           <Select value={state.startYear != null ? String(state.startYear) : ''} onValueChange={(v) => (actions.setStartYear(v ? Number(v) : null), onChange?.())}>

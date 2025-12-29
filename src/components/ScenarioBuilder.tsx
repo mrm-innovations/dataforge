@@ -530,7 +530,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
   const pillMuted = 'bg-zinc-100 text-zinc-500 border-zinc-200'
 
   return (
-    <section className="rounded-xl border p-4 space-y-4">
+    <section className="rounded-xl border p-4 space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <div>
           <h2 className="text-lg font-medium">Scenario Builder</h2>
@@ -559,13 +559,14 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
         </div>
       </div>
 
-      <div className="grid gap-3">
+      <div className="space-y-6">
+      <div className="grid gap-4">
         <div className="rounded-lg border p-3 space-y-3">
           <div className="flex items-center justify-between">
             <div className="text-sm font-medium">Seal of Good Local Governance (SGLG) Indicator</div>
             <TogglePill enabled={useSglg} onChange={setUseSglg} />
           </div>
-          <div className={`grid gap-3 md:grid-cols-3 ${!useSglg ? 'opacity-50 pointer-events-none' : ''}`}>
+          <div className={`grid gap-4 md:grid-cols-3 ${!useSglg ? 'opacity-50 pointer-events-none' : ''}`}>
             <div className="flex flex-col gap-1">
               <Label className="text-xs">Criteria</Label>
               <Select value={criteriaKey} onValueChange={(v) => setCriteriaKey(v)}>
@@ -605,7 +606,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
             <div className="text-sm font-medium">Seal of Good Local Governance (SGLG) Overall Status</div>
             <TogglePill enabled={useSglgOverall} onChange={setUseSglgOverall} />
           </div>
-          <div className={`grid gap-3 ${!useSglgOverall ? 'opacity-50 pointer-events-none' : ''}`}>
+          <div className={`grid gap-4 ${!useSglgOverall ? 'opacity-50 pointer-events-none' : ''}`}>
             <div className="flex flex-col gap-1">
               <Label className="text-xs">Status</Label>
               <Select value={sglgOverallStatus} onValueChange={(v) => setSglgOverallStatus(v)}>
@@ -622,7 +623,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
             <div className="text-sm font-medium">Anti-Drug Abuse Council (ADAC) Performance Audit</div>
             <TogglePill enabled={useAdac} onChange={setUseAdac} />
           </div>
-          <div className={`grid gap-3 ${!useAdac ? 'opacity-50 pointer-events-none' : ''}`}>
+          <div className={`grid gap-4 ${!useAdac ? 'opacity-50 pointer-events-none' : ''}`}>
             <div className="flex flex-col gap-1">
               <Label className="text-xs">Band</Label>
               <Select value={adacBand} onValueChange={(v) => setAdacBand(v)}>
@@ -639,7 +640,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
             <div className="text-sm font-medium">Local Council for the Protection of Children (LCPC) Functionality Assessment</div>
             <TogglePill enabled={useLcpc} onChange={setUseLcpc} />
           </div>
-          <div className={`grid gap-3 ${!useLcpc ? 'opacity-50 pointer-events-none' : ''}`}>
+          <div className={`grid gap-4 ${!useLcpc ? 'opacity-50 pointer-events-none' : ''}`}>
             <div className="flex flex-col gap-1">
               <Label className="text-xs">Band</Label>
               <Select value={lcpcBand} onValueChange={(v) => setLcpcBand(v)}>
@@ -656,7 +657,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
             <div className="text-sm font-medium">Peace and Order Council (POC) Performance Audit</div>
             <TogglePill enabled={usePoc} onChange={setUsePoc} />
           </div>
-          <div className={`grid gap-3 ${!usePoc ? 'opacity-50 pointer-events-none' : ''}`}>
+          <div className={`grid gap-4 ${!usePoc ? 'opacity-50 pointer-events-none' : ''}`}>
             <div className="flex flex-col gap-1">
               <Label className="text-xs">Band</Label>
               <Select value={pocBand} onValueChange={(v) => setPocBand(v)}>
@@ -673,7 +674,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
             <div className="text-sm font-medium">Child-Friendly Local Governance Audit (CFLGA)</div>
             <TogglePill enabled={useCflga} onChange={setUseCflga} />
           </div>
-          <div className={`grid gap-3 ${!useCflga ? 'opacity-50 pointer-events-none' : ''}`}>
+          <div className={`grid gap-4 ${!useCflga ? 'opacity-50 pointer-events-none' : ''}`}>
             <div className="flex flex-col gap-1">
               <Label className="text-xs">Status</Label>
               <Select value={cflgaStatus} onValueChange={(v) => setCflgaStatus(v)}>
@@ -687,7 +688,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
         </div>
       </div>
 
-      <div className="grid gap-3 md:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-4">
         <div className="flex flex-col gap-1">
           <Label className="text-xs">Province</Label>
           <Select value={provinceFilter} onValueChange={(v) => setProvinceFilter(v)}>
@@ -746,24 +747,24 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
         <table className="w-full text-sm">
           <thead className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
             <tr>
-              <th className="text-left p-2 border-b font-medium">Province</th>
-              <th className="text-left p-2 border-b font-medium">LGU</th>
-              <th className="text-left p-2 border-b font-medium">Type</th>
-              <th className="text-left p-2 border-b font-medium">Income Class</th>
-              <th className="text-left p-2 border-b font-medium">Current LCE</th>
-              <th className="text-left p-2 border-b font-medium">Current Field Officer</th>
+              <th className="text-left px-4 py-3 border-b font-medium">Province</th>
+              <th className="text-left px-4 py-3 border-b font-medium">LGU</th>
+              <th className="text-left px-4 py-3 border-b font-medium">Type</th>
+              <th className="text-left px-4 py-3 border-b font-medium">Income Class</th>
+              <th className="text-left px-4 py-3 border-b font-medium">Current LCE</th>
+              <th className="text-left px-4 py-3 border-b font-medium">Current Field Officer</th>
             </tr>
           </thead>
           <tbody>
             {results.map((row, idx) => {
               return (
                 <tr key={`${row.province}-${row.lgu}-${idx}`} className={idx % 2 ? 'bg-zinc-50' : 'bg-white'}>
-                  <td className="p-2 border-b">{row.province}</td>
-                  <td className="p-2 border-b">{row.lgu}</td>
-                  <td className="p-2 border-b">{row.type}</td>
-                  <td className="p-2 border-b">{row.incomeClass || '-'}</td>
-                  <td className="p-2 border-b">{row.lce || '-'}</td>
-                  <td className="p-2 border-b">{row.fieldOfficer || '-'}</td>
+                  <td className="px-4 py-3 border-b">{row.province}</td>
+                  <td className="px-4 py-3 border-b">{row.lgu}</td>
+                  <td className="px-4 py-3 border-b">{row.type}</td>
+                  <td className="px-4 py-3 border-b">{row.incomeClass || '-'}</td>
+                  <td className="px-4 py-3 border-b">{row.lce || '-'}</td>
+                  <td className="px-4 py-3 border-b">{row.fieldOfficer || '-'}</td>
                 </tr>
               )
             })}
@@ -776,6 +777,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
             )}
           </tbody>
         </table>
+      </div>
       </div>
     </section>
   )

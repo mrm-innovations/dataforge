@@ -334,7 +334,7 @@ export const LocalOfficialsView = forwardRef<LocalOfficialsActions, Props>(({ of
   useImperativeHandle(ref, () => ({ resetFilters, exportCsv }), [resetFilters, exportCsv])
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
         <div className="flex flex-col gap-1">
           <Label className="text-xs">Province</Label>
           <Select value={province} onValueChange={(v) => { setProvince(v); setPage(0) }}>

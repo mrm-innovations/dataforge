@@ -141,8 +141,8 @@ export const SglgCriteriaTab = forwardRef<SglgCriteriaActions, Props>(({ onFilte
   }
 
   return (
-    <div className="space-y-4">
-      <div className="grid gap-3 md:grid-cols-6">
+    <div className="space-y-6">
+      <div className="grid gap-4 md:grid-cols-6">
         <div className="flex flex-col gap-1">
           <Label className="text-xs">Year</Label>
           <Select value={String(year)} onValueChange={(v) => setYear(Number(v))}>
@@ -211,23 +211,23 @@ export const SglgCriteriaTab = forwardRef<SglgCriteriaActions, Props>(({ onFilte
         <table className="w-full text-sm">
           <thead className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
             <tr>
-              <th className="text-left p-2 border-b font-medium">Province</th>
-              <th className="text-left p-2 border-b font-medium">LGU</th>
-              <th className="text-left p-2 border-b font-medium">Type</th>
-              <th className="text-left p-2 border-b font-medium">Indicator</th>
-              <th className="text-left p-2 border-b font-medium">Value</th>
-              <th className="text-left p-2 border-b font-medium">Status</th>
+              <th className="text-left px-4 py-3 border-b font-medium">Province</th>
+              <th className="text-left px-4 py-3 border-b font-medium">LGU</th>
+              <th className="text-left px-4 py-3 border-b font-medium">Type</th>
+              <th className="text-left px-4 py-3 border-b font-medium">Indicator</th>
+              <th className="text-left px-4 py-3 border-b font-medium">Value</th>
+              <th className="text-left px-4 py-3 border-b font-medium">Status</th>
             </tr>
           </thead>
           <tbody>
             {filtered.slice(0, 400).map((r, idx) => (
               <tr key={`${r.lgu}-${r.province}-${idx}`} className={idx % 2 ? 'bg-zinc-50' : 'bg-white'}>
-                <td className="p-2 border-b">{r.province}</td>
-                <td className="p-2 border-b">{r.lgu}</td>
-                <td className="p-2 border-b">{r.type || '-'}</td>
-                <td className="p-2 border-b">{r.indicator.label}</td>
-                <td className="p-2 border-b">{r.indicator.value ?? '-'}</td>
-                <td className="p-2 border-b">
+                <td className="px-4 py-3 border-b">{r.province}</td>
+                <td className="px-4 py-3 border-b">{r.lgu}</td>
+                <td className="px-4 py-3 border-b">{r.type || '-'}</td>
+                <td className="px-4 py-3 border-b">{r.indicator.label}</td>
+                <td className="px-4 py-3 border-b">{r.indicator.value ?? '-'}</td>
+                <td className="px-4 py-3 border-b">
                   <StatusPill status={r.indicator.status} />
                 </td>
               </tr>

@@ -763,27 +763,27 @@ export function App() {
                     <table className="w-full text-sm">
                       <thead className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
                         <tr>
-                          <th className="text-left p-2 border-b font-medium">Province</th>
-                          <th className="text-right p-2 border-b font-medium">LGUs</th>
-                          <th className="text-right p-2 border-b font-medium">{metricIsStatus() ? 'Avg Pass %' : 'Avg Score'}</th>
-                          <th className="text-right p-2 border-b font-medium">YoY Change</th>
-                          <th className="text-right p-2 border-b font-medium">Compliance %</th>
-                          <th className="text-right p-2 border-b font-medium">Coverage %</th>
-                          <th className="text-left p-2 border-b font-medium">Top LGU</th>
-                          <th className="text-left p-2 border-b font-medium">Lowest LGU</th>
+                          <th className="text-left px-4 py-3 border-b font-medium">Province</th>
+                          <th className="text-right px-4 py-3 border-b font-medium">LGUs</th>
+                          <th className="text-right px-4 py-3 border-b font-medium">{metricIsStatus() ? 'Avg Pass %' : 'Avg Score'}</th>
+                          <th className="text-right px-4 py-3 border-b font-medium">YoY Change</th>
+                          <th className="text-right px-4 py-3 border-b font-medium">Compliance %</th>
+                          <th className="text-right px-4 py-3 border-b font-medium">Coverage %</th>
+                          <th className="text-left px-4 py-3 border-b font-medium">Top LGU</th>
+                          <th className="text-left px-4 py-3 border-b font-medium">Lowest LGU</th>
                         </tr>
                       </thead>
                       <tbody>
                         {provinceAnalytics.map((row, idx) => (
                           <tr key={row.province} className={idx % 2 ? 'bg-zinc-50' : 'bg-white'}>
-                            <td className="p-2 border-b">{row.province}</td>
-                            <td className="p-2 border-b text-right">{row.lguCount}</td>
-                            <td className="p-2 border-b text-right">{row.avgLatest == null ? '-' : metricIsStatus() ? `${fmt(row.avgLatest, 0)}%` : fmt(row.avgLatest)}</td>
-                            <td className="p-2 border-b text-right">{row.change == null ? '-' : `${row.change >= 0 ? '+' : ''}${metricIsStatus() ? fmt(row.change, 0) + '%' : fmt(row.change)}`}</td>
-                            <td className="p-2 border-b text-right">{row.compliant == null ? '-' : `${fmt(row.compliant, 0)}%`}</td>
-                            <td className="p-2 border-b text-right">{row.coverage == null ? '-' : `${fmt(row.coverage, 0)}%`}</td>
-                            <td className="p-2 border-b">{row.topLgu}</td>
-                            <td className="p-2 border-b">{row.bottomLgu}</td>
+                            <td className="px-4 py-3 border-b">{row.province}</td>
+                            <td className="px-4 py-3 border-b text-right">{row.lguCount}</td>
+                            <td className="px-4 py-3 border-b text-right">{row.avgLatest == null ? '-' : metricIsStatus() ? `${fmt(row.avgLatest, 0)}%` : fmt(row.avgLatest)}</td>
+                            <td className="px-4 py-3 border-b text-right">{row.change == null ? '-' : `${row.change >= 0 ? '+' : ''}${metricIsStatus() ? fmt(row.change, 0) + '%' : fmt(row.change)}`}</td>
+                            <td className="px-4 py-3 border-b text-right">{row.compliant == null ? '-' : `${fmt(row.compliant, 0)}%`}</td>
+                            <td className="px-4 py-3 border-b text-right">{row.coverage == null ? '-' : `${fmt(row.coverage, 0)}%`}</td>
+                            <td className="px-4 py-3 border-b">{row.topLgu}</td>
+                            <td className="px-4 py-3 border-b">{row.bottomLgu}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -930,7 +930,7 @@ export function App() {
             )}
 
             {tab === 'officials' && officials && (
-              <section className="rounded-xl border p-4 space-y-2">
+              <section className="rounded-xl border p-4 space-y-3">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <h2 className="text-lg font-medium">Local Officials (2025-2028)</h2>
                   <div className="flex flex-wrap items-center gap-2">
@@ -1042,7 +1042,7 @@ export function App() {
                     {demographyStatus}
                   </div>
                 )}
-                <div className="grid gap-3 md:grid-cols-4 lg:grid-cols-5">
+                <div className="grid gap-4 md:grid-cols-4 lg:grid-cols-5">
                   <div className="flex flex-col gap-1">
                     <Label className="text-xs">Province</Label>
                     <Select value={demoProvince} onValueChange={(v) => setDemoProvince(v)}>

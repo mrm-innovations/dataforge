@@ -56,15 +56,15 @@ export function RecordsTable({ rows }: { rows: any[] }) {
       <Table>
         <TableHeader className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
           <TableRow>
-            <TableHead className="text-left p-2 border-b font-medium">Region</TableHead>
-            <TableHead className="text-left p-2 border-b font-medium">Province</TableHead>
-            <TableHead className="text-left p-2 border-b font-medium">LGU</TableHead>
-            <TableHead className="text-left p-2 border-b font-medium">Type</TableHead>
+            <TableHead className="text-left border-b font-medium">Region</TableHead>
+            <TableHead className="text-left border-b font-medium">Province</TableHead>
+            <TableHead className="text-left border-b font-medium">LGU</TableHead>
+            <TableHead className="text-left border-b font-medium">Type</TableHead>
             {years.map((y) => (
-              <TableHead key={y} className="text-left p-2 border-b font-medium">{y}</TableHead>
+              <TableHead key={y} className="text-left border-b font-medium">{y}</TableHead>
             ))}
-            <TableHead className="text-left p-2 border-b font-medium">{summaryLabel}</TableHead>
-            <TableHead className="text-left p-2 border-b font-medium">Actions</TableHead>
+            <TableHead className="text-left border-b font-medium">{summaryLabel}</TableHead>
+            <TableHead className="text-left border-b font-medium">Actions</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -73,7 +73,7 @@ export function RecordsTable({ rows }: { rows: any[] }) {
               const value = (row as any)['y' + y] as number | null
               const label = isStatus ? statusShort((row as any)['s' + y]) : fmt(value)
               return (
-                <TableCell key={y} className="p-2 border-b text-sm text-gray-700">
+                <TableCell key={y} className="px-4 py-3 border-b text-sm text-gray-700">
                   <div className={`inline-flex items-center rounded border px-2 py-0.5 text-xs font-normal ${pillClassesForValue(value)}`}>
                     {label}
                   </div>
@@ -98,15 +98,15 @@ export function RecordsTable({ rows }: { rows: any[] }) {
                 }}
                 aria-label={`Open profile for ${(row as any).lgu}`}
               >
-                <TableCell className="p-2 border-b text-sm text-gray-700">{(row as any).region}</TableCell>
-                <TableCell className="p-2 border-b text-sm text-gray-700">{(row as any).province}</TableCell>
-                <TableCell className="p-2 border-b text-sm text-gray-700">
+                <TableCell className="px-4 py-3 border-b text-sm text-gray-700">{(row as any).region}</TableCell>
+                <TableCell className="px-4 py-3 border-b text-sm text-gray-700">{(row as any).province}</TableCell>
+                <TableCell className="px-4 py-3 border-b text-sm text-gray-700">
                   {(row as any).lgu}
                 </TableCell>
-                <TableCell className="p-2 border-b text-sm text-gray-700">{(row as any).type}</TableCell>
+                <TableCell className="px-4 py-3 border-b text-sm text-gray-700">{(row as any).type}</TableCell>
                 {cells}
-                <TableCell className="p-2 border-b text-sm font-semibold text-gray-900">{summaryText}</TableCell>
-                <TableCell className="p-2 border-b">
+                <TableCell className="px-4 py-3 border-b text-sm font-semibold text-gray-900">{summaryText}</TableCell>
+                <TableCell className="px-4 py-3 border-b">
                   <Button
                     size="icon"
                     variant="outline"
