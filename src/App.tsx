@@ -721,27 +721,28 @@ export function App() {
 
             {tab === 'dashboard' && (
               <section className="rounded-xl border p-4 space-y-3">
-                <FilterBar onChange={() => { /* persist band filter */ force() }} onAuditChange={() => {
-                  // if current bandFilter not applicable for audit, clear it
-                  const audit = store.state.audit
-                  const set = metricIsStatus() ? new Set(['pass','fail']) : (audit==='ADAC' ? new Set(['high','moderate','low']) : new Set(['elite','compliant','near','below']))
-                  if (bandFilter && !set.has(bandFilter)) setBandFilter(null)
-                }} />
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  {bandFilter ? (
-                    <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 px-2 py-1 rounded-md inline-flex items-center gap-2">
-                      <span>Band filter: {bandFilter}</span>
-                      <button className="underline" onClick={() => setBandFilter(null)}>clear</button>
-                    </div>
-                  ) : (
-                    <span className="text-xs text-muted-foreground">Band filter not applied</span>
-                  )}
-                  {role === 'admin' && (
+                <FilterBar
+                  onChange={() => { /* persist band filter */ force() }}
+                  onAuditChange={() => {
+                    // if current bandFilter not applicable for audit, clear it
+                    const audit = store.state.audit
+                    const set = metricIsStatus() ? new Set(['pass','fail']) : (audit==='ADAC' ? new Set(['high','moderate','low']) : new Set(['elite','compliant','near','below']))
+                    if (bandFilter && !set.has(bandFilter)) setBandFilter(null)
+                  }}
+                  actionsSlot={role === 'admin' && (
                     <Button size="sm" variant="outline" onClick={refreshAudits} disabled={refreshingAudits}>
                       {refreshingAudits ? 'Refreshing…' : 'Refresh Audits'}
                     </Button>
                   )}
-                </div>
+                />
+                {bandFilter && (
+                  <div className="flex flex-wrap items-center gap-2">
+                    <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 px-2 py-1 rounded-md inline-flex items-center gap-2">
+                      <span>Band filter: {bandFilter}</span>
+                      <button className="underline" onClick={() => setBandFilter(null)}>clear</button>
+                    </div>
+                  </div>
+                )}
                 {auditsStatus && (
                   <div className={`text-xs ${auditsStatus.includes('failed') || auditsStatus.includes('Invalid') ? 'text-red-600' : 'text-green-600'}`}>
                     {auditsStatus}
