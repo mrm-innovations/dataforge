@@ -128,6 +128,7 @@ function formatOfficialName(official: Official) {
 type ScenarioBuilderProps = {
   officials?: Official[] | null
   fieldOfficers?: FieldOfficer[] | null
+  wide?: boolean
 }
 
 function normStatusFromValue(val: unknown): string | null {
@@ -158,7 +159,7 @@ function TogglePill({ enabled, onChange }: { enabled: boolean; onChange: (next: 
   )
 }
 
-export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderProps) {
+export function ScenarioBuilder({ officials, fieldOfficers, wide }: ScenarioBuilderProps) {
   const [matchMode, setMatchMode] = useState<'all' | 'any'>('all')
   const [useSglg, setUseSglg] = useState(true)
   const [useAdac, setUseAdac] = useState(true)
@@ -530,7 +531,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
   const pillMuted = 'bg-zinc-100 text-zinc-500 border-zinc-200'
 
   return (
-    <section className="rounded-xl border p-4 space-y-3">
+    <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
       <div className="flex flex-wrap items-center justify-between gap-2">
         <div>
           <h2 className="text-lg font-medium">Scenario Builder</h2>

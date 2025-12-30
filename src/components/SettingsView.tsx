@@ -763,8 +763,7 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
 
   return (
     <div className="p-4">
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="font-medium">Settings</h2>
+      <div className="flex items-center justify-end mb-4">
         <div className="inline-flex rounded-md border">
           <button
             className={`px-3 py-1 text-xs font-medium rounded-l-md ${activePanel === 'data' ? 'bg-primary text-white' : 'bg-white text-muted-foreground'}`}

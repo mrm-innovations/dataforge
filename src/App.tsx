@@ -215,7 +215,10 @@ export function App() {
   const [bandFilter, setBandFilter] = useState<string | null>(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
-  const [wide, setWide] = useState(false)
+  const [wide, setWide] = useState(() => {
+    if (typeof window === 'undefined') return false
+    return window.matchMedia('(max-width: 1023px)').matches
+  })
   const [demoProvince, setDemoProvince] = useState<string>('__all__')
   const [demoType, setDemoType] = useState<string>('__all__')
   const [demoIncomeClass, setDemoIncomeClass] = useState<string>('__all__')
@@ -880,11 +883,11 @@ export function App() {
             )}
 
             {tab === 'scenario' && (
-              <ScenarioBuilder officials={officials || []} fieldOfficers={fieldOfficers || []} />
+              <ScenarioBuilder officials={officials || []} fieldOfficers={fieldOfficers || []} wide={wide} />
             )}
 
             {tab === 'sglg-overview' && (
-              <section className="rounded-xl border p-4 space-y-3">
+              <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   <Button
                     size="sm"
@@ -909,7 +912,7 @@ export function App() {
             )}
 
             {tab === 'sglg' && (
-              <section className="rounded-xl border p-4 space-y-3">
+              <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   <Button
                     size="sm"
@@ -934,7 +937,7 @@ export function App() {
             )}
 
             {tab === 'officials' && officials && (
-              <section className="rounded-xl border p-4 space-y-3">
+              <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   <div className="flex flex-wrap items-center gap-2">
                     {role === 'admin' && (
@@ -974,7 +977,7 @@ export function App() {
             )}
 
             {tab === 'field-officers' && fieldOfficers && (
-              <section className="rounded-xl border p-4 space-y-3">
+              <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
                 <div className="flex flex-wrap items-center justify-end gap-3">
                   <div className="flex flex-wrap items-center gap-2">
                     {role === 'admin' && (
@@ -1024,7 +1027,7 @@ export function App() {
             )}
 
             {tab === 'demography' && (
-              <section className="rounded-xl border p-4 space-y-3">
+              <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   <div className="flex flex-wrap items-center gap-2">
                     {role === 'admin' && (
@@ -1176,7 +1179,7 @@ export function App() {
                 </section>
               )}
             {role === 'admin' && tab === 'settings' && (
-              <section className="rounded-xl border p-0 overflow-hidden">
+              <section className={wide ? 'overflow-hidden' : 'rounded-xl border p-0 overflow-hidden'}>
                 <SettingsView authed={role === 'admin'} />
               </section>
             )}
