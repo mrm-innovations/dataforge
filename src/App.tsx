@@ -224,6 +224,7 @@ export function App() {
   const [demoIncomeClass, setDemoIncomeClass] = useState<string>('__all__')
   const [demoSearch, setDemoSearch] = useState<string>('')
   const baseRows = filterRows()
+  const tabWrapperClass = wide ? 'space-y-4' : 'rounded-xl border p-4 space-y-4'
   useEffect(() => {
     if (role !== 'admin' && tab === 'settings') setTab('dashboard')
   }, [role, tab])
@@ -738,39 +739,37 @@ export function App() {
           <div className={`${wide ? 'w-full' : 'max-w-7xl mx-auto'} space-y-6`}>
 
             {tab === 'dashboard' && (
-              <section className="rounded-xl border p-4 space-y-3">
-                <FilterBar
-                  onChange={() => { /* persist band filter */ force() }}
-                  onAuditChange={() => {
-                    // if current bandFilter not applicable for audit, clear it
-                    const audit = store.state.audit
-                    const set = metricIsStatus() ? new Set(['pass','fail']) : (audit==='ADAC' ? new Set(['high','moderate','low']) : new Set(['elite','compliant','near','below']))
-                    if (bandFilter && !set.has(bandFilter)) setBandFilter(null)
-                  }}
-                  actionsSlot={role === 'admin' && (
-                    <Button size="sm" variant="outline" onClick={refreshAudits} disabled={refreshingAudits}>
-                      {refreshingAudits ? 'Refreshing…' : 'Refresh Audits'}
-                    </Button>
-                  )}
-                />
-                {bandFilter && (
-                  <div className="flex flex-wrap items-center gap-2">
-                    <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 px-2 py-1 rounded-md inline-flex items-center gap-2">
-                      <span>Band filter: {bandFilter}</span>
-                      <button className="underline" onClick={() => setBandFilter(null)}>clear</button>
+              <section className={tabWrapperClass}>
+                <div className="space-y-3">
+                  <FilterBar
+                    onChange={() => { /* persist band filter */ force() }}
+                    onAuditChange={() => {
+                      // if current bandFilter not applicable for audit, clear it
+                      const audit = store.state.audit
+                      const set = metricIsStatus() ? new Set(['pass','fail']) : (audit==='ADAC' ? new Set(['high','moderate','low']) : new Set(['elite','compliant','near','below']))
+                      if (bandFilter && !set.has(bandFilter)) setBandFilter(null)
+                    }}
+                    actionsSlot={role === 'admin' && (
+                      <Button size="sm" variant="outline" onClick={refreshAudits} disabled={refreshingAudits}>
+                        {refreshingAudits ? 'Refreshing...' : 'Refresh Audits'}
+                      </Button>
+                    )}
+                  />
+                  {bandFilter && (
+                    <div className="flex flex-wrap items-center gap-2">
+                      <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 px-2 py-1 rounded-md inline-flex items-center gap-2">
+                        <span>Band filter: {bandFilter}</span>
+                        <button className="underline" onClick={() => setBandFilter(null)}>clear</button>
+                      </div>
                     </div>
-                  </div>
-                )}
-                {auditsStatus && (
-                  <div className={`text-xs ${auditsStatus.includes('failed') || auditsStatus.includes('Invalid') ? 'text-red-600' : 'text-green-600'}`}>
-                    {auditsStatus}
-                  </div>
-                )}
-              </section>
-            )}
+                  )}
+                  {auditsStatus && (
+                    <div className={`text-xs ${auditsStatus.includes('failed') || auditsStatus.includes('Invalid') ? 'text-red-600' : 'text-green-600'}`}>
+                      {auditsStatus}
+                    </div>
+                  )}
+                </div>
 
-            {tab === 'dashboard' && (
-              <>
                 <MetricCards rows={rows} years={years} onBandFilter={(b) => setBandFilter(b)} />
 
                 <section className="rounded-xl border p-4">
@@ -814,57 +813,56 @@ export function App() {
                   <div className="rounded-xl border p-4">
                     <div className="flex items-center justify-between mb-2">
                       <h2 className="font-medium">Functional Distribution</h2>
-                    <div className="text-xs text-muted-foreground">
-                      {metricIsStatus() ? 'Passers vs Non-Passers' : (store.state.audit === 'ADAC' ? 'High / Moderate / Low' : 'Band distribution')}
+                      <div className="text-xs text-muted-foreground">
+                        {metricIsStatus() ? 'Passers vs Non-Passers' : (store.state.audit === 'ADAC' ? 'High / Moderate / Low' : 'Band distribution')}
+                      </div>
                     </div>
+                    <BandDistribution rows={rows} />
                   </div>
-                  <BandDistribution rows={rows} />
-                  </div>
-                
 
                   <div className="rounded-xl border p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <h2 className="font-medium">Trend by Type</h2>
-                    <div className="text-xs text-muted-foreground">{years.length ? `${years[0]}-${years[years.length - 1]}` : ''}</div>
-                  </div>
-                  {chartData ? (
-                    <Line
-                      data={chartData as any}
-                      options={{
-                        responsive: true,
-                        scales: {
-                          y: metricIsStatus() ? { suggestedMin: 0, suggestedMax: 100, ticks: { callback: (v) => `${v}%` } } : {},
-                        },
-                        plugins: {
-                          legend: {
-                            position: 'bottom',
-                            labels: {
-                              usePointStyle: true,
-                              pointStyle: 'circle',
-                              boxWidth: 10,
-                              boxHeight: 10,
+                    <div className="flex items-center justify-between mb-2">
+                      <h2 className="font-medium">Trend by Type</h2>
+                      <div className="text-xs text-muted-foreground">{years.length ? `${years[0]}-${years[years.length - 1]}` : ''}</div>
+                    </div>
+                    {chartData ? (
+                      <Line
+                        data={chartData as any}
+                        options={{
+                          responsive: true,
+                          scales: {
+                            y: metricIsStatus() ? { suggestedMin: 0, suggestedMax: 100, ticks: { callback: (v) => `${v}%` } } : {},
+                          },
+                          plugins: {
+                            legend: {
+                              position: 'bottom',
+                              labels: {
+                                usePointStyle: true,
+                                pointStyle: 'circle',
+                                boxWidth: 10,
+                                boxHeight: 10,
+                              },
                             },
                           },
-                        },
-                      }}
-                    />
-                  ) : (
-                    <div className="text-sm text-muted-foreground">Loading…</div>
-                  )}
+                        }}
+                      />
+                    ) : (
+                      <div className="text-sm text-muted-foreground">Loading...</div>
+                    )}
                   </div>
                 </section>
 
                 <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                   <div className="rounded-xl border p-4">
                     <div className="flex items-center justify-between mb-2">
-                      <h2 className="font-medium">{metricIsStatus() ? 'Pass % (Latest)' : 'Scores (Latest)'} – by LGU</h2>
+                      <h2 className="font-medium">{metricIsStatus() ? 'Pass % (Latest)' : 'Scores (Latest)'} by LGU</h2>
                       <div className="text-xs text-muted-foreground">Top 30</div>
                     </div>
                     <BarChartLGU rows={rows} />
                   </div>
                   <div className="rounded-xl border p-4">
                     <div className="flex items-center justify-between mb-2">
-                      <h2 className="font-medium">{metricIsStatus() ? 'Pass % (Latest)' : 'Avg (Latest)'} – by Province</h2>
+                      <h2 className="font-medium">{metricIsStatus() ? 'Pass % (Latest)' : 'Avg (Latest)'} by Province</h2>
                     </div>
                     <ProvinceChart rows={rows} />
                   </div>
@@ -879,15 +877,17 @@ export function App() {
                   </div>
                   <RecordsTable rows={rows} />
                 </section>
-              </>
+              </section>
             )}
 
             {tab === 'scenario' && (
-              <ScenarioBuilder officials={officials || []} fieldOfficers={fieldOfficers || []} wide={wide} />
+              <section className={tabWrapperClass}>
+                <ScenarioBuilder officials={officials || []} fieldOfficers={fieldOfficers || []} />
+              </section>
             )}
 
             {tab === 'sglg-overview' && (
-              <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
+              <section className={tabWrapperClass}>
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   <Button
                     size="sm"
@@ -912,7 +912,7 @@ export function App() {
             )}
 
             {tab === 'sglg' && (
-              <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
+              <section className={tabWrapperClass}>
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   <Button
                     size="sm"
@@ -936,98 +936,104 @@ export function App() {
               </section>
             )}
 
-            {tab === 'officials' && officials && (
-              <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
-                <div className="flex flex-wrap items-center justify-end gap-2">
-                  <div className="flex flex-wrap items-center gap-2">
-                    {role === 'admin' && (
-                      <Button size="sm" variant="outline" onClick={refreshLocalOfficials} disabled={refreshingOfficials}>
-                        {refreshingOfficials ? 'Refreshing…' : 'Refresh Directory'}
-                      </Button>
-                    )}
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      onClick={() => localOfficialsActions.current?.resetFilters()}
-                    >
-                      Reset filters
-                    </Button>
-                    <Button
-                      size="sm"
-                      onClick={() => localOfficialsActions.current?.exportCsv()}
-                      disabled={!officialsFilteredCount}
-                    >
-                      <Download className="h-4 w-4 mr-2" /> CSV
-                    </Button>
+            {tab === 'officials' && (
+              <section className={tabWrapperClass}>
+                {officials ? (
+                  <>
+                    <div className="flex flex-wrap items-center justify-end gap-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        {role === 'admin' && (
+                          <Button size="sm" variant="outline" onClick={refreshLocalOfficials} disabled={refreshingOfficials}>
+                            {refreshingOfficials ? 'Refreshing...' : 'Refresh Directory'}
+                          </Button>
+                        )}
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={() => localOfficialsActions.current?.resetFilters()}
+                        >
+                          Reset filters
+                        </Button>
+                        <Button
+                          size="sm"
+                          onClick={() => localOfficialsActions.current?.exportCsv()}
+                          disabled={!officialsFilteredCount}
+                        >
+                          <Download className="h-4 w-4 mr-2" /> CSV
+                        </Button>
+                      </div>
+                    </div>
+                    {officialsStatus && <div className="text-xs text-green-600">{officialsStatus}</div>}
+                    {officialsError && <div className="text-xs text-red-600">{officialsError}</div>}
+                    <LocalOfficialsView
+                      ref={localOfficialsActions}
+                      officials={officials}
+                      onFilteredCountChange={setOfficialsFilteredCount}
+                    />
+                  </>
+                ) : (
+                  <div className="text-sm text-muted-foreground">
+                    {officialsError || 'Loading officials dataset...'}
                   </div>
-                </div>
-                {officialsStatus && <div className="text-xs text-green-600">{officialsStatus}</div>}
-                {officialsError && <div className="text-xs text-red-600">{officialsError}</div>}
-                <LocalOfficialsView
-                  ref={localOfficialsActions}
-                  officials={officials}
-                  onFilteredCountChange={setOfficialsFilteredCount}
-                />
+                )}
               </section>
-            )}
-            {tab === 'officials' && !officials && (
-              <div className="rounded-xl border p-4 text-sm text-muted-foreground">
-                {officialsError || 'Loading officials dataset…'}
-              </div>
             )}
 
-            {tab === 'field-officers' && fieldOfficers && (
-              <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
-                <div className="flex flex-wrap items-center justify-end gap-3">
-                  <div className="flex flex-wrap items-center gap-2">
-                    {role === 'admin' && (
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        onClick={refreshFieldOfficersDirectory}
-                        disabled={refreshingFieldOfficers || ((import.meta as any).env?.DEV && !phpBackendAvailable)}
-                        title={(import.meta as any).env?.DEV && !phpBackendAvailable ? 'Requires PHP backend (api/ping.php)' : undefined}
-                      >
-                        {refreshingFieldOfficers ? 'Refreshing...' : 'Refresh Directory'}
-                      </Button>
+            {tab === 'field-officers' && (
+              <section className={tabWrapperClass}>
+                {fieldOfficers ? (
+                  <>
+                    <div className="flex flex-wrap items-center justify-end gap-3">
+                      <div className="flex flex-wrap items-center gap-2">
+                        {role === 'admin' && (
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            onClick={refreshFieldOfficersDirectory}
+                            disabled={refreshingFieldOfficers || ((import.meta as any).env?.DEV && !phpBackendAvailable)}
+                            title={(import.meta as any).env?.DEV && !phpBackendAvailable ? 'Requires PHP backend (api/ping.php)' : undefined}
+                          >
+                            {refreshingFieldOfficers ? 'Refreshing...' : 'Refresh Directory'}
+                          </Button>
+                        )}
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={() => fieldOfficersActions.current?.resetFilters()}
+                        >
+                          Reset filters
+                        </Button>
+                        <Button
+                          size="sm"
+                          onClick={() => fieldOfficersActions.current?.exportCsv()}
+                          disabled={!fieldOfficersFilteredCount}
+                        >
+                          <Download className="h-4 w-4 mr-2" /> CSV
+                        </Button>
+                      </div>
+                    </div>
+                    {fieldOfficersStatus && (
+                      <div className="text-xs text-green-600">{fieldOfficersStatus}</div>
                     )}
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      onClick={() => fieldOfficersActions.current?.resetFilters()}
-                    >
-                      Reset filters
-                    </Button>
-                    <Button
-                      size="sm"
-                      onClick={() => fieldOfficersActions.current?.exportCsv()}
-                      disabled={!fieldOfficersFilteredCount}
-                    >
-                      <Download className="h-4 w-4 mr-2" /> CSV
-                    </Button>
+                    {fieldOfficersError && (
+                      <div className="text-xs text-red-600">{fieldOfficersError}</div>
+                    )}
+                    <FieldOfficersView
+                      ref={fieldOfficersActions}
+                      officers={fieldOfficers}
+                      onFilteredCountChange={setFieldOfficersFilteredCount}
+                    />
+                  </>
+                ) : (
+                  <div className="text-sm text-muted-foreground">
+                    {fieldOfficersError || 'Loading field officers directory...'}
                   </div>
-                </div>
-                {fieldOfficersStatus && (
-                  <div className="text-xs text-green-600">{fieldOfficersStatus}</div>
                 )}
-                {fieldOfficersError && (
-                  <div className="text-xs text-red-600">{fieldOfficersError}</div>
-                )}
-                <FieldOfficersView
-                  ref={fieldOfficersActions}
-                  officers={fieldOfficers}
-                  onFilteredCountChange={setFieldOfficersFilteredCount}
-                />
               </section>
-            )}
-            {tab === 'field-officers' && !fieldOfficers && (
-              <div className="rounded-xl border p-4 text-sm text-muted-foreground">
-                {fieldOfficersError || 'Loading field officers directory…'}
-              </div>
             )}
 
             {tab === 'demography' && (
-              <section className={wide ? 'space-y-3' : 'rounded-xl border p-4 space-y-3'}>
+              <section className={tabWrapperClass}>
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   <div className="flex flex-wrap items-center gap-2">
                     {role === 'admin' && (
@@ -1105,7 +1111,7 @@ export function App() {
             )}
 
               {tab === 'about' && (
-                <section className="space-y-4">
+                <section className={tabWrapperClass}>
                   <div className="rounded-xl border p-5 space-y-3">
                     <div>
                       <h2 className="text-lg font-semibold">About DataForge — DILG Region XII</h2>
@@ -1179,7 +1185,7 @@ export function App() {
                 </section>
               )}
             {role === 'admin' && tab === 'settings' && (
-              <section className={wide ? 'overflow-hidden' : 'rounded-xl border p-0 overflow-hidden'}>
+              <section className={`${tabWrapperClass} overflow-hidden`}>
                 <SettingsView authed={role === 'admin'} />
               </section>
             )}

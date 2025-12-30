@@ -739,7 +739,7 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
 
   if (!adminAuthed){
     return (
-      <div className="p-4">
+      <div>
         <div className="max-w-md mx-auto border rounded bg-white p-4">
           <h2 className="font-medium mb-2">Admin Login</h2>
           <p className="text-xs text-muted-foreground mb-3">Enter the admin account to access Settings.</p>
@@ -762,7 +762,7 @@ export function SettingsView({ authed = false }: { authed?: boolean }){
   }
 
   return (
-    <div className="p-4">
+    <div>
       <div className="flex items-center justify-end mb-4">
         <div className="inline-flex rounded-md border">
           <button
