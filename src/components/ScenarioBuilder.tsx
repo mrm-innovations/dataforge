@@ -150,7 +150,7 @@ function TogglePill({ enabled, onChange }: { enabled: boolean; onChange: (next: 
   return (
     <button
       type="button"
-      className={`inline-flex items-center rounded-full border px-2 py-0.5 text-xs ${enabled ? 'bg-zinc-900 text-white border-zinc-900' : 'bg-white text-zinc-600'}`}
+      className={`inline-flex items-center rounded-full border px-2 py-0.5 text-xs ${enabled ? 'bg-[oklch(72.3%_0.219_149.579)] text-white border-[oklch(72.3%_0.219_149.579)]' : 'bg-white text-zinc-600'}`}
       onClick={() => onChange(!enabled)}
     >
       {enabled ? 'ON' : 'OFF'}
