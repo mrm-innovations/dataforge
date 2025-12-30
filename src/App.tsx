@@ -885,27 +885,21 @@ export function App() {
 
             {tab === 'sglg-overview' && (
               <section className="rounded-xl border p-4 space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <h2 className="text-lg font-medium">SGLG Overview</h2>
-                    <div className="text-xs text-muted-foreground">All criteria in one view</div>
-                  </div>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      onClick={() => sglgOverviewActions.current?.resetFilters()}
-                    >
-                      Reset filters
-                    </Button>
-                    <Button
-                      size="sm"
-                      onClick={() => sglgOverviewActions.current?.exportCsv()}
-                      disabled={!sglgOverviewFilteredCount}
-                    >
-                      <Download className="h-4 w-4 mr-2" /> CSV
-                    </Button>
-                  </div>
+                <div className="flex flex-wrap items-center justify-end gap-2">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={() => sglgOverviewActions.current?.resetFilters()}
+                  >
+                    Reset filters
+                  </Button>
+                  <Button
+                    size="sm"
+                    onClick={() => sglgOverviewActions.current?.exportCsv()}
+                    disabled={!sglgOverviewFilteredCount}
+                  >
+                    <Download className="h-4 w-4 mr-2" /> CSV
+                  </Button>
                 </div>
                 <SglgOverview
                   ref={sglgOverviewActions}
@@ -916,27 +910,21 @@ export function App() {
 
             {tab === 'sglg' && (
               <section className="rounded-xl border p-4 space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <h2 className="text-lg font-medium">SGLG Criteria</h2>
-                    <div className="text-xs text-muted-foreground">Filter LGUs by indicator/status</div>
-                  </div>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      onClick={() => sglgCriteriaActions.current?.resetFilters()}
-                    >
-                      Reset filters
-                    </Button>
-                    <Button
-                      size="sm"
-                      onClick={() => sglgCriteriaActions.current?.exportCsv()}
-                      disabled={!sglgCriteriaFilteredCount}
-                    >
-                      <Download className="h-4 w-4 mr-2" /> CSV
-                    </Button>
-                  </div>
+                <div className="flex flex-wrap items-center justify-end gap-2">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={() => sglgCriteriaActions.current?.resetFilters()}
+                  >
+                    Reset filters
+                  </Button>
+                  <Button
+                    size="sm"
+                    onClick={() => sglgCriteriaActions.current?.exportCsv()}
+                    disabled={!sglgCriteriaFilteredCount}
+                  >
+                    <Download className="h-4 w-4 mr-2" /> CSV
+                  </Button>
                 </div>
                 <SglgCriteriaTab
                   ref={sglgCriteriaActions}
@@ -947,8 +935,7 @@ export function App() {
 
             {tab === 'officials' && officials && (
               <section className="rounded-xl border p-4 space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <h2 className="text-lg font-medium">Local Officials (2025-2028)</h2>
+                <div className="flex flex-wrap items-center justify-end gap-2">
                   <div className="flex flex-wrap items-center gap-2">
                     {role === 'admin' && (
                       <Button size="sm" variant="outline" onClick={refreshLocalOfficials} disabled={refreshingOfficials}>
@@ -988,8 +975,7 @@ export function App() {
 
             {tab === 'field-officers' && fieldOfficers && (
               <section className="rounded-xl border p-4 space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <h2 className="text-lg font-medium">Field Officers Directory</h2>
+                <div className="flex flex-wrap items-center justify-end gap-3">
                   <div className="flex flex-wrap items-center gap-2">
                     {role === 'admin' && (
                       <Button
@@ -1039,8 +1025,7 @@ export function App() {
 
             {tab === 'demography' && (
               <section className="rounded-xl border p-4 space-y-3">
-                <div className="flex flex-wrap items-center justify-between">
-                  <h2 className="text-lg font-medium">Demography</h2>
+                <div className="flex flex-wrap items-center justify-end gap-2">
                   <div className="flex flex-wrap items-center gap-2">
                     {role === 'admin' && (
                       <Button size="sm" variant="outline" onClick={refreshDemography} disabled={refreshingDemography}>

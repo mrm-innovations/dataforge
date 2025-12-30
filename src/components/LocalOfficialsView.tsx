@@ -502,68 +502,72 @@ export const LocalOfficialsView = forwardRef<LocalOfficialsActions, Props>(({ of
           />
         </div>
       </div>
-      <div className="flex justify-between items-end gap-4 mt-6 mb-2">
-        <div className="flex flex-col gap-1 w-full max-w-sm">
-          <Label className="text-xs">Search</Label>
-          <Input
-            value={search}
-            onChange={(e) => { setSearch(e.target.value); setPage(0) }}
-            placeholder="Search name, position, or LGU"
-          />
+      <div className="space-y-2 mt-6">
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="text-sm font-medium">Directory</div>
+          <div className="flex items-center gap-2 w-full max-w-sm sm:ml-auto">
+            <span className="text-xs text-muted-foreground">Search</span>
+            <Input
+              aria-label="Search local officials"
+              value={search}
+              onChange={(e) => { setSearch(e.target.value); setPage(0) }}
+              placeholder="Search name, position, or LGU"
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="rounded-xl border bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)]">
-        <Table className="text-sm">
-          <TableHeader style={{ background: 'oklch(98.5% 0 0)' }}>
-            <TableRow style={{ borderColor: 'oklch(92.2% 0 0)' }}>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Province</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">LGU</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Position</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Name</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Sex</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Party</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Term</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {paged.map((o, idx) => {
-              const canonical = canonicalSex(o.sex)
-              const party = o.party?.trim() || 'Independent'
-              const term = toTitleCase(o.term || 'Unknown')
-              return (
-                <TableRow key={`${o.province}-${o.lgu}-${idx}`} className="odd:bg-white even:bg-muted/25 hover:bg-indigo-50/70">
-                  <TableCell className="py-3 text-gray-800">{toTitleCase(o.province)}</TableCell>
-                  <TableCell className="py-3 text-gray-800">{toTitleCase(o.lgu)}</TableCell>
-                  <TableCell className="py-3 text-gray-800">{toTitleCase(o.position)}</TableCell>
-                  <TableCell className="py-3 text-gray-900 font-medium">{formatOfficialName(o)}</TableCell>
-                  <TableCell className="py-3 text-gray-800">{canonical}</TableCell>
-                  <TableCell className="py-3 text-gray-800">{party}</TableCell>
-                  <TableCell className="py-3 text-gray-800">{term}</TableCell>
-                </TableRow>
-              )
-            })}
-          </TableBody>
-        </Table>
-        <div className="flex items-center justify-between px-3 py-2 border-t text-xs text-muted-foreground">
-          <span>
-            Showing {(page * PAGE_SIZE) + 1}-{Math.min((page + 1) * PAGE_SIZE, filtered.length)} of {filtered.length} officials.
-          </span>
-          <div className="inline-flex items-center gap-2">
-            <Button variant="ghost" size="sm" disabled={page === 0} onClick={() => setPage((p) => Math.max(0, p - 1))}>
-              Prev
-            </Button>
+        <div className="rounded-xl border bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)]">
+          <Table className="text-sm">
+            <TableHeader style={{ background: 'oklch(98.5% 0 0)' }}>
+              <TableRow style={{ borderColor: 'oklch(92.2% 0 0)' }}>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Province</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">LGU</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Position</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Name</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Sex</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Party</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Term</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {paged.map((o, idx) => {
+                const canonical = canonicalSex(o.sex)
+                const party = o.party?.trim() || 'Independent'
+                const term = toTitleCase(o.term || 'Unknown')
+                return (
+                  <TableRow key={`${o.province}-${o.lgu}-${idx}`} className="odd:bg-white even:bg-muted/25 hover:bg-indigo-50/70">
+                    <TableCell className="py-3 text-gray-800">{toTitleCase(o.province)}</TableCell>
+                    <TableCell className="py-3 text-gray-800">{toTitleCase(o.lgu)}</TableCell>
+                    <TableCell className="py-3 text-gray-800">{toTitleCase(o.position)}</TableCell>
+                    <TableCell className="py-3 text-gray-900 font-medium">{formatOfficialName(o)}</TableCell>
+                    <TableCell className="py-3 text-gray-800">{canonical}</TableCell>
+                    <TableCell className="py-3 text-gray-800">{party}</TableCell>
+                    <TableCell className="py-3 text-gray-800">{term}</TableCell>
+                  </TableRow>
+                )
+              })}
+            </TableBody>
+          </Table>
+          <div className="flex items-center justify-between px-3 py-2 border-t text-xs text-muted-foreground">
             <span>
-              Page {page + 1} / {pageCount}
+              Showing {(page * PAGE_SIZE) + 1}-{Math.min((page + 1) * PAGE_SIZE, filtered.length)} of {filtered.length} officials.
             </span>
-            <Button
-              variant="ghost"
-              size="sm"
-              disabled={page + 1 >= pageCount}
-              onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
-            >
-              Next
-            </Button>
+            <div className="inline-flex items-center gap-2">
+              <Button variant="ghost" size="sm" disabled={page === 0} onClick={() => setPage((p) => Math.max(0, p - 1))}>
+                Prev
+              </Button>
+              <span>
+                Page {page + 1} / {pageCount}
+              </span>
+              <Button
+                variant="ghost"
+                size="sm"
+                disabled={page + 1 >= pageCount}
+                onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
+              >
+                Next
+              </Button>
+            </div>
           </div>
         </div>
       </div>

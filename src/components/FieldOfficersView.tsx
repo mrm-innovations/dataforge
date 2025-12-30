@@ -200,75 +200,79 @@ export const FieldOfficersView = forwardRef<FieldOfficersActions, Props>(({ offi
         </div>
       </div>
 
-      <div className="text-xs text-muted-foreground">
-        {filtered.length} officers across {assignmentCount} offices
-      </div>
-
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {stats.map((card) => (
           <MiniStat key={card.label} {...card} />
         ))}
       </div>
 
-      <div className="rounded-xl border bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)]">
-        <Table className="text-sm">
-          <TableHeader style={{ background: 'oklch(98.5% 0 0)' }}>
-            <TableRow style={{ borderColor: 'oklch(92.2% 0 0)' }}>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Province / HUC</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Assignment / Office</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Name</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Position</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Designation</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Sex</TableHead>
-              <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Contact Information</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {paged.map((officer, idx) => (
-              <TableRow key={`${officer.assignment}-${officer.name}-${idx}`} className="odd:bg-white even:bg-muted/25">
-                <TableCell className="py-3 text-gray-800">{officer.province || '—'}</TableCell>
-                <TableCell className="py-3 text-gray-800">{officer.assignment || '—'}</TableCell>
-                <TableCell className="py-3 text-gray-900">
-                  <div className="font-medium">{officer.name}</div>
-                  {officer.remarks && (
-                    <div className="text-xs text-muted-foreground mt-0.5">{officer.remarks}</div>
-                  )}
-                </TableCell>
-                <TableCell className="py-3 text-gray-800">{officer.position}</TableCell>
-                <TableCell className="py-3 text-gray-800">{officer.designation}</TableCell>
-                <TableCell className="py-3 text-gray-800">{officer.sex || 'Unspecified'}</TableCell>
-                <TableCell className="py-3 text-gray-700">{officer.contact || '—'}</TableCell>
+      <div className="space-y-2">
+        <div className="flex items-center justify-between">
+          <div className="text-sm font-medium">Directory</div>
+          <div className="text-xs text-muted-foreground">
+            {filtered.length} officers across {assignmentCount} offices
+          </div>
+        </div>
+        <div className="rounded-xl border bg-[oklch(98.5%_0_0)] border-[oklch(92.2%_0_0)]">
+          <Table className="text-sm">
+            <TableHeader style={{ background: 'oklch(98.5% 0 0)' }}>
+              <TableRow style={{ borderColor: 'oklch(92.2% 0 0)' }}>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Province / HUC</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Assignment / Office</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Name</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Position</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Designation</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Sex</TableHead>
+                <TableHead className="text-xs uppercase tracking-wide text-muted-foreground">Contact Information</TableHead>
               </TableRow>
-            ))}
-            {!paged.length && (
-              <TableRow>
-                <TableCell colSpan={7} className="py-6 text-center text-sm text-muted-foreground">
-                  No officers found for the current filters.
-                </TableCell>
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-        <div className="flex items-center justify-between px-3 py-2 border-t text-xs text-muted-foreground">
-          <span>
-            Showing {(page * PAGE_SIZE) + 1}-{Math.min((page + 1) * PAGE_SIZE, filtered.length)} of {filtered.length} officers.
-          </span>
-          <div className="inline-flex items-center gap-2">
-            <button
-              className="text-sm px-2 py-1 rounded border"
-              disabled={page === 0}
-              onClick={() => setPage((prev) => Math.max(0, prev - 1))}
-            >
-              Prev
-            </button>
-            <span>Page {page + 1} / {pageCount}</span>
-            <button
-              className="text-sm px-2 py-1 rounded border"
-              disabled={page + 1 >= pageCount}
-              onClick={() => setPage((prev) => Math.min(pageCount - 1, prev + 1))}
-            >
-              Next
-            </button>
+            </TableHeader>
+            <TableBody>
+              {paged.map((officer, idx) => (
+                <TableRow key={`${officer.assignment}-${officer.name}-${idx}`} className="odd:bg-white even:bg-muted/25">
+                  <TableCell className="py-3 text-gray-800">{officer.province || '—'}</TableCell>
+                  <TableCell className="py-3 text-gray-800">{officer.assignment || '—'}</TableCell>
+                  <TableCell className="py-3 text-gray-900">
+                    <div className="font-medium">{officer.name}</div>
+                    {officer.remarks && (
+                      <div className="text-xs text-muted-foreground mt-0.5">{officer.remarks}</div>
+                    )}
+                  </TableCell>
+                  <TableCell className="py-3 text-gray-800">{officer.position}</TableCell>
+                  <TableCell className="py-3 text-gray-800">{officer.designation}</TableCell>
+                  <TableCell className="py-3 text-gray-800">{officer.sex || 'Unspecified'}</TableCell>
+                  <TableCell className="py-3 text-gray-700">{officer.contact || '—'}</TableCell>
+                </TableRow>
+              ))}
+              {!paged.length && (
+                <TableRow>
+                  <TableCell colSpan={7} className="py-6 text-center text-sm text-muted-foreground">
+                    No officers found for the current filters.
+                  </TableCell>
+                </TableRow>
+              )}
+            </TableBody>
+          </Table>
+          <div className="flex items-center justify-between px-3 py-2 border-t text-xs text-muted-foreground">
+            <span>
+              Showing {(page * PAGE_SIZE) + 1}-{Math.min((page + 1) * PAGE_SIZE, filtered.length)} of {filtered.length} officers.
+            </span>
+            <div className="inline-flex items-center gap-2">
+              <button
+                className="text-sm px-2 py-1 rounded border"
+                disabled={page === 0}
+                onClick={() => setPage((prev) => Math.max(0, prev - 1))}
+              >
+                Prev
+              </button>
+              <span>Page {page + 1} / {pageCount}</span>
+              <button
+                className="text-sm px-2 py-1 rounded border"
+                disabled={page + 1 >= pageCount}
+                onClick={() => setPage((prev) => Math.min(pageCount - 1, prev + 1))}
+              >
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </div>
