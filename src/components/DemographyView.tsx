@@ -253,7 +253,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Card className={panelClass}>
-          <CardContent className="p-4">
+          <CardContent className="p-0">
             <div className="text-sm font-medium mb-2">Population by Province</div>
             {provinceBar.labels.length ? (
               <Bar data={{ labels: provinceBar.labels, datasets: [{ label: 'Population', data: provinceBar.data, backgroundColor: applyAlpha(hsl('blue'), 0.75), borderRadius: 8, maxBarThickness: 48 }] }} options={{ responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => fmt(ctx.parsed.y, 0) } } }, scales: { y: { beginAtZero: true } } }} />
@@ -261,7 +261,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
           </CardContent>
         </Card>
         <Card className={panelClass}>
-          <CardContent className="p-4">
+          <CardContent className="p-0">
             <div className="text-sm font-medium mb-2">Population by LGU Type</div>
             {typeDoughnut.labels.length ? (
               <div style={{ height: 280 }}>
@@ -282,7 +282,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Card className={panelClass}>
-          <CardContent className="p-4">
+          <CardContent className="p-0">
             <div className="text-sm font-medium mb-2">Income Class Distribution</div>
             {classDist.datasets.length ? (
               <Bar
@@ -299,7 +299,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
         </Card>
 
         <Card className={panelClass}>
-          <CardContent className="p-4">
+          <CardContent className="p-0">
             <div className="text-sm font-medium mb-2">Top 10 by Population</div>
             {topLGUs.length ? (
               <Bar
@@ -318,33 +318,36 @@ export function DemographyView({ rows }: { rows: Row[] }){
 
       <div className="grid grid-cols-1 gap-4">
         <Card className={panelClass}>
-          <CardContent className="p-4">
-            <div className="text-sm font-medium mb-2">Directory</div>
+          <CardContent className="p-0">
+            <div className="flex items-center justify-between mb-2">
+              <div className="text-sm font-medium">Directory</div>
+              <div className="text-xs text-muted-foreground">{working.length} records</div>
+            </div>
             <div className="overflow-auto rounded-md border">
               <Table>
                 <TableHeader className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
                   <TableRow>
-                    <TableHead className="text-left border-b font-medium">Province</TableHead>
-                    <TableHead className="text-left border-b font-medium">LGU</TableHead>
-                    <TableHead className="text-left border-b font-medium">Type</TableHead>
-                    <TableHead className="text-left border-b font-medium">Income</TableHead>
-                    <TableHead className="text-right border-b font-medium">Population</TableHead>
+                    <TableHead className="text-left border-b font-medium px-3 py-2 h-10">Province</TableHead>
+                    <TableHead className="text-left border-b font-medium px-3 py-2 h-10">LGU</TableHead>
+                    <TableHead className="text-left border-b font-medium px-3 py-2 h-10">Type</TableHead>
+                    <TableHead className="text-left border-b font-medium px-3 py-2 h-10">Income</TableHead>
+                    <TableHead className="text-right border-b font-medium px-3 py-2 h-10">Population</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {working.slice().sort((a,b)=> (Number(b.population)||0) - (Number(a.population)||0)).map((r:any, idx)=> (
                     <TableRow key={r.lgu+':'+r.province} className={idx % 2 ? 'bg-zinc-50' : 'bg-white'}>
-                      <TableCell className="px-4 py-3 border-b text-sm text-gray-700">{r.province || '--'}</TableCell>
-                      <TableCell className="px-4 py-3 border-b text-sm text-gray-700">{r.lgu || '--'}</TableCell>
-                      <TableCell className="px-4 py-3 border-b text-sm text-gray-700">{r.type || '--'}</TableCell>
-                      <TableCell className="px-4 py-3 border-b text-sm text-gray-700">
+                      <TableCell className="p-3 border-b text-sm text-gray-700">{r.province || '--'}</TableCell>
+                      <TableCell className="p-3 border-b text-sm text-gray-700">{r.lgu || '--'}</TableCell>
+                      <TableCell className="p-3 border-b text-sm text-gray-700">{r.type || '--'}</TableCell>
+                      <TableCell className="p-3 border-b text-sm text-gray-700">
                         {r.income_class ? (
                           <span className={`inline-flex items-center rounded border px-2 py-0.5 text-xs font-normal ${incomeClassPillClass(normalizeClass(r.income_class))}`}>
                             {normalizeClass(r.income_class)}
                           </span>
                         ) : '--'}
                       </TableCell>
-                      <TableCell className="px-4 py-3 border-b text-sm text-gray-700 text-right">{Number.isFinite(r.population) ? fmt(r.population,0) : '--'}</TableCell>
+                      <TableCell className="p-3 border-b text-sm text-gray-700 text-right">{Number.isFinite(r.population) ? fmt(r.population,0) : '--'}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

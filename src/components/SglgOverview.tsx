@@ -57,6 +57,25 @@ function resolveOverallStatus(record: any): string | null {
   return 'met'
 }
 
+const CRITERIA_PILL_CLASSES = [
+  'border-sky-200 bg-sky-50 text-sky-700',
+  'border-emerald-200 bg-emerald-50 text-emerald-700',
+  'border-amber-200 bg-amber-50 text-amber-800',
+  'border-rose-200 bg-rose-50 text-rose-700',
+  'border-indigo-200 bg-indigo-50 text-indigo-700',
+  'border-teal-200 bg-teal-50 text-teal-700',
+  'border-cyan-200 bg-cyan-50 text-cyan-700',
+  'border-fuchsia-200 bg-fuchsia-50 text-fuchsia-700',
+]
+
+function criteriaPillClass(label: string) {
+  let hash = 0
+  for (const ch of String(label || '')) {
+    hash = (hash * 31 + ch.charCodeAt(0)) >>> 0
+  }
+  return CRITERIA_PILL_CLASSES[hash % CRITERIA_PILL_CLASSES.length]
+}
+
 type Props = {
   onFilteredCountChange?: (count: number) => void
 }
@@ -477,8 +496,6 @@ export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFiltered
           <Input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search LGU or province" />
         </div>
       </div>
-      <div className="text-xs text-muted-foreground">{filtered.length} LGUs</div>
-
       {criteriaFocusLabel && (
         <div className="flex items-center gap-2 text-xs">
           <span className="inline-flex items-center gap-2 rounded-full border px-3 py-1 bg-zinc-50 text-zinc-700">
@@ -667,11 +684,13 @@ export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFiltered
         </div>
       </div>
 
-      <div className="rounded-xl border p-4 space-y-3">
+      <div className="max-w-full overflow-x-hidden" style={{ contain: 'layout paint' }}>
+        <div className="rounded-xl border p-4 space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="text-sm font-medium">LGU Overview</div>
+          <div className="text-xs text-muted-foreground">{filtered.length} LGUs</div>
         </div>
-        <div className="rounded border overflow-auto">
+        <div className="rounded border overflow-x-auto">
           <table className="w-full text-sm">
             <thead className="bg-zinc-50 text-xs uppercase tracking-wide text-muted-foreground">
               <tr>
@@ -706,7 +725,24 @@ export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFiltered
                       <StatusPill status={r.statuses[criteriaFocusKey] || null} />
                     </td>
                   )}
-                  <td className="px-4 py-3 border-b">{r.failedCriteria.length ? r.failedCriteria.join(', ') : '-'}</td>
+                  <td className="px-4 py-3 border-b">
+                    {r.failedCriteria.length ? (
+                      <div className="flex flex-wrap gap-1">
+                        {r.failedCriteria.map((label, criteriaIndex) => (
+                          <span
+                            key={`${label}-${criteriaIndex}`}
+                            className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-normal leading-snug max-w-[220px] break-words whitespace-normal ${criteriaPillClass(label)}`}
+                            title={label}
+                            aria-label={label}
+                          >
+                            {label}
+                          </span>
+                        ))}
+                      </div>
+                    ) : (
+                      '-'
+                    )}
+                  </td>
                   <td className="px-4 py-3 border-b">
                     <Button
                       size="icon"
@@ -727,6 +763,7 @@ export const SglgOverview = forwardRef<SglgOverviewActions, Props>(({ onFiltered
         {filtered.length > 400 && (
           <div className="text-xs text-muted-foreground">Showing first 400 rows. Export CSV for full list.</div>
         )}
+      </div>
       </div>
     </div>
   )

@@ -117,6 +117,7 @@ export function App() {
   const [demographyStatus, setDemographyStatus] = useState<string>('')
   const [refreshingAudits, setRefreshingAudits] = useState(false)
   const [auditsStatus, setAuditsStatus] = useState<string>('')
+  const [phpBackendAvailable, setPhpBackendAvailable] = useState(true)
   const [canonReady, setCanonReady] = useState<boolean>(false)
   const [officialsFilteredCount, setOfficialsFilteredCount] = useState<number>(0)
   const localOfficialsActions = useRef<LocalOfficialsActions | null>(null)
@@ -132,6 +133,20 @@ export function App() {
     const base = ((import.meta as any).env?.BASE_URL ?? '/').toString()
     return base.replace(/\/+$/, '/').replace(/\/dist\/$/, '/')
   }
+
+  useEffect(() => {
+    if (!(import.meta as any).env?.DEV) return
+    let active = true
+    fetch(`${apiBase()}api/ping.php`, { cache: 'no-store' })
+      .then((resp) => (resp.ok ? resp.json().catch(() => ({})) : Promise.reject()))
+      .then((data) => {
+        if (active) setPhpBackendAvailable(!!data?.ok)
+      })
+      .catch(() => {
+        if (active) setPhpBackendAvailable(false)
+      })
+    return () => { active = false }
+  }, [])
 
   useEffect(() => {
     ;(async () => {
@@ -977,7 +992,13 @@ export function App() {
                   <h2 className="text-lg font-medium">Field Officers Directory</h2>
                   <div className="flex flex-wrap items-center gap-2">
                     {role === 'admin' && (
-                      <Button size="sm" variant="outline" onClick={refreshFieldOfficersDirectory} disabled={refreshingFieldOfficers}>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        onClick={refreshFieldOfficersDirectory}
+                        disabled={refreshingFieldOfficers || ((import.meta as any).env?.DEV && !phpBackendAvailable)}
+                        title={(import.meta as any).env?.DEV && !phpBackendAvailable ? 'Requires PHP backend (api/ping.php)' : undefined}
+                      >
                         {refreshingFieldOfficers ? 'Refreshing...' : 'Refresh Directory'}
                       </Button>
                     )}
@@ -1089,8 +1110,9 @@ export function App() {
                     />
                   </div>
                 </div>
-                <div className="text-xs text-muted-foreground">{demographyRows.length} records</div>
-                <DemographyView rows={demographyRows} />
+                <div className="pt-3">
+                  <DemographyView rows={demographyRows} />
+                </div>
               </section>
             )}
 

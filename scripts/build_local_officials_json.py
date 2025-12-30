@@ -5,6 +5,7 @@ from pathlib import Path
 
 CSV_PATH = Path("datasets/local-officials.csv")
 JSON_PATH = Path("datasets/local-officials-2025.json")
+PUBLIC_JSON_PATH = Path("public/datasets/local-officials-2025.json")
 
 SUFFIXES = {"JR", "JR.", "II", "III", "IV"}
 
@@ -59,8 +60,12 @@ def main():
                     "term": (row.get("Term") or "").strip(),
                 }
             )
-    JSON_PATH.write_text(json.dumps(rows, indent=2, ensure_ascii=False), encoding="utf-8")
+    payload = json.dumps(rows, indent=2, ensure_ascii=False) + "\n"
+    JSON_PATH.write_text(payload, encoding="utf-8")
+    PUBLIC_JSON_PATH.parent.mkdir(parents=True, exist_ok=True)
+    PUBLIC_JSON_PATH.write_text(payload, encoding="utf-8")
     print(f"Wrote {len(rows)} records to {JSON_PATH}")
+    print(f"Wrote {len(rows)} records to {PUBLIC_JSON_PATH}")
 
 
 if __name__ == "__main__":

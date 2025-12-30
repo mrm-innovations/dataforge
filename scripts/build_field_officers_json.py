@@ -8,6 +8,7 @@ from pathlib import Path
 
 CSV_PATH = Path("datasets/field-officers.csv")
 JSON_PATH = Path("datasets/field-officers.json")
+PUBLIC_JSON_PATH = Path("public/datasets/field-officers.json")
 
 def main() -> None:
     if not CSV_PATH.exists():
@@ -30,8 +31,12 @@ def main() -> None:
                 }
             )
 
-    JSON_PATH.write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    payload = json.dumps(rows, indent=2, ensure_ascii=False) + "\n"
+    JSON_PATH.write_text(payload, encoding="utf-8")
+    PUBLIC_JSON_PATH.parent.mkdir(parents=True, exist_ok=True)
+    PUBLIC_JSON_PATH.write_text(payload, encoding="utf-8")
     print(f"Wrote {len(rows)} records to {JSON_PATH}")
+    print(f"Wrote {len(rows)} records to {PUBLIC_JSON_PATH}")
 
 
 if __name__ == "__main__":
