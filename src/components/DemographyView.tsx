@@ -65,6 +65,15 @@ export function DemographyView({ rows }: { rows: Row[] }){
     return set.size
   }, [working])
 
+  const baseColorForType = (value: string) => {
+    const key = String(value || '').trim().toLowerCase()
+    if (key === 'province') return 'oklch(74.6% 0.16 232.661)'
+    if (key === 'municipality') return 'oklch(70.2% 0.183 293.541)'
+    if (key === 'component city') return 'oklch(74% 0.238 322.16)'
+    if (key === 'highly urbanized city') return 'oklch(71.2% 0.194 13.428)'
+    return hsl('indigo')
+  }
+
   // Province population bar (exclude HUC and province placeholder)
   const provinceBar = useMemo(() => {
     const groups: Record<string, number> = {}
@@ -90,11 +99,10 @@ export function DemographyView({ rows }: { rows: Row[] }){
       groups[key] = (groups[key] || 0) + (Number(r.population) || 0)
     })
     const entries = Object.entries(groups).sort((a, b) => b[1] - a[1])
-    const palette = [hsl('blue'), hsl('yellow'), hsl('orange')].map((c) => applyAlpha(c, 0.75))
     return {
       labels: entries.map((e) => e[0]),
       data: entries.map((e) => e[1]),
-      colors: entries.map((_, i) => palette[i % palette.length])
+      colors: entries.map(([label]) => applyAlpha(baseColorForType(label), 0.75))
     }
   }, [popRows])
 
@@ -144,12 +152,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
     })
     const labels = CLASS_ORDER.slice()
     const colorForType = (t: string) => {
-      const key = String(t || '').trim().toLowerCase()
-      if (key === 'province') return applyAlpha(hsl('indigo'), 0.75)
-      if (key === 'municipality') return applyAlpha(hsl('blue'), 0.75)
-      if (key === 'component city') return applyAlpha(hsl('orange'), 0.75)
-      if (key === 'highly urbanized city') return applyAlpha(hsl('yellow'), 0.75)
-      return applyAlpha(hsl('indigo'), 0.75)
+      return applyAlpha(baseColorForType(t), 0.75)
     }
     const datasets = types.map((t) => ({
       label: t === 'highly urbanized city' ? 'HUC' : t.charAt(0).toUpperCase() + t.slice(1),
@@ -256,7 +259,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
           <CardContent className="p-0">
             <div className="text-sm font-medium mb-2">Population by Province</div>
             {provinceBar.labels.length ? (
-              <Bar data={{ labels: provinceBar.labels, datasets: [{ label: 'Population', data: provinceBar.data, backgroundColor: applyAlpha(hsl('blue'), 0.75), borderRadius: 8, maxBarThickness: 48 }] }} options={{ responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => fmt(ctx.parsed.y, 0) } } }, scales: { y: { beginAtZero: true } } }} />
+              <Bar data={{ labels: provinceBar.labels, datasets: [{ label: 'Population', data: provinceBar.data, backgroundColor: applyAlpha(baseColorForType('province'), 0.75), borderRadius: 8, maxBarThickness: 48 }] }} options={{ responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => fmt(ctx.parsed.y, 0) } } }, scales: { y: { beginAtZero: true } } }} />
             ) : (<div className="text-sm text-muted-foreground">No data</div>)}
           </CardContent>
         </Card>
@@ -303,7 +306,7 @@ export function DemographyView({ rows }: { rows: Row[] }){
             <div className="text-sm font-medium mb-2">Top 10 by Population</div>
             {topLGUs.length ? (
               <Bar
-                data={{ labels: topLGUs.map(r => r.lgu), datasets: [{ data: topLGUs.map(r => r.population), backgroundColor: applyAlpha(hsl('blue'), 0.75), borderRadius: 8 }] }}
+                data={{ labels: topLGUs.map(r => r.lgu), datasets: [{ data: topLGUs.map(r => r.population), backgroundColor: applyAlpha('oklch(76.5% 0.177 163.223)', 0.75), borderRadius: 8 }] }}
                 options={{
                   responsive: true,
                   indexAxis: 'y',

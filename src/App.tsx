@@ -223,8 +223,22 @@ export function App() {
   const [demoType, setDemoType] = useState<string>('__all__')
   const [demoIncomeClass, setDemoIncomeClass] = useState<string>('__all__')
   const [demoSearch, setDemoSearch] = useState<string>('')
+  const [recordsSort, setRecordsSort] = useState<'latest' | 'avg' | 'lgu' | 'province' | 'type'>('latest')
   const baseRows = filterRows()
   const tabWrapperClass = wide ? 'space-y-4' : 'rounded-xl border p-4 space-y-4'
+  const tabLoading = (() => {
+    if (tab === 'about' || tab === 'settings') return false
+    if (!canonReady) return true
+    if (tab === 'officials') return !officials && !officialsError
+    if (tab === 'field-officers') return !fieldOfficers && !fieldOfficersError
+    return false
+  })()
+  const tabLoadingBar = tabLoading ? (
+    <div className="h-1 w-full overflow-hidden rounded-full bg-zinc-100" aria-hidden="true">
+      <div className="h-full w-1/3 animate-pulse rounded-full bg-zinc-400" />
+    </div>
+  ) : null
+
   useEffect(() => {
     if (role !== 'admin' && tab === 'settings') setTab('dashboard')
   }, [role, tab])
@@ -740,6 +754,7 @@ export function App() {
 
             {tab === 'dashboard' && (
               <section className={tabWrapperClass}>
+                {tabLoadingBar}
                 <div className="space-y-3">
                   <FilterBar
                     onChange={() => { /* persist band filter */ force() }}
@@ -871,23 +886,39 @@ export function App() {
                 {/* Heatmap merged into Detailed Records (cell coloring) */}
 
                 <section className="rounded-xl border p-4">
-                  <div className="flex items-center justify-between mb-2">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                     <h2 className="font-medium">Detailed Records</h2>
-                    <div className="text-xs text-muted-foreground">Sorted by latest year</div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span className="whitespace-nowrap">Sort by</span>
+                      <Select value={recordsSort} onValueChange={(v) => setRecordsSort(v as typeof recordsSort)}>
+                        <SelectTrigger className="h-8 text-sm">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="latest">Latest year</SelectItem>
+                          <SelectItem value="avg">{metricIsStatus() ? 'Avg pass rate' : 'Avg score'}</SelectItem>
+                          <SelectItem value="lgu">LGU (A-Z)</SelectItem>
+                          <SelectItem value="province">Province (A-Z)</SelectItem>
+                          <SelectItem value="type">Type (A-Z)</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
                   </div>
-                  <RecordsTable rows={rows} />
+                  <RecordsTable rows={rows} sortBy={recordsSort} />
                 </section>
               </section>
             )}
 
             {tab === 'scenario' && (
               <section className={tabWrapperClass}>
+                {tabLoadingBar}
                 <ScenarioBuilder officials={officials || []} fieldOfficers={fieldOfficers || []} />
               </section>
             )}
 
             {tab === 'sglg-overview' && (
               <section className={tabWrapperClass}>
+                {tabLoadingBar}
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   <Button
                     size="sm"
@@ -913,6 +944,7 @@ export function App() {
 
             {tab === 'sglg' && (
               <section className={tabWrapperClass}>
+                {tabLoadingBar}
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   <Button
                     size="sm"
@@ -938,6 +970,7 @@ export function App() {
 
             {tab === 'officials' && (
               <section className={tabWrapperClass}>
+                {tabLoadingBar}
                 {officials ? (
                   <>
                     <div className="flex flex-wrap items-center justify-end gap-2">
@@ -981,6 +1014,7 @@ export function App() {
 
             {tab === 'field-officers' && (
               <section className={tabWrapperClass}>
+                {tabLoadingBar}
                 {fieldOfficers ? (
                   <>
                     <div className="flex flex-wrap items-center justify-end gap-3">
@@ -1034,6 +1068,7 @@ export function App() {
 
             {tab === 'demography' && (
               <section className={tabWrapperClass}>
+                {tabLoadingBar}
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   <div className="flex flex-wrap items-center gap-2">
                     {role === 'admin' && (
@@ -1112,6 +1147,7 @@ export function App() {
 
               {tab === 'about' && (
                 <section className={tabWrapperClass}>
+                {tabLoadingBar}
                   <div className="rounded-xl border p-5 space-y-3">
                     <div>
                       <h2 className="text-lg font-semibold">About DataForge — DILG Region XII</h2>
@@ -1186,6 +1222,7 @@ export function App() {
               )}
             {role === 'admin' && tab === 'settings' && (
               <section className={`${tabWrapperClass} overflow-hidden`}>
+                {tabLoadingBar}
                 <SettingsView authed={role === 'admin'} />
               </section>
             )}

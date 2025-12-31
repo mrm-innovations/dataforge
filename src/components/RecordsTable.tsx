@@ -5,12 +5,32 @@ import { ExternalLink } from 'lucide-react'
 import { avg, fmt, isADAC, isLCPC, metricIsStatus, statusToNum, store, yearsInScope, statusShort } from '@/lib/store'
 import { LguDialog, openGovernanceScorecard } from '@/components/LguDialog'
 
-export function RecordsTable({ rows }: { rows: any[] }) {
+export function RecordsTable({ rows, sortBy = 'latest' }: { rows: any[]; sortBy?: 'latest' | 'avg' | 'lgu' | 'province' | 'type' }) {
   const [selected, setSelected] = useState<{ lgu: string; province: string } | null>(null)
   const years = yearsInScope()
   const isStatus = metricIsStatus()
   const summaryLabel = isStatus ? 'Avg Pass Rate' : 'Avg Score'
-  const sorted = rows.slice().sort((a, b) => (((b as any)['y' + store.state.endYear!] ?? -1) - ((a as any)['y' + store.state.endYear!] ?? -1)))
+  const summaryAvgFor = (row: any) => {
+    const summaryValues = years.map((y) => (isStatus ? (statusToNum((row as any)['s' + y]) == null ? null : (statusToNum((row as any)['s' + y])! * 100)) : ((row as any)['y' + y] as number | null)))
+    return avg(summaryValues)
+  }
+  const sorted = rows.slice().sort((a, b) => {
+    if (sortBy === 'avg') {
+      const aAvg = summaryAvgFor(a) ?? -1
+      const bAvg = summaryAvgFor(b) ?? -1
+      return bAvg - aAvg
+    }
+    if (sortBy === 'lgu') {
+      return String((a as any).lgu || '').localeCompare(String((b as any).lgu || ''))
+    }
+    if (sortBy === 'province') {
+      return String((a as any).province || '').localeCompare(String((b as any).province || ''))
+    }
+    if (sortBy === 'type') {
+      return String((a as any).type || '').localeCompare(String((b as any).type || ''))
+    }
+    return (((b as any)['y' + store.state.endYear!] ?? -1) - ((a as any)['y' + store.state.endYear!] ?? -1))
+  })
 
   const pillClassesForValue = (value: number | null | undefined) => {
     if (value == null) return 'bg-slate-100 text-slate-700 border-slate-200'
@@ -80,8 +100,7 @@ export function RecordsTable({ rows }: { rows: any[] }) {
                 </TableCell>
               )
             })
-            const summaryValues = years.map((y) => (isStatus ? (statusToNum((row as any)['s' + y]) == null ? null : (statusToNum((row as any)['s' + y])! * 100)) : ((row as any)['y' + y] as number | null)))
-            const summaryAvg = avg(summaryValues)
+            const summaryAvg = summaryAvgFor(row)
             const summaryText = summaryAvg == null ? '-' : isStatus ? `${fmt(summaryAvg, 0)}%` : fmt(summaryAvg)
             return (
               <TableRow

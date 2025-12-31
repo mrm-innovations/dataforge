@@ -49,11 +49,6 @@ export function FilterBar({ onChange, onAuditChange, actionsSlot }: Props) {
   return (
     <div className="space-y-3">
       <div className="flex flex-wrap items-center gap-2">
-        {scopedYears.length ? (
-          <div className="text-xs text-muted-foreground">
-            {scopedYears[0]}-{scopedYears[scopedYears.length - 1]}
-          </div>
-        ) : null}
         <div className="flex flex-wrap items-center gap-2 ml-auto w-full justify-end sm:w-auto">
           {actionsSlot}
           <Button size="sm" variant="outline" onClick={() => (actions.resetFilters(), onChange?.())}>Reset filters</Button>
