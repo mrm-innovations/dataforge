@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -12,6 +12,13 @@ type IndicatorEntry = {
   key: string
   label: string
   status: string
+}
+
+type SglgIndicatorRow = {
+  id: string
+  criteriaKey: string
+  indicatorKey: string
+  indicatorStatus: string
 }
 
 type ScenarioRow = {
@@ -174,22 +181,61 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
     () => store.SGLG_CRITERIA.filter((c) => c.year === sglgYear),
     [sglgYear, store.SGLG_CRITERIA],
   )
-  const [criteriaKey, setCriteriaKey] = useState<string>(criteriaForYear[0]?.key || '')
-  useEffect(() => {
-    if (!criteriaForYear.length) {
-      setCriteriaKey('')
-      return
-    }
-    if (!criteriaForYear.some((c) => c.key === criteriaKey)) {
-      setCriteriaKey(criteriaForYear[0].key)
-    }
-  }, [criteriaForYear, criteriaKey])
+  const indicatorIdRef = useRef(0)
+  const nextIndicatorId = () => `indicator-${indicatorIdRef.current++}`
+  const [indicatorRows, setIndicatorRows] = useState<SglgIndicatorRow[]>([])
 
   const criteriaLabelMap = useMemo(() => {
     const map = new Map<string, string>()
     criteriaForYear.forEach((c) => map.set(c.key, c.label || c.key || ''))
     return map
   }, [criteriaForYear])
+
+  const indicatorOptionsByCriteria = useMemo(() => {
+    const map = new Map<string, Array<{ key: string; label: string }>>()
+    if (!sglgYear) return map
+    criteriaForYear.forEach((criteria) => {
+      const dataKey = `${sglgYear}:${criteria.key}`
+      const records = store.SGLG_CRITERIA_DATA[dataKey] || []
+      const optionMap = new Map<string, string>()
+      records.forEach((rec: any) => {
+        const indicators = Array.isArray(rec?.indicators) ? rec.indicators : []
+        indicators.forEach((indicator: any) => {
+          const key = String(indicator?.key || '').trim()
+          if (!key || optionMap.has(key)) return
+          optionMap.set(key, String(indicator?.label || key).trim())
+        })
+      })
+      map.set(criteria.key, Array.from(optionMap.entries()).map(([key, label]) => ({ key, label })))
+    })
+    return map
+  }, [sglgYear, criteriaForYear, store.SGLG_CRITERIA_DATA])
+
+  useEffect(() => {
+    if (!criteriaForYear.length) {
+      setIndicatorRows([])
+      return
+    }
+    const defaultCriteriaKey = criteriaForYear[0].key
+    setIndicatorRows((rows) => {
+      if (!rows.length) {
+        const initialOptions = indicatorOptionsByCriteria.get(defaultCriteriaKey) || []
+        return [{
+          id: nextIndicatorId(),
+          criteriaKey: defaultCriteriaKey,
+          indicatorKey: initialOptions[0]?.key || '',
+          indicatorStatus: '__all__',
+        }]
+      }
+      return rows.map((row) => {
+        const criteriaKey = criteriaForYear.some((c) => c.key === row.criteriaKey) ? row.criteriaKey : defaultCriteriaKey
+        const options = indicatorOptionsByCriteria.get(criteriaKey) || []
+        const indicatorKey = options.some((opt) => opt.key === row.indicatorKey) ? row.indicatorKey : (options[0]?.key || '')
+        if (criteriaKey === row.criteriaKey && indicatorKey === row.indicatorKey) return row
+        return { ...row, criteriaKey, indicatorKey }
+      })
+    })
+  }, [criteriaForYear, indicatorOptionsByCriteria])
 
   const lceMap = useMemo(() => {
     const map = new Map<string, string[]>()
@@ -261,34 +307,6 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
     return joined
   }, [fieldOfficersList])
 
-  const indicatorOptions = useMemo(() => {
-    if (!sglgYear || !criteriaKey) return [] as Array<{ key: string; label: string }>
-    const dataKey = `${sglgYear}:${criteriaKey}`
-    const records = store.SGLG_CRITERIA_DATA[dataKey] || []
-    const map = new Map<string, string>()
-    records.forEach((rec: any) => {
-      const indicators = Array.isArray(rec?.indicators) ? rec.indicators : []
-      indicators.forEach((indicator: any) => {
-        const key = String(indicator?.key || '').trim()
-        if (!key || map.has(key)) return
-        map.set(key, String(indicator?.label || key).trim())
-      })
-    })
-    return Array.from(map.entries()).map(([key, label]) => ({ key, label }))
-  }, [sglgYear, criteriaKey, store.SGLG_CRITERIA_DATA])
-
-  const [indicatorKey, setIndicatorKey] = useState<string>(indicatorOptions[0]?.key || '')
-  useEffect(() => {
-    if (!indicatorOptions.length) {
-      setIndicatorKey('')
-      return
-    }
-    if (!indicatorOptions.some((opt) => opt.key === indicatorKey)) {
-      setIndicatorKey(indicatorOptions[0].key)
-    }
-  }, [indicatorOptions, indicatorKey])
-
-  const [indicatorStatus, setIndicatorStatus] = useState<string>('__all__')
   const [adacBand, setAdacBand] = useState<string>('__all__')
   const [lcpcBand, setLcpcBand] = useState<string>('__all__')
   const [pocBand, setPocBand] = useState<string>('__all__')
@@ -331,31 +349,40 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
   const [typeFilter, setTypeFilter] = useState('__all__')
   const [search, setSearch] = useState('')
 
-  const indicatorMap = useMemo(() => {
-    const map = new Map<string, IndicatorEntry>()
-    if (!sglgYear || !criteriaKey || !indicatorKey) return map
-    const dataKey = `${sglgYear}:${criteriaKey}`
-    const records = store.SGLG_CRITERIA_DATA[dataKey] || []
-    records.forEach((rec: any) => {
-      const province = String(rec?.province || '').trim()
-      const lgu = String(rec?.lgu || '').trim()
-      if (!province || !lgu) return
-      const indicators = Array.isArray(rec?.indicators) ? rec.indicators : []
-      const indicator = indicators.find((i: any) => String(i?.key || '').trim() === indicatorKey)
-      if (!indicator) return
-      const status = resolveIndicatorStatus(indicator)
-      map.set(sglgKey(province, lgu), {
-        key: indicatorKey,
-        label: String(indicator?.label || indicatorKey).trim(),
-        status,
+  const activeIndicatorRows = useMemo(
+    () => indicatorRows.filter((row) => row.criteriaKey && row.indicatorKey),
+    [indicatorRows],
+  )
+
+  const indicatorMaps = useMemo(() => {
+    const maps = new Map<string, Map<string, IndicatorEntry>>()
+    if (!sglgYear) return maps
+    activeIndicatorRows.forEach((row) => {
+      const map = new Map<string, IndicatorEntry>()
+      const dataKey = `${sglgYear}:${row.criteriaKey}`
+      const records = store.SGLG_CRITERIA_DATA[dataKey] || []
+      records.forEach((rec: any) => {
+        const province = String(rec?.province || '').trim()
+        const lgu = String(rec?.lgu || '').trim()
+        if (!province || !lgu) return
+        const indicators = Array.isArray(rec?.indicators) ? rec.indicators : []
+        const indicator = indicators.find((i: any) => String(i?.key || '').trim() === row.indicatorKey)
+        if (!indicator) return
+        const status = resolveIndicatorStatus(indicator)
+        map.set(sglgKey(province, lgu), {
+          key: row.indicatorKey,
+          label: String(indicator?.label || row.indicatorKey).trim(),
+          status,
+        })
       })
+      maps.set(row.id, map)
     })
-    return map
-  }, [sglgYear, criteriaKey, indicatorKey, store.SGLG_CRITERIA_DATA])
+    return maps
+  }, [sglgYear, activeIndicatorRows, store.SGLG_CRITERIA_DATA])
 
   const results = useMemo(() => {
     const rows: ScenarioRow[] = []
-    if (useSglg && !indicatorKey) return rows
+    if (useSglg && !activeIndicatorRows.length) return rows
     const q = search.trim().toLowerCase()
     store.LGUS.forEach((g) => {
       if (provinceFilter !== '__all__' && g.province !== provinceFilter) return
@@ -368,11 +395,15 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
       const isProvince = typeValue === 'province'
       const isHuc = typeValue === 'highly urbanized city'
       const key = sglgKey(g.province || '', g.lgu || '')
-      const indicator = indicatorMap.get(key)
-      const indicatorStatusValue = indicator?.status || (isProvince ? 'na' : null)
-      const sglgMatch = indicatorStatusValue
-        ? (indicatorStatus === '__all__' || indicatorStatusValue === indicatorStatus)
-        : false
+      const sglgChecks = useSglg
+        ? activeIndicatorRows.map((row) => {
+          const indicator = indicatorMaps.get(row.id)?.get(key)
+          const indicatorStatusValue = indicator?.status || (isProvince ? 'na' : null)
+          return indicatorStatusValue
+            ? (row.indicatorStatus === '__all__' || indicatorStatusValue === row.indicatorStatus)
+            : false
+        })
+        : []
 
       const bandMatchFor = (auditKey: string, year: number | null, bandValue: string, allowMissing: boolean) => {
         if (year == null) return allowMissing && bandValue === '__all__'
@@ -401,7 +432,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
       const sglgOverallMatch = statusMatchFor('SGLG', sglgOverallYear, sglgOverallStatus, isProvince)
 
       const checks: boolean[] = []
-      if (useSglg) checks.push(sglgMatch)
+      if (useSglg) checks.push(...sglgChecks)
       if (useAdac) checks.push(adacMatch)
       if (useLcpc) checks.push(lcpcMatch)
       if (usePoc) checks.push(pocMatch)
@@ -432,9 +463,8 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
     })
     return rows
   }, [
-    indicatorKey,
-    indicatorMap,
-    indicatorStatus,
+    activeIndicatorRows,
+    indicatorMaps,
     adacBand,
     lcpcBand,
     pocBand,
@@ -469,11 +499,44 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
     { value: 'na', label: 'N/A' },
   ]
 
+  const addIndicatorRow = () => {
+    const baseCriteriaKey = indicatorRows[indicatorRows.length - 1]?.criteriaKey || criteriaForYear[0]?.key || ''
+    const options = indicatorOptionsByCriteria.get(baseCriteriaKey) || []
+    setIndicatorRows((rows) => ([
+      ...rows,
+      {
+        id: nextIndicatorId(),
+        criteriaKey: baseCriteriaKey,
+        indicatorKey: options[0]?.key || '',
+        indicatorStatus: '__all__',
+      },
+    ]))
+  }
+
+  const updateIndicatorRow = (id: string, patch: Partial<SglgIndicatorRow>) => {
+    setIndicatorRows((rows) => rows.map((row) => (row.id === id ? { ...row, ...patch } : row)))
+  }
+
+  const removeIndicatorRow = (id: string) => {
+    setIndicatorRows((rows) => (rows.length > 1 ? rows.filter((row) => row.id !== id) : rows))
+  }
+
   const resetFilters = () => {
     setProvinceFilter('__all__')
     setTypeFilter('__all__')
     setSearch('')
-    setIndicatorStatus('__all__')
+    if (criteriaForYear.length) {
+      const defaultCriteriaKey = criteriaForYear[0].key
+      const options = indicatorOptionsByCriteria.get(defaultCriteriaKey) || []
+      setIndicatorRows([{
+        id: nextIndicatorId(),
+        criteriaKey: defaultCriteriaKey,
+        indicatorKey: options[0]?.key || '',
+        indicatorStatus: '__all__',
+      }])
+    } else {
+      setIndicatorRows([])
+    }
     setAdacBand('__all__')
     setLcpcBand('__all__')
     setPocBand('__all__')
@@ -518,9 +581,20 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
     return <div className="text-sm text-muted-foreground">No SGLG criteria datasets loaded.</div>
   }
 
-  const criteriaLabel = criteriaLabelMap.get(criteriaKey) || criteriaKey
-  const indicatorLabel = indicatorOptions.find((opt) => opt.key === indicatorKey)?.label || indicatorKey
-  const indicatorStatusLabel = statusOptions.find((opt) => opt.value === indicatorStatus)?.label || 'All statuses'
+  const indicatorStatusLabelFor = (value: string) => statusOptions.find((opt) => opt.value === value)?.label || 'All statuses'
+  const indicatorLabelFor = (criteriaKey: string, indicatorKey: string) => {
+    const options = indicatorOptionsByCriteria.get(criteriaKey) || []
+    return options.find((opt) => opt.key === indicatorKey)?.label || indicatorKey
+  }
+  const sglgIndicatorSummaries = activeIndicatorRows.map((row) => {
+    const criteriaLabel = criteriaLabelMap.get(row.criteriaKey) || row.criteriaKey
+    const indicatorLabel = indicatorLabelFor(row.criteriaKey, row.indicatorKey)
+    const statusLabel = indicatorStatusLabelFor(row.indicatorStatus)
+    return {
+      id: row.id,
+      label: `SGLG ${criteriaLabel || 'Criteria'} > ${indicatorLabel || 'Indicator'} (${statusLabel})`,
+    }
+  })
   const adacBandLabel = adacBand === '__all__' ? 'any band' : bandLabelForKey('ADAC', adacBand)
   const lcpcBandLabel = lcpcBand === '__all__' ? 'any band' : bandLabelForKey('LCPC', lcpcBand)
   const pocBandLabel = pocBand === '__all__' ? 'any band' : bandLabelForKey('POC', pocBand)
@@ -566,38 +640,75 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
             <div className="text-sm font-medium">Seal of Good Local Governance (SGLG) Indicator</div>
             <TogglePill enabled={useSglg} onChange={setUseSglg} />
           </div>
-          <div className={`grid gap-4 md:grid-cols-3 ${!useSglg ? 'opacity-50 pointer-events-none' : ''}`}>
-            <div className="flex flex-col gap-1">
-              <Label className="text-xs">Criteria</Label>
-              <Select value={criteriaKey} onValueChange={(v) => setCriteriaKey(v)}>
-                <SelectTrigger><SelectValue placeholder="Select criteria" /></SelectTrigger>
-                <SelectContent>
-                  {criteriaForYear.map((c) => {
-                    const label = c.label || c.key || ''
-                    return (
-                      <SelectItem key={c.key} value={c.key}>{label}</SelectItem>
-                    )
-                  })}
-                </SelectContent>
-              </Select>
-            </div>
-            <div className="flex flex-col gap-1">
-              <Label className="text-xs">Indicator</Label>
-              <Select value={indicatorKey} onValueChange={(v) => setIndicatorKey(v)}>
-                <SelectTrigger><SelectValue placeholder="Select indicator" /></SelectTrigger>
-                <SelectContent>
-                  {indicatorOptions.map((opt) => (<SelectItem key={opt.key} value={opt.key}>{opt.label}</SelectItem>))}
-                </SelectContent>
-              </Select>
-            </div>
-            <div className="flex flex-col gap-1">
-              <Label className="text-xs">Status</Label>
-              <Select value={indicatorStatus} onValueChange={(v) => setIndicatorStatus(v)}>
-                <SelectTrigger><SelectValue placeholder="All statuses" /></SelectTrigger>
-                <SelectContent>
-                  {statusOptions.map((opt) => (<SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>))}
-                </SelectContent>
-              </Select>
+          <div className={`space-y-3 ${!useSglg ? 'opacity-50 pointer-events-none' : ''}`}>
+            {indicatorRows.map((row) => {
+              const indicatorOptions = indicatorOptionsByCriteria.get(row.criteriaKey) || []
+              return (
+                <div key={row.id} className="space-y-2">
+                  <div className="grid gap-4 md:grid-cols-3">
+                    <div className="flex flex-col gap-1">
+                      <Label className="text-xs">Criteria</Label>
+                      <Select
+                        value={row.criteriaKey}
+                        onValueChange={(v) => {
+                          const options = indicatorOptionsByCriteria.get(v) || []
+                          updateIndicatorRow(row.id, { criteriaKey: v, indicatorKey: options[0]?.key || '' })
+                        }}
+                      >
+                        <SelectTrigger><SelectValue placeholder="Select criteria" /></SelectTrigger>
+                        <SelectContent>
+                          {criteriaForYear.map((c) => {
+                            const label = c.label || c.key || ''
+                            return (
+                              <SelectItem key={c.key} value={c.key}>{label}</SelectItem>
+                            )
+                          })}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <Label className="text-xs">Indicator</Label>
+                      <Select
+                        value={row.indicatorKey}
+                        onValueChange={(v) => updateIndicatorRow(row.id, { indicatorKey: v })}
+                      >
+                        <SelectTrigger><SelectValue placeholder="Select indicator" /></SelectTrigger>
+                        <SelectContent>
+                          {indicatorOptions.map((opt) => (<SelectItem key={opt.key} value={opt.key}>{opt.label}</SelectItem>))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <Label className="text-xs">Status</Label>
+                      <Select
+                        value={row.indicatorStatus}
+                        onValueChange={(v) => updateIndicatorRow(row.id, { indicatorStatus: v })}
+                      >
+                        <SelectTrigger><SelectValue placeholder="All statuses" /></SelectTrigger>
+                        <SelectContent>
+                          {statusOptions.map((opt) => (<SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                  </div>
+                  {indicatorRows.length > 1 && (
+                    <div className="flex justify-end">
+                      <button
+                        type="button"
+                        className="text-xs text-muted-foreground underline"
+                        onClick={() => removeIndicatorRow(row.id)}
+                      >
+                        Remove indicator
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+            <div>
+              <Button type="button" size="sm" variant="outline" onClick={addIndicatorRow}>
+                Add indicator
+              </Button>
             </div>
           </div>
         </div>
@@ -723,9 +834,19 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
 
       <div className="flex flex-wrap items-center gap-2 text-xs">
         <span className="text-muted-foreground">Scenario</span>
-        <span className={`${pillBase} ${useSglg ? 'bg-indigo-50 text-indigo-700 border-indigo-200' : pillMuted}`}>
-          {useSglg ? `SGLG ${criteriaLabel || 'Criteria'} > ${indicatorLabel || 'Indicator'} (${indicatorStatusLabel})` : 'SGLG off'}
-        </span>
+        {useSglg ? (
+          sglgIndicatorSummaries.length ? (
+            sglgIndicatorSummaries.map((summary) => (
+              <span key={summary.id} className={`${pillBase} bg-indigo-50 text-indigo-700 border-indigo-200`}>
+                {summary.label}
+              </span>
+            ))
+          ) : (
+            <span className={`${pillBase} ${pillMuted}`}>SGLG indicators not set</span>
+          )
+        ) : (
+          <span className={`${pillBase} ${pillMuted}`}>SGLG off</span>
+        )}
         <span className={`${pillBase} ${useSglgOverall ? 'bg-sky-50 text-sky-700 border-sky-200' : pillMuted}`}>
           {useSglgOverall ? `SGLG Overall ${sglgOverallYear ?? ''} (${sglgOverallLabel})` : 'SGLG overall off'}
         </span>
