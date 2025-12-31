@@ -641,13 +641,13 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
             <TogglePill enabled={useSglg} onChange={setUseSglg} />
           </div>
           <div className={`space-y-3 ${!useSglg ? 'opacity-50 pointer-events-none' : ''}`}>
-            {indicatorRows.map((row) => {
+            {indicatorRows.map((row, index) => {
               const indicatorOptions = indicatorOptionsByCriteria.get(row.criteriaKey) || []
               return (
                 <div key={row.id} className="space-y-2">
                   <div className="grid gap-4 md:grid-cols-3">
                     <div className="flex flex-col gap-1">
-                      <Label className="text-xs">Criteria</Label>
+                      <Label className={index === 0 ? 'text-xs' : 'sr-only'}>Criteria</Label>
                       <Select
                         value={row.criteriaKey}
                         onValueChange={(v) => {
@@ -667,7 +667,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
                       </Select>
                     </div>
                     <div className="flex flex-col gap-1">
-                      <Label className="text-xs">Indicator</Label>
+                      <Label className={index === 0 ? 'text-xs' : 'sr-only'}>Indicator</Label>
                       <Select
                         value={row.indicatorKey}
                         onValueChange={(v) => updateIndicatorRow(row.id, { indicatorKey: v })}
@@ -679,7 +679,7 @@ export function ScenarioBuilder({ officials, fieldOfficers }: ScenarioBuilderPro
                       </Select>
                     </div>
                     <div className="flex flex-col gap-1">
-                      <Label className="text-xs">Status</Label>
+                      <Label className={index === 0 ? 'text-xs' : 'sr-only'}>Status</Label>
                       <Select
                         value={row.indicatorStatus}
                         onValueChange={(v) => updateIndicatorRow(row.id, { indicatorStatus: v })}
