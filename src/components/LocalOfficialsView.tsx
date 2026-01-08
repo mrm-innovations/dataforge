@@ -256,6 +256,9 @@ export const LocalOfficialsView = forwardRef<LocalOfficialsActions, Props>(({ of
         colors: entries.map(([label]) => termChartColor(label)),
       }
   }, [filtered])
+  const sexTotal = useMemo(() => activeSexLabels.reduce((sum, label) => sum + (sexCounts[label] || 0), 0), [activeSexLabels, sexCounts])
+  const partyTotal = useMemo(() => partyCounts.values.reduce((sum, value) => sum + value, 0), [partyCounts])
+  const termTotal = useMemo(() => termCounts.values.reduce((sum, value) => sum + value, 0), [termCounts])
   const neoCount = filtered.filter((o) => /newly/i.test(o.term)).length
   const femaleCount = filtered.filter((o) => canonicalSex(o.sex) === 'Female').length
   const statCards = [
@@ -434,6 +437,15 @@ export const LocalOfficialsView = forwardRef<LocalOfficialsActions, Props>(({ of
               cutout: '72%',
               plugins: {
                 legend: { position: 'top' },
+                tooltip: {
+                  callbacks: {
+                    label: (ctx) => {
+                      const value = Number(ctx.parsed) || 0
+                      const pct = sexTotal ? Math.round((value / sexTotal) * 100) : 0
+                      return `${ctx.label}: ${pct}% (${value})`
+                    },
+                  },
+                },
               },
             }}
           />
@@ -461,7 +473,11 @@ export const LocalOfficialsView = forwardRef<LocalOfficialsActions, Props>(({ of
                   legend: { display: false },
                   tooltip: {
                     callbacks: {
-                      label: (ctx) => `${ctx.parsed.x}`,
+                      label: (ctx) => {
+                        const value = Number(ctx.parsed.x) || 0
+                        const pct = partyTotal ? Math.round((value / partyTotal) * 100) : 0
+                        return `${ctx.label}: ${pct}% (${value})`
+                      },
                     },
                   },
                 },
@@ -497,6 +513,15 @@ export const LocalOfficialsView = forwardRef<LocalOfficialsActions, Props>(({ of
               cutout: '72%',
               plugins: {
                 legend: { position: 'top' },
+                tooltip: {
+                  callbacks: {
+                    label: (ctx) => {
+                      const value = Number(ctx.parsed) || 0
+                      const pct = termTotal ? Math.round((value / termTotal) * 100) : 0
+                      return `${ctx.label}: ${pct}% (${value})`
+                    },
+                  },
+                },
               },
             }}
           />

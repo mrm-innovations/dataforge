@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useMemo } from 'react'
 import { Bar } from 'react-chartjs-2'
 import {
   Chart as ChartJS,
@@ -10,14 +10,12 @@ import {
 } from 'chart.js'
 import { classifyBand, isADAC, isLCPC, metricIsStatus, yearsInScope, fmt, bandsArrayFor, bandLabelForKey, store } from '@/lib/store'
 import { applyAlpha, hsl } from '@/lib/colors'
-import { Button } from '@/components/ui/button'
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend)
 
 type Props = { rows: any[] }
 
 export function BandDistribution({ rows }: Props) {
-  const [mode, setMode] = useState<'percent' | 'count'>('percent')
   const years = yearsInScope()
 
   const { labels, datasets } = useMemo(() => {
@@ -104,12 +102,11 @@ export function BandDistribution({ rows }: Props) {
 
   if (!years.length) return null
 
-  const isPct = mode === 'percent'
   const data = {
     labels,
     datasets: datasets.map((ds) => ({
       ...ds,
-      data: isPct ? ds.data : ds.metaCounts,
+      data: ds.data,
       borderRadius: 6,
     })),
   }
@@ -118,10 +115,6 @@ export function BandDistribution({ rows }: Props) {
     <div className="space-y-2">
       <div className="flex items-center justify-between">
         <div className="text-sm text-muted-foreground">{years[0]}{years.length > 1 ? `–${years[years.length - 1]}` : ''}</div>
-        <div className="inline-flex gap-1">
-          <Button size="sm" variant={isPct ? 'default' : 'outline'} onClick={() => setMode('percent')}>Percent</Button>
-          <Button size="sm" variant={!isPct ? 'default' : 'outline'} onClick={() => setMode('count')}>Count</Button>
-        </div>
       </div>
       <Bar
         data={data as any}
@@ -141,9 +134,9 @@ export function BandDistribution({ rows }: Props) {
             y: {
               stacked: true,
               suggestedMin: 0,
-              suggestedMax: isPct ? 100 : undefined,
+              suggestedMax: 100,
               ticks: {
-                callback: (val) => (isPct ? `${val}%` : `${val}`),
+                callback: (val) => `${val}%`,
               },
             },
           },
@@ -153,8 +146,7 @@ export function BandDistribution({ rows }: Props) {
               callbacks: {
                 label: (ctx) => {
                   const count = (ctx.dataset as any).metaCounts?.[ctx.dataIndex] ?? 0
-                  if (isPct) return `${ctx.dataset.label}: ${fmt(ctx.parsed.y, 0)}% (${count})`
-                  return `${ctx.dataset.label}: ${count}`
+                  return `${ctx.dataset.label}: ${fmt(ctx.parsed.y, 0)}% (${count})`
                 },
               },
             },
